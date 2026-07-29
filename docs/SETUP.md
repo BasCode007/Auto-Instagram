@@ -81,44 +81,26 @@ node inside the workflow.
 ## Part D — Host the renderer + n8n
 
 The render scripts need `ffmpeg`, `imagemagick`, `bash`, `curl`, `jq` and fonts
-on the same machine as n8n. The stock n8n image doesn't include them, so extend
-it:
+on the same machine as n8n. A ready-to-use **`Dockerfile`**, **`docker-compose.yml`**
+and **`.env.example`** are in the repo root — the Dockerfile extends the stock
+n8n image with that toolchain, and compose mounts the repo read-only at `/repo`
+so the Execute Command nodes can call `/repo/scripts`.
 
-```dockerfile
-# Dockerfile
-FROM n8nio/n8n:latest
-USER root
-RUN apk add --no-cache ffmpeg imagemagick ttf-dejavu fontconfig bash curl jq
-USER node
+From the cloned repo:
+
+```bash
+cp .env.example .env      # then fill in your keys (see Parts A-C)
+docker compose up -d --build
 ```
 
-```yaml
-# docker-compose.yml
-services:
-  n8n:
-    build: .
-    ports: ["5678:5678"]
-    environment:
-      - GENERIC_TIMEZONE=Australia/Sydney
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
-      - ELEVENLABS_VOICE_ID=${ELEVENLABS_VOICE_ID}
-      - PEXELS_API_KEY=${PEXELS_API_KEY}
-      - CLOUDINARY_CLOUD_NAME=${CLOUDINARY_CLOUD_NAME}
-      - CLOUDINARY_UPLOAD_PRESET=${CLOUDINARY_UPLOAD_PRESET}
-      - IG_ACCESS_TOKEN=${IG_ACCESS_TOKEN}
-      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
-      - SCRIPTS_DIR=/repo/scripts
-    volumes:
-      - n8n_data:/home/node/.n8n
-      - ./Auto-Instagram:/repo        # this repo, so /repo/scripts exists
-volumes:
-  n8n_data:
-```
+Open `http://localhost:5678`.
 
-Put the secrets in a `.env` next to the compose file, clone this repo into
-`./Auto-Instagram`, then `docker compose up -d --build`. Open
-`http://localhost:5678`.
+Notes:
+- Set **`N8N_ENCRYPTION_KEY`** in `.env` to a long random string before saving
+  any credentials, so they survive restarts (`openssl rand -hex 24`).
+- The Telegram approve/skip buttons call back to **`WEBHOOK_URL`**. Local
+  testing works on `http://localhost:5678`; for production set it to a publicly
+  reachable domain or tunnel.
 
 > Quick render self-test (inside the container):
 > ```bash

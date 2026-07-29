@@ -35,6 +35,17 @@ config/           niche.md (brand + compliance), hashtags.json (tag bank)
 auto_instagram/   caption + content library (canonical caption/hashtag rules)
 tests/            unit tests for the library
 docs/             SYSTEM_DESIGN.md, SETUP.md
+Dockerfile        n8n + ffmpeg/ImageMagick render toolchain
+docker-compose.yml self-hosted n8n (mounts scripts/, loads .env)
+.env.example      copy to .env and fill in your keys
+```
+
+## Quick start (self-hosted)
+
+```bash
+cp .env.example .env      # fill in your keys — see docs/SETUP.md
+docker compose up -d --build
+# open http://localhost:5678 and import n8n/auto-instagram-workflow.json
 ```
 
 ## The caption/content library

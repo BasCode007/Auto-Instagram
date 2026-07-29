@@ -1,0 +1,30 @@
+# Self-hosted n8n for Auto-Instagram.
+#
+#   1. cp .env.example .env   and fill it in
+#   2. docker compose up -d --build
+#   3. open http://localhost:5678  and import n8n/auto-instagram-workflow.json
+#
+# The repo is mounted read-only at /repo, so the Execute Command nodes call the
+# render scripts at /repo/scripts (SCRIPTS_DIR below). Rendered files are written
+# to a temp dir and uploaded to a public URL, not back into the repo.
+services:
+  n8n:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: auto-instagram-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    env_file:
+      - .env
+    environment:
+      # Fixed container path to the render scripts (authoritative; not a secret).
+      - SCRIPTS_DIR=/repo/scripts
+      - N8N_RUNNERS_ENABLED=true
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - .:/repo:ro
+
+volumes:
+  n8n_data:
