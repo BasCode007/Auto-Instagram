@@ -1,0 +1,77 @@
+{
+  "_comment": "Hashtag bank for the finance / wealth / success / positive-mindset niche. select_hashtags() in auto_instagram/content.py combines the core set with one pillar set, de-duplicates, and caps at Instagram's 30-tag limit. Keep tags broad-but-relevant; avoid banned or spammy tags.",
+  "core": [
+    "#wealth",
+    "#financialfreedom",
+    "#moneymindset",
+    "#successmindset",
+    "#buildwealth",
+    "#financialliteracy",
+    "#growyourwealth",
+    "#moneytips",
+    "#mindsetmatters",
+    "#positivemindset"
+  ],
+  "pillars": {
+    "wealth_mindset": [
+      "#abundancemindset",
+      "#wealthmindset",
+      "#millionairemindset",
+      "#delayedgratification",
+      "#disciplineequalsfreedom",
+      "#thinkandgrowrich",
+      "#moneymotivation",
+      "#richhabits"
+    ],
+    "money_habits": [
+      "#savingmoney",
+      "#budgetingtips",
+      "#personalfinance",
+      "#moneymanagement",
+      "#financialgoals",
+      "#smartmoney",
+      "#payyourselffirst",
+      "#debtfreejourney"
+    ],
+    "investing_basics": [
+      "#investing",
+      "#compoundinterest",
+      "#longterminvesting",
+      "#investingtips",
+      "#passiveincome",
+      "#wealthbuilding",
+      "#financialeducation",
+      "#investsmart"
+    ],
+    "entrepreneurship": [
+      "#entrepreneurmindset",
+      "#sidehustle",
+      "#businessmindset",
+      "#entrepreneurship",
+      "#valuecreation",
+      "#hustlesmart",
+      "#startuplife",
+      "#buildabrand"
+    ],
+    "success_psychology": [
+      "#successhabits",
+      "#gratitudepractice",
+      "#resilience",
+      "#growthmindset",
+      "#selfdiscipline",
+      "#mentalwealth",
+      "#positivethinking",
+      "#levelup"
+    ],
+    "daily_motivation": [
+      "#dailymotivation",
+      "#motivationalquotes",
+      "#successquotes",
+      "#affirmations",
+      "#mindsetshift",
+      "#inspirationdaily",
+      "#believeinyourself",
+      "#keepgoing"
+    ]
+  }
+}

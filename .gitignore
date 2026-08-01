@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Local env / secrets (copy .env.example -> .env)
+.env
+
+# Rendered output when using the "copy" uploader
+public/

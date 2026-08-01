@@ -1,2 +1,93 @@
 # Auto-Instagram
-This will be a automatic system for posting content to Instagram as well as sourcing content
+
+An automated pipeline that **creates** short vertical videos for a finance /
+wealth / success / positive-mindset account and **publishes** them to Instagram
+through the official Graph API — with a human approval step before anything goes
+live.
+
+- **Publishing:** official Instagram Graph API (ToS-safe; Business/Creator
+  account + linked Facebook Page).
+- **Content:** two rotated formats — faceless **narrated Reels** and motion
+  **quote cards**.
+- **Control:** **review before posting** via Telegram approve/skip.
+- **Runs on:** self-hosted **n8n** + local **ffmpeg**/**ImageMagick**, ElevenLabs
+  voice, free Pexels footage and Cloudinary hosting. ~AUD 9–21/month.
+
+## How it works
+
+```
+schedule → pick format+pillar → LLM script/quote + caption
+        → render (narrated Reel | quote card) → upload to public URL
+        → Telegram approve/skip → Graph API publish
+```
+
+See **[docs/SYSTEM_DESIGN.md](docs/SYSTEM_DESIGN.md)** for the architecture,
+flow diagram, and cost breakdown, and **[docs/SETUP.md](docs/SETUP.md)** for the
+full setup (Meta app + tokens, API keys, host, and importing the workflow).
+
+## Repository layout
+
+```
+n8n/              auto-instagram-workflow.json  ← import this into n8n
+scripts/          render_narrated_reel.sh, render_quote_card.sh, upload_public.sh
+                  verify_setup.sh (preflight credential + dependency check)
+prompts/          LLM system prompts for each format
+config/           niche.md (brand + compliance), hashtags.json (tag bank)
+auto_instagram/   caption + content library (canonical caption/hashtag rules)
+tests/            unit tests for the library
+docs/             GO_LIVE.md (checklist), SETUP.md (detail), SYSTEM_DESIGN.md
+Dockerfile        n8n + ffmpeg/ImageMagick render toolchain
+docker-compose.yml self-hosted n8n (mounts scripts/, loads .env)
+.env.example      copy to .env and fill in your keys
+```
+
+## Quick start (self-hosted)
+
+```bash
+cp .env.example .env      # fill in your keys — see docs/SETUP.md
+docker compose up -d --build
+docker compose exec n8n bash /repo/scripts/verify_setup.sh   # preflight
+# open http://localhost:5678 and import n8n/auto-instagram-workflow.json
+```
+
+`verify_setup.sh` calls every service with your credentials before you rely on
+them — it confirms the Instagram token really carries `instagram_content_publish`,
+that rendered videos land on a publicly fetchable URL, and prints your Instagram
+Business Account ID. **[docs/GO_LIVE.md](docs/GO_LIVE.md)** is the ordered
+checklist from empty account to live posting.
+
+## The caption/content library
+
+`auto_instagram/` is the canonical, tested definition of how captions are built
+(the n8n workflow mirrors the same rules in a Code node). It's pure standard
+library — no credentials or network needed.
+
+```python
+from auto_instagram import build_post_caption
+
+print(build_post_caption(
+    "The habit that quietly builds wealth",
+    "Automate a transfer the day you get paid. Pay yourself first, always.",
+    "money_habits",
+    cta="Save this for payday. 👇",
+))
+```
+
+It enforces Instagram's limits (2,200 chars, 30 hashtags), normalises and
+de-duplicates hashtags, pulls the right tag set for each content pillar, and
+appends an "educational only, not financial advice" disclaimer on investing
+posts.
+
+## Running the tests
+
+```bash
+python -m unittest discover -s tests
+```
+
+## Compliance
+
+Publishing is only via the official Graph API on an account you own. Content is
+education/motivation, **not financial advice** — the prompts ban
+guaranteed-return / risk-free / individual buy-sell language, and the
+review-before-posting step keeps you in control of everything that ships. See
+[config/niche.md](config/niche.md).
