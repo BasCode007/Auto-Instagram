@@ -102,7 +102,31 @@ Notes:
   testing works on `http://localhost:5678`; for production set it to a publicly
   reachable domain or tunnel.
 
-> Quick render self-test (inside the container):
+## Part D½ — Verify before you wire anything
+
+Run the preflight check inside the container. Do this **before** importing the
+workflow — it catches every credential problem in one pass instead of leaving
+you to debug a half-finished run:
+
+```bash
+docker compose exec n8n bash /repo/scripts/verify_setup.sh
+```
+
+It checks the render binaries and fonts, that every required variable is set,
+and then actually calls each service with your keys: OpenAI, ElevenLabs
+(including that your voice ID exists on the account), Pexels, a real test
+upload through `upload_public.sh` that confirms the resulting URL is **publicly
+fetchable**, and the Graph API — token validity, that
+`instagram_content_publish` is really granted, your remaining daily quota, and
+how long the token has left. It exits non-zero if anything failed.
+
+If you left `IG_USER_ID` blank, the verifier **discovers and prints your
+Instagram Business Account ID** — that's the value you paste into the workflow
+in Part E.
+
+Useful flags: `--skip-network` (binaries and variables only), `--help`.
+
+> Prefer a single render smoke test instead? This still works:
 > ```bash
 > QUOTE="Wealth is built in the boring middle." HANDLE="@yourhandle" \
 >   UPLOADER=copy PUBLIC_DIR=/tmp/pub PUBLIC_BASE_URL=http://localhost \
@@ -118,7 +142,7 @@ Notes:
 3. Open the two **Telegram** nodes and select your Telegram credential. If the
    **Approve post?** node shows a parameter warning after import, re-select
    operation **"Send and Wait for Response"** (the human-in-the-loop op).
-4. Confirm the env vars from the checklist are set (Part D).
+4. Confirm `verify_setup.sh` passes (Part D½).
 5. Click **Execute Workflow** once to test. You should get a Telegram message
    with the caption and a video link; tap **Approve** and watch it publish.
 

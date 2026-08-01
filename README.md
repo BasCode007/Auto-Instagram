@@ -30,11 +30,12 @@ full setup (Meta app + tokens, API keys, host, and importing the workflow).
 ```
 n8n/              auto-instagram-workflow.json  ← import this into n8n
 scripts/          render_narrated_reel.sh, render_quote_card.sh, upload_public.sh
+                  verify_setup.sh (preflight credential + dependency check)
 prompts/          LLM system prompts for each format
 config/           niche.md (brand + compliance), hashtags.json (tag bank)
 auto_instagram/   caption + content library (canonical caption/hashtag rules)
 tests/            unit tests for the library
-docs/             SYSTEM_DESIGN.md, SETUP.md
+docs/             GO_LIVE.md (checklist), SETUP.md (detail), SYSTEM_DESIGN.md
 Dockerfile        n8n + ffmpeg/ImageMagick render toolchain
 docker-compose.yml self-hosted n8n (mounts scripts/, loads .env)
 .env.example      copy to .env and fill in your keys
@@ -45,8 +46,15 @@ docker-compose.yml self-hosted n8n (mounts scripts/, loads .env)
 ```bash
 cp .env.example .env      # fill in your keys — see docs/SETUP.md
 docker compose up -d --build
+docker compose exec n8n bash /repo/scripts/verify_setup.sh   # preflight
 # open http://localhost:5678 and import n8n/auto-instagram-workflow.json
 ```
+
+`verify_setup.sh` calls every service with your credentials before you rely on
+them — it confirms the Instagram token really carries `instagram_content_publish`,
+that rendered videos land on a publicly fetchable URL, and prints your Instagram
+Business Account ID. **[docs/GO_LIVE.md](docs/GO_LIVE.md)** is the ordered
+checklist from empty account to live posting.
 
 ## The caption/content library
 
