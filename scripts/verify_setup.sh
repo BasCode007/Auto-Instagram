@@ -323,6 +323,30 @@ if [ "$(status_of "$resp")" = "200" ]; then
   fi
 fi
 
+section "Public URL (webhook callbacks)"
+case "${WEBHOOK_URL:-}" in
+  ""|*localhost*|*127.0.0.1*)
+    warn "WEBHOOK_URL is local — cannot check reachability" \
+         "Telegram approve/skip buttons will do nothing until this is public (SETUP.md Part D½)" ;;
+  *)
+    probe="$(curl -sS -o /dev/null -w '%{http_code} %{url_effective}' --max-time 20 -L \
+             "${WEBHOOK_URL%/}/healthz" 2>/dev/null)"
+    code="${probe%% *}"; final="${probe#* }"
+    case "$final" in
+      *cloudflareaccess.com*)
+        ok "tunnel is up (Cloudflare Access is in front, as intended)"
+        warn "Access challenges this URL" \
+             "fine for you in a browser; if approval links get annoying, add an Access Bypass for /webhook/ and /webhook-waiting/ only" ;;
+      *)
+        if [ "$code" = "200" ]; then
+          ok "WEBHOOK_URL reachable from the internet"
+        else
+          bad "WEBHOOK_URL not reachable (HTTP ${code:-000})" \
+              "tunnel down, or its public hostname does not point at n8n:5678" ;
+        fi ;;
+    esac ;;
+esac
+
 section "Telegram"
 if [ -n "${TELEGRAM_BOT_TOKEN:-}" ]; then
   resp="$(http_get "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getMe")"

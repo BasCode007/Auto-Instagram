@@ -102,7 +102,65 @@ Notes:
   testing works on `http://localhost:5678`; for production set it to a publicly
   reachable domain or tunnel.
 
-## Part D½ — Verify before you wire anything
+## Part D½ — Public URL via Cloudflare Tunnel
+
+n8n needs a public https URL or the Telegram approve/skip buttons do nothing:
+those buttons link back to `WEBHOOK_URL`, and `localhost` is not reachable from
+your phone. A Cloudflare Tunnel gives you one without opening a router port or
+putting the machine on a public IP.
+
+Both options below are opt-in compose **profiles**, so a plain
+`docker compose up -d` still runs local-only.
+
+### Named tunnel — what you want for live use
+
+Stable hostname that survives restarts. Needs a domain on Cloudflare.
+
+1. Cloudflare dashboard → **Zero Trust → Networks → Tunnels → Create a tunnel**
+   → *Cloudflared*. Name it, then copy the **connector token**.
+2. Add a **Public hostname**: e.g. `n8n.yourdomain.com`, service type **HTTP**,
+   URL `n8n:5678`. That is the compose service name — **not** `localhost`,
+   which inside the cloudflared container means the container itself.
+3. In `.env`:
+   ```
+   CLOUDFLARE_TUNNEL_TOKEN=<the connector token>
+   WEBHOOK_URL=https://n8n.yourdomain.com
+   ```
+4. Start it:
+   ```bash
+   docker compose --profile tunnel up -d
+   docker compose logs -f cloudflared     # expect "Registered tunnel connection"
+   ```
+
+**Then lock it down.** That hostname exposes your n8n editor to the internet.
+n8n has its own login, but put **Zero Trust → Access → Applications** in front
+of the hostname too and restrict it to your email. If approval links then ask
+you to authenticate every time and you would rather they did not, add an Access
+**Bypass** policy for the `/webhook/` and `/webhook-waiting/` paths only —
+never for `/` or `/rest/`.
+
+### Quick tunnel — throwaway, for one smoke test
+
+No account, no domain, no token. The URL is random and changes on every
+restart, so it is fine for proving approvals work and useless for running live.
+
+```bash
+docker compose --profile quicktunnel up -d
+docker compose logs -f cloudflared-quick   # prints https://<random>.trycloudflare.com
+```
+
+### Either way, restart n8n afterwards
+
+`WEBHOOK_URL` is read at startup, so after changing it:
+
+```bash
+docker compose up -d n8n
+```
+
+The verifier in the next section warns on a `localhost` `WEBHOOK_URL`, so a
+clean run tells you it took effect.
+
+## Part D¾ — Verify before you wire anything
 
 Run the preflight check inside the container. Do this **before** importing the
 workflow — it catches every credential problem in one pass instead of leaving
@@ -142,7 +200,7 @@ Useful flags: `--skip-network` (binaries and variables only), `--help`.
 3. Open the two **Telegram** nodes and select your Telegram credential. If the
    **Approve post?** node shows a parameter warning after import, re-select
    operation **"Send and Wait for Response"** (the human-in-the-loop op).
-4. Confirm `verify_setup.sh` passes (Part D½).
+4. Confirm `verify_setup.sh` passes (Part D¾).
 5. Click **Execute Workflow** once to test. You should get a Telegram message
    with the caption and a video link; tap **Approve** and watch it publish.
 

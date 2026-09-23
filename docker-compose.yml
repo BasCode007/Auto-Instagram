@@ -7,6 +7,22 @@
 # The repo is mounted read-only at /repo, so the Execute Command nodes call the
 # render scripts at /repo/scripts (SCRIPTS_DIR below). Rendered files are written
 # to a temp dir and uploaded to a public URL, not back into the repo.
+#
+# PUBLIC ACCESS — the Telegram approve/skip buttons call back into n8n, so it
+# needs a public https URL. Two Cloudflare Tunnel options are wired up below;
+# both are opt-in via compose profiles so plain `up -d` stays local-only:
+#
+#   Production (stable hostname, needs a domain on Cloudflare):
+#     set CLOUDFLARE_TUNNEL_TOKEN and WEBHOOK_URL in .env, then
+#     docker compose --profile tunnel up -d
+#
+#   Throwaway test (no domain, random *.trycloudflare.com URL that changes
+#   on every restart — fine for one smoke test, not for running live):
+#     docker compose --profile quicktunnel up -d
+#     docker compose logs -f cloudflared-quick     # read the URL, put it in
+#                                                  # WEBHOOK_URL, then restart n8n
+#
+# See docs/SETUP.md "Part D½ — Public URL via Cloudflare Tunnel".
 services:
   n8n:
     build:
@@ -22,9 +38,35 @@ services:
       # Fixed container path to the render scripts (authoritative; not a secret).
       - SCRIPTS_DIR=/repo/scripts
       - N8N_RUNNERS_ENABLED=true
+      # Trust one proxy hop so n8n sees the real client IP through the tunnel.
+      - N8N_PROXY_HOPS=1
     volumes:
       - n8n_data:/home/node/.n8n
       - .:/repo:ro
+
+  # Named tunnel: stable hostname, survives restarts. Create the tunnel in
+  # Cloudflare Zero Trust -> Networks -> Tunnels, point its public hostname at
+  # the service URL http://n8n:5678 (that is this compose network, not
+  # localhost), and copy the connector token into CLOUDFLARE_TUNNEL_TOKEN.
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: auto-instagram-tunnel
+    restart: unless-stopped
+    profiles: ["tunnel"]
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN:?set CLOUDFLARE_TUNNEL_TOKEN in .env}
+    depends_on:
+      - n8n
+
+  # Quick tunnel: no account, no domain, random URL printed to the logs.
+  # Useful to prove approvals work end to end before committing to a domain.
+  cloudflared-quick:
+    image: cloudflare/cloudflared:latest
+    container_name: auto-instagram-tunnel-quick
+    restart: unless-stopped
+    profiles: ["quicktunnel"]
+    command: tunnel --no-autoupdate --url http://n8n:5678
+    depends_on:
+      - n8n
 
 volumes:
   n8n_data:

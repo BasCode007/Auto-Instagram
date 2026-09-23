@@ -26,11 +26,27 @@ step 2 is the long pole.
 - [ ] **4. Telegram bot** — `/newbot` with @BotFather, message the bot once,
       then read your chat id from `getUpdates`. → `SETUP.md` Part C
 
-## Stage 2 — Host (~10 min)
+## Stage 2 — Host + public URL (~20 min)
 
 - [ ] **5. Configure** — `cp .env.example .env` and fill it in.
 - [ ] **6. Start** — `docker compose up -d --build`, then open
       <http://localhost:5678>.
+- [ ] **7. Cloudflare Tunnel** — n8n needs a public https URL or the Telegram
+      approve buttons do nothing. Create a tunnel in **Zero Trust → Networks →
+      Tunnels**, point its public hostname at service URL `n8n:5678`, then set
+      `CLOUDFLARE_TUNNEL_TOKEN` and `WEBHOOK_URL=https://your-host` in `.env`
+      and run `docker compose --profile tunnel up -d`.
+      → `SETUP.md` Part D½
+- [ ] **8. Restrict it** — that hostname is now public. Put **Zero Trust →
+      Access** in front of it, limited to your email.
+- [ ] **9. Restart n8n** so the new `WEBHOOK_URL` is picked up:
+      `docker compose up -d n8n`.
+
+> Just want one smoke test without buying a domain? `docker compose --profile
+> quicktunnel up -d`, take the `*.trycloudflare.com` URL from
+> `docker compose logs -f cloudflared-quick`, put it in `WEBHOOK_URL`, restart
+> n8n. The URL changes on every restart, so swap to a named tunnel before
+> going live.
 
 ## ✅ Checkpoint A — verify credentials
 
@@ -43,20 +59,20 @@ work, confirms the Graph token really carries `instagram_content_publish`,
 does a real test upload to check the video URL is publicly fetchable, and
 **prints your Instagram Business Account ID** if you haven't set one.
 
-- [ ] **7. Verifier passes** (warnings are acceptable; `✗` failures are not).
+- [ ] **10. Verifier passes** (warnings are acceptable; `✗` failures are not).
 
 ## Stage 3 — Wire the workflow (~10 min)
 
-- [ ] **8. Import** `n8n/auto-instagram-workflow.json`.
-- [ ] **9. Set config node** — paste your `igUserId` (from the verifier) and
+- [ ] **11. Import** `n8n/auto-instagram-workflow.json`.
+- [ ] **12. Set config node** — paste your `igUserId` (from the verifier) and
       your `handle`; leave `graphVersion` at `v21.0`.
-- [ ] **10. Telegram credential** — create it with your bot token and select it
+- [ ] **13. Telegram credential** — create it with your bot token and select it
       on both Telegram nodes. If the *Approve post?* node warns after import,
       re-select operation **"Send and Wait for Response"**.
 
 ## ✅ Checkpoint B — one real post
 
-- [ ] **11. Execute Workflow** once, by hand. Expect: a Telegram message with
+- [ ] **14. Execute Workflow** once, by hand. Expect: a Telegram message with
       the caption and a video link → tap **Approve** → the Reel appears on the
       account within a minute or two.
 
@@ -65,9 +81,9 @@ nothing, your `WEBHOOK_URL` isn't publicly reachable — see Gotchas.
 
 ## Stage 4 — Live
 
-- [ ] **12. Cadence** — edit the Schedule node (ships at every 12h).
-- [ ] **13. Activate** the workflow with the toggle.
-- [ ] **14. Watch the first week** of approvals and tune
+- [ ] **15. Cadence** — edit the Schedule node (ships at every 12h).
+- [ ] **16. Activate** the workflow with the toggle.
+- [ ] **17. Watch the first week** of approvals and tune
       `config/niche.md` + `prompts/` until the voice sounds like you.
 
 ---
@@ -76,7 +92,7 @@ nothing, your `WEBHOOK_URL` isn't publicly reachable — see Gotchas.
 
 | Symptom | Cause | Fix |
 | --- | --- | --- |
-| Telegram message arrives, Approve does nothing | `WEBHOOK_URL` is `localhost`, so Telegram can't call back | Put n8n behind a public domain or a tunnel (Cloudflare Tunnel / ngrok) and set `WEBHOOK_URL` to it |
+| Telegram message arrives, Approve does nothing | `WEBHOOK_URL` is `localhost`, or n8n wasn't restarted after changing it | Run the Cloudflare Tunnel (`SETUP.md` Part D½), set `WEBHOOK_URL` to the tunnel hostname, then `docker compose up -d n8n` |
 | Publishing breaks ~60 days in | Long-lived tokens expire | Switch to a **System User** token (Business Settings → Users → System Users) — it doesn't expire |
 | `Invalid OAuth access token` | Token wrong, expired, or missing scopes | Re-run the verifier; it names the missing scope |
 | Upload works, Instagram won't fetch it | Video URL isn't public | Verifier's "publicly fetchable" check catches this |

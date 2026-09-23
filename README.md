@@ -46,9 +46,15 @@ docker-compose.yml self-hosted n8n (mounts scripts/, loads .env)
 ```bash
 cp .env.example .env      # fill in your keys — see docs/SETUP.md
 docker compose up -d --build
+docker compose --profile tunnel up -d     # public URL for Telegram approvals
 docker compose exec n8n bash /repo/scripts/verify_setup.sh   # preflight
 # open http://localhost:5678 and import n8n/auto-instagram-workflow.json
 ```
+
+The tunnel is required, not optional: the Telegram approve/skip buttons link
+back to `WEBHOOK_URL`, so on `localhost` they silently do nothing. A Cloudflare
+Tunnel is wired into the compose file (`--profile tunnel` for a stable
+hostname, `--profile quicktunnel` for a throwaway test URL).
 
 `verify_setup.sh` calls every service with your credentials before you rely on
 them — it confirms the Instagram token really carries `instagram_content_publish`,
