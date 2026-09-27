@@ -1,0 +1,679 @@
+{
+  "name": "Auto-Instagram — finance/wealth Reels",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 12
+            }
+          ]
+        }
+      },
+      "id": "schedule-2x-day",
+      "name": "Schedule (2x/day)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -820,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a1",
+              "name": "igUserId",
+              "type": "string",
+              "value": "YOUR_IG_BUSINESS_ACCOUNT_ID"
+            },
+            {
+              "id": "a2",
+              "name": "graphVersion",
+              "type": "string",
+              "value": "v21.0"
+            },
+            {
+              "id": "a3",
+              "name": "handle",
+              "type": "string",
+              "value": "@yourhandle"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-config",
+      "name": "Set config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -600,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Rotate content type (by hour) and pillar (by day), and pick the prompt.\nconst pillars = [\"wealth_mindset\",\"money_habits\",\"investing_basics\",\"entrepreneurship\",\"success_psychology\",\"daily_motivation\"];\nconst now = new Date();\nconst content_type = now.getUTCHours() < 12 ? \"narrated\" : \"quote\";\nconst pillar = pillars[Math.floor(Date.now()/86400000) % pillars.length];\nconst NARRATED = \"You write short faceless Instagram Reels for a finance/wealth/success account with a positive, grounded voice (never hype, never get-rich-quick). Pillar: {{PILLAR}}. Return STRICT JSON only with keys: pillar, on_screen_hook (<=40 chars), hook (first spoken line), script (90-140 word voiceover), caption (<=2000 chars, no hashtags), hashtags (8-15 lowercase, no # symbol), broll_keywords (3-5 concrete visual stock search terms). Education only, not financial advice: no guaranteed returns, no risk-free, no individual buy/sell calls.\";\nconst QUOTE = \"You write short original motivational quotes for a finance/wealth/success account with a positive, grounded voice (never hype, never get-rich-quick). Pillar: {{PILLAR}}. Return STRICT JSON only with keys: pillar, quote (<=120 chars, no quotation marks), caption (<=2000 chars, no hashtags), hashtags (8-15 lowercase, no # symbol), background_keyword (one calm premium visual term). Education only, not financial advice: no guaranteed returns, no risk-free, no individual buy/sell calls.\";\nconst system_prompt = (content_type === \"narrated\" ? NARRATED : QUOTE).replaceAll(\"{{PILLAR}}\", pillar);\nreturn [{ json: { content_type, pillar, system_prompt } }];\n"
+      },
+      "id": "pick-content-type-and-pillar",
+      "name": "Pick content type & pillar",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -380,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.OPENAI_API_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"gpt-4o-mini\",\n  \"temperature\": 0.8,\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    { \"role\": \"system\", \"content\": {{ JSON.stringify($json.system_prompt) }} },\n    { \"role\": \"user\", \"content\": {{ JSON.stringify('Write today\\'s post for pillar: ' + $json.pillar) }} }\n  ]\n}",
+        "options": {}
+      },
+      "id": "generate-script-llm",
+      "name": "Generate script (LLM)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -160,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse the LLM JSON and build the final caption (mirrors auto_instagram.caption).\nconst item = $json;\nconst raw = item.choices?.[0]?.message?.content ?? item.message?.content ?? item.content;\nlet data;\ntry { data = typeof raw === \"string\" ? JSON.parse(raw) : raw; }\ncatch (e) { throw new Error(\"LLM did not return JSON: \" + JSON.stringify(raw)); }\n\nconst MAXLEN = 2200, MAXTAGS = 30;\nconst normTag = (t) => { const c = (t||\"\").trim().replace(/^#+/, \"\").replace(/[^\\p{L}\\p{N}_]/gu, \"\"); return c ? \"#\"+c : null; };\nconst normTags = (tags) => { const out=[], seen=new Set(); for (const t of (tags||[])) { const n=normTag(t); if(!n) continue; const k=n.toLowerCase(); if(seen.has(k)) continue; seen.add(k); out.push(n); if(out.length>=MAXTAGS) break; } return out; };\n\nconst cfg = $('Pick content type & pillar').first().json;\nconst handle = $('Set config').first().json.handle || \"\";\nconst pillar = data.pillar || cfg.pillar;\nconst tags = normTags(data.hashtags);\nconst disclaimer = pillar === \"investing_basics\" ? \"Educational only, not financial advice.\" : \"\";\n\nlet body = (data.caption || \"\").trim();\nif (disclaimer) body += \"\\n\\n\" + disclaimer;\nlet caption = [body, tags.join(\" \")].filter(Boolean).join(\"\\n\\n\");\nif (caption.length > MAXLEN) caption = caption.slice(0, MAXLEN - 1) + \"…\";\n\nconst b64 = (s) => Buffer.from(s || \"\", \"utf8\").toString(\"base64\");\nreturn [{ json: {\n  content_type: cfg.content_type,\n  pillar,\n  handle,\n  caption,\n  script_b64: b64(data.script || \"\"),\n  hook_b64: b64(data.on_screen_hook || \"\"),\n  keywords_b64: b64((data.broll_keywords || []).join(\", \")),\n  quote_b64: b64(data.quote || \"\"),\n} }];\n"
+      },
+      "id": "parse-and-build-caption",
+      "name": "Parse & build caption",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        60,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.content_type }}",
+              "rightValue": "narrated",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "narrated",
+      "name": "Narrated?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        280,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "export SCRIPT_TEXT=\"$(printf %s '={{ $json.script_b64 }}' | base64 -d)\"; export ON_SCREEN_HOOK=\"$(printf %s '={{ $json.hook_b64 }}' | base64 -d)\"; export BROLL_KEYWORDS=\"$(printf %s '={{ $json.keywords_b64 }}' | base64 -d)\"; export HANDLE=\"={{ $json.handle }}\"; bash \"$SCRIPTS_DIR/render_narrated_reel.sh\""
+      },
+      "id": "render-narrated-reel",
+      "name": "Render narrated Reel",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        520,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "command": "export QUOTE=\"$(printf %s '={{ $json.quote_b64 }}' | base64 -d)\"; export HANDLE=\"={{ $json.handle }}\"; bash \"$SCRIPTS_DIR/render_quote_card.sh\""
+      },
+      "id": "render-quote-card",
+      "name": "Render quote card",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        520,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Read the render script's JSON stdout and carry the caption forward.\nconst p = $('Parse & build caption').first().json;\nconst out = ($json.stdout || \"\").trim();\nlet data;\ntry { data = JSON.parse(out.split(\"\\n\").pop()); }\ncatch (e) { throw new Error(\"render script did not print JSON. stdout=\" + out + \" stderr=\" + ($json.stderr||\"\")); }\nreturn [{ json: {\n  content_type: p.content_type,\n  pillar: p.pillar,\n  caption: p.caption,\n  video_url: data.video_url,\n  video_duration: data.duration,\n} }];\n"
+      },
+      "id": "parse-render-output",
+      "name": "Parse render output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        760,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendAndWait",
+        "chatId": "={{ $env.TELEGRAM_CHAT_ID }}",
+        "message": "=Review this {{ $json.content_type }} post ({{ $json.pillar }}):\n\n{{ $json.caption }}\n\n▶ Video: {{ $json.video_url }}",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double",
+            "approveLabel": "Approve",
+            "disapproveLabel": "Skip"
+          }
+        },
+        "options": {}
+      },
+      "id": "approve-post",
+      "name": "Approve post?",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        980,
+        300
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "REPLACE",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c2",
+              "leftValue": "={{ $json.data.approved }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "approved",
+      "name": "Approved?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1200,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Set config').first().json.graphVersion }}/{{ $('Set config').first().json.igUserId }}/media",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "media_type",
+              "value": "REELS"
+            },
+            {
+              "name": "video_url",
+              "value": "={{ $('Parse render output').first().json.video_url }}"
+            },
+            {
+              "name": "caption",
+              "value": "={{ $('Parse render output').first().json.caption }}"
+            },
+            {
+              "name": "share_to_feed",
+              "value": "true"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $env.IG_ACCESS_TOKEN }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "create-media-container",
+      "name": "Create media container",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1440,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds"
+      },
+      "id": "wait-for-processing",
+      "name": "Wait for processing",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1660,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://graph.facebook.com/{{ $('Set config').first().json.graphVersion }}/{{ $('Create media container').first().json.id }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "status_code"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $env.IG_ACCESS_TOKEN }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "check-container-status",
+      "name": "Check container status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1880,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c3",
+              "leftValue": "={{ $json.status_code }}",
+              "rightValue": "FINISHED",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "finished",
+      "name": "Finished?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2100,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/{{ $('Set config').first().json.graphVersion }}/{{ $('Set config').first().json.igUserId }}/media_publish",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "creation_id",
+              "value": "={{ $('Create media container').first().json.id }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $env.IG_ACCESS_TOKEN }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "publish-reel",
+      "name": "Publish Reel",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2340,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendMessage",
+        "chatId": "={{ $env.TELEGRAM_CHAT_ID }}",
+        "text": "=✅ Posted to Instagram. Media id: {{ $json.id }}",
+        "additionalFields": {}
+      },
+      "id": "notify-posted",
+      "name": "Notify posted",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        2560,
+        100
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "REPLACE",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendMessage",
+        "chatId": "={{ $env.TELEGRAM_CHAT_ID }}",
+        "text": "=❌ Post skipped at review ({{ $('Parse render output').first().json.pillar }}).",
+        "additionalFields": {}
+      },
+      "id": "notify-skipped",
+      "name": "Notify skipped",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1440,
+        440
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "REPLACE",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "width": 520,
+        "height": 200,
+        "content": "## Auto-Instagram\nSelf-hosted n8n with **ffmpeg + ImageMagick** and this repo cloned on the host.\n\nHost env vars required: `OPENAI_API_KEY`, `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID`, `PEXELS_API_KEY`, `IG_ACCESS_TOKEN`, `TELEGRAM_CHAT_ID`, `SCRIPTS_DIR` (path to repo `scripts/`), plus `CLOUDINARY_CLOUD_NAME` + `CLOUDINARY_UPLOAD_PRESET`.\n\nSee docs/SETUP.md."
+      },
+      "id": "setup",
+      "name": "Setup",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -820,
+        40
+      ]
+    },
+    {
+      "parameters": {
+        "width": 460,
+        "height": 150,
+        "content": "### On n8n Cloud?\nExecute Command / ffmpeg are not available there. Replace the two render nodes with an HTTP node calling a cloud render API (Creatomate / JSON2Video) that returns a public MP4 URL, then feed that into **Parse render output**. See docs/SETUP.md."
+      },
+      "id": "cloud-render-note",
+      "name": "Cloud render note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        440,
+        560
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule (2x/day)": {
+      "main": [
+        [
+          {
+            "node": "Set config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set config": {
+      "main": [
+        [
+          {
+            "node": "Pick content type & pillar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pick content type & pillar": {
+      "main": [
+        [
+          {
+            "node": "Generate script (LLM)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate script (LLM)": {
+      "main": [
+        [
+          {
+            "node": "Parse & build caption",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse & build caption": {
+      "main": [
+        [
+          {
+            "node": "Narrated?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Narrated?": {
+      "main": [
+        [
+          {
+            "node": "Render narrated Reel",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Render quote card",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Render narrated Reel": {
+      "main": [
+        [
+          {
+            "node": "Parse render output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Render quote card": {
+      "main": [
+        [
+          {
+            "node": "Parse render output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse render output": {
+      "main": [
+        [
+          {
+            "node": "Approve post?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Approve post?": {
+      "main": [
+        [
+          {
+            "node": "Approved?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Approved?": {
+      "main": [
+        [
+          {
+            "node": "Create media container",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notify skipped",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create media container": {
+      "main": [
+        [
+          {
+            "node": "Wait for processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait for processing": {
+      "main": [
+        [
+          {
+            "node": "Check container status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check container status": {
+      "main": [
+        [
+          {
+            "node": "Finished?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Finished?": {
+      "main": [
+        [
+          {
+            "node": "Publish Reel",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait for processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Publish Reel": {
+      "main": [
+        [
+          {
+            "node": "Notify posted",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateId": "auto-instagram"
+  },
+  "tags": []
+}
