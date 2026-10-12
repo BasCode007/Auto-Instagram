@@ -336,7 +336,7 @@ case "${WEBHOOK_URL:-}" in
       *cloudflareaccess.com*)
         ok "tunnel is up (Cloudflare Access is in front, as intended)"
         warn "Access challenges this URL" \
-             "fine for you in a browser; if approval links get annoying, add an Access Bypass for /webhook/ and /webhook-waiting/ only" ;;
+             "fine for you in a browser; to open approval links without a login, see the Access bypass table in docs/SETUP.md Part D½" ;;
       *)
         if [ "$code" = "200" ]; then
           ok "WEBHOOK_URL reachable from the internet"

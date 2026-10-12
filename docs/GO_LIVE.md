@@ -38,7 +38,10 @@ step 2 is the long pole.
       and run `docker compose --profile tunnel up -d`.
       → `SETUP.md` Part D½
 - [ ] **8. Restrict it** — that hostname is now public. Put **Zero Trust →
-      Access** in front of it, limited to your email.
+      Access** in front of it, limited to your email. Approval links will then
+      ask you to log in; to skip that, add a narrower Access app for
+      `/webhook-waiting` with a **Bypass** policy — and never bypass `/` or
+      `/rest`. → `SETUP.md` Part D½ has the full path table and the trade-off.
 - [ ] **9. Restart n8n** so the new `WEBHOOK_URL` is picked up:
       `docker compose up -d n8n`.
 

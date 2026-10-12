@@ -134,10 +134,50 @@ Stable hostname that survives restarts. Needs a domain on Cloudflare.
 
 **Then lock it down.** That hostname exposes your n8n editor to the internet.
 n8n has its own login, but put **Zero Trust → Access → Applications** in front
-of the hostname too and restrict it to your email. If approval links then ask
-you to authenticate every time and you would rather they did not, add an Access
-**Bypass** policy for the `/webhook/` and `/webhook-waiting/` paths only —
-never for `/` or `/rest/`.
+of the hostname too: add a **Self-hosted** application for
+`n8n.yourdomain.com`, with an **Allow** policy limited to your email.
+
+#### Optional — Access bypass for webhook paths
+
+With Access over the whole hostname, every approval link asks you to
+authenticate first. That is perfectly workable — it is one extra tap, and it is
+the safer default. If you would rather the approve/skip links open straight
+through, you can exempt just the callback paths.
+
+The mechanism matters: Access matches applications by **hostname + path**, most
+specific first. You do not add a bypass rule inside your main application — you
+add a **second, narrower application** for the path and give that one a single
+**Bypass** policy (include: *Everyone*). The broad application keeps protecting
+everything else.
+
+So, alongside the main app covering `n8n.yourdomain.com`, create one
+Self-hosted app per path below with a Bypass policy:
+
+| Path | What it is | Bypass? |
+| --- | --- | --- |
+| `n8n.yourdomain.com/webhook-waiting` | Wait-node and **Send and Wait for Response** resume URLs — this is what the Telegram approve/skip buttons hit | **Yes** — the only one approvals actually need |
+| `n8n.yourdomain.com/form-waiting` | the form-rendered variant of a waiting step, if your n8n version serves approvals as a form page | Yes, if approvals render as a form |
+| `n8n.yourdomain.com/webhook` | production webhook triggers | Only if you add workflows triggered by outside callers |
+| `n8n.yourdomain.com/healthz` | n8n health endpoint | Optional — lets `verify_setup.sh` probe it without an Access challenge |
+
+Never bypass these:
+
+| Path | Why not |
+| --- | --- |
+| `/` | the editor UI — full control of your workflows and credentials |
+| `/rest` | the editor's internal API — same exposure as the UI, via HTTP |
+| `/webhook-test` | test-mode webhooks, only live while you have the editor open; no reason to expose |
+
+**Understand the trade.** A bypassed `/webhook-waiting` means *possession of the
+link is permission to act*: anyone who gets that URL can approve or skip the
+post, with no login. The URLs carry unguessable execution IDs and arrive only in
+your private Telegram chat, so the practical exposure is small — but it is a
+real downgrade from "only my email can approve". For a content account that is
+usually a fine trade; decide deliberately rather than by default.
+
+Path names come from n8n's HTTP surface and have moved between major versions —
+confirm against your running instance (`docker compose logs n8n` prints the
+webhook base URLs on startup) before relying on a bypass.
 
 ### Quick tunnel — throwaway, for one smoke test
 
