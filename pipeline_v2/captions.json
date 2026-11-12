@@ -1,0 +1,715 @@
+{
+ "segments": [
+  {
+   "start": 0.051,
+   "end": 0.872,
+   "text": "THE WEALTHY DON'T",
+   "words": [
+    {
+     "text": "THE",
+     "start": 0.051,
+     "end": 0.151
+    },
+    {
+     "text": "WEALTHY",
+     "start": 0.191,
+     "end": 0.571
+    },
+    {
+     "text": "DON'T",
+     "start": 0.631,
+     "end": 0.832
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 0.892,
+   "end": 1.952,
+   "text": "SAVE MONEY,",
+   "words": [
+    {
+     "text": "SAVE",
+     "start": 0.892,
+     "end": 1.132
+    },
+    {
+     "text": "MONEY,",
+     "start": 1.212,
+     "end": 1.472
+    }
+   ]
+  },
+  {
+   "start": 1.972,
+   "end": 3.393,
+   "text": "THEY BUY TIME.",
+   "words": [
+    {
+     "text": "THEY",
+     "start": 1.972,
+     "end": 2.132
+    },
+    {
+     "text": "BUY",
+     "start": 2.173,
+     "end": 2.373
+    },
+    {
+     "text": "TIME.",
+     "start": 2.453,
+     "end": 2.793
+    }
+   ],
+   "emphasize": [
+    1,
+    2
+   ]
+  },
+  {
+   "start": 3.533,
+   "end": 4.434,
+   "text": "MOST PEOPLE TRADE",
+   "words": [
+    {
+     "text": "MOST",
+     "start": 3.533,
+     "end": 3.734
+    },
+    {
+     "text": "PEOPLE",
+     "start": 3.794,
+     "end": 4.054
+    },
+    {
+     "text": "TRADE",
+     "start": 4.114,
+     "end": 4.394
+    }
+   ]
+  },
+  {
+   "start": 4.454,
+   "end": 5.375,
+   "text": "HOURS FOR DOLLARS",
+   "words": [
+    {
+     "text": "HOURS",
+     "start": 4.454,
+     "end": 4.774
+    },
+    {
+     "text": "FOR",
+     "start": 4.834,
+     "end": 4.955
+    },
+    {
+     "text": "DOLLARS",
+     "start": 4.995,
+     "end": 5.355
+    }
+   ],
+   "emphasize": [
+    0
+   ]
+  },
+  {
+   "start": 5.395,
+   "end": 6.635,
+   "text": "THEIR WHOLE LIFE.",
+   "words": [
+    {
+     "text": "THEIR",
+     "start": 5.395,
+     "end": 5.535
+    },
+    {
+     "text": "WHOLE",
+     "start": 5.575,
+     "end": 5.735
+    },
+    {
+     "text": "LIFE.",
+     "start": 5.775,
+     "end": 6.035
+    }
+   ]
+  },
+  {
+   "start": 6.676,
+   "end": 8.177,
+   "text": "THE WEALTHY FLIP IT.",
+   "words": [
+    {
+     "text": "THE",
+     "start": 6.676,
+     "end": 6.776
+    },
+    {
+     "text": "WEALTHY",
+     "start": 6.816,
+     "end": 7.156
+    },
+    {
+     "text": "FLIP",
+     "start": 7.216,
+     "end": 7.496
+    },
+    {
+     "text": "IT.",
+     "start": 7.536,
+     "end": 7.636
+    }
+   ],
+   "emphasize": [
+    1,
+    2
+   ]
+  },
+  {
+   "start": 8.197,
+   "end": 9.097,
+   "text": "THEY BUY ASSETS",
+   "words": [
+    {
+     "text": "THEY",
+     "start": 8.197,
+     "end": 8.357
+    },
+    {
+     "text": "BUY",
+     "start": 8.377,
+     "end": 8.597
+    },
+    {
+     "text": "ASSETS",
+     "start": 8.717,
+     "end": 9.077
+    }
+   ],
+   "emphasize": [
+    1,
+    2
+   ]
+  },
+  {
+   "start": 9.117,
+   "end": 9.738,
+   "text": "THAT EARN WHILE",
+   "words": [
+    {
+     "text": "THAT",
+     "start": 9.117,
+     "end": 9.258
+    },
+    {
+     "text": "EARN",
+     "start": 9.358,
+     "end": 9.538
+    },
+    {
+     "text": "WHILE",
+     "start": 9.578,
+     "end": 9.738
+    }
+   ]
+  },
+  {
+   "start": 9.758,
+   "end": 10.699,
+   "text": "THEY SLEEP,",
+   "words": [
+    {
+     "text": "THEY",
+     "start": 9.758,
+     "end": 9.898
+    },
+    {
+     "text": "SLEEP,",
+     "start": 9.958,
+     "end": 10.278
+    }
+   ]
+  },
+  {
+   "start": 10.719,
+   "end": 11.259,
+   "text": "AND THEY GUARD",
+   "words": [
+    {
+     "text": "AND",
+     "start": 10.719,
+     "end": 10.799
+    },
+    {
+     "text": "THEY",
+     "start": 10.819,
+     "end": 10.959
+    },
+    {
+     "text": "GUARD",
+     "start": 10.999,
+     "end": 11.259
+    }
+   ]
+  },
+  {
+   "start": 11.279,
+   "end": 12.06,
+   "text": "THEIR HOURS LIKE",
+   "words": [
+    {
+     "text": "THEIR",
+     "start": 11.279,
+     "end": 11.439
+    },
+    {
+     "text": "HOURS",
+     "start": 11.479,
+     "end": 11.859
+    },
+    {
+     "text": "LIKE",
+     "start": 11.899,
+     "end": 12.04
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 12.08,
+   "end": 12.98,
+   "text": "THE SCARCEST THING",
+   "words": [
+    {
+     "text": "THE",
+     "start": 12.08,
+     "end": 12.18
+    },
+    {
+     "text": "SCARCEST",
+     "start": 12.24,
+     "end": 12.72
+    },
+    {
+     "text": "THING",
+     "start": 12.78,
+     "end": 12.96
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 13,
+   "end": 13.941,
+   "text": "THEY OWN.",
+   "words": [
+    {
+     "text": "THEY",
+     "start": 13,
+     "end": 13.14
+    },
+    {
+     "text": "OWN.",
+     "start": 13.26,
+     "end": 13.421
+    }
+   ]
+  },
+  {
+   "start": 13.961,
+   "end": 15.261,
+   "text": "BECAUSE THEY ARE.",
+   "words": [
+    {
+     "text": "BECAUSE",
+     "start": 13.961,
+     "end": 14.241
+    },
+    {
+     "text": "THEY",
+     "start": 14.261,
+     "end": 14.381
+    },
+    {
+     "text": "ARE.",
+     "start": 14.521,
+     "end": 14.661
+    }
+   ]
+  },
+  {
+   "start": 15.402,
+   "end": 16.243,
+   "text": "EVERY DOLLAR YOU",
+   "words": [
+    {
+     "text": "EVERY",
+     "start": 15.402,
+     "end": 15.662
+    },
+    {
+     "text": "DOLLAR",
+     "start": 15.722,
+     "end": 16.042
+    },
+    {
+     "text": "YOU",
+     "start": 16.082,
+     "end": 16.223
+    }
+   ]
+  },
+  {
+   "start": 16.263,
+   "end": 17.363,
+   "text": "INVEST EARLY IS",
+   "words": [
+    {
+     "text": "INVEST",
+     "start": 16.263,
+     "end": 16.583
+    },
+    {
+     "text": "EARLY",
+     "start": 16.663,
+     "end": 16.963
+    },
+    {
+     "text": "IS",
+     "start": 17.263,
+     "end": 17.343
+    }
+   ],
+   "emphasize": [
+    0
+   ]
+  },
+  {
+   "start": 17.383,
+   "end": 18.084,
+   "text": "AN HOUR YOU",
+   "words": [
+    {
+     "text": "AN",
+     "start": 17.383,
+     "end": 17.463
+    },
+    {
+     "text": "HOUR",
+     "start": 17.563,
+     "end": 17.864
+    },
+    {
+     "text": "YOU",
+     "start": 17.924,
+     "end": 18.064
+    }
+   ]
+  },
+  {
+   "start": 18.104,
+   "end": 19.444,
+   "text": "BUY BACK LATER.",
+   "words": [
+    {
+     "text": "BUY",
+     "start": 18.104,
+     "end": 18.264
+    },
+    {
+     "text": "BACK",
+     "start": 18.304,
+     "end": 18.524
+    },
+    {
+     "text": "LATER.",
+     "start": 18.564,
+     "end": 18.844
+    }
+   ],
+   "emphasize": [
+    0
+   ]
+  },
+  {
+   "start": 19.545,
+   "end": 20.245,
+   "text": "SO BEFORE YOUR",
+   "words": [
+    {
+     "text": "SO",
+     "start": 19.545,
+     "end": 19.685
+    },
+    {
+     "text": "BEFORE",
+     "start": 19.745,
+     "end": 20.065
+    },
+    {
+     "text": "YOUR",
+     "start": 20.105,
+     "end": 20.245
+    }
+   ]
+  },
+  {
+   "start": 20.265,
+   "end": 21.206,
+   "text": "NEXT PURCHASE,",
+   "words": [
+    {
+     "text": "NEXT",
+     "start": 20.265,
+     "end": 20.466
+    },
+    {
+     "text": "PURCHASE,",
+     "start": 20.526,
+     "end": 20.966
+    }
+   ]
+  },
+  {
+   "start": 21.226,
+   "end": 23.027,
+   "text": "ASK ONE QUESTION.",
+   "words": [
+    {
+     "text": "ASK",
+     "start": 21.226,
+     "end": 21.466
+    },
+    {
+     "text": "ONE",
+     "start": 21.706,
+     "end": 21.847
+    },
+    {
+     "text": "QUESTION.",
+     "start": 21.947,
+     "end": 22.427
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 23.087,
+   "end": 23.828,
+   "text": "DOES THIS BUY",
+   "words": [
+    {
+     "text": "DOES",
+     "start": 23.087,
+     "end": 23.268
+    },
+    {
+     "text": "THIS",
+     "start": 23.308,
+     "end": 23.488
+    },
+    {
+     "text": "BUY",
+     "start": 23.608,
+     "end": 23.808
+    }
+   ],
+   "emphasize": [
+    2
+   ]
+  },
+  {
+   "start": 23.848,
+   "end": 25.169,
+   "text": "ME TIME OR",
+   "words": [
+    {
+     "text": "ME",
+     "start": 23.848,
+     "end": 23.968
+    },
+    {
+     "text": "TIME",
+     "start": 24.048,
+     "end": 24.408
+    },
+    {
+     "text": "OR",
+     "start": 24.969,
+     "end": 25.049
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 25.189,
+   "end": 26.65,
+   "text": "COST ME TIME?",
+   "words": [
+    {
+     "text": "COST",
+     "start": 25.189,
+     "end": 25.529
+    },
+    {
+     "text": "ME",
+     "start": 25.589,
+     "end": 25.709
+    },
+    {
+     "text": "TIME?",
+     "start": 25.769,
+     "end": 26.05
+    }
+   ],
+   "emphasize": [
+    2
+   ]
+  },
+  {
+   "start": 26.931,
+   "end": 28.197,
+   "text": "START SMALL.",
+   "words": [
+    {
+     "text": "START",
+     "start": 26.931,
+     "end": 27.212
+    },
+    {
+     "text": "SMALL.",
+     "start": 27.272,
+     "end": 27.634
+    }
+   ]
+  },
+  {
+   "start": 28.217,
+   "end": 29.221,
+   "text": "AUTOMATE IT.",
+   "words": [
+    {
+     "text": "AUTOMATE",
+     "start": 28.217,
+     "end": 28.658
+    },
+    {
+     "text": "IT.",
+     "start": 28.679,
+     "end": 28.739
+    }
+   ]
+  },
+  {
+   "start": 29.241,
+   "end": 30.406,
+   "text": "LET COMPOUNDING DO",
+   "words": [
+    {
+     "text": "LET",
+     "start": 29.241,
+     "end": 29.422
+    },
+    {
+     "text": "COMPOUNDING",
+     "start": 29.502,
+     "end": 30.245
+    },
+    {
+     "text": "DO",
+     "start": 30.285,
+     "end": 30.406
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 30.426,
+   "end": 31.692,
+   "text": "THE HEAVY LIFTING.",
+   "words": [
+    {
+     "text": "THE",
+     "start": 30.426,
+     "end": 30.506
+    },
+    {
+     "text": "HEAVY",
+     "start": 30.567,
+     "end": 30.768
+    },
+    {
+     "text": "LIFTING.",
+     "start": 30.828,
+     "end": 31.189
+    }
+   ]
+  },
+  {
+   "start": 31.712,
+   "end": 32.877,
+   "text": "FOLLOW FOR ONE",
+   "words": [
+    {
+     "text": "FOLLOW",
+     "start": 31.712,
+     "end": 32.053
+    },
+    {
+     "text": "FOR",
+     "start": 32.113,
+     "end": 32.254
+    },
+    {
+     "text": "ONE",
+     "start": 32.495,
+     "end": 32.656
+    }
+   ],
+   "emphasize": [
+    0,
+    2
+   ]
+  },
+  {
+   "start": 32.897,
+   "end": 34.642,
+   "text": "WEALTH HABIT A DAY.",
+   "words": [
+    {
+     "text": "WEALTH",
+     "start": 32.897,
+     "end": 33.158
+    },
+    {
+     "text": "HABIT",
+     "start": 33.218,
+     "end": 33.54
+    },
+    {
+     "text": "A",
+     "start": 33.74,
+     "end": 33.781
+    },
+    {
+     "text": "DAY.",
+     "start": 33.821,
+     "end": 34.042
+    }
+   ]
+  }
+ ]
+}
