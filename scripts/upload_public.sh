@@ -35,7 +35,8 @@ case "$uploader" in
     : "${PUBLIC_DIR:?set PUBLIC_DIR}"
     : "${PUBLIC_BASE_URL:?set PUBLIC_BASE_URL}"
     mkdir -p "$PUBLIC_DIR"
-    base="$(basename "$file")"
+    # unique name: successive renders must not overwrite a video Instagram is still fetching
+    base="$(date +%Y%m%d-%H%M%S)-$$-$(basename "$file")"
     cp -f "$file" "${PUBLIC_DIR%/}/${base}"
     printf '%s/%s\n' "${PUBLIC_BASE_URL%/}" "$base"
     ;;

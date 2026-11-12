@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import unittest
 
-from auto_instagram.caption import count_hashtags
+from auto_instagram.caption import MAX_HASHTAGS, count_hashtags
 from auto_instagram.content import (
     DISCLAIMER,
     PILLARS,
@@ -30,6 +30,8 @@ class HashtagBankTests(unittest.TestCase):
         for pillar in PILLARS:
             self.assertIn(pillar, bank["pillars"], f"missing pillar {pillar}")
             self.assertTrue(bank["pillars"][pillar], f"empty pillar {pillar}")
+            # core + pillar must fit Instagram's hashtag limit without truncation
+            self.assertLessEqual(len(bank["core"]) + len(bank["pillars"][pillar]), MAX_HASHTAGS)
 
 
 class SelectHashtagsTests(unittest.TestCase):

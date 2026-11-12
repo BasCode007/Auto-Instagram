@@ -1,0 +1,59 @@
+{
+  "id": "AutoIgErrors0001",
+  "name": "Auto-Instagram — failure alerts",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "onanyfailure",
+      "name": "On any failure",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.TELEGRAM_BASE_URL || 'https://api.telegram.org' }}/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $env.TELEGRAM_CHAT_ID, text: 'Auto-Instagram FAILED at \"' + ($json.execution?.lastNodeExecuted || 'unknown step') + '\": ' + String($json.execution?.error?.message || 'no message').slice(0, 600) + '\\nNothing was posted for this slot.' }) }}",
+        "options": {
+          "timeout": 20000
+        }
+      },
+      "id": "alertowner",
+      "name": "Alert owner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    }
+  ],
+  "connections": {
+    "On any failure": {
+      "main": [
+        [
+          {
+            "node": "Alert owner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": []
+}

@@ -62,7 +62,7 @@ class VerifySetupTests(unittest.TestCase):
     def test_missing_env_fails_before_any_network_call(self):
         result = run("--skip-network")
         self.assertEqual(result.returncode, 1)
-        self.assertIn("OPENAI_API_KEY is not set", result.stdout)
+        self.assertIn("LLM_API_KEY is not set", result.stdout)
         self.assertIn("IG_ACCESS_TOKEN is not set", result.stdout)
         # Should stop at the env stage rather than reporting service results.
         self.assertNotIn("publishing permission confirmed", result.stdout)
@@ -80,12 +80,25 @@ class VerifySetupTests(unittest.TestCase):
         self.assertIn("carrier-pigeon", result.stdout)
         self.assertEqual(result.returncode, 1)
 
-    def test_warns_about_localhost_webhook_url(self):
-        result = run(
-            "--skip-network", env_extra={"WEBHOOK_URL": "http://localhost:5678"}
-        )
-        self.assertIn("WEBHOOK_URL", result.stdout)
-        self.assertIn("call back", result.stdout)
+    def test_review_mode_warns_about_localhost_webhook_url(self):
+        result = run("--skip-network", env_extra={"WEBHOOK_URL": "http://localhost:5678"})
+        self.assertIn("WEBHOOK_URL is local", result.stdout)
+
+    def test_autopilot_needs_no_public_url_or_telegram(self):
+        result = run("--skip-network", env_extra={"AUTO_PUBLISH": "true"})
+        self.assertIn("mode: autopilot", result.stdout)
+        self.assertNotIn("WEBHOOK_URL is local", result.stdout)
+        # Telegram is optional on autopilot (a warning), required in review mode.
+        self.assertNotIn("✗ Telegram", result.stdout)
+        review = run("--skip-network")
+        self.assertIn("✗ Telegram not configured", review.stdout)
+
+    def test_all_settings_present_passes_offline(self):
+        env = {k: "x" for k in ("IG_ACCESS_TOKEN", "LLM_API_KEY", "ELEVENLABS_API_KEY", "ELEVENLABS_VOICE_ID",
+                                "PEXELS_API_KEY", "CLOUDINARY_CLOUD_NAME", "CLOUDINARY_UPLOAD_PRESET")}
+        env["AUTO_PUBLISH"] = "true"
+        result = run("--skip-network", env_extra=env)
+        self.assertNotIn("is not set", result.stdout)
 
     def test_warns_about_placeholder_encryption_key(self):
         result = run(

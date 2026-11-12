@@ -1,110 +1,60 @@
 # Go-live checklist
 
-The ordered path from an empty account to a live, self-running poster. Tick
-straight down. `SETUP.md` has the detail for each step; this page is the
-sequence and the checkpoints.
+The whole path, in order. Budget about an hour; step 2 is most of it.
 
-Everything here is **owner action** — it needs your accounts and credentials.
-The code side is finished and on the branch. Budget ~1–2 hours end to end;
-step 2 is the long pole.
+## 1. Accounts and keys
 
----
+- [ ] **Instagram** — account set to **Creator** or **Business** (Settings →
+      Account type and tools).
+- [ ] **Instagram token** — the one hard step. `SETUP.md` Part A.
+- [ ] **Script writer** — an OpenAI API key (or any OpenAI-compatible API).
+- [ ] **ElevenLabs** — API key and a voice ID.
+- [ ] **Pexels** — free API key.
+- [ ] **Cloudinary** — free account; an **unsigned** upload preset.
+- [ ] **Telegram bot** — `/newbot` with @BotFather; your chat ID. This is how
+      you hear about failures, so do it even for autopilot.
 
-## Stage 1 — Accounts (~1 hour)
-
-- [ ] **1. Instagram account** — switch to **Business** or **Creator** and link
-      a Facebook Page. *Nothing downstream works until this is true.*
-- [ ] **2. Meta app + token** — create the app, add the Instagram Graph API
-      product, **leave it in Development mode** (publishing to your own account
-      needs no App Review), and generate a token with `instagram_basic`,
-      `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`,
-      `business_management`. Then exchange it for a **long-lived** token.
-      → `SETUP.md` Part A
-- [ ] **3. Content keys** — OpenAI, ElevenLabs (**Starter** tier, for the
-      commercial licence), Pexels, Cloudinary (the upload preset must be
-      **unsigned**). → `SETUP.md` Part B
-- [ ] **4. Telegram bot** — `/newbot` with @BotFather, message the bot once,
-      then read your chat id from `getUpdates`. → `SETUP.md` Part C
-
-## Stage 2 — Host + public URL (~20 min)
-
-- [ ] **5. Configure** — `cp .env.example .env` and fill it in.
-- [ ] **6. Start** — `docker compose up -d --build`, then open
-      <http://localhost:5678>.
-- [ ] **7. Cloudflare Tunnel** — n8n needs a public https URL or the Telegram
-      approve buttons do nothing. Create a tunnel in **Zero Trust → Networks →
-      Tunnels**, point its public hostname at service URL `n8n:5678`, then set
-      `CLOUDFLARE_TUNNEL_TOKEN` and `WEBHOOK_URL=https://your-host` in `.env`
-      and run `docker compose --profile tunnel up -d`.
-      → `SETUP.md` Part D½
-- [ ] **8. Restrict it** — that hostname is now public. Put **Zero Trust →
-      Access** in front of it, limited to your email. Approval links will then
-      ask you to log in; to skip that, add a narrower Access app for
-      `/webhook-waiting` with a **Bypass** policy — and never bypass `/` or
-      `/rest`. → `SETUP.md` Part D½ has the full path table and the trade-off.
-- [ ] **9. Restart n8n** so the new `WEBHOOK_URL` is picked up:
-      `docker compose up -d n8n`.
-
-> Just want one smoke test without buying a domain? `docker compose --profile
-> quicktunnel up -d`, take the `*.trycloudflare.com` URL from
-> `docker compose logs -f cloudflared-quick`, put it in `WEBHOOK_URL`, restart
-> n8n. The URL changes on every restart, so swap to a named tunnel before
-> going live.
-
-## ✅ Checkpoint A — verify credentials
+## 2. Start it
 
 ```bash
-docker compose exec n8n bash /repo/scripts/verify_setup.sh
+cp .env.example .env      # paste the values in
+docker compose up -d --build
 ```
 
-Every line must be green before you go further. The verifier proves your keys
-work, confirms the Graph token really carries `instagram_content_publish`,
-does a real test upload to check the video URL is publicly fetchable, and
-**prints your Instagram Business Account ID** if you haven't set one.
+Nothing to configure in the n8n UI: the workflows import and activate
+themselves.
 
-- [ ] **10. Verifier passes** (warnings are acceptable; `✗` failures are not).
+## 3. Check it
 
-## Stage 3 — Wire the workflow (~10 min)
+```bash
+docker compose exec renderer bash /app/scripts/verify_setup.sh
+```
 
-- [ ] **11. Import** `n8n/auto-instagram-workflow.json`.
-- [ ] **12. Set config node** — paste your `igUserId` (from the verifier) and
-      your `handle`; leave `graphVersion` at `v21.0`.
-- [ ] **13. Telegram credential** — create it with your bot token and select it
-      on both Telegram nodes. If the *Approve post?* node warns after import,
-      re-select operation **"Send and Wait for Response"**.
+Every line should be green. It calls each service with your real keys and
+confirms the token can publish.
 
-## ✅ Checkpoint B — one real post
+## 4. First post
 
-- [ ] **14. Execute Workflow** once, by hand. Expect: a Telegram message with
-      the caption and a video link → tap **Approve** → the Reel appears on the
-      account within a minute or two.
+Open <http://localhost:5678>, create the owner login when asked, open
+**Auto-Instagram — create and publish** and click **Execute workflow**.
 
-If the video renders and the Telegram message arrives but tapping Approve does
-nothing, your `WEBHOOK_URL` isn't publicly reachable — see Gotchas.
+- `AUTO_PUBLISH=true` — it posts, then messages you the link.
+- `AUTO_PUBLISH=false` — it messages you the video with Approve / Skip links.
+  Those links need a public URL: `SETUP.md` Part C.
 
-## Stage 4 — Live
+## 5. Leave it running
 
-- [ ] **15. Cadence** — edit the Schedule node (ships at every 12h).
-- [ ] **16. Activate** the workflow with the toggle.
-- [ ] **17. Watch the first week** of approvals and tune
-      `config/niche.md` + `prompts/` until the voice sounds like you.
+It posts at 07:30 and 18:30 (your `GENERIC_TIMEZONE`). To change that, edit the
+cron line in `n8n/build_workflow.py`, run it, and re-import with
+`FORCE_REIMPORT=1 docker compose up -d`.
 
----
+Keep the machine on. A small always-on box or a ~$6/month VPS is enough.
 
-## Gotchas that actually bite
+## When something breaks
 
-| Symptom | Cause | Fix |
-| --- | --- | --- |
-| Telegram message arrives, Approve does nothing | `WEBHOOK_URL` is `localhost`, or n8n wasn't restarted after changing it | Run the Cloudflare Tunnel (`SETUP.md` Part D½), set `WEBHOOK_URL` to the tunnel hostname, then `docker compose up -d n8n` |
-| Publishing breaks ~60 days in | Long-lived tokens expire | Switch to a **System User** token (Business Settings → Users → System Users) — it doesn't expire |
-| `Invalid OAuth access token` | Token wrong, expired, or missing scopes | Re-run the verifier; it names the missing scope |
-| Upload works, Instagram won't fetch it | Video URL isn't public | Verifier's "publicly fetchable" check catches this |
-| Credentials vanish after restart | `N8N_ENCRYPTION_KEY` unset or changed | Set it **once** before saving credentials, never change it |
-| Quote cards fail on ImageMagick | image is v7 (`magick`, no `convert`) | `ln -s $(command -v magick) /usr/local/bin/convert` |
-
-## When you're ready to drop the approval step
-
-The pipeline ships with review-before-posting on purpose — keep it while you
-calibrate. To go fully hands-off later, connect **Parse render output** straight
-to **Create media container**, bypassing *Approve post?* and *Approved?*. Keep
-the "Notify posted" node so you still get a receipt for every post.
+| Symptom | Cause |
+|---|---|
+| Telegram: "FAILED at Render video" | A key or quota problem — run the verifier. |
+| Telegram: "Instagram did not accept the video" | Usually the video URL was not public. The verifier tests this. |
+| Posts stop after ~2 months | Token expired. Generate a new one (Part A) and restart. |
+| Approve link does nothing | `WEBHOOK_URL` is not reachable from your phone (Part C). |

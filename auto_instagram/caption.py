@@ -6,7 +6,8 @@ the small-but-fiddly job of turning a title, body and a set of tags into a
 well-formed caption that respects Instagram's published limits:
 
 * Captions may be at most 2,200 characters long.
-* A post may contain at most 30 hashtags.
+* A post may contain at most 5 hashtags (Instagram cut this from 30 in
+  December 2025).
 * Hashtags may only contain letters, numbers and underscores; a space (or any
   other character) ends the tag, so ``"foo bar"`` is really the tag ``foo``.
 
@@ -32,8 +33,9 @@ __all__ = [
 #: Maximum number of characters Instagram allows in a caption.
 MAX_CAPTION_LENGTH = 2_200
 
-#: Maximum number of hashtags Instagram counts on a single post.
-MAX_HASHTAGS = 30
+#: Maximum number of hashtags Instagram allows on a post or Reel. This was 30
+#: until December 2025; Meta's API reference still quotes the old figure.
+MAX_HASHTAGS = 5
 
 _SECTION_SEPARATOR = "\n\n"
 _ELLIPSIS = "…"  # single-character "…"

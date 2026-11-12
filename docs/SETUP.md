@@ -1,273 +1,88 @@
-# Setup guide
+# Setup detail
 
-End-to-end setup for the finance/wealth auto-poster. Budget path: **self-hosted
-n8n** with local rendering. Plan ~1–2 hours the first time.
+`GO_LIVE.md` is the checklist; this is the reference behind it.
 
-You will collect a set of secrets and put them in n8n's **environment** (not in
-the workflow). The workflow references them as `{{ $env.NAME }}`, and the render
-scripts read them directly.
+## Part A — Instagram token
 
-Secrets checklist:
+You need a token that lets an app publish to **your own** account. An app in
+Development mode can do this for accounts with a role on it — no App Review.
 
-| Env var | From |
-| --- | --- |
-| `OPENAI_API_KEY` | platform.openai.com |
-| `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | elevenlabs.io |
+**Recommended: Instagram Login** (no Facebook Page needed)
+
+1. Make the Instagram account **Creator** or **Business**.
+2. <https://developers.facebook.com> → *My Apps* → *Create app* → choose the
+   Instagram use case ("Manage messaging & content on Instagram").
+3. In the app: *Instagram* → *API setup with Instagram login*.
+4. Under *Generate access tokens*, add your Instagram account, log in and
+   approve. Accept the tester invite if asked (Instagram → Settings → Apps and
+   websites → Tester invites).
+5. Copy the token into `.env` as `IG_ACCESS_TOKEN`. Leave
+   `IG_GRAPH_HOST=graph.instagram.com` and `IG_USER_ID=me`.
+
+It needs the `instagram_business_basic` and `instagram_business_content_publish`
+permissions. The token lasts **60 days**. Refresh it before then:
+
+```bash
+curl "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$IG_ACCESS_TOKEN"
+```
+
+**Alternative: Facebook Login** — use this if you want a token that never
+expires. Link the Instagram account to a Facebook Page, create a System User in
+Meta Business Settings with `instagram_basic`, `instagram_content_publish` and
+`pages_read_engagement`, and generate its token. Set
+`IG_GRAPH_HOST=graph.facebook.com`; the verifier prints the `IG_USER_ID` to use.
+
+Meta's dashboard wording changes often. If a label above has moved, the goal is
+unchanged: a token for your account with the content-publish permission.
+
+## Part B — The other keys
+
+| Setting | Where |
+|---|---|
+| `LLM_API_KEY` | platform.openai.com → API keys. Any OpenAI-compatible API works via `LLM_BASE_URL` / `LLM_MODEL`. |
+| `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | elevenlabs.io → profile → API key; Voices → copy a voice ID. Use a paid tier for commercial rights. |
 | `PEXELS_API_KEY` | pexels.com/api |
-| `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_UPLOAD_PRESET` | cloudinary.com |
-| `IG_ACCESS_TOKEN` | Meta app (Part A) |
-| `TELEGRAM_CHAT_ID` | Telegram (Part D) |
-| `SCRIPTS_DIR` | path to this repo's `scripts/` on the n8n host |
+| `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_UPLOAD_PRESET` | Cloudinary → Settings → Upload → add an **unsigned** preset. |
+| `TELEGRAM_BOT_TOKEN` | @BotFather → `/newbot` |
+| `TELEGRAM_CHAT_ID` | message your bot, then open `https://api.telegram.org/bot<TOKEN>/getUpdates` and read `message.chat.id` |
 
-Non-secret values (`igUserId`, `graphVersion`, `handle`) go in the **Set config**
-node inside the workflow.
+## Part C — Review mode needs a public URL
 
----
+Only when `AUTO_PUBLISH=false`. The Approve / Skip links in Telegram open n8n,
+so n8n must be reachable from your phone. Autopilot needs none of this.
 
-## Part A — Instagram + Meta (official Graph API)
+1. Cloudflare → Zero Trust → Networks → Tunnels → create a tunnel; copy the
+   connector token into `CLOUDFLARE_TUNNEL_TOKEN`.
+2. Add a public hostname with service URL **`http://n8n:5678`** — the compose
+   service name, not `localhost`.
+3. Set `WEBHOOK_URL=https://that-hostname` and run
+   `docker compose --profile tunnel up -d`.
+4. That hostname exposes the n8n editor. Put Cloudflare Access in front of it,
+   limited to your email. If you want approval links to open without a login,
+   add a second, narrower Access application for the path `/webhook-waiting`
+   with a Bypass policy. Never bypass `/` or `/rest`.
 
-1. **Convert the account** to **Business** or **Creator** (Instagram app →
-   Settings → Account type). Business accounts must be **linked to a Facebook
-   Page** (create a throwaway Page if you don't have one).
-2. Go to **developers.facebook.com** → *My Apps* → *Create App* → type
-   **Business**. Add the **Instagram Graph API** product.
-3. **Keep the app in _Development_ mode** and add yourself as an app admin. In
-   development mode you can publish to accounts that have a role on the app —
-   i.e. your own — **without going through App Review**. (You only need Review +
-   Business Verification if you later publish for other people.)
-4. In **Graph API Explorer**, select your app and generate a **User token** with
-   scopes: `instagram_basic`, `instagram_content_publish`, `pages_show_list`,
-   `pages_read_engagement`, `business_management`.
-5. Find your **Instagram Business Account ID**:
-   ```bash
-   # 1) find your page id
-   curl -s "https://graph.facebook.com/v21.0/me/accounts?access_token=SHORT_TOKEN"
-   # 2) get the linked IG account id from that page
-   curl -s "https://graph.facebook.com/v21.0/PAGE_ID?fields=instagram_business_account&access_token=SHORT_TOKEN"
-   ```
-   The `instagram_business_account.id` is your **`igUserId`** (put it in *Set config*).
-6. **Get a long-lived token** (~60 days):
-   ```bash
-   curl -s "https://graph.facebook.com/v21.0/oauth/access_token?grant_type=fb_exchange_token&client_id=APP_ID&client_secret=APP_SECRET&fb_exchange_token=SHORT_TOKEN"
-   ```
-   Use that value as **`IG_ACCESS_TOKEN`**. For a token that doesn't expire,
-   create a **System User** in *Business Settings → Users → System Users*, assign
-   your Page and the two `instagram_*` permissions, and generate its token
-   instead. Set a calendar reminder to refresh if you use the 60-day token.
+For a one-off test without a domain: `docker compose --profile quicktunnel up -d`
+and take the URL from `docker compose logs cloudflared-quick`.
 
-## Part B — Content API keys
+An unanswered approval is treated as Skip after 12 hours.
 
-- **OpenAI** — create a key → `OPENAI_API_KEY`. (Swap the model/URL in the
-  *Generate script* node if you prefer another provider.)
-- **ElevenLabs** — subscribe to **Starter** (~USD 5/mo, includes a commercial
-  licence). Copy your API key → `ELEVENLABS_API_KEY`. Pick a voice in *Voices*
-  and copy its **Voice ID** → `ELEVENLABS_VOICE_ID`.
-- **Pexels** — request a free API key at pexels.com/api → `PEXELS_API_KEY`.
-- **Cloudinary** — free account. In *Settings → Upload*, add an **unsigned**
-  upload preset. Note your **cloud name** and the **preset name** →
-  `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_UPLOAD_PRESET`.
+## Part D — Music
 
-## Part C — Telegram approval bot
+Put royalty-free tracks you are licensed to use in `assets/music/`. One is
+picked at random per video. Without any, videos are voice-only or silent.
 
-1. In Telegram, message **@BotFather** → `/newbot` → copy the **bot token**.
-2. Send your new bot any message, then read your chat id:
-   ```bash
-   curl -s "https://api.telegram.org/botBOT_TOKEN/getUpdates"
-   ```
-   Use `result[0].message.chat.id` → `TELEGRAM_CHAT_ID`.
-3. In n8n you'll create a **Telegram credential** with the bot token (the two
-   Telegram nodes reference it).
+## Part E — Changing what it posts
 
-## Part D — Host the renderer + n8n
+- Voice, pillars, rules: `config/niche.md`.
+- Prompts, schedule, rotation: `n8n/build_workflow.py`, then
+  `python3 n8n/build_workflow.py` and `FORCE_REIMPORT=1 docker compose up -d`.
+  Re-importing clears the "already posted" memory.
 
-The render scripts need `ffmpeg`, `imagemagick`, `bash`, `curl`, `jq` and fonts
-on the same machine as n8n. A ready-to-use **`Dockerfile`**, **`docker-compose.yml`**
-and **`.env.example`** are in the repo root — the Dockerfile extends the stock
-n8n image with that toolchain, and compose mounts the repo read-only at `/repo`
-so the Execute Command nodes can call `/repo/scripts`.
-
-From the cloned repo:
+## Running one post by hand, without n8n
 
 ```bash
-cp .env.example .env      # then fill in your keys (see Parts A-C)
-docker compose up -d --build
+docker compose exec renderer bash -c 'QUOTE="Calm is a strategy." PILLAR=wealth_mindset bash /app/scripts/render_quote_card.sh'
+# -> {"video_url": "...", "duration": 7}
+IG_ACCESS_TOKEN=... bash scripts/publish_reel.sh "<video_url>" caption.txt
 ```
-
-Open `http://localhost:5678`.
-
-Notes:
-- Set **`N8N_ENCRYPTION_KEY`** in `.env` to a long random string before saving
-  any credentials, so they survive restarts (`openssl rand -hex 24`).
-- The Telegram approve/skip buttons call back to **`WEBHOOK_URL`**. Local
-  testing works on `http://localhost:5678`; for production set it to a publicly
-  reachable domain or tunnel.
-
-## Part D½ — Public URL via Cloudflare Tunnel
-
-n8n needs a public https URL or the Telegram approve/skip buttons do nothing:
-those buttons link back to `WEBHOOK_URL`, and `localhost` is not reachable from
-your phone. A Cloudflare Tunnel gives you one without opening a router port or
-putting the machine on a public IP.
-
-Both options below are opt-in compose **profiles**, so a plain
-`docker compose up -d` still runs local-only.
-
-### Named tunnel — what you want for live use
-
-Stable hostname that survives restarts. Needs a domain on Cloudflare.
-
-1. Cloudflare dashboard → **Zero Trust → Networks → Tunnels → Create a tunnel**
-   → *Cloudflared*. Name it, then copy the **connector token**.
-2. Add a **Public hostname**: e.g. `n8n.yourdomain.com`, service type **HTTP**,
-   URL `n8n:5678`. That is the compose service name — **not** `localhost`,
-   which inside the cloudflared container means the container itself.
-3. In `.env`:
-   ```
-   CLOUDFLARE_TUNNEL_TOKEN=<the connector token>
-   WEBHOOK_URL=https://n8n.yourdomain.com
-   ```
-4. Start it:
-   ```bash
-   docker compose --profile tunnel up -d
-   docker compose logs -f cloudflared     # expect "Registered tunnel connection"
-   ```
-
-**Then lock it down.** That hostname exposes your n8n editor to the internet.
-n8n has its own login, but put **Zero Trust → Access → Applications** in front
-of the hostname too: add a **Self-hosted** application for
-`n8n.yourdomain.com`, with an **Allow** policy limited to your email.
-
-#### Optional — Access bypass for webhook paths
-
-With Access over the whole hostname, every approval link asks you to
-authenticate first. That is perfectly workable — it is one extra tap, and it is
-the safer default. If you would rather the approve/skip links open straight
-through, you can exempt just the callback paths.
-
-The mechanism matters: Access matches applications by **hostname + path**, most
-specific first. You do not add a bypass rule inside your main application — you
-add a **second, narrower application** for the path and give that one a single
-**Bypass** policy (include: *Everyone*). The broad application keeps protecting
-everything else.
-
-So, alongside the main app covering `n8n.yourdomain.com`, create one
-Self-hosted app per path below with a Bypass policy:
-
-| Path | What it is | Bypass? |
-| --- | --- | --- |
-| `n8n.yourdomain.com/webhook-waiting` | Wait-node and **Send and Wait for Response** resume URLs — this is what the Telegram approve/skip buttons hit | **Yes** — the only one approvals actually need |
-| `n8n.yourdomain.com/form-waiting` | the form-rendered variant of a waiting step, if your n8n version serves approvals as a form page | Yes, if approvals render as a form |
-| `n8n.yourdomain.com/webhook` | production webhook triggers | Only if you add workflows triggered by outside callers |
-| `n8n.yourdomain.com/healthz` | n8n health endpoint | Optional — lets `verify_setup.sh` probe it without an Access challenge |
-
-Never bypass these:
-
-| Path | Why not |
-| --- | --- |
-| `/` | the editor UI — full control of your workflows and credentials |
-| `/rest` | the editor's internal API — same exposure as the UI, via HTTP |
-| `/webhook-test` | test-mode webhooks, only live while you have the editor open; no reason to expose |
-
-**Understand the trade.** A bypassed `/webhook-waiting` means *possession of the
-link is permission to act*: anyone who gets that URL can approve or skip the
-post, with no login. The URLs carry unguessable execution IDs and arrive only in
-your private Telegram chat, so the practical exposure is small — but it is a
-real downgrade from "only my email can approve". For a content account that is
-usually a fine trade; decide deliberately rather than by default.
-
-Path names come from n8n's HTTP surface and have moved between major versions —
-confirm against your running instance (`docker compose logs n8n` prints the
-webhook base URLs on startup) before relying on a bypass.
-
-### Quick tunnel — throwaway, for one smoke test
-
-No account, no domain, no token. The URL is random and changes on every
-restart, so it is fine for proving approvals work and useless for running live.
-
-```bash
-docker compose --profile quicktunnel up -d
-docker compose logs -f cloudflared-quick   # prints https://<random>.trycloudflare.com
-```
-
-### Either way, restart n8n afterwards
-
-`WEBHOOK_URL` is read at startup, so after changing it:
-
-```bash
-docker compose up -d n8n
-```
-
-The verifier in the next section warns on a `localhost` `WEBHOOK_URL`, so a
-clean run tells you it took effect.
-
-## Part D¾ — Verify before you wire anything
-
-Run the preflight check inside the container. Do this **before** importing the
-workflow — it catches every credential problem in one pass instead of leaving
-you to debug a half-finished run:
-
-```bash
-docker compose exec n8n bash /repo/scripts/verify_setup.sh
-```
-
-It checks the render binaries and fonts, that every required variable is set,
-and then actually calls each service with your keys: OpenAI, ElevenLabs
-(including that your voice ID exists on the account), Pexels, a real test
-upload through `upload_public.sh` that confirms the resulting URL is **publicly
-fetchable**, and the Graph API — token validity, that
-`instagram_content_publish` is really granted, your remaining daily quota, and
-how long the token has left. It exits non-zero if anything failed.
-
-If you left `IG_USER_ID` blank, the verifier **discovers and prints your
-Instagram Business Account ID** — that's the value you paste into the workflow
-in Part E.
-
-Useful flags: `--skip-network` (binaries and variables only), `--help`.
-
-> Prefer a single render smoke test instead? This still works:
-> ```bash
-> QUOTE="Wealth is built in the boring middle." HANDLE="@yourhandle" \
->   UPLOADER=copy PUBLIC_DIR=/tmp/pub PUBLIC_BASE_URL=http://localhost \
->   bash /repo/scripts/render_quote_card.sh
-> ```
-> It should print a JSON line ending in `.mp4`.
-
-## Part E — Import and wire the workflow
-
-1. In n8n: *Workflows → Import from File* → `n8n/auto-instagram-workflow.json`.
-2. Open **Set config** and fill `igUserId`, `graphVersion` (keep `v21.0`),
-   `handle`.
-3. Open the two **Telegram** nodes and select your Telegram credential. If the
-   **Approve post?** node shows a parameter warning after import, re-select
-   operation **"Send and Wait for Response"** (the human-in-the-loop op).
-4. Confirm `verify_setup.sh` passes (Part D¾).
-5. Click **Execute Workflow** once to test. You should get a Telegram message
-   with the caption and a video link; tap **Approve** and watch it publish.
-
-## Part F — Go live
-
-- The **Schedule** node runs every 12h (edit to your posting cadence).
-- Content type alternates by time of day and the pillar rotates daily — tune the
-  logic in **Pick content type & pillar**.
-- Activate the workflow with the toggle. Keep an eye on the first week of
-  Telegram approvals to calibrate tone before trusting it.
-
-## Optional — cloud rendering (e.g. on n8n Cloud)
-
-If you can't self-host ffmpeg (n8n Cloud has no Execute Command), replace the two
-render nodes with an **HTTP Request** node that calls a render API
-(**Creatomate** or **JSON2Video**) using the same fields (`script_b64` etc.,
-base64-decoded on their side or sent as plain text), returning a public MP4 URL.
-Feed that URL into **Parse render output** as `video_url`. Budget note: these
-services start around AUD 30+/mo, above the AUD 20–30 target.
-
-## Troubleshooting
-
-| Symptom | Fix |
-| --- | --- |
-| `need ffmpeg` / `need ImageMagick` | Rebuild the image with the `apk add` line above. |
-| ImageMagick has only `magick`, not `convert` | Alias it: `ln -s $(command -v magick) /usr/local/bin/convert`. |
-| Graph API "media not ready" | The workflow already polls; increase the **Wait** if your videos are long. |
-| Graph API permission error | Token missing `instagram_content_publish`, or the account isn't Business/Creator + Page-linked. |
-| Cloudinary upload fails | The preset must be **unsigned**; check `CLOUDINARY_CLOUD_NAME`/preset. |
-| Token stopped working after ~60 days | Refresh the long-lived token, or switch to a System User token. |

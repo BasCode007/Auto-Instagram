@@ -6,6 +6,7 @@ import unittest
 
 from auto_instagram.caption import (
     MAX_CAPTION_LENGTH,
+    MAX_HASHTAGS,
     build_caption,
     count_hashtags,
     normalize_hashtag,
@@ -104,7 +105,7 @@ class ValidateCaptionTests(unittest.TestCase):
         self.assertIn("over", problems[0])
 
     def test_flags_too_many_hashtags(self):
-        caption = " ".join(f"#tag{i}" for i in range(31))
+        caption = " ".join(f"#tag{i}" for i in range(MAX_HASHTAGS + 1))
         problems = validate_caption(caption)
         self.assertTrue(any("hashtag" in p for p in problems))
 

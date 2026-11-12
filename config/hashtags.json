@@ -1,77 +1,39 @@
 {
-  "_comment": "Hashtag bank for the finance / wealth / success / positive-mindset niche. select_hashtags() in auto_instagram/content.py combines the core set with one pillar set, de-duplicates, and caps at Instagram's 30-tag limit. Keep tags broad-but-relevant; avoid banned or spammy tags.",
+  "_comment": "Hashtag bank. Instagram allows at most 5 hashtags per post (since December 2025), so each post gets the 2 core tags plus the 3 for its pillar. Order matters: earlier tags win if the list is ever cut.",
   "core": [
-    "#wealth",
-    "#financialfreedom",
     "#moneymindset",
-    "#successmindset",
-    "#buildwealth",
-    "#financialliteracy",
-    "#growyourwealth",
-    "#moneytips",
-    "#mindsetmatters",
-    "#positivemindset"
+    "#financialfreedom"
   ],
   "pillars": {
     "wealth_mindset": [
-      "#abundancemindset",
       "#wealthmindset",
-      "#millionairemindset",
-      "#delayedgratification",
-      "#disciplineequalsfreedom",
-      "#thinkandgrowrich",
-      "#moneymotivation",
+      "#abundancemindset",
       "#richhabits"
     ],
     "money_habits": [
-      "#savingmoney",
-      "#budgetingtips",
+      "#moneyhabits",
       "#personalfinance",
-      "#moneymanagement",
-      "#financialgoals",
-      "#smartmoney",
-      "#payyourselffirst",
-      "#debtfreejourney"
+      "#savingmoney"
     ],
     "investing_basics": [
       "#investing",
       "#compoundinterest",
-      "#longterminvesting",
-      "#investingtips",
-      "#passiveincome",
-      "#wealthbuilding",
-      "#financialeducation",
-      "#investsmart"
+      "#financialeducation"
     ],
     "entrepreneurship": [
       "#entrepreneurmindset",
       "#sidehustle",
-      "#businessmindset",
-      "#entrepreneurship",
-      "#valuecreation",
-      "#hustlesmart",
-      "#startuplife",
-      "#buildabrand"
+      "#businessmindset"
     ],
     "success_psychology": [
       "#successhabits",
-      "#gratitudepractice",
-      "#resilience",
       "#growthmindset",
-      "#selfdiscipline",
-      "#mentalwealth",
-      "#positivethinking",
-      "#levelup"
+      "#selfdiscipline"
     ],
     "daily_motivation": [
       "#dailymotivation",
-      "#motivationalquotes",
       "#successquotes",
-      "#affirmations",
-      "#mindsetshift",
-      "#inspirationdaily",
-      "#believeinyourself",
-      "#keepgoing"
+      "#mindsetshift"
     ]
   }
 }

@@ -1,7 +1,7 @@
 # Niche & brand guide
 
 The single source of truth for *what* this account posts and *how* it sounds.
-The LLM prompts in `prompts/` reference these rules, and `auto_instagram/content.py`
+The prompts in `n8n/build_workflow.py` encode these rules, and `auto_instagram/content.py`
 mirrors the pillar list in code.
 
 ## Topic
