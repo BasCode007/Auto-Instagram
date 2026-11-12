@@ -11,3 +11,4 @@ venv/
 
 # Rendered output when using the "copy" uploader
 public/
+comfyui/models/

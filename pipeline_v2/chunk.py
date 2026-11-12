@@ -5,14 +5,14 @@ out=[]
 for seg in t['segments']:
     ws=seg['words']; i=0
     while i<len(ws):
-        n=3
-        # take up to 3 words but stop after punctuation
+        n=2
+        # 1-2 words per beat (docs/STANDARD.md); stop early at punctuation
         chunk=[]
         while i<len(ws) and len(chunk)<n:
             chunk.append(ws[i]); i+=1
             if chunk[-1]['text'][-1] in ',.?!': break
         # avoid orphan single word at end: merge if remaining is 1 word
-        if i==len(ws)-1 and len(chunk)<4:
+        if i==len(ws)-1 and len(chunk)<2:
             chunk.append(ws[i]); i+=1
         out.append(chunk)
 segs=[]

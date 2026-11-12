@@ -13,6 +13,7 @@ The workflows import and activate themselves and everything is configured from
 `.env`. With `AUTO_PUBLISH=true` it runs unattended and needs no public URL;
 with `false`, each post is sent to Telegram for Approve / Skip first.
 
+- **[docs/STANDARD.md](docs/STANDARD.md)** — the quality bar, derived from the owner's reference reels.
 - **[docs/GO_LIVE.md](docs/GO_LIVE.md)** — the checklist.
 - **[docs/SETUP.md](docs/SETUP.md)** — where each key comes from.
 - **[docs/SYSTEM_DESIGN.md](docs/SYSTEM_DESIGN.md)** — how it works.
@@ -23,7 +24,9 @@ with `false`, each post is sent to Telegram for Approve / Skip first.
 ```
 docker-compose.yml   n8n + renderer (+ optional Cloudflare Tunnel)
 n8n/                 build_workflow.py -> the two workflow JSON files; init.sh
-renderer/            HTTP wrapper around the render scripts
+renderer/            HTTP wrapper around the render scripts (legacy quality)
+pipeline_v2/         voice -> word timings -> montage scene -> Picsart render
+comfyui/             optional GPU video generator (Wan 2.2), replaces Higgsfield
 scripts/             render_*.sh, make_captions.py, upload_public.sh,
                      publish_reel.sh, verify_setup.sh
 config/              niche.md (voice + rules), hashtags.json

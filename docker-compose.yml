@@ -78,5 +78,23 @@ services:
     command: tunnel --no-autoupdate --url http://n8n:5678
     depends_on: [n8n]
 
+  comfyui:
+    profiles: ["gpu"]
+    build: ./comfyui
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8188:8188"
+    volumes:
+      - ./comfyui/models:/opt/comfyui/models
+      - comfyui_output:/opt/comfyui/output
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
 volumes:
   n8n_data:
+  comfyui_output:

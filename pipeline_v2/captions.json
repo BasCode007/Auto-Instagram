@@ -2,8 +2,8 @@
  "segments": [
   {
    "start": 0.051,
-   "end": 0.872,
-   "text": "THE WEALTHY DON'T",
+   "end": 0.611,
+   "text": "THE WEALTHY",
    "words": [
     {
      "text": "THE",
@@ -14,11 +14,6 @@
      "text": "WEALTHY",
      "start": 0.191,
      "end": 0.571
-    },
-    {
-     "text": "DON'T",
-     "start": 0.631,
-     "end": 0.832
     }
    ],
    "emphasize": [
@@ -26,15 +21,27 @@
    ]
   },
   {
-   "start": 0.892,
-   "end": 1.952,
-   "text": "SAVE MONEY,",
+   "start": 0.631,
+   "end": 1.192,
+   "text": "DON'T SAVE",
    "words": [
+    {
+     "text": "DON'T",
+     "start": 0.631,
+     "end": 0.832
+    },
     {
      "text": "SAVE",
      "start": 0.892,
      "end": 1.132
-    },
+    }
+   ]
+  },
+  {
+   "start": 1.212,
+   "end": 1.952,
+   "text": "MONEY,",
+   "words": [
     {
      "text": "MONEY,",
      "start": 1.212,
@@ -44,8 +51,8 @@
   },
   {
    "start": 1.972,
-   "end": 3.393,
-   "text": "THEY BUY TIME.",
+   "end": 2.433,
+   "text": "THEY BUY",
    "words": [
     {
      "text": "THEY",
@@ -56,7 +63,17 @@
      "text": "BUY",
      "start": 2.173,
      "end": 2.373
-    },
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 2.453,
+   "end": 3.393,
+   "text": "TIME.",
+   "words": [
     {
      "text": "TIME.",
      "start": 2.453,
@@ -64,14 +81,13 @@
     }
    ],
    "emphasize": [
-    1,
-    2
+    0
    ]
   },
   {
    "start": 3.533,
-   "end": 4.434,
-   "text": "MOST PEOPLE TRADE",
+   "end": 4.094,
+   "text": "MOST PEOPLE",
    "words": [
     {
      "text": "MOST",
@@ -82,24 +98,34 @@
      "text": "PEOPLE",
      "start": 3.794,
      "end": 4.054
-    },
-    {
-     "text": "TRADE",
-     "start": 4.114,
-     "end": 4.394
     }
    ]
   },
   {
-   "start": 4.454,
-   "end": 5.375,
-   "text": "HOURS FOR DOLLARS",
+   "start": 4.114,
+   "end": 4.814,
+   "text": "TRADE HOURS",
    "words": [
+    {
+     "text": "TRADE",
+     "start": 4.114,
+     "end": 4.394
+    },
     {
      "text": "HOURS",
      "start": 4.454,
      "end": 4.774
-    },
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 4.834,
+   "end": 5.375,
+   "text": "FOR DOLLARS",
+   "words": [
     {
      "text": "FOR",
      "start": 4.834,
@@ -110,15 +136,12 @@
      "start": 4.995,
      "end": 5.355
     }
-   ],
-   "emphasize": [
-    0
    ]
   },
   {
    "start": 5.395,
-   "end": 6.635,
-   "text": "THEIR WHOLE LIFE.",
+   "end": 5.755,
+   "text": "THEIR WHOLE",
    "words": [
     {
      "text": "THEIR",
@@ -129,7 +152,14 @@
      "text": "WHOLE",
      "start": 5.575,
      "end": 5.735
-    },
+    }
+   ]
+  },
+  {
+   "start": 5.775,
+   "end": 6.635,
+   "text": "LIFE.",
+   "words": [
     {
      "text": "LIFE.",
      "start": 5.775,
@@ -139,8 +169,8 @@
   },
   {
    "start": 6.676,
-   "end": 8.177,
-   "text": "THE WEALTHY FLIP IT.",
+   "end": 7.196,
+   "text": "THE WEALTHY",
    "words": [
     {
      "text": "THE",
@@ -151,7 +181,17 @@
      "text": "WEALTHY",
      "start": 6.816,
      "end": 7.156
-    },
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 7.216,
+   "end": 8.177,
+   "text": "FLIP IT.",
+   "words": [
     {
      "text": "FLIP",
      "start": 7.216,
@@ -164,14 +204,13 @@
     }
    ],
    "emphasize": [
-    1,
-    2
+    0
    ]
   },
   {
    "start": 8.197,
-   "end": 9.097,
-   "text": "THEY BUY ASSETS",
+   "end": 8.697,
+   "text": "THEY BUY",
    "words": [
     {
      "text": "THEY",
@@ -182,28 +221,37 @@
      "text": "BUY",
      "start": 8.377,
      "end": 8.597
-    },
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 8.717,
+   "end": 9.338,
+   "text": "ASSETS THAT",
+   "words": [
     {
      "text": "ASSETS",
      "start": 8.717,
      "end": 9.077
-    }
-   ],
-   "emphasize": [
-    1,
-    2
-   ]
-  },
-  {
-   "start": 9.117,
-   "end": 9.738,
-   "text": "THAT EARN WHILE",
-   "words": [
+    },
     {
      "text": "THAT",
      "start": 9.117,
      "end": 9.258
-    },
+    }
+   ],
+   "emphasize": [
+    0
+   ]
+  },
+  {
+   "start": 9.358,
+   "end": 9.738,
+   "text": "EARN WHILE",
+   "words": [
     {
      "text": "EARN",
      "start": 9.358,
@@ -235,8 +283,8 @@
   },
   {
    "start": 10.719,
-   "end": 11.259,
-   "text": "AND THEY GUARD",
+   "end": 10.979,
+   "text": "AND THEY",
    "words": [
     {
      "text": "AND",
@@ -247,24 +295,31 @@
      "text": "THEY",
      "start": 10.819,
      "end": 10.959
-    },
-    {
-     "text": "GUARD",
-     "start": 10.999,
-     "end": 11.259
     }
    ]
   },
   {
-   "start": 11.279,
-   "end": 12.06,
-   "text": "THEIR HOURS LIKE",
+   "start": 10.999,
+   "end": 11.459,
+   "text": "GUARD THEIR",
    "words": [
+    {
+     "text": "GUARD",
+     "start": 10.999,
+     "end": 11.259
+    },
     {
      "text": "THEIR",
      "start": 11.279,
      "end": 11.439
-    },
+    }
+   ]
+  },
+  {
+   "start": 11.479,
+   "end": 12.06,
+   "text": "HOURS LIKE",
+   "words": [
     {
      "text": "HOURS",
      "start": 11.479,
@@ -277,13 +332,13 @@
     }
    ],
    "emphasize": [
-    1
+    0
    ]
   },
   {
    "start": 12.08,
-   "end": 12.98,
-   "text": "THE SCARCEST THING",
+   "end": 12.76,
+   "text": "THE SCARCEST",
    "words": [
     {
      "text": "THE",
@@ -294,11 +349,6 @@
      "text": "SCARCEST",
      "start": 12.24,
      "end": 12.72
-    },
-    {
-     "text": "THING",
-     "start": 12.78,
-     "end": 12.96
     }
    ],
    "emphasize": [
@@ -306,15 +356,27 @@
    ]
   },
   {
-   "start": 13,
-   "end": 13.941,
-   "text": "THEY OWN.",
+   "start": 12.78,
+   "end": 13.24,
+   "text": "THING THEY",
    "words": [
+    {
+     "text": "THING",
+     "start": 12.78,
+     "end": 12.96
+    },
     {
      "text": "THEY",
      "start": 13,
      "end": 13.14
-    },
+    }
+   ]
+  },
+  {
+   "start": 13.26,
+   "end": 13.941,
+   "text": "OWN.",
+   "words": [
     {
      "text": "OWN.",
      "start": 13.26,
@@ -324,8 +386,8 @@
   },
   {
    "start": 13.961,
-   "end": 15.261,
-   "text": "BECAUSE THEY ARE.",
+   "end": 14.501,
+   "text": "BECAUSE THEY",
    "words": [
     {
      "text": "BECAUSE",
@@ -336,7 +398,14 @@
      "text": "THEY",
      "start": 14.261,
      "end": 14.381
-    },
+    }
+   ]
+  },
+  {
+   "start": 14.521,
+   "end": 15.261,
+   "text": "ARE.",
+   "words": [
     {
      "text": "ARE.",
      "start": 14.521,
@@ -346,8 +415,8 @@
   },
   {
    "start": 15.402,
-   "end": 16.243,
-   "text": "EVERY DOLLAR YOU",
+   "end": 16.062,
+   "text": "EVERY DOLLAR",
    "words": [
     {
      "text": "EVERY",
@@ -358,24 +427,34 @@
      "text": "DOLLAR",
      "start": 15.722,
      "end": 16.042
-    },
-    {
-     "text": "YOU",
-     "start": 16.082,
-     "end": 16.223
     }
    ]
   },
   {
-   "start": 16.263,
-   "end": 17.363,
-   "text": "INVEST EARLY IS",
+   "start": 16.082,
+   "end": 16.643,
+   "text": "YOU INVEST",
    "words": [
+    {
+     "text": "YOU",
+     "start": 16.082,
+     "end": 16.223
+    },
     {
      "text": "INVEST",
      "start": 16.263,
      "end": 16.583
-    },
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 16.663,
+   "end": 17.363,
+   "text": "EARLY IS",
+   "words": [
     {
      "text": "EARLY",
      "start": 16.663,
@@ -386,15 +465,12 @@
      "start": 17.263,
      "end": 17.343
     }
-   ],
-   "emphasize": [
-    0
    ]
   },
   {
    "start": 17.383,
-   "end": 18.084,
-   "text": "AN HOUR YOU",
+   "end": 17.904,
+   "text": "AN HOUR",
    "words": [
     {
      "text": "AN",
@@ -405,24 +481,34 @@
      "text": "HOUR",
      "start": 17.563,
      "end": 17.864
-    },
-    {
-     "text": "YOU",
-     "start": 17.924,
-     "end": 18.064
     }
    ]
   },
   {
-   "start": 18.104,
-   "end": 19.444,
-   "text": "BUY BACK LATER.",
+   "start": 17.924,
+   "end": 18.284,
+   "text": "YOU BUY",
    "words": [
+    {
+     "text": "YOU",
+     "start": 17.924,
+     "end": 18.064
+    },
     {
      "text": "BUY",
      "start": 18.104,
      "end": 18.264
-    },
+    }
+   ],
+   "emphasize": [
+    1
+   ]
+  },
+  {
+   "start": 18.304,
+   "end": 19.444,
+   "text": "BACK LATER.",
+   "words": [
     {
      "text": "BACK",
      "start": 18.304,
@@ -433,15 +519,12 @@
      "start": 18.564,
      "end": 18.844
     }
-   ],
-   "emphasize": [
-    0
    ]
   },
   {
    "start": 19.545,
-   "end": 20.245,
-   "text": "SO BEFORE YOUR",
+   "end": 20.085,
+   "text": "SO BEFORE",
    "words": [
     {
      "text": "SO",
@@ -452,24 +535,31 @@
      "text": "BEFORE",
      "start": 19.745,
      "end": 20.065
-    },
-    {
-     "text": "YOUR",
-     "start": 20.105,
-     "end": 20.245
     }
    ]
   },
   {
-   "start": 20.265,
-   "end": 21.206,
-   "text": "NEXT PURCHASE,",
+   "start": 20.105,
+   "end": 20.506,
+   "text": "YOUR NEXT",
    "words": [
+    {
+     "text": "YOUR",
+     "start": 20.105,
+     "end": 20.245
+    },
     {
      "text": "NEXT",
      "start": 20.265,
      "end": 20.466
-    },
+    }
+   ]
+  },
+  {
+   "start": 20.526,
+   "end": 21.206,
+   "text": "PURCHASE,",
+   "words": [
     {
      "text": "PURCHASE,",
      "start": 20.526,
@@ -479,8 +569,8 @@
   },
   {
    "start": 21.226,
-   "end": 23.027,
-   "text": "ASK ONE QUESTION.",
+   "end": 21.927,
+   "text": "ASK ONE",
    "words": [
     {
      "text": "ASK",
@@ -491,11 +581,6 @@
      "text": "ONE",
      "start": 21.706,
      "end": 21.847
-    },
-    {
-     "text": "QUESTION.",
-     "start": 21.947,
-     "end": 22.427
     }
    ],
    "emphasize": [
@@ -503,9 +588,21 @@
    ]
   },
   {
+   "start": 21.947,
+   "end": 23.027,
+   "text": "QUESTION.",
+   "words": [
+    {
+     "text": "QUESTION.",
+     "start": 21.947,
+     "end": 22.427
+    }
+   ]
+  },
+  {
    "start": 23.087,
-   "end": 23.828,
-   "text": "DOES THIS BUY",
+   "end": 23.588,
+   "text": "DOES THIS",
    "words": [
     {
      "text": "DOES",
@@ -516,27 +613,34 @@
      "text": "THIS",
      "start": 23.308,
      "end": 23.488
-    },
+    }
+   ]
+  },
+  {
+   "start": 23.608,
+   "end": 24.028,
+   "text": "BUY ME",
+   "words": [
     {
      "text": "BUY",
      "start": 23.608,
      "end": 23.808
-    }
-   ],
-   "emphasize": [
-    2
-   ]
-  },
-  {
-   "start": 23.848,
-   "end": 25.169,
-   "text": "ME TIME OR",
-   "words": [
+    },
     {
      "text": "ME",
      "start": 23.848,
      "end": 23.968
-    },
+    }
+   ],
+   "emphasize": [
+    0
+   ]
+  },
+  {
+   "start": 24.048,
+   "end": 25.169,
+   "text": "TIME OR",
+   "words": [
     {
      "text": "TIME",
      "start": 24.048,
@@ -549,13 +653,13 @@
     }
    ],
    "emphasize": [
-    1
+    0
    ]
   },
   {
    "start": 25.189,
-   "end": 26.65,
-   "text": "COST ME TIME?",
+   "end": 25.749,
+   "text": "COST ME",
    "words": [
     {
      "text": "COST",
@@ -566,7 +670,14 @@
      "text": "ME",
      "start": 25.589,
      "end": 25.709
-    },
+    }
+   ]
+  },
+  {
+   "start": 25.769,
+   "end": 26.65,
+   "text": "TIME?",
+   "words": [
     {
      "text": "TIME?",
      "start": 25.769,
@@ -574,7 +685,7 @@
     }
    ],
    "emphasize": [
-    2
+    0
    ]
   },
   {
@@ -613,8 +724,8 @@
   },
   {
    "start": 29.241,
-   "end": 30.406,
-   "text": "LET COMPOUNDING DO",
+   "end": 30.265,
+   "text": "LET COMPOUNDING",
    "words": [
     {
      "text": "LET",
@@ -625,11 +736,6 @@
      "text": "COMPOUNDING",
      "start": 29.502,
      "end": 30.245
-    },
-    {
-     "text": "DO",
-     "start": 30.285,
-     "end": 30.406
     }
    ],
    "emphasize": [
@@ -637,15 +743,27 @@
    ]
   },
   {
-   "start": 30.426,
-   "end": 31.692,
-   "text": "THE HEAVY LIFTING.",
+   "start": 30.285,
+   "end": 30.547,
+   "text": "DO THE",
    "words": [
+    {
+     "text": "DO",
+     "start": 30.285,
+     "end": 30.406
+    },
     {
      "text": "THE",
      "start": 30.426,
      "end": 30.506
-    },
+    }
+   ]
+  },
+  {
+   "start": 30.567,
+   "end": 31.692,
+   "text": "HEAVY LIFTING.",
+   "words": [
     {
      "text": "HEAVY",
      "start": 30.567,
@@ -660,8 +778,8 @@
   },
   {
    "start": 31.712,
-   "end": 32.877,
-   "text": "FOLLOW FOR ONE",
+   "end": 32.475,
+   "text": "FOLLOW FOR",
    "words": [
     {
      "text": "FOLLOW",
@@ -672,28 +790,37 @@
      "text": "FOR",
      "start": 32.113,
      "end": 32.254
-    },
+    }
+   ],
+   "emphasize": [
+    0
+   ]
+  },
+  {
+   "start": 32.495,
+   "end": 33.198,
+   "text": "ONE WEALTH",
+   "words": [
     {
      "text": "ONE",
      "start": 32.495,
      "end": 32.656
-    }
-   ],
-   "emphasize": [
-    0,
-    2
-   ]
-  },
-  {
-   "start": 32.897,
-   "end": 34.642,
-   "text": "WEALTH HABIT A DAY.",
-   "words": [
+    },
     {
      "text": "WEALTH",
      "start": 32.897,
      "end": 33.158
-    },
+    }
+   ],
+   "emphasize": [
+    0
+   ]
+  },
+  {
+   "start": 33.218,
+   "end": 33.801,
+   "text": "HABIT A",
+   "words": [
     {
      "text": "HABIT",
      "start": 33.218,
@@ -703,7 +830,14 @@
      "text": "A",
      "start": 33.74,
      "end": 33.781
-    },
+    }
+   ]
+  },
+  {
+   "start": 33.821,
+   "end": 34.642,
+   "text": "DAY.",
+   "words": [
     {
      "text": "DAY.",
      "start": 33.821,
