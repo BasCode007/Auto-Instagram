@@ -8,7 +8,7 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"; cd "$ROOT"
 W="$(mktemp -d)"; M=http://127.0.0.1:9911; N8N_IMAGE="${N8N_IMAGE:-n8nio/n8n:2.47.3}"
-cleanup() { docker rm -f autoig-e2e-n8n >/dev/null 2>&1 || true; kill "${MOCK:-0}" "${REND:-0}" 2>/dev/null || true; }
+cleanup() { docker rm -f autoig-e2e-n8n >/dev/null 2>&1 || true; for p in "${MOCK:-}" "${REND:-}"; do [ -n "$p" ] && kill "$p" 2>/dev/null; done; true; }
 trap cleanup EXIT
 mkdir -p "$W/fx" "$W/pub" "$W/data"; chmod 777 "$W/data" "$W/pub"
 
@@ -17,7 +17,7 @@ ffmpeg -y -loglevel error -f lavfi -i "flite=text='Wealth is a system you repeat
 VS="$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$W/fx/voice.mp3")"
 for i in 1 2 3; do ffmpeg -y -loglevel error -f lavfi -i "testsrc2=s=720x1280:r=25:d=4" -c:v libx264 -pix_fmt yuv420p "$W/fx/clip$i.mp4"; done
 
-start_mock() { kill "${MOCK:-0}" 2>/dev/null || true; python3 tests/e2e/mock_apis.py --port 9911 --fixtures "$W/fx" --public "$W/pub" --graph-mode "$1" --voice-seconds "$VS" & MOCK=$!; sleep 1; }
+start_mock() { [ -n "${MOCK:-}" ] && kill "$MOCK" 2>/dev/null; python3 tests/e2e/mock_apis.py --port 9911 --fixtures "$W/fx" --public "$W/pub" --graph-mode "$1" --voice-seconds "$VS" & MOCK=$!; sleep 1; }
 start_mock ok
 PORT=8080 UPLOADER=copy PUBLIC_DIR="$W/pub" PUBLIC_BASE_URL="$M/pub" ELEVENLABS_BASE_URL="$M" PEXELS_BASE_URL="$M" \
   ELEVENLABS_API_KEY=k ELEVENLABS_VOICE_ID=v PEXELS_API_KEY=k python3 renderer/server.py >"$W/renderer.log" 2>&1 & REND=$!
