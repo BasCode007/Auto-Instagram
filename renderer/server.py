@@ -112,6 +112,7 @@ class Handler(BaseHTTPRequestHandler):
         except subprocess.TimeoutExpired:
             self._send(504, {"error": f"render exceeded {TIMEOUT}s"})
         except Exception as exc:  # surfaced to n8n, which alerts the owner
+            print("renderer error:", str(exc)[-800:], flush=True)
             self._send(500, {"error": str(exc)})
 
     def log_message(self, fmt, *args):

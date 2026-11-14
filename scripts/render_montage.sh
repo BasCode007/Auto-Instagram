@@ -84,7 +84,7 @@ else
     resp="$(curl -sS -f --retry 2 --max-time 30 -G "${PX_BASE}/videos/search" -H "Authorization: ${PEXELS_API_KEY}" \
       --data-urlencode "query=${kw}" --data-urlencode "orientation=portrait" --data-urlencode "per_page=15")" || continue
     while IFS= read -r l; do [ -n "$l" ] && links+=("$l"); done < <(printf '%s' "$resp" | jq -r '
-      .videos[]? | select(.duration >= 4) | [.video_files[]? | select(.height > .width and .width >= 1000)]
+      .videos[]? | select((.duration // 99) >= 4) | [.video_files[]? | select(.height > .width and .width >= 1000)]
       | sort_by((.width - 1080) | fabs) | .[0].link // empty' | shuf | head -n 3)
   done
   want=$(( nseg / 2 + 2 )); [ "$want" -gt 12 ] && want=12; idx=0
