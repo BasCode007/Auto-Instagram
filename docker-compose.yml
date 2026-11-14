@@ -56,6 +56,9 @@ services:
     env_file: [.env]
     environment:
       - MUSIC_DIR=/music
+      - COMFYUI_URL=${COMFYUI_URL:-}
+      - CUT=${CUT:-1.3}
+      - MUSIC_LEVEL=${MUSIC_LEVEL:-0.25}
     volumes:
       - ./assets/music:/music:ro
 

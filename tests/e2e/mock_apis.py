@@ -34,6 +34,7 @@ NARRATED = {
     "caption": "Pay yourself first, automatically. Start small and let time do the heavy lifting. Save this for payday.",
     "hashtags": ["MoneyHabits", "#payyourselffirst", "moneyhabits", "wealth building", "savingmoney", "extra1", "extra2"],
     "broll_keywords": ["city skyline sunrise", "person writing notebook", "coffee desk morning", "walking street", "calm ocean"],
+    "hero_prompts": ["slow dolly past a matte black supercar in a dark showroom, volumetric light, cinematic, photoreal, 9:16"],
 }
 QUOTE = {
     "quote": "Calm is a financial strategy. Panic is just expensive.",

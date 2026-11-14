@@ -9,6 +9,7 @@ RUN apt-get update \
 WORKDIR /app
 COPY scripts/ /app/scripts/
 COPY renderer/server.py /app/renderer/server.py
+COPY pipeline_v2/comfy_client.py /app/pipeline_v2/comfy_client.py
 RUN chmod +x /app/scripts/*.sh /app/scripts/*.py \
  && useradd --create-home --uid 10001 render
 USER render

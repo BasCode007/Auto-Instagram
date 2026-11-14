@@ -4,7 +4,8 @@
 n8n 2.x ships without the Execute Command node and on a hardened image that
 cannot install ffmpeg, so rendering lives in this sidecar instead. n8n calls:
 
-    POST /render   {"type": "quote" | "narrated", ...}  ->  {"video_url", "duration"}
+    POST /render   {"type": "montage" | "quote", ...}  ->  {"video_url", "duration"}
+    ("narrated" is accepted as an alias of "montage")
     GET  /healthz
 
 The service is only reachable on the compose network; it is never published
@@ -50,7 +51,8 @@ def render(payload: dict) -> dict:
         env["QUOTE"] = quote
         env["PILLAR"] = str(payload.get("pillar") or "")
         script = "render_quote_card.sh"
-    elif kind == "narrated":
+    elif kind in ("montage", "narrated"):
+        kind = "montage"
         text = str(payload.get("script") or "").strip()
         if not text:
             raise ValueError("script is required")
@@ -59,10 +61,13 @@ def render(payload: dict) -> dict:
             keywords = ", ".join(str(k) for k in keywords)
         env["SCRIPT_TEXT"] = text
         env["BROLL_KEYWORDS"] = str(keywords)
-        env["ON_SCREEN_HOOK"] = str(payload.get("hook") or "")
-        script = "render_narrated_reel.sh"
+        hero = payload.get("hero_prompts") or []
+        if isinstance(hero, list):
+            hero = "||".join(str(h) for h in hero if str(h).strip())
+        env["HERO_PROMPTS"] = str(hero)
+        script = "render_montage.sh"
     else:
-        raise ValueError("type must be 'quote' or 'narrated'")
+        raise ValueError("type must be 'montage' or 'quote'")
 
     work = tempfile.mkdtemp(prefix="render-")
     env["OUT_DIR"] = work

@@ -78,7 +78,7 @@ const angles = [
 ];
 const pillar = pillars[n % pillars.length];
 const angle = angles[n % angles.length];              // 7 angles x 6 pillars: 42 posts before a pair repeats
-const content_type = (n + Math.floor(n / pillars.length)) % 2 === 0 ? "narrated" : "quote";
+const content_type = "montage";   // quote cards are kept in the renderer for manual use only (docs/STANDARD.md)
 const avoid = sd.history.slice(-30).map(h => "- " + h.hook).join("\n") || "(nothing yet)";
 
 const common = `You write for an Instagram account about finance, wealth and success with a positive, grounded voice: building wealth and keeping a calm, disciplined, grateful mindset go together. Never hype, never get-rich-quick. Speak to one person ("you"). Education and motivation only, NOT financial advice: no guaranteed returns, no "risk-free", no individual buy/sell calls, no income claims.
@@ -88,12 +88,13 @@ ${avoid}
 Return STRICT JSON only.`;
 
 const narrated = `${common}
-Write a faceless narrated Reel. Keys: "on_screen_hook" (<= 34 characters, punchy), "hook" (the first spoken line), "script" (the full voiceover INCLUDING the hook, 75-115 words, short sentences, ends with a gentle call to action), "caption" (<= 600 characters, no hashtags, adds value beyond the video), "hashtags" (3 to 5 lowercase tags without #), "broll_keywords" (5 concrete, visual stock-footage search terms such as "city skyline sunrise" or "person writing in notebook").`;
+Write a faceless narrated Reel in fast montage style (see the account standard): 45-80 words, 20-35 seconds spoken. Open with a counter-intuitive command or claim that works as the first spoken line (no greeting, no "today", no "in this video"). Short declarative sentences; each sentence is one shot. End on the strongest line. NO call to action, no "follow", no "save this", no question at the end.
+Keys: "hook" (the first spoken line, <= 60 characters), "script" (the full voiceover INCLUDING the hook, 45-80 words), "caption" (<= 400 characters, no hashtags, one extra insight), "hashtags" (3 to 5 lowercase tags without #), "broll_keywords" (6 concrete cinematic stock-footage search terms: luxury, city at night, skyline sunrise, supercar, private jet, yacht, penthouse, watch close-up, lone figure golden hour; never "office", "handshake" or "stock chart"), "hero_prompts" (2 text-to-video prompts for the signature shots, each one sentence: subject, camera move, light, mood, "cinematic, photoreal, 9:16"; no people's faces, no text).`;
 
 const quote = `${common}
 Write an original quote card. Keys: "quote" (<= 110 characters, one or two sentences, no quotation marks, no attribution), "hook" (same as quote), "caption" (2-4 encouraging sentences then a gentle call to action, <= 600 characters, no hashtags), "hashtags" (3 to 5 lowercase tags without #).`;
 
-return [{ json: { content_type, pillar, angle, system_prompt: content_type === "narrated" ? narrated : quote } }];
+return [{ json: { content_type, pillar, angle, system_prompt: content_type === "montage" ? narrated : quote } }];
 """
 
 PARSE_CODE = r"""// Parse and validate the model's JSON, then build the final caption.
@@ -109,7 +110,7 @@ const pick = $('Pick format and topic').first().json;
 const type = pick.content_type;
 const MAX_LEN = 2200, MAX_TAGS = 5;
 
-const need = type === "narrated" ? ["script", "caption", "broll_keywords"] : ["quote", "caption"];
+const need = type === "montage" ? ["script", "caption", "broll_keywords"] : ["quote", "caption"];
 for (const k of need) if (!d[k] || (Array.isArray(d[k]) && !d[k].length)) throw new Error(`Model output is missing "${k}"`);
 
 // Compliance backstop: the prompt forbids these, this refuses to publish them.
@@ -119,7 +120,7 @@ const hit = allText.match(banned);
 if (hit) throw new Error(`Blocked by compliance check: "${hit[0]}"`);
 
 const words = (d.script || "").trim().split(/\s+/).filter(Boolean).length;
-if (type === "narrated" && (words < 40 || words > 170)) throw new Error(`Script is ${words} words; expected roughly 75-115`);
+if (type === "montage" && (words < 30 || words > 120)) throw new Error(`Script is ${words} words; expected 45-80`);
 if (type === "quote" && d.quote.length > 180) throw new Error(`Quote is ${d.quote.length} characters; too long for the card`);
 
 const normTag = (t) => { const c = String(t || "").trim().replace(/^#+/, "").replace(/[^\p{L}\p{N}_]/gu, ""); return c ? "#" + c : null; };
@@ -137,8 +138,8 @@ if (onScreen.length > 44) onScreen = onScreen.slice(0, 43).trimEnd() + "…";
 return [{ json: {
   content_type: type, pillar: pick.pillar, caption,
   hook: String(d.hook || d.quote || d.on_screen_hook || "").trim(),
-  render_request: type === "narrated"
-    ? { type, script: String(d.script).trim(), hook: onScreen, keywords: d.broll_keywords, pillar: pick.pillar }
+  render_request: type === "montage"
+    ? { type, script: String(d.script).trim(), keywords: d.broll_keywords, hero_prompts: d.hero_prompts || [], pillar: pick.pillar }
     : { type, quote: String(d.quote).trim(), pillar: pick.pillar },
 } }];
 """

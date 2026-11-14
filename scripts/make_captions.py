@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""Build an ASS subtitle file (hook + word-timed captions) for a narrated Reel.
+"""Build an ASS subtitle file of big, centred, word-revealed captions (docs/STANDARD.md).
 
 Usage:
   make_captions.py --out captions.ass --duration 31.2 \
-      [--alignment tts.json] [--text script.txt] [--hook "..."] [--font Inter]
+      [--alignment tts.json | --words-json words.json | --text script.txt] [--font Inter]
 
-Timing comes from an ElevenLabs "with-timestamps" response when --alignment is
-given. Without it (e.g. a pre-recorded voice file) word times are estimated by
-spreading the words across the audio in proportion to their length, which is
-close enough for 2-3 word caption chunks.
+Word timing, in order of preference:
+  --alignment   an ElevenLabs "with-timestamps" response (character timings)
+  --words-json  [{"text","start","end"}, ...]  (Whisper / any transcriber)
+  --text        no timings: words are spread across the audio by length
 
-Everything is positioned inside the Reels UI safe zone: clear of the top bar,
-the bottom caption overlay and the right-hand button column.
+Style: 1-2 words per beat, Montserrat/Inter extra-bold at 112 px (1080-wide canvas),
+white with a soft dark edge, centred a little above the middle of the frame. Words
+appear as they are spoken; the word being spoken, and any emphasis word, is gold.
+No hook box, no label, no CTA: the hook is the first spoken line.
 """
 from __future__ import annotations
 
@@ -20,121 +22,133 @@ import json
 import re
 import sys
 
-MAX_WORDS = 3          # words per caption chunk
-MAX_CHARS = 18         # ...or fewer if the words are long
-HOOK_SECONDS = 3.0
+MAX_WORDS = 2
+GOLD = r"\c&H48C9F7&"      # #F7C948 in ASS BGR
+WHITE = r"\c&HFFFFFF&"
+POS = r"\an5\pos(540,900)"
+EMPHASIS = {
+    "money", "time", "wealth", "wealthy", "rich", "invest", "investing", "assets", "asset", "income",
+    "hours", "compounding", "discipline", "freedom", "profit", "profits", "habit", "habits", "risk",
+    "focus", "patience", "leverage", "equity", "cash", "debt", "own", "earn", "build", "buy",
+}
 
 
-def words_from_alignment(path: str) -> list[tuple[str, float, float]]:
+def words_from_alignment(path):
     data = json.load(open(path, encoding="utf-8"))
     al = data.get("alignment") or data.get("normalized_alignment") or {}
-    chars = al.get("characters") or []
-    starts = al.get("character_start_times_seconds") or []
-    ends = al.get("character_end_times_seconds") or []
+    chars, starts, ends = al.get("characters") or [], al.get("character_start_times_seconds") or [], al.get("character_end_times_seconds") or []
     words, cur, w_start, w_end = [], "", None, 0.0
     for ch, s, e in zip(chars, starts, ends):
         if ch.isspace():
             if cur:
-                words.append((cur, w_start, w_end))
-                cur, w_start = "", None
+                words.append((cur, w_start, w_end)); cur, w_start = "", None
             continue
         if w_start is None:
             w_start = s
-        cur += ch
-        w_end = e
+        cur += ch; w_end = e
     if cur:
         words.append((cur, w_start, w_end))
     return words
 
 
-def words_estimated(text: str, duration: float) -> list[tuple[str, float, float]]:
+def words_from_json(path):
+    data = json.load(open(path, encoding="utf-8"))
+    if isinstance(data, dict):
+        data = data.get("words") or [w for s in data.get("segments", []) for w in s.get("words", [])]
+    return [(str(w["text"]).strip(), float(w["start"]), float(w["end"])) for w in data if str(w.get("text", "")).strip()]
+
+
+def words_estimated(text, duration):
     tokens = text.split()
     if not tokens:
         return []
-    weights = [len(t) + 1.5 for t in tokens]   # +1.5 ~ the pause after a word
-    total = sum(weights)
-    out, t = [], 0.0
+    weights = [len(t) + 1.5 for t in tokens]
+    total = sum(weights); out, t = [], 0.0
     for tok, w in zip(tokens, weights):
-        span = duration * w / total
-        out.append((tok, t, t + span))
-        t += span
+        span = duration * w / total; out.append((tok, t, t + span)); t += span
     return out
 
 
 def chunk(words):
-    """Group words into short caption chunks, breaking at sentence ends."""
     chunks, cur = [], []
     for w in words:
         cur.append(w)
-        text_len = sum(len(x[0]) for x in cur) + len(cur) - 1
-        if len(cur) >= MAX_WORDS or text_len >= MAX_CHARS or re.search(r"[.!?]$", w[0]):
-            chunks.append(cur)
-            cur = []
+        if len(cur) >= MAX_WORDS or re.search(r"[.!?,;:]$", w[0]):
+            chunks.append(cur); cur = []
     if cur:
-        chunks.append(cur)
-    return [(" ".join(x[0] for x in c), c[0][1], c[-1][2]) for c in chunks]
+        if len(cur) == 1 and chunks and len(chunks[-1]) < MAX_WORDS and not re.search(r"[.!?]$", chunks[-1][-1][0]):
+            chunks[-1].extend(cur)
+        else:
+            chunks.append(cur)
+    return chunks
 
 
-def ts(seconds: float) -> str:
-    seconds = max(0.0, seconds)
-    h, rem = divmod(seconds, 3600)
-    m, s = divmod(rem, 60)
+def ts(seconds):
+    seconds = max(0.0, seconds); h, rem = divmod(seconds, 3600); m, s = divmod(rem, 60)
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
-def esc(text: str) -> str:
+def esc(text):
     return text.replace("\\", "").replace("{", "(").replace("}", ")").replace("\n", " ")
 
 
-def build(words, hook: str, duration: float, font: str) -> str:
+def is_emph(word):
+    return re.sub(r"[^a-z']", "", word.lower()) in EMPHASIS
+
+
+def build(words, duration, font):
     head = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: 1080
 PlayResY: 1920
-WrapStyle: 0
+WrapStyle: 2
 ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{font},84,&H00FFFFFF,&H00FFFFFF,&H00101010,&H96000000,-1,0,0,0,100,100,0,0,1,6,2,5,110,190,0,1
-Style: Hook,{font},70,&H00FFFFFF,&H00FFFFFF,&H00101010,&HB4000000,-1,0,0,0,100,100,0,0,3,18,0,8,110,190,300,1
+Style: Cap,{font},112,&H00FFFFFF,&H00FFFFFF,&H40000000,&H90000000,-1,0,0,0,100,100,1,0,1,5,6,5,60,60,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = []
-    if hook:
-        lines.append(f"Dialogue: 1,{ts(0)},{ts(min(HOOK_SECONDS, duration))},Hook,,0,0,0,,{esc(hook)}")
     chunks = chunk(words)
-    for i, (text, start, end) in enumerate(chunks):
-        # hold each chunk until the next one starts, so captions never flicker off
-        nxt = chunks[i + 1][1] if i + 1 < len(chunks) else min(end + 0.4, duration)
-        end = max(end, min(nxt, end + 0.6))
-        # {\pos} pins captions at 62% height: below the hook, above the IG caption overlay
-        lines.append(f"Dialogue: 0,{ts(start)},{ts(end)},Cap,,0,0,0,,{{\\pos(500,1190)\\fad(60,0)}}{esc(text)}")
+    for ci, ch in enumerate(chunks):
+        if ci + 1 < len(chunks):
+            chunk_end = chunks[ci + 1][0][1] - 0.02          # never overlap the next beat
+        else:
+            chunk_end = min(ch[-1][2] + 0.6, duration)
+        chunk_end = max(chunk_end, ch[-1][1] + 0.08)
+        for k, (text, start, _end) in enumerate(ch):
+            end = ch[k + 1][1] if k + 1 < len(ch) else chunk_end
+            if end <= start:
+                continue
+            parts = []
+            for j, (t, _s, _e) in enumerate(ch[: k + 1]):
+                colour = GOLD if (j == k or is_emph(t)) else WHITE
+                parts.append("{" + colour + r"\be1}" + esc(t.upper()))
+            fad = r"\fad(50,0)" if k == 0 else ""
+            lines.append(f"Dialogue: 0,{ts(start)},{ts(end)},Cap,,0,0,0,,{{{POS}{fad}}}" + " ".join(parts))
     return head + "\n".join(lines) + "\n"
 
 
-def main() -> int:
+def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", required=True)
-    ap.add_argument("--duration", type=float, required=True)
-    ap.add_argument("--alignment")
-    ap.add_argument("--text")
-    ap.add_argument("--hook", default="")
+    ap.add_argument("--out", required=True); ap.add_argument("--duration", type=float, required=True)
+    ap.add_argument("--alignment"); ap.add_argument("--words-json"); ap.add_argument("--text")
+    ap.add_argument("--hook", default="")          # accepted for compatibility; the hook is spoken, not boxed
     ap.add_argument("--font", default="Inter")
     a = ap.parse_args()
-
     words = []
-    if a.alignment:
-        try:
-            words = words_from_alignment(a.alignment)
-        except (OSError, ValueError) as exc:
-            print(f"make_captions: bad alignment file ({exc}); estimating", file=sys.stderr)
+    for loader, arg in ((words_from_alignment, a.alignment), (words_from_json, a.words_json)):
+        if arg and not words:
+            try:
+                words = loader(arg)
+            except (OSError, ValueError, KeyError) as exc:
+                print(f"make_captions: cannot read {arg} ({exc}); falling back", file=sys.stderr)
     if not words and a.text:
         words = words_estimated(open(a.text, encoding="utf-8").read(), a.duration)
-
-    open(a.out, "w", encoding="utf-8").write(build(words, a.hook.strip(), a.duration, a.font))
+    open(a.out, "w", encoding="utf-8").write(build(words, a.duration, a.font))
     return 0
 
 
