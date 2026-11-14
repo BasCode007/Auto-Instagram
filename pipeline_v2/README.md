@@ -1,10 +1,17 @@
-# Pipeline v2 — the quality standard
+# Pipeline v2 — prototype and scene builder
+
+**Production now runs in the Docker stack:** `scripts/render_montage.sh` behind
+the renderer service renders at the standard in `docs/STANDARD.md` with ffmpeg
+alone, so n8n needs no chat connectors. This folder holds the prototype that set
+that standard (vidIQ voice + Picsart compositor, first two test reels) and the
+ComfyUI client the renderer uses for AI shots.
+
 
 The first renderer (ffmpeg + ImageMagick in `scripts/`) was judged too poor to
 post. This folder is the replacement production path, built from the connectors
 now attached to the account. It produced the first test reel on 2026-11-12.
 
-## How a reel is made
+## How the prototype reel was made
 
 | Step | Tool | Cost |
 |---|---|---|

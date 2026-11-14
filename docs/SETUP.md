@@ -74,6 +74,10 @@ picked at random per video. Without any, videos are voice-only or silent.
 
 ## Part E — Changing what it posts
 
+- The look and pacing: `CUT` (seconds per shot) and `MUSIC_LEVEL` in `.env`;
+  caption size, colour and position at the top of `scripts/make_captions.py`.
+- AI shots: `COMFYUI_URL`, `COMFY_SHOTS`, `COMFY_SECONDS` (see `comfyui/README.md`).
+
 - Voice, pillars, rules: `config/niche.md`.
 - Prompts, schedule, rotation: `n8n/build_workflow.py`, then
   `python3 n8n/build_workflow.py` and `FORCE_REIMPORT=1 docker compose up -d`.

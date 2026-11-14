@@ -24,6 +24,12 @@ docker compose up -d --build
 Nothing to configure in the n8n UI: the workflows import and activate
 themselves.
 
+### Optional: AI signature shots
+
+On the machine with the NVIDIA GPU: `bash comfyui/smoke_test.sh` once, then
+`docker compose --profile gpu up -d` and set `COMFYUI_URL=http://comfyui:8188`
+in `.env`. Each reel then opens with up to two generated shots.
+
 ## 3. Check it
 
 ```bash
