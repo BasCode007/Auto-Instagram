@@ -1,0 +1,103 @@
+# Auto-Instagram: n8n (scheduler + publisher) and a render worker.
+#
+#   1. cp .env.example .env    and fill it in
+#   2. docker compose up -d --build
+#
+# That is the whole install. The workflows are imported and activated
+# automatically, and everything is configured from .env — there is nothing to
+# edit in the n8n UI. In autopilot mode (AUTO_PUBLISH=true) every call is
+# outbound, so no public URL, tunnel or open port is needed.
+#
+# n8n is pinned to a tested version on purpose: n8n 2.x changed defaults that
+# broke earlier versions of this stack. Upgrade deliberately, then re-run
+# tests/e2e/run.sh.
+#
+# Only if you want Telegram approve/skip buttons (AUTO_PUBLISH=false) does n8n
+# need a public https URL; see the cloudflared profiles at the bottom.
+services:
+  n8n-init:
+    image: n8nio/n8n:2.47.3
+    entrypoint: ["/bin/sh", "/workflows/init.sh"]
+    env_file: [.env]
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./n8n:/workflows:ro
+    restart: "no"
+
+  n8n:
+    image: n8nio/n8n:2.47.3
+    container_name: auto-instagram-n8n
+    restart: unless-stopped
+    depends_on:
+      n8n-init:
+        condition: service_completed_successfully
+      renderer:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:5678:5678"     # editor reachable from this machine only
+    env_file: [.env]
+    environment:
+      # The workflows read their settings and keys from $env; n8n 2.x blocks
+      # that unless this is false. Acceptable on a single-owner instance.
+      - N8N_BLOCK_ENV_ACCESS_IN_NODE=false
+      - RENDERER_URL=http://renderer:8080
+      - N8N_PROXY_HOPS=1
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+  # ffmpeg + ImageMagick + fonts behind a small HTTP API. Not published to the
+  # host: only n8n can reach it, over the compose network.
+  renderer:
+    build:
+      context: .
+      dockerfile: renderer/Dockerfile
+    container_name: auto-instagram-renderer
+    restart: unless-stopped
+    env_file: [.env]
+    environment:
+      - MUSIC_DIR=/music
+      - COMFYUI_URL=${COMFYUI_URL:-}
+      - CUT=${CUT:-1.3}
+      - MUSIC_LEVEL=${MUSIC_LEVEL:-0.25}
+    volumes:
+      - ./assets/music:/music:ro
+
+  # --- optional: public URL for Telegram approval buttons -------------------
+  # Named tunnel (stable hostname). Point its public hostname at http://n8n:5678
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: auto-instagram-tunnel
+    restart: unless-stopped
+    profiles: ["tunnel"]
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN:-unset}
+    depends_on: [n8n]
+
+  # Quick tunnel: no account or domain; random URL in the logs; test use only.
+  cloudflared-quick:
+    image: cloudflare/cloudflared:latest
+    container_name: auto-instagram-tunnel-quick
+    restart: unless-stopped
+    profiles: ["quicktunnel"]
+    command: tunnel --no-autoupdate --url http://n8n:5678
+    depends_on: [n8n]
+
+  comfyui:
+    profiles: ["gpu"]
+    build: ./comfyui
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8188:8188"
+    volumes:
+      - ./comfyui/models:/opt/comfyui/models
+      - comfyui_output:/opt/comfyui/output
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  n8n_data:
+  comfyui_output:

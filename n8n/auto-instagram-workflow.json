@@ -1,0 +1,875 @@
+{
+  "id": "AutoIgMain000001",
+  "name": "Auto-Instagram — create and publish",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "30 7,18 * * *"
+            }
+          ]
+        }
+      },
+      "id": "schedule",
+      "name": "Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1320,
+        200
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "runoncenow",
+      "name": "Run once now",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1320,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a1",
+              "name": "graphBase",
+              "type": "string",
+              "value": "={{ ($env.IG_GRAPH_BASE_URL || ('https://' + ($env.IG_GRAPH_HOST || 'graph.instagram.com'))) + '/' + ($env.GRAPH_VERSION || 'v27.0') }}"
+            },
+            {
+              "id": "a2",
+              "name": "igUserId",
+              "type": "string",
+              "value": "={{ $env.IG_USER_ID || 'me' }}"
+            },
+            {
+              "id": "a3",
+              "name": "handle",
+              "type": "string",
+              "value": "={{ $env.IG_HANDLE || '' }}"
+            },
+            {
+              "id": "a4",
+              "name": "autoPublish",
+              "type": "boolean",
+              "value": "={{ String($env.AUTO_PUBLISH || 'false').toLowerCase() === 'true' }}"
+            },
+            {
+              "id": "a5",
+              "name": "llmBase",
+              "type": "string",
+              "value": "={{ $env.LLM_BASE_URL || 'https://api.openai.com/v1' }}"
+            },
+            {
+              "id": "a6",
+              "name": "llmModel",
+              "type": "string",
+              "value": "={{ $env.LLM_MODEL || 'gpt-4o-mini' }}"
+            },
+            {
+              "id": "a7",
+              "name": "rendererUrl",
+              "type": "string",
+              "value": "={{ $env.RENDERER_URL || 'http://renderer:8080' }}"
+            },
+            {
+              "id": "a8",
+              "name": "telegramBase",
+              "type": "string",
+              "value": "={{ $env.TELEGRAM_BASE_URL || 'https://api.telegram.org' }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "config",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1100,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Choose format, pillar and angle, and build the prompt. Remembers what was\n// already posted (workflow static data) so the model is told not to repeat it.\nconst sd = $getWorkflowStaticData('global');\nsd.counter = (sd.counter || 0) + 1;\nsd.history = sd.history || [];\nconst n = sd.counter;\n\nconst pillars = [\"wealth_mindset\",\"money_habits\",\"investing_basics\",\"entrepreneurship\",\"success_psychology\",\"daily_motivation\"];\nconst angles = [\n  \"a counter-intuitive truth most people get backwards\",\n  \"one small concrete action someone can take today\",\n  \"a common mistake and the calmer alternative\",\n  \"a short story about an ordinary person (no real names)\",\n  \"a simple number or rule of thumb, explained plainly\",\n  \"a reframe of a limiting belief about money\",\n  \"a question that makes the viewer reflect on their own habits\",\n];\nconst pillar = pillars[n % pillars.length];\nconst angle = angles[n % angles.length];              // 7 angles x 6 pillars: 42 posts before a pair repeats\nconst content_type = \"montage\";   // quote cards are kept in the renderer for manual use only (docs/STANDARD.md)\nconst avoid = sd.history.slice(-30).map(h => \"- \" + h.hook).join(\"\\n\") || \"(nothing yet)\";\n\nconst common = `You write for an Instagram account about finance, wealth and success with a positive, grounded voice: building wealth and keeping a calm, disciplined, grateful mindset go together. Never hype, never get-rich-quick. Speak to one person (\"you\"). Education and motivation only, NOT financial advice: no guaranteed returns, no \"risk-free\", no individual buy/sell calls, no income claims.\nPillar: ${pillar}. Angle for this post: ${angle}.\nDo NOT repeat or closely paraphrase any of these earlier posts:\n${avoid}\nReturn STRICT JSON only.`;\n\nconst narrated = `${common}\nWrite a faceless narrated Reel in fast montage style (see the account standard): 45-80 words, 20-35 seconds spoken. Open with a counter-intuitive command or claim that works as the first spoken line (no greeting, no \"today\", no \"in this video\"). Short declarative sentences; each sentence is one shot. End on the strongest line. NO call to action, no \"follow\", no \"save this\", no question at the end.\nKeys: \"hook\" (the first spoken line, <= 60 characters), \"script\" (the full voiceover INCLUDING the hook, 45-80 words), \"caption\" (<= 400 characters, no hashtags, one extra insight), \"hashtags\" (3 to 5 lowercase tags without #), \"broll_keywords\" (6 concrete cinematic stock-footage search terms: luxury, city at night, skyline sunrise, supercar, private jet, yacht, penthouse, watch close-up, lone figure golden hour; never \"office\", \"handshake\" or \"stock chart\"), \"hero_prompts\" (2 text-to-video prompts for the signature shots, each one sentence: subject, camera move, light, mood, \"cinematic, photoreal, 9:16\"; no people's faces, no text).`;\n\nconst quote = `${common}\nWrite an original quote card. Keys: \"quote\" (<= 110 characters, one or two sentences, no quotation marks, no attribution), \"hook\" (same as quote), \"caption\" (2-4 encouraging sentences then a gentle call to action, <= 600 characters, no hashtags), \"hashtags\" (3 to 5 lowercase tags without #).`;\n\nreturn [{ json: { content_type, pillar, angle, system_prompt: content_type === \"montage\" ? narrated : quote } }];\n"
+      },
+      "id": "pickformatandtopic",
+      "name": "Pick format and topic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -880,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.llmBase }}/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.LLM_API_KEY || $env.OPENAI_API_KEY }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: $('Config').first().json.llmModel, temperature: 0.9, response_format: { type: 'json_object' }, messages: [ { role: 'system', content: $json.system_prompt }, { role: 'user', content: 'Write the post now. JSON only.' } ] }) }}",
+        "options": {
+          "timeout": 90000
+        }
+      },
+      "id": "writescriptllm",
+      "name": "Write script (LLM)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -660,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse and validate the model's JSON, then build the final caption.\n// Mirrors auto_instagram/caption.py: 2,200 characters, at most 5 hashtags\n// (Instagram's limit since December 2025), de-duplicated case-insensitively.\nconst raw = $json.choices?.[0]?.message?.content ?? $json.message?.content ?? $json.content;\nlet d;\ntry { d = typeof raw === \"string\" ? JSON.parse(raw) : raw; }\ncatch (e) { throw new Error(\"Model did not return JSON: \" + String(raw).slice(0, 300)); }\nif (!d || typeof d !== \"object\") throw new Error(\"Model returned nothing usable\");\n\nconst pick = $('Pick format and topic').first().json;\nconst type = pick.content_type;\nconst MAX_LEN = 2200, MAX_TAGS = 5;\n\nconst need = type === \"montage\" ? [\"script\", \"caption\", \"broll_keywords\"] : [\"quote\", \"caption\"];\nfor (const k of need) if (!d[k] || (Array.isArray(d[k]) && !d[k].length)) throw new Error(`Model output is missing \"${k}\"`);\n\n// Compliance backstop: the prompt forbids these, this refuses to publish them.\nconst banned = /\\b(guaranteed?\\s+(returns?|profits?|income)|risk[- ]free|can'?t lose|get rich quick|double your money|financial advice:)/i;\nconst allText = [d.script, d.quote, d.caption, d.on_screen_hook].filter(Boolean).join(\" \");\nconst hit = allText.match(banned);\nif (hit) throw new Error(`Blocked by compliance check: \"${hit[0]}\"`);\n\nconst words = (d.script || \"\").trim().split(/\\s+/).filter(Boolean).length;\nif (type === \"montage\" && (words < 30 || words > 120)) throw new Error(`Script is ${words} words; expected 45-80`);\nif (type === \"quote\" && d.quote.length > 180) throw new Error(`Quote is ${d.quote.length} characters; too long for the card`);\n\nconst normTag = (t) => { const c = String(t || \"\").trim().replace(/^#+/, \"\").replace(/[^\\p{L}\\p{N}_]/gu, \"\"); return c ? \"#\" + c : null; };\nconst tags = []; const seen = new Set();\nfor (const t of (d.hashtags || [])) { const x = normTag(t); if (!x || seen.has(x.toLowerCase())) continue; seen.add(x.toLowerCase()); tags.push(x); if (tags.length >= MAX_TAGS) break; }\n\nlet body = String(d.caption).trim().replace(/#[\\p{L}\\p{N}_]+/gu, \"\").replace(/[ \\t]+\\n/g, \"\\n\").trim();\nif (pick.pillar === \"investing_basics\") body += \"\\n\\nEducational only, not financial advice.\";\nlet caption = [body, tags.join(\" \")].filter(Boolean).join(\"\\n\\n\");\nif (caption.length > MAX_LEN) caption = caption.slice(0, MAX_LEN - 1) + \"…\";\n\nlet onScreen = String(d.on_screen_hook || \"\").trim();\nif (onScreen.length > 44) onScreen = onScreen.slice(0, 43).trimEnd() + \"…\";\n\nreturn [{ json: {\n  content_type: type, pillar: pick.pillar, caption,\n  hook: String(d.hook || d.quote || d.on_screen_hook || \"\").trim(),\n  render_request: type === \"montage\"\n    ? { type, script: String(d.script).trim(), keywords: d.broll_keywords, hero_prompts: d.hero_prompts || [], pillar: pick.pillar }\n    : { type, quote: String(d.quote).trim(), pillar: pick.pillar },\n} }];\n"
+      },
+      "id": "parseandbuildcaption",
+      "name": "Parse and build caption",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.rendererUrl }}/render",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify(Object.assign({ handle: $('Config').first().json.handle }, $json.render_request)) }}",
+        "options": {
+          "timeout": 900000
+        }
+      },
+      "id": "rendervideo",
+      "name": "Render video",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -220,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Combine the rendered video with the caption for the publish steps.\nconst p = $('Parse and build caption').first().json;\nif (!$json.video_url) throw new Error(\"Renderer returned no video_url: \" + JSON.stringify($json).slice(0, 300));\nreturn [{ json: { video_url: $json.video_url, duration: $json.duration, caption: p.caption,\n                  content_type: p.content_type, pillar: p.pillar, hook: p.hook } }];\n"
+      },
+      "id": "preparepost",
+      "name": "Prepare post",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $('Config').first().json.autoPublish }}",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "autopilot",
+      "name": "Autopilot?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.telegramBase }}/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $env.TELEGRAM_CHAT_ID, text: 'Review this ' + $json.content_type + ' post (' + $json.pillar + '):\\n\\n' + $json.caption + '\\n\\nVideo: ' + $json.video_url, disable_web_page_preview: false, reply_markup: { inline_keyboard: [[ { text: 'Approve', url: $execution.resumeUrl + '?decision=approve' }, { text: 'Skip', url: $execution.resumeUrl + '?decision=skip' } ]] } }) }}",
+        "options": {
+          "timeout": 20000
+        }
+      },
+      "id": "askforapproval",
+      "name": "Ask for approval",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        480
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "resume": "webhook",
+        "httpMethod": "GET",
+        "responseMode": "onReceived",
+        "limitWaitTime": true,
+        "limitType": "afterTimeInterval",
+        "resumeAmount": 12,
+        "resumeUnit": "hours",
+        "options": {
+          "responseData": "Recorded. You can close this tab."
+        }
+      },
+      "id": "waitfordecision",
+      "name": "Wait for decision",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        480
+      ],
+      "webhookId": "autoig-approval"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.query?.decision }}",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              },
+              "rightValue": "approve"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "approved",
+      "name": "Approved?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        880,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.telegramBase }}/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $env.TELEGRAM_CHAT_ID, text: 'Skipped (no approval): ' + $('Prepare post').first().json.hook, disable_web_page_preview: false }) }}",
+        "options": {
+          "timeout": 20000
+        }
+      },
+      "id": "notifyskipped",
+      "name": "Notify skipped",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        620
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.graphBase }}/{{ $('Config').first().json.igUserId }}/media",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.IG_ACCESS_TOKEN }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "media_type",
+              "value": "REELS"
+            },
+            {
+              "name": "video_url",
+              "value": "={{ $('Prepare post').first().json.video_url }}"
+            },
+            {
+              "name": "caption",
+              "value": "={{ $('Prepare post').first().json.caption }}"
+            },
+            {
+              "name": "thumb_offset",
+              "value": "1500"
+            },
+            {
+              "name": "share_to_feed",
+              "value": "true"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "createmediacontainer",
+      "name": "Create media container",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "amount": 20,
+        "unit": "seconds"
+      },
+      "id": "waitforprocessing",
+      "name": "Wait for processing",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1320,
+        300
+      ],
+      "webhookId": "autoig-poll"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('Config').first().json.graphBase }}/{{ $('Create media container').first().json.id }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.IG_ACCESS_TOKEN }}"
+            }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "status_code,status"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "checkcontainerstatus",
+      "name": "Check container status",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1540,
+        300
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.status_code }}",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              },
+              "rightValue": "FINISHED"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "finished",
+      "name": "Finished?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1760,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ ['ERROR','EXPIRED'].includes($json.status_code) || $runIndex >= 20 }}",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "failedortimedout",
+      "name": "Failed or timed out?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1980,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "errorMessage": "=Instagram did not accept the video (status: {{ $json.status_code }} {{ $json.status }}). Nothing was published."
+      },
+      "id": "stopinstagramrejectedvideo",
+      "name": "Stop: Instagram rejected video",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        2200,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.graphBase }}/{{ $('Config').first().json.igUserId }}/media_publish",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.IG_ACCESS_TOKEN }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "creation_id",
+              "value": "={{ $('Create media container').first().json.id }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "publishreel",
+      "name": "Publish Reel",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1980,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('Config').first().json.graphBase }}/{{ $json.id }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $env.IG_ACCESS_TOKEN }}"
+            }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "permalink"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "getpermalink",
+      "name": "Get permalink",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2200,
+        200
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Remember what was posted so future prompts avoid repeating it.\nconst sd = $getWorkflowStaticData('global');\nconst post = $('Prepare post').first().json;\nsd.history = (sd.history || []).concat([{ hook: post.hook, pillar: post.pillar, type: post.content_type,\n  permalink: $json.permalink || \"\", at: new Date().toISOString() }]).slice(-120);\nreturn [{ json: { permalink: $json.permalink || \"\", media_id: $('Publish Reel').first().json.id, hook: post.hook } }];\n"
+      },
+      "id": "recordpost",
+      "name": "Record post",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2420,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.telegramBase }}/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $env.TELEGRAM_CHAT_ID, text: 'Posted: ' + $json.hook + '\\n' + $json.permalink, disable_web_page_preview: false }) }}",
+        "options": {
+          "timeout": 20000
+        }
+      },
+      "id": "notifyposted",
+      "name": "Notify posted",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2640,
+        200
+      ],
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "connections": {
+    "Schedule": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run once now": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "Pick format and topic",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pick format and topic": {
+      "main": [
+        [
+          {
+            "node": "Write script (LLM)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write script (LLM)": {
+      "main": [
+        [
+          {
+            "node": "Parse and build caption",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse and build caption": {
+      "main": [
+        [
+          {
+            "node": "Render video",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Render video": {
+      "main": [
+        [
+          {
+            "node": "Prepare post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare post": {
+      "main": [
+        [
+          {
+            "node": "Autopilot?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ask for approval": {
+      "main": [
+        [
+          {
+            "node": "Wait for decision",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait for decision": {
+      "main": [
+        [
+          {
+            "node": "Approved?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create media container": {
+      "main": [
+        [
+          {
+            "node": "Wait for processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait for processing": {
+      "main": [
+        [
+          {
+            "node": "Check container status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check container status": {
+      "main": [
+        [
+          {
+            "node": "Finished?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Publish Reel": {
+      "main": [
+        [
+          {
+            "node": "Get permalink",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get permalink": {
+      "main": [
+        [
+          {
+            "node": "Record post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Record post": {
+      "main": [
+        [
+          {
+            "node": "Notify posted",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Autopilot?": {
+      "main": [
+        [
+          {
+            "node": "Create media container",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Ask for approval",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Approved?": {
+      "main": [
+        [
+          {
+            "node": "Create media container",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notify skipped",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Finished?": {
+      "main": [
+        [
+          {
+            "node": "Publish Reel",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Failed or timed out?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Failed or timed out?": {
+      "main": [
+        [
+          {
+            "node": "Stop: Instagram rejected video",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait for processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "AutoIgErrors0001"
+  },
+  "tags": []
+}
