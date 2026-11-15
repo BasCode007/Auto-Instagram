@@ -4,7 +4,7 @@
 #
 # Checks the render tools, the required settings, and then calls every
 # external service with your real credentials: the script-writing model,
-# ElevenLabs (including that your voice id exists), Pexels, a real test upload
+# the voice service (or ElevenLabs when it is not set), ComfyUI, Pexels, a real test upload
 # to your video host, the Instagram API (token, publish permission, quota,
 # expiry) and Telegram. Read-only apart from one tiny test clip upload.
 #
@@ -79,8 +79,15 @@ require() { local name="$1" hint="${2:-}"; if [ -z "${!1:-}" ]; then bad "$name 
 
 require IG_ACCESS_TOKEN     "docs/SETUP.md Part A"
 if [ -n "$LLM_KEY" ]; then ok "LLM_API_KEY is set"; else bad "LLM_API_KEY is not set" "key for the script-writing model"; fi
-require ELEVENLABS_API_KEY  "elevenlabs.io -> profile -> API key"
-require ELEVENLABS_VOICE_ID "elevenlabs.io -> Voices -> copy the voice ID"
+if [ -n "${VOICE_BASE_URL:-}" ]; then
+  ok "voice: VoiceStudio at $VOICE_BASE_URL"
+  case "${VOICE_API_KEY:-}" in ""|change-me*) warn "VOICE_API_KEY unset or still the placeholder" "set any long random string; the voice container uses it as its admin key" ;; *) ok "VOICE_API_KEY is set" ;; esac
+else
+  warn "VOICE_BASE_URL is empty: voice comes from ElevenLabs" "set VOICE_BASE_URL=http://voice:3900 and run the gpu profile for the free local voice"
+  require ELEVENLABS_API_KEY  "elevenlabs.io -> profile -> API key"
+  require ELEVENLABS_VOICE_ID "elevenlabs.io -> Voices -> copy the voice ID"
+fi
+if [ -n "${COMFYUI_URL:-}" ]; then ok "AI shots: ComfyUI at $COMFYUI_URL"; else warn "COMFYUI_URL is empty: every shot will be stock footage" "set COMFYUI_URL=http://comfyui:8188 once the gpu profile is running"; fi
 require PEXELS_API_KEY      "pexels.com/api"
 case "$UPLOADER" in
   cloudinary) require CLOUDINARY_CLOUD_NAME "Cloudinary dashboard"; require CLOUDINARY_UPLOAD_PRESET "must be an UNSIGNED preset" ;;
@@ -125,6 +132,33 @@ case "$(status_of "$resp")" in
   *)   bad "unexpected status $(status_of "$resp")" "$(snip "$(body_of "$resp")")" ;;
 esac
 
+if [ -n "${VOICE_BASE_URL:-}" ]; then
+section "Voice (VoiceStudio)"
+VB="${VOICE_BASE_URL%/}"
+resp="$(http_get "$VB/health")"
+if [ "$(status_of "$resp")" = "200" ]; then ok "voice service is up"
+else bad "voice service unreachable at $VB ($(status_of "$resp"))" "docker compose --profile gpu up -d voice"; fi
+resp="$(http_get -H "Authorization: Bearer ${VOICE_API_KEY:-}" "$VB/models")"
+if [ "$(status_of "$resp")" = "200" ]; then
+  for want in "k2-fsa/OmniVoice" "whisper"; do
+    if printf '%s' "$(body_of "$resp")" | jq -e --arg w "$want" '(if type=="array" then . else (.models // .items // []) end)[]? | select((.repo_id|test($w; "i")) and .installed)' >/dev/null 2>&1; then ok "model installed: $want"
+    else bad "model not installed: $want" "VOICE_API_KEY=... bash voice/setup_models.sh"; fi
+  done
+else warn "could not list voice models ($(status_of "$resp"))" "$(snip "$(body_of "$resp")")"; fi
+fi
+if [ -n "${COMFYUI_URL:-}" ]; then
+section "AI shots (ComfyUI)"
+CB="${COMFYUI_URL%/}"
+resp="$(http_get "$CB/system_stats")"
+if [ "$(status_of "$resp")" = "200" ]; then
+  ok "ComfyUI $(printf '%s' "$(body_of "$resp")" | jq -r '.system.comfyui_version // "?"') on $(printf '%s' "$(body_of "$resp")" | jq -r '[.devices[]? | .name + " " + ((.vram_total/1073741824)|floor|tostring) + " GB"] | join(", ")')"
+  resp2="$(http_get "$CB/object_info/UNETLoader")"
+  if printf '%s' "$(body_of "$resp2")" | jq -e '.UNETLoader.input.required.unet_name[0][]? | select(test("wan2.2_ti2v_5B"))' >/dev/null 2>&1; then ok "Wan 2.2 5B model present"
+  else bad "Wan 2.2 model missing" "bash comfyui/download_models.sh ./comfyui/models (or RUN_ME.bat)"; fi
+else bad "ComfyUI unreachable at $CB ($(status_of "$resp"))" "docker compose --profile gpu up -d comfyui"; fi
+fi
+
+if [ -z "${VOICE_BASE_URL:-}" ]; then
 section "ElevenLabs"
 EL_BASE="${ELEVENLABS_BASE_URL:-https://api.elevenlabs.io}"
 resp="$(http_get -H "xi-api-key: $ELEVENLABS_API_KEY" "$EL_BASE/v1/voices")"
@@ -141,6 +175,7 @@ if [ "$(status_of "$resp")" = "200" ]; then
   if [ "$left" -lt 1500 ]; then bad "voice quota nearly exhausted ($left characters left)" "narrated Reels will fail until it resets or you upgrade"
   elif [ "$left" -lt 8000 ]; then warn "voice quota low: $left characters left (~$(( left / 700 )) Reels)"
   else ok "voice quota: $left characters left (~$(( left / 700 )) Reels)"; fi
+fi
 fi
 
 section "Pexels"
