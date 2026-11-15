@@ -71,6 +71,8 @@ class H(BaseHTTPRequestHandler):
         if p.startswith("/clips/"):
             return self._file(Path(ARGS.fixtures) / p[7:], "video/mp4")
         self._record(None)
+        if p.endswith("/refresh_access_token"):
+            return self._json(200, {"access_token": "REFRESHED", "token_type": "bearer", "expires_in": 5184000})
         if p == "/videos/search":
             clips = sorted(Path(ARGS.fixtures).glob("clip*.mp4"))
             base = f"http://127.0.0.1:{ARGS.port}/clips/"

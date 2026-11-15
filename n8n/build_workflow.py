@@ -80,6 +80,9 @@ const pillar = pillars[n % pillars.length];
 const angle = angles[n % angles.length];              // 7 angles x 6 pillars: 42 posts before a pair repeats
 const content_type = "montage";   // quote cards are kept in the renderer for manual use only (docs/STANDARD.md)
 const avoid = sd.history.slice(-30).map(h => "- " + h.hook).join("\n") || "(nothing yet)";
+// Instagram token: a refreshed one (stored by "Record post") wins over the .env value,
+// so a 60-day Instagram-login token keeps rolling without anyone editing .env.
+const ig_token = sd.ig_token || $env.IG_ACCESS_TOKEN || "";
 
 const common = `You write for an Instagram account about finance, wealth and success with a positive, grounded voice: building wealth and keeping a calm, disciplined, grateful mindset go together. Never hype, never get-rich-quick. Speak to one person ("you"). Education and motivation only, NOT financial advice: no guaranteed returns, no "risk-free", no individual buy/sell calls, no income claims.
 Pillar: ${pillar}. Angle for this post: ${angle}.
@@ -94,7 +97,7 @@ Keys: "hook" (the first spoken line, <= 60 characters), "script" (the full voice
 const quote = `${common}
 Write an original quote card. Keys: "quote" (<= 110 characters, one or two sentences, no quotation marks, no attribution), "hook" (same as quote), "caption" (2-4 encouraging sentences then a gentle call to action, <= 600 characters, no hashtags), "hashtags" (3 to 5 lowercase tags without #).`;
 
-return [{ json: { content_type, pillar, angle, system_prompt: content_type === "montage" ? narrated : quote } }];
+return [{ json: { content_type, pillar, angle, ig_token, system_prompt: content_type === "montage" ? narrated : quote } }];
 """
 
 PARSE_CODE = r"""// Parse and validate the model's JSON, then build the final caption.
@@ -151,12 +154,34 @@ return [{ json: { video_url: $json.video_url, duration: $json.duration, caption:
                   content_type: p.content_type, pillar: p.pillar, hook: p.hook } }];
 """
 
-RECORD_CODE = r"""// Remember what was posted so future prompts avoid repeating it.
+RECORD_CODE = r"""// Remember what was posted so future prompts avoid repeating it, and keep the
+// Instagram token alive: Instagram-login tokens expire after 60 days, so once
+// every 25 days (and only after a successful post) exchange it for a fresh one.
 const sd = $getWorkflowStaticData('global');
 const post = $('Prepare post').first().json;
 sd.history = (sd.history || []).concat([{ hook: post.hook, pillar: post.pillar, type: post.content_type,
   permalink: $json.permalink || "", at: new Date().toISOString() }]).slice(-120);
-return [{ json: { permalink: $json.permalink || "", media_id: $('Publish Reel').first().json.id, hook: post.hook } }];
+
+const pick = $('Pick format and topic').first().json;
+const cfg = $('Config').first().json;
+let token_refreshed = false, token_note = "";
+const host = String(cfg.graphBase || "");
+const due = !sd.ig_token_refreshed_at || (Date.now() - Date.parse(sd.ig_token_refreshed_at)) > 25 * 864e5;
+if (due && !/graph\.facebook\.com/.test(host) && pick.ig_token) {
+  try {
+    const base = host.replace(/\/v[\d.]+$/, "");
+    const r = await this.helpers.httpRequest({ method: "GET", url: base + "/refresh_access_token",
+      qs: { grant_type: "ig_refresh_token", access_token: pick.ig_token },
+      headers: { Authorization: "Bearer " + pick.ig_token }, json: true });
+    if (r && r.access_token) {
+      sd.ig_token = r.access_token; sd.ig_token_refreshed_at = new Date().toISOString();
+      sd.ig_token_expires_at = new Date(Date.now() + (Number(r.expires_in) || 5184000) * 1000).toISOString();
+      token_refreshed = true;
+    } else { token_note = "refresh returned no token"; }
+  } catch (e) { token_note = "refresh failed: " + String(e.message || e).slice(0, 200); }
+}
+return [{ json: { permalink: $json.permalink || "", media_id: $('Publish Reel').first().json.id, hook: post.hook,
+                  token_refreshed, token_note, token_expires_at: sd.ig_token_expires_at || "" } }];
 """
 
 
@@ -211,7 +236,7 @@ def build_main():
 
     # --- publish: container -> bounded poll -> publish
     auth = {"sendHeaders": True, "headerParameters": {"parameters": [
-        {"name": "Authorization", "value": "=Bearer {{ $env.IG_ACCESS_TOKEN }}"}]}}
+        {"name": "Authorization", "value": "=Bearer {{ $('Pick format and topic').first().json.ig_token }}"}]}}
     post = "$('Prepare post').first().json"
     f.node("Create media container", "httpRequest", 4.2, [1100, 300], {
         "method": "POST", "url": "={{ " + CFG + ".graphBase }}/{{ " + CFG + ".igUserId }}/media", **auth,
