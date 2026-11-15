@@ -90,6 +90,8 @@ services:
     volumes:
       - ./comfyui/models:/opt/comfyui/models
       - comfyui_output:/opt/comfyui/output
+      - ./comfyui:/opt/kit/comfyui:ro
+      - ./pipeline_v2:/opt/kit/pipeline_v2:ro
     deploy:
       resources:
         reservations:

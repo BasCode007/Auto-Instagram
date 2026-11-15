@@ -2,7 +2,7 @@
 FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
 ARG COMFYUI_REF=v0.45.0
 ARG MANAGER_REF=main
-RUN apt-get update && apt-get install -y --no-install-recommends git ffmpeg libgl1 libglib2.0-0 \
+RUN apt-get update && apt-get install -y --no-install-recommends git curl ffmpeg libgl1 libglib2.0-0 \
  && rm -rf /var/lib/apt/lists/*
 WORKDIR /opt
 RUN git clone --depth 1 --branch ${COMFYUI_REF} https://github.com/comfyanonymous/ComfyUI.git comfyui \

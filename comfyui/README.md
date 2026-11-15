@@ -23,9 +23,11 @@ files and offloading, so start with 5B.
 1. Install Docker Desktop with the WSL 2 backend and the current NVIDIA driver.
    Check the GPU is visible to containers:
    `docker run --rm --gpus all nvidia/cuda:12.8.0-base-ubuntu22.04 nvidia-smi`
-2. Clone this repo, then `bash comfyui/smoke_test.sh` (Git Bash or WSL). It
-   downloads the models once (~18 GB), builds the container, confirms ComfyUI
-   sees the card and renders a 2 s test clip to `comfyui/smoke.mp4`.
+2. Double-click `RUN_ME.bat` in the repo (or kit) folder. It needs only Docker
+   Desktop: it builds the container, downloads the models once (~18 GB),
+   confirms ComfyUI sees the card, renders a 2 s test clip to `smoke.mp4` and
+   writes `smoke_report.txt`. (`bash comfyui/smoke_test.sh` does the same on
+   Linux/WSL.)
 3. If the Claude desktop app is on that machine, share the repo folder under
    Settings, Claude Code, Remote Control, and the cloud session can run these
    steps and the first real generations itself.
