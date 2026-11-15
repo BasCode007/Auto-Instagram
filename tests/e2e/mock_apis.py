@@ -103,6 +103,13 @@ class H(BaseHTTPRequestHandler):
             system = body["messages"][0]["content"]
             out = NARRATED if "narrated Reel" in system else QUOTE
             return self._json(200, {"choices": [{"message": {"role": "assistant", "content": json.dumps(out)}}]})
+        if p.endswith("/v1/audio/speech"):
+            return self._file(Path(ARGS.fixtures) / "voice.mp3", "audio/mpeg")
+        if p.endswith("/v1/audio/transcriptions"):
+            text = "Wealth is a system you repeat. Start small this week and let time do the work."
+            toks = text.split(); dur = float(ARGS.voice_seconds); step = dur / len(toks)
+            return self._json(200, {"text": text, "words": [
+                {"word": t, "start": round(i * step, 3), "end": round((i + 1) * step, 3)} for i, t in enumerate(toks)]})
         if "/text-to-speech/" in p and p.endswith("/with-timestamps"):
             text = body["text"]; audio = (Path(ARGS.fixtures) / "voice.mp3").read_bytes()
             dur = float(ARGS.voice_seconds); step = dur / max(len(text), 1)

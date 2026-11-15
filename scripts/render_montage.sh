@@ -39,10 +39,26 @@ sub_filter="subtitles=captions.ass${FONTS_DIR:+:fontsdir=${FONTS_DIR}}"
 voice="$OUT_DIR/voice.mp3"; printf '%s' "$SCRIPT_TEXT" > "$OUT_DIR/script.txt"
 
 # 1) Voice -------------------------------------------------------------------
+# Order: VOICE_FILE (pre-made) > VoiceStudio (VOICE_BASE_URL) > ElevenLabs.
 cap_args=()
 if [ -n "${VOICE_FILE:-}" ]; then
   cp -f "$VOICE_FILE" "$voice"
   [ -n "${WORDS_JSON:-}" ] && [ -f "$WORDS_JSON" ] && cap_args=(--words-json "$WORDS_JSON")
+elif [ -n "${VOICE_BASE_URL:-}" ]; then
+  VB="${VOICE_BASE_URL%/}"; auth=(); [ -n "${VOICE_API_KEY:-}" ] && auth=(-H "Authorization: Bearer ${VOICE_API_KEY}")
+  jq -n --arg t "$SCRIPT_TEXT" --arg m "${VOICE_MODEL:-omnivoice}" --arg v "${VOICE_PROFILE:-default}" --arg i "${VOICE_INSTRUCT:-}" \
+    '{model:$m, input:$t, voice:$v, response_format:"mp3", speed:1.0} + (if $i != "" then {instruct:$i} else {} end)' > "$OUT_DIR/tts_req.json"
+  curl -sS -f --retry 2 --max-time 600 -X POST "$VB/v1/audio/speech" "${auth[@]}" -H "Content-Type: application/json" \
+    --data @"$OUT_DIR/tts_req.json" -o "$voice"
+  [ -s "$voice" ] || { echo "VoiceStudio returned no audio" >&2; exit 1; }
+  # word timings from its Whisper; the captions use the script's own words with these times
+  if curl -sS -f --max-time 600 -X POST "$VB/v1/audio/transcriptions" "${auth[@]}" \
+       -F "file=@$voice" -F "model=${VOICE_ASR_MODEL:-whisper-1}" -F "response_format=verbose_json" \
+       -F "timestamp_granularities[]=word" -F "language=en" -o "$OUT_DIR/asr.json"; then
+    cap_args=(--words-json "$OUT_DIR/asr.json")
+  else
+    echo "VoiceStudio transcription failed; captions will be estimated" >&2
+  fi
 else
   : "${ELEVENLABS_API_KEY:?set ELEVENLABS_API_KEY}"; : "${ELEVENLABS_VOICE_ID:?set ELEVENLABS_VOICE_ID}"
   jq -n --arg t "$SCRIPT_TEXT" --arg m "${ELEVENLABS_MODEL:-eleven_multilingual_v2}" \

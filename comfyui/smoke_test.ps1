@@ -38,5 +38,24 @@ docker compose --profile gpu exec -T comfyui python3 /opt/kit/pipeline_v2/comfy_
 if ($LASTEXITCODE -ne 0) { Write-Host "Generation failed. Logs:"; docker compose --profile gpu logs --tail 80 comfyui; exit 1 }
 docker compose --profile gpu cp comfyui:/opt/comfyui/output/smoke.mp4 .\smoke.mp4
 Write-Host ("Rendered in " + [int]((Get-Date) - $t0).TotalSeconds + " s -> " + (Resolve-Path .\smoke.mp4))
+
+Step 7 "Voice service (VoiceStudio): start, install models once (~3 GB), speak a test line"
+$envText = Get-Content .env -Raw
+if ($envText -match "VOICE_API_KEY=change-me") {
+  $key = -join ((48..57 + 97..122) | Get-Random -Count 40 | ForEach-Object { [char]$_ })
+  ($envText -replace "VOICE_API_KEY=change-me[^\r\n]*", "VOICE_API_KEY=$key") | Set-Content .env -NoNewline
+}
+$key = ((Get-Content .env) | Where-Object { $_ -match "^VOICE_API_KEY=" }) -replace "^VOICE_API_KEY=", ""
+docker compose --profile gpu up -d voice
+docker compose --profile gpu exec -T -e VOICE_BASE_URL=http://localhost:3900 voice bash /opt/kit/voice/setup_models.sh
+if ($LASTEXITCODE -ne 0) { Write-Host "Voice models did not install; see above. The video part is fine."; exit 1 }
+$hdr = @{ Authorization = "Bearer $key"; "Content-Type" = "application/json" }
+$body = @{ model = "omnivoice"; input = "The wealthy don't save money. They buy time."; voice = "default"; response_format = "mp3";
+           instruct = "Deep, calm, authoritative male narrator in his forties, neutral accent, unhurried documentary pace." } | ConvertTo-Json
+$t1 = Get-Date
+Invoke-WebRequest -Uri "http://localhost:3900/v1/audio/speech" -Method Post -Headers $hdr -Body $body -OutFile .\voice_test.mp3 -TimeoutSec 900
+Write-Host ("Spoke the test line in " + [int]((Get-Date) - $t1).TotalSeconds + " s -> " + (Resolve-Path .\voice_test.mp3))
+& curl.exe -sS -X POST "http://localhost:3900/v1/audio/transcriptions" -H "Authorization: Bearer $key" -F "file=@voice_test.mp3" -F "model=whisper-1" -F "response_format=verbose_json" -F "timestamp_granularities[]=word" -o voice_words.json
+Write-Host ("Word timings: " + (Get-Content voice_words.json -Raw).Substring(0, [Math]::Min(300, (Get-Content voice_words.json -Raw).Length)))
 Write-Host ""
-Write-Host "DONE. Drop smoke_report.txt and smoke.mp4 into the chat." -ForegroundColor Green
+Write-Host "DONE. Drop smoke_report.txt, smoke.mp4 and voice_test.mp3 into the chat." -ForegroundColor Green

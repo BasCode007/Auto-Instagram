@@ -8,7 +8,7 @@ The whole path, in order. Budget about an hour; step 2 is most of it.
       Account type and tools).
 - [ ] **Instagram token** — the one hard step. `SETUP.md` Part A.
 - [ ] **Script writer** — an OpenAI API key (or any OpenAI-compatible API).
-- [ ] **ElevenLabs** — API key and a voice ID.
+- [ ] **Voice** — none needed: the `voice` container (VoiceStudio) speaks and times the captions. (ElevenLabs only if you leave `VOICE_BASE_URL` empty.)
 - [ ] **Pexels** — free API key.
 - [ ] **Cloudinary** — free account; an **unsigned** upload preset.
 - [ ] **Telegram bot** — `/newbot` with @BotFather; your chat ID. This is how
@@ -24,11 +24,13 @@ docker compose up -d --build
 Nothing to configure in the n8n UI: the workflows import and activate
 themselves.
 
-### Optional: AI signature shots
+### GPU services: voice and AI signature shots
 
-On the machine with the NVIDIA GPU: `bash comfyui/smoke_test.sh` once, then
-`docker compose --profile gpu up -d` and set `COMFYUI_URL=http://comfyui:8188`
-in `.env`. Each reel then opens with up to two generated shots.
+On the machine with the NVIDIA GPU run `RUN_ME.bat` once (or
+`bash comfyui/smoke_test.sh`): it builds ComfyUI, downloads the video and voice
+models and proves both work. Then `docker compose --profile gpu up -d` with
+`COMFYUI_URL=http://comfyui:8188` and `VOICE_BASE_URL=http://voice:3900` in
+`.env`. Each reel is voiced locally and opens with up to two generated shots.
 
 ## 3. Check it
 

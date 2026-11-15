@@ -19,7 +19,7 @@ for i in 1 2 3; do ffmpeg -y -loglevel error -f lavfi -i "testsrc2=s=720x1280:r=
 
 start_mock() { [ -n "${MOCK:-}" ] && kill "$MOCK" 2>/dev/null; python3 tests/e2e/mock_apis.py --port 9911 --fixtures "$W/fx" --public "$W/pub" --graph-mode "$1" --voice-seconds "$VS" & MOCK=$!; sleep 1; }
 start_mock ok
-PORT=8080 UPLOADER=copy PUBLIC_DIR="$W/pub" PUBLIC_BASE_URL="$M/pub" ELEVENLABS_BASE_URL="$M" PEXELS_BASE_URL="$M" \
+PORT=8080 UPLOADER=copy PUBLIC_DIR="$W/pub" PUBLIC_BASE_URL="$M/pub" ELEVENLABS_BASE_URL="$M" PEXELS_BASE_URL="$M" VOICE_BASE_URL="$M" VOICE_API_KEY=k \
   ELEVENLABS_API_KEY=k ELEVENLABS_VOICE_ID=v PEXELS_API_KEY=k python3 renderer/server.py >"$W/renderer.log" 2>&1 & REND=$!
 
 cat > "$W/env" <<ENV

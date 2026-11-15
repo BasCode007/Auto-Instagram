@@ -52,10 +52,24 @@ def words_from_alignment(path):
 
 
 def words_from_json(path):
+    """[{text|word,start,end}], {"words":[...]}, or OpenAI verbose_json ({"words":[{"word",...}]} / segments)."""
     data = json.load(open(path, encoding="utf-8"))
     if isinstance(data, dict):
         data = data.get("words") or [w for s in data.get("segments", []) for w in s.get("words", [])]
-    return [(str(w["text"]).strip(), float(w["start"]), float(w["end"])) for w in data if str(w.get("text", "")).strip()]
+    out = []
+    for w in data:
+        t = str(w.get("text", w.get("word", ""))).strip()
+        if t:
+            out.append((t, float(w["start"]), float(w["end"])))
+    return out
+
+
+def retext(words, script):
+    """Keep the transcriber's timings but the script's spelling/punctuation when the word counts match."""
+    tokens = script.split()
+    if words and len(tokens) == len(words):
+        return [(tok, s, e) for tok, (_t, s, e) in zip(tokens, words)]
+    return words
 
 
 def words_estimated(text, duration):
@@ -146,8 +160,11 @@ def main():
                 words = loader(arg)
             except (OSError, ValueError, KeyError) as exc:
                 print(f"make_captions: cannot read {arg} ({exc}); falling back", file=sys.stderr)
-    if not words and a.text:
-        words = words_estimated(open(a.text, encoding="utf-8").read(), a.duration)
+    script = open(a.text, encoding="utf-8").read() if a.text else ""
+    if words and script:
+        words = retext(words, script)
+    if not words and script:
+        words = words_estimated(script, a.duration)
     open(a.out, "w", encoding="utf-8").write(build(words, a.duration, a.font))
     return 0
 

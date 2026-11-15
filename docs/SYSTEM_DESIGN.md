@@ -26,7 +26,9 @@ Two containers:
 | Narrated montage (every scheduled post) | Voice with word timings → **a new shot every 1.3 s**: AI signature shots from ComfyUI when the `gpu` profile is up, then HD portrait stock → cinematic grade, push-in, grain, vignette → **1–2 word centred captions** revealed on the spoken word, gold highlight → music at about -12 dB. `scripts/render_montage.sh`; the bar it is held to is `docs/STANDARD.md`. |
 | Quote card (manual) | Kept in the renderer for one-off use; not scheduled. |
 
-Optional third container, **comfyui** (`docker compose --profile gpu`): Wan 2.2
+Two more containers under `docker compose --profile gpu`: **voice** (VoiceStudio:
+OmniVoice speech plus Whisper word timings, OpenAI-compatible API on :3900) and
+**comfyui** (`docker compose --profile gpu`): Wan 2.2
 text-to-video on the owner's NVIDIA GPU, reached by the renderer at
 `COMFYUI_URL`. Without it, every shot is stock footage.
 
@@ -39,7 +41,7 @@ published Reels limits (≤ 1920 px wide, 23–60 fps, 3 s–15 min, ≤ 300 MB)
 |---|---|
 | n8n + renderer, self-hosted | free, or ~$6–9 for a small VPS |
 | Script writing | ~$1–4 |
-| ElevenLabs | from ~$8; check your quota against your posting rate (a local voice can replace it via `VOICE_FILE`) |
+| Voice | free: VoiceStudio (OmniVoice + Whisper) on the same GPU; ElevenLabs only if `VOICE_BASE_URL` is unset |
 | ComfyUI | free on your own GPU (RTX 5080 class); the models are a one-time 18 GB download |
 | Pexels, Cloudinary free tier, Telegram | free |
 
