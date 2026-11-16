@@ -19,7 +19,11 @@ for i in 1 2 3; do ffmpeg -y -loglevel error -f lavfi -i "testsrc2=s=720x1280:r=
 
 start_mock() { [ -n "${MOCK:-}" ] && kill "$MOCK" 2>/dev/null; python3 tests/e2e/mock_apis.py --port 9911 --fixtures "$W/fx" --public "$W/pub" --graph-mode "$1" --voice-seconds "$VS" & MOCK=$!; sleep 1; }
 start_mock ok
-PORT=8080 UPLOADER=copy PUBLIC_DIR="$W/pub" PUBLIC_BASE_URL="$M/pub" ELEVENLABS_BASE_URL="$M" PEXELS_BASE_URL="$M" VOICE_BASE_URL="$M" VOICE_API_KEY=k \
+mkdir -p "$W/content" "$W/state"
+cat > "$W/content/queue.json" <<'Q'
+[{"id":"e2e-1","pillar":"money_habits","hook":"Rich people are boring with money.","script":"Rich people are boring with money. That is the whole trick. The same transfer on the same day every month for decades. Boring is what compounding looks like from the inside. Pick the boring plan and automate it.","caption":"The plan that works is the one you can repeat on a bad day.","hashtags":["moneyhabits","compounding"],"broll_keywords":["city skyline sunrise","coffee desk morning"],"hero_prompts":["slow dolly past a supercar, cinematic, 9:16"]}]
+Q
+PORT=8080 UPLOADER=copy PUBLIC_DIR="$W/pub" PUBLIC_BASE_URL="$M/pub" ELEVENLABS_BASE_URL="$M" PEXELS_BASE_URL="$M" VOICE_BASE_URL="$M" VOICE_API_KEY=k CONTENT_DIR="$W/content" STATE_DIR="$W/state" \
   ELEVENLABS_API_KEY=k ELEVENLABS_VOICE_ID=v PEXELS_API_KEY=k python3 renderer/server.py >"$W/renderer.log" 2>&1 & REND=$!
 
 cat > "$W/env" <<ENV
@@ -52,12 +56,15 @@ cap="$(echo "$log" | jq -r '[.[]|select(.body.caption?)][0].body.caption')"
 [ "$(printf '%s' "$cap" | grep -o '#[A-Za-z0-9_]*' | wc -l)" -le 5 ] || fail "more than 5 hashtags"
 [ "$(echo "$log" | jq '[.[]|select(.auth=="" and (.path|test("^/bot")|not))]|length')" = "0" ] || fail "an API call went out without auth"
 [ "$(echo "$log" | jq '[.[]|select(.path|test("refresh_access_token"))]|length')" = "1" ] || fail "expected exactly one token refresh after the post"
-echo "   ok: published once, <=5 hashtags, auth on every call, token refreshed once"
+[ "$(echo "$log" | jq '[.[]|select(.path|test("chat/completions"))]|length')" = "0" ] || fail "the queued script should have been used instead of the model"
+[ "$(printf '%s' "$cap" | grep -c "repeat on a bad day")" = "1" ] || fail "caption did not come from the queued item"
+echo "   ok: published once (from the queue), <=5 hashtags, auth on every call, token refreshed once"
 
 echo "== Instagram rejects the video"
 start_mock error
 out="$(exec_wf)"; echo "$out" | grep -q "Instagram did not accept the video" || fail "rejection was not reported"
 [ "$(curl -s --noproxy '*' $M/_log | jq '[.[]|select(.path|test("media_publish"))]|length')" = "0" ] || fail "published a rejected video"
 echo "   token used on this run: $(curl -s --noproxy '*' $M/_log | jq -r '[.[]|select(.path|test("/media$"))][0].auth')  (REFRESHED = the stored token carried over)"
-echo "   ok: stopped cleanly, nothing published"
+[ "$(curl -s --noproxy '*' $M/_log | jq '[.[]|select(.path|test("chat/completions"))]|length')" = "1" ] || fail "queue exhausted: the model should have written this one"
+echo "   ok: stopped cleanly, nothing published; model wrote the script once the queue was empty"
 echo "ALL E2E CHECKS PASSED"

@@ -113,6 +113,56 @@
     },
     {
       "parameters": {
+        "method": "GET",
+        "url": "={{ $('Config').first().json.rendererUrl }}/queue/pop",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "queuedscript",
+      "name": "Queued script?",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -770,
+        300
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.queued === true }}",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "usequeued",
+      "name": "Use queued?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -720,
+        300
+      ]
+    },
+    {
+      "parameters": {
         "method": "POST",
         "url": "={{ $('Config').first().json.llmBase }}/chat/completions",
         "sendHeaders": true,
@@ -126,7 +176,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({ model: $('Config').first().json.llmModel, temperature: 0.9, response_format: { type: 'json_object' }, messages: [ { role: 'system', content: $json.system_prompt }, { role: 'user', content: 'Write the post now. JSON only.' } ] }) }}",
+        "jsonBody": "={{ JSON.stringify({ model: $('Config').first().json.llmModel, temperature: 0.9, response_format: { type: 'json_object' }, messages: [ { role: 'system', content: $('Pick format and topic').first().json.system_prompt }, { role: 'user', content: 'Write the post now. JSON only.' } ] }) }}",
         "options": {
           "timeout": 90000
         }
@@ -145,7 +195,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Parse and validate the model's JSON, then build the final caption.\n// Mirrors auto_instagram/caption.py: 2,200 characters, at most 5 hashtags\n// (Instagram's limit since December 2025), de-duplicated case-insensitively.\nconst raw = $json.choices?.[0]?.message?.content ?? $json.message?.content ?? $json.content;\nlet d;\ntry { d = typeof raw === \"string\" ? JSON.parse(raw) : raw; }\ncatch (e) { throw new Error(\"Model did not return JSON: \" + String(raw).slice(0, 300)); }\nif (!d || typeof d !== \"object\") throw new Error(\"Model returned nothing usable\");\n\nconst pick = $('Pick format and topic').first().json;\nconst type = pick.content_type;\nconst MAX_LEN = 2200, MAX_TAGS = 5;\n\nconst need = type === \"montage\" ? [\"script\", \"caption\", \"broll_keywords\"] : [\"quote\", \"caption\"];\nfor (const k of need) if (!d[k] || (Array.isArray(d[k]) && !d[k].length)) throw new Error(`Model output is missing \"${k}\"`);\n\n// Compliance backstop: the prompt forbids these, this refuses to publish them.\nconst banned = /\\b(guaranteed?\\s+(returns?|profits?|income)|risk[- ]free|can'?t lose|get rich quick|double your money|financial advice:)/i;\nconst allText = [d.script, d.quote, d.caption, d.on_screen_hook].filter(Boolean).join(\" \");\nconst hit = allText.match(banned);\nif (hit) throw new Error(`Blocked by compliance check: \"${hit[0]}\"`);\n\nconst words = (d.script || \"\").trim().split(/\\s+/).filter(Boolean).length;\nif (type === \"montage\" && (words < 30 || words > 120)) throw new Error(`Script is ${words} words; expected 45-80`);\nif (type === \"quote\" && d.quote.length > 180) throw new Error(`Quote is ${d.quote.length} characters; too long for the card`);\n\nconst normTag = (t) => { const c = String(t || \"\").trim().replace(/^#+/, \"\").replace(/[^\\p{L}\\p{N}_]/gu, \"\"); return c ? \"#\" + c : null; };\nconst tags = []; const seen = new Set();\nfor (const t of (d.hashtags || [])) { const x = normTag(t); if (!x || seen.has(x.toLowerCase())) continue; seen.add(x.toLowerCase()); tags.push(x); if (tags.length >= MAX_TAGS) break; }\n\nlet body = String(d.caption).trim().replace(/#[\\p{L}\\p{N}_]+/gu, \"\").replace(/[ \\t]+\\n/g, \"\\n\").trim();\nif (pick.pillar === \"investing_basics\") body += \"\\n\\nEducational only, not financial advice.\";\nlet caption = [body, tags.join(\" \")].filter(Boolean).join(\"\\n\\n\");\nif (caption.length > MAX_LEN) caption = caption.slice(0, MAX_LEN - 1) + \"…\";\n\nlet onScreen = String(d.on_screen_hook || \"\").trim();\nif (onScreen.length > 44) onScreen = onScreen.slice(0, 43).trimEnd() + \"…\";\n\nreturn [{ json: {\n  content_type: type, pillar: pick.pillar, caption,\n  hook: String(d.hook || d.quote || d.on_screen_hook || \"\").trim(),\n  render_request: type === \"montage\"\n    ? { type, script: String(d.script).trim(), keywords: d.broll_keywords, hero_prompts: d.hero_prompts || [], pillar: pick.pillar }\n    : { type, quote: String(d.quote).trim(), pillar: pick.pillar },\n} }];\n"
+        "jsCode": "// Parse and validate the model's JSON, then build the final caption.\n// Mirrors auto_instagram/caption.py: 2,200 characters, at most 5 hashtags\n// (Instagram's limit since December 2025), de-duplicated case-insensitively.\nconst raw = $json.choices?.[0]?.message?.content ?? $json.message?.content ?? $json.content;\nlet d;\ntry { d = typeof raw === \"string\" ? JSON.parse(raw) : raw; }\ncatch (e) { throw new Error(\"Model did not return JSON: \" + String(raw).slice(0, 300)); }\nif (!d || typeof d !== \"object\") throw new Error(\"Model returned nothing usable\");\n\nconst pick = $('Pick format and topic').first().json;\nconst type = pick.content_type;\nif (d.pillar) pick.pillar = String(d.pillar);          // a queued item names its own pillar\nconst MAX_LEN = 2200, MAX_TAGS = 5;\n\nconst need = type === \"montage\" ? [\"script\", \"caption\", \"broll_keywords\"] : [\"quote\", \"caption\"];\nfor (const k of need) if (!d[k] || (Array.isArray(d[k]) && !d[k].length)) throw new Error(`Model output is missing \"${k}\"`);\n\n// Compliance backstop: the prompt forbids these, this refuses to publish them.\nconst banned = /\\b(guaranteed?\\s+(returns?|profits?|income)|risk[- ]free|can'?t lose|get rich quick|double your money|financial advice:)/i;\nconst allText = [d.script, d.quote, d.caption, d.on_screen_hook].filter(Boolean).join(\" \");\nconst hit = allText.match(banned);\nif (hit) throw new Error(`Blocked by compliance check: \"${hit[0]}\"`);\n\nconst words = (d.script || \"\").trim().split(/\\s+/).filter(Boolean).length;\nif (type === \"montage\" && (words < 30 || words > 120)) throw new Error(`Script is ${words} words; expected 45-80`);\nif (type === \"quote\" && d.quote.length > 180) throw new Error(`Quote is ${d.quote.length} characters; too long for the card`);\n\nconst normTag = (t) => { const c = String(t || \"\").trim().replace(/^#+/, \"\").replace(/[^\\p{L}\\p{N}_]/gu, \"\"); return c ? \"#\" + c : null; };\nconst tags = []; const seen = new Set();\nfor (const t of (d.hashtags || [])) { const x = normTag(t); if (!x || seen.has(x.toLowerCase())) continue; seen.add(x.toLowerCase()); tags.push(x); if (tags.length >= MAX_TAGS) break; }\n\nlet body = String(d.caption).trim().replace(/#[\\p{L}\\p{N}_]+/gu, \"\").replace(/[ \\t]+\\n/g, \"\\n\").trim();\nif (pick.pillar === \"investing_basics\") body += \"\\n\\nEducational only, not financial advice.\";\nlet caption = [body, tags.join(\" \")].filter(Boolean).join(\"\\n\\n\");\nif (caption.length > MAX_LEN) caption = caption.slice(0, MAX_LEN - 1) + \"…\";\n\nlet onScreen = String(d.on_screen_hook || \"\").trim();\nif (onScreen.length > 44) onScreen = onScreen.slice(0, 43).trimEnd() + \"…\";\n\nreturn [{ json: {\n  content_type: type, pillar: pick.pillar, caption,\n  hook: String(d.hook || d.quote || d.on_screen_hook || \"\").trim(),\n  render_request: type === \"montage\"\n    ? { type, script: String(d.script).trim(), keywords: d.broll_keywords, hero_prompts: d.hero_prompts || [], pillar: pick.pillar }\n    : { type, quote: String(d.quote).trim(), pillar: pick.pillar },\n} }];\n"
       },
       "id": "parseandbuildcaption",
       "name": "Parse and build caption",
@@ -653,7 +703,18 @@
       "main": [
         [
           {
-            "node": "Write script (LLM)",
+            "node": "Queued script?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Queued script?": {
+      "main": [
+        [
+          {
+            "node": "Use queued?",
             "type": "main",
             "index": 0
           }
@@ -786,6 +847,24 @@
         [
           {
             "node": "Notify posted",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Use queued?": {
+      "main": [
+        [
+          {
+            "node": "Parse and build caption",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Write script (LLM)",
             "type": "main",
             "index": 0
           }

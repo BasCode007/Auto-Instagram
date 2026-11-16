@@ -6,6 +6,9 @@ cannot install ffmpeg, so rendering lives in this sidecar instead. n8n calls:
 
     POST /render   {"type": "montage" | "quote", ...}  ->  {"video_url", "duration"}
     ("narrated" is accepted as an alias of "montage")
+    GET  /queue/pop  -> the next unposted item of content/queue.json, in the shape of
+                       an OpenAI chat completion so the workflow can parse it like a
+                       model reply ({"queued": false} when the queue is empty)
     GET  /healthz
 
 The service is only reachable on the compose network; it is never published
@@ -24,6 +27,38 @@ from pathlib import Path
 SCRIPTS = Path(os.environ.get("SCRIPTS_DIR", Path(__file__).resolve().parent.parent / "scripts"))
 TIMEOUT = int(os.environ.get("RENDER_TIMEOUT_SECONDS", "900"))
 MUSIC_DIR = os.environ.get("MUSIC_DIR", "")
+CONTENT_DIR = os.environ.get("CONTENT_DIR", "/content")
+STATE_DIR = os.environ.get("STATE_DIR", "/state")
+_QUEUE_LOCK = __import__("threading").Lock()
+
+
+def queue_pop() -> dict:
+    """Hand out the next item of content/queue.json that has not been used yet."""
+    qfile = Path(CONTENT_DIR) / "queue.json"
+    if not qfile.is_file():
+        return {"queued": False, "reason": "no queue file"}
+    with _QUEUE_LOCK:
+        try:
+            items = json.loads(qfile.read_text(encoding="utf-8"))
+        except ValueError as exc:
+            return {"queued": False, "reason": f"queue.json is not valid JSON: {exc}"}
+        state_file = Path(STATE_DIR) / "queue_state.json"
+        try:
+            used = set(json.loads(state_file.read_text()).get("used", [])) if state_file.is_file() else set()
+        except ValueError:
+            used = set()
+        for item in items:
+            if not isinstance(item, dict) or not item.get("id") or item["id"] in used:
+                continue
+            if not item.get("script"):
+                continue
+            used.add(item["id"])
+            state_file.parent.mkdir(parents=True, exist_ok=True)
+            state_file.write_text(json.dumps({"used": sorted(used)}))
+            content = {k: v for k, v in item.items() if k not in ("id", "music")}
+            return {"queued": True, "id": item["id"],
+                    "choices": [{"message": {"role": "assistant", "content": json.dumps(content)}}]}
+    return {"queued": False, "reason": "queue exhausted"}
 
 
 def pick_music() -> str:
@@ -97,6 +132,8 @@ class Handler(BaseHTTPRequestHandler):
         if self.path == "/healthz":
             self._send(200, {"status": "ok", "ffmpeg": bool(shutil.which("ffmpeg")),
                              "imagemagick": bool(shutil.which("convert"))})
+        elif self.path.startswith("/queue/pop"):
+            self._send(200, queue_pop())
         else:
             self._send(404, {"error": "not found"})
 

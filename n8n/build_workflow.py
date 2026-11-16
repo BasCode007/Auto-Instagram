@@ -111,6 +111,7 @@ if (!d || typeof d !== "object") throw new Error("Model returned nothing usable"
 
 const pick = $('Pick format and topic').first().json;
 const type = pick.content_type;
+if (d.pillar) pick.pillar = String(d.pillar);          // a queued item names its own pillar
 const MAX_LEN = 2200, MAX_TAGS = 5;
 
 const need = type === "montage" ? ["script", "caption", "broll_keywords"] : ["quote", "caption"];
@@ -203,13 +204,18 @@ def build_main():
         {"id": "a8", "name": "telegramBase", "type": "string", "value": "={{ $env.TELEGRAM_BASE_URL || 'https://api.telegram.org' }}"},
     ]}, "options": {}})
     f.node("Pick format and topic", "code", 2, [-880, 300], {"jsCode": PICK_CODE})
+    # Planned content first (content/queue.json via the renderer), the model after that.
+    f.node("Queued script?", "httpRequest", 4.2, [-770, 300], {
+        "method": "GET", "url": "={{ " + CFG + ".rendererUrl }}/queue/pop", "options": {"timeout": 15000}},
+        onError="continueRegularOutput")
+    f.node("Use queued?", "if", 2.2, [-720, 300], if_params("={{ $json.queued === true }}", "boolean", "true"))
     f.node("Write script (LLM)", "httpRequest", 4.2, [-660, 300], {
         "method": "POST", "url": "={{ " + CFG + ".llmBase }}/chat/completions",
         "sendHeaders": True, "headerParameters": {"parameters": [
             {"name": "Authorization", "value": "=Bearer {{ $env.LLM_API_KEY || $env.OPENAI_API_KEY }}"}]},
         "sendBody": True, "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify({ model: " + CFG + ".llmModel, temperature: 0.9, response_format: { type: 'json_object' }, "
-                    "messages: [ { role: 'system', content: $json.system_prompt }, "
+                    "messages: [ { role: 'system', content: $('Pick format and topic').first().json.system_prompt }, "
                     "{ role: 'user', content: 'Write the post now. JSON only.' } ] }) }}",
         "options": {"timeout": 90000}}, **RETRY)
     f.node("Parse and build caption", "code", 2, [-440, 300], {"jsCode": PARSE_CODE})
@@ -271,7 +277,8 @@ def build_main():
         "'Posted: ' + $json.hook + '\\n' + $json.permalink"), onError="continueRegularOutput")
 
     f.link("Schedule", "Config"); f.link("Run once now", "Config")
-    for a, b in [("Config", "Pick format and topic"), ("Pick format and topic", "Write script (LLM)"),
+    for a, b in [("Config", "Pick format and topic"), ("Pick format and topic", "Queued script?"),
+                 ("Queued script?", "Use queued?"),
                  ("Write script (LLM)", "Parse and build caption"), ("Parse and build caption", "Render video"),
                  ("Render video", "Prepare post"), ("Prepare post", "Autopilot?"),
                  ("Ask for approval", "Wait for decision"), ("Wait for decision", "Approved?"),
@@ -279,6 +286,7 @@ def build_main():
                  ("Check container status", "Finished?"), ("Publish Reel", "Get permalink"),
                  ("Get permalink", "Record post"), ("Record post", "Notify posted")]:
         f.link(a, b)
+    f.link("Use queued?", "Parse and build caption", 0); f.link("Use queued?", "Write script (LLM)", 1)
     f.link("Autopilot?", "Create media container", 0); f.link("Autopilot?", "Ask for approval", 1)
     f.link("Approved?", "Create media container", 0); f.link("Approved?", "Notify skipped", 1)
     f.link("Finished?", "Publish Reel", 0); f.link("Finished?", "Failed or timed out?", 1)
