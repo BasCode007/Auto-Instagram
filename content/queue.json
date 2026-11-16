@@ -1,0 +1,72 @@
+[
+  {
+    "id": "2026-11-w1-01",
+    "pillar": "wealth_mindset",
+    "hook": "Your salary is the most expensive thing you own.",
+    "script": "Your salary is the most expensive thing you own. It costs you forty hours a week, every week, for forty years. And it stops the moment you do. The wealthy keep the salary, but they stop living on it. Every pay cycle, a slice goes into things that pay them back: a fund, a skill, a small business. The pay cheque buys the assets. The assets buy the life.",
+    "caption": "A salary is a great tool and a terrible destination. Use it to buy the things that pay you back.",
+    "hashtags": ["wealthmindset", "moneyhabits", "financialfreedom", "investing", "mindset"],
+    "hero_prompts": [
+      "slow push-in on an empty glass corner office at dawn, city skyline through the window, volumetric light, cinematic, photoreal, 9:16",
+      "a hand placing folded banknotes into a dark leather briefcase in slow motion, moody rim light, cinematic, photoreal, 9:16"
+    ],
+    "broll_keywords": ["city skyline sunrise aerial", "luxury watch close up", "private jet tarmac night", "penthouse window city night", "supercar driving night tunnel", "man walking golden hour silhouette"],
+    "music": "cinematic ambient, hopeful, sub pulse"
+  },
+  {
+    "id": "2026-11-w1-02",
+    "pillar": "money_habits",
+    "hook": "Rich people are boring with money. That's the whole trick.",
+    "script": "Rich people are boring with money. That's the whole trick. No hot tips. No jumping in and out. The same transfer, on the same day, every single month, for decades. Boring is what compounding looks like from the inside. The exciting stuff is how people stay broke with a good story. Pick the boring plan. Automate it. Then go be exciting somewhere else.",
+    "caption": "The plan that works is the one you can repeat on a bad day. Automate the transfer, then forget it exists.",
+    "hashtags": ["moneyhabits", "compounding", "wealthbuilding", "discipline", "financialfreedom"],
+    "hero_prompts": [
+      "ultra slow motion macro of a mechanical watch movement, gears turning, gold and black, cinematic, photoreal, 9:16",
+      "calm ocean at golden hour seen from a yacht deck, slow dolly forward, warm haze, cinematic, photoreal, 9:16"
+    ],
+    "broll_keywords": ["coins stacking close up", "calendar pages flipping", "quiet luxury living room", "yacht deck sunset", "city timelapse night", "coffee on marble desk"],
+    "music": "lo-fi ambient, patient, warm"
+  },
+  {
+    "id": "2026-11-w1-03",
+    "pillar": "success_psychology",
+    "hook": "Nobody is coming to make you rich. Good.",
+    "script": "Nobody is coming to make you rich. Good. No boss, no market, no lucky break owes you anything. That sounds harsh until you notice what it hands you: the whole thing is yours. Your hours. Your skills. Your decisions. The people who build wealth stopped waiting for permission a long time ago. They treat every day like an owner, not an employee of their own life.",
+    "caption": "Ownership is a mindset before it is an asset. Act like the owner of your hours and the balance sheet follows.",
+    "hashtags": ["successmindset", "ownership", "wealthmindset", "selfmade", "discipline"],
+    "hero_prompts": [
+      "lone figure in a long coat walking across an empty rooftop at sunrise, seen from behind, wide shot, cinematic, photoreal, 9:16",
+      "slow dolly along a dark showroom past a matte black supercar, volumetric light, cinematic, photoreal, 9:16"
+    ],
+    "broll_keywords": ["man climbing stairs silhouette", "sunrise over city aerial", "boxer training dark gym", "private jet boarding stairs", "mountain road drone sunrise", "rain city street night"],
+    "music": "dark cinematic pulse, building"
+  },
+  {
+    "id": "2026-11-w1-04",
+    "pillar": "daily_motivation",
+    "hook": "You don't need more motivation. You need fewer decisions.",
+    "script": "You don't need more motivation. You need fewer decisions. Motivation is a mood. Moods leave. The wealthy remove the choice entirely: the savings move before they can be spent, the work starts at the same hour, the phone stays in another room. Discipline isn't willpower. It's design. Build a day where the right thing is the easy thing, and the results stop depending on how you feel.",
+    "caption": "Design beats willpower. Remove the decision and the habit runs itself.",
+    "hashtags": ["discipline", "dailymotivation", "moneyhabits", "successhabits", "mindset"],
+    "hero_prompts": [
+      "minimalist bedroom at dawn, sunlight sweeping across a made bed, slow pan, cinematic, photoreal, 9:16",
+      "a chess piece being placed on a marble board, macro, dramatic side light, cinematic, photoreal, 9:16"
+    ],
+    "broll_keywords": ["alarm clock morning light", "running at sunrise city", "notebook planning desk", "gym dark weights", "espresso pour slow motion", "city dawn aerial"],
+    "music": "calm piano, steady pulse"
+  },
+  {
+    "id": "2026-11-w1-05",
+    "pillar": "wealth_mindset",
+    "hook": "Stop asking what it costs. Ask what it pays.",
+    "script": "Stop asking what it costs. Ask what it pays. A car payment costs. A course that doubles your rate pays. A night out costs. An hour building something you own pays. Most people price everything and value nothing. The wealthy run every dollar through one filter: does this come back with friends, or does it leave for good? Spend on what pays. Starve what only costs.",
+    "caption": "Price tags tell you what something costs. Only you can work out what it pays.",
+    "hashtags": ["wealthmindset", "assets", "moneymindset", "financialfreedom", "investinyourself"],
+    "hero_prompts": [
+      "banknotes fanning out on a dark marble table in slow motion, macro, cinematic rim light, photoreal, 9:16",
+      "aerial of a modern villa with an infinity pool at dusk, slow orbit, cinematic, photoreal, 9:16"
+    ],
+    "broll_keywords": ["luxury car showroom", "handing over car keys close up", "laptop working late city view", "infinity pool dusk", "cash counting close up", "skyline golden hour"],
+    "music": "cinematic ambient, confident"
+  }
+]

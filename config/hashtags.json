@@ -1,0 +1,39 @@
+{
+  "_comment": "Hashtag bank. Instagram allows at most 5 hashtags per post (since December 2025), so each post gets the 2 core tags plus the 3 for its pillar. Order matters: earlier tags win if the list is ever cut.",
+  "core": [
+    "#moneymindset",
+    "#financialfreedom"
+  ],
+  "pillars": {
+    "wealth_mindset": [
+      "#wealthmindset",
+      "#abundancemindset",
+      "#richhabits"
+    ],
+    "money_habits": [
+      "#moneyhabits",
+      "#personalfinance",
+      "#savingmoney"
+    ],
+    "investing_basics": [
+      "#investing",
+      "#compoundinterest",
+      "#financialeducation"
+    ],
+    "entrepreneurship": [
+      "#entrepreneurmindset",
+      "#sidehustle",
+      "#businessmindset"
+    ],
+    "success_psychology": [
+      "#successhabits",
+      "#growthmindset",
+      "#selfdiscipline"
+    ],
+    "daily_motivation": [
+      "#dailymotivation",
+      "#successquotes",
+      "#mindsetshift"
+    ]
+  }
+}
