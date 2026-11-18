@@ -14,6 +14,8 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `peanut-ammu-nation.mp4` | AMMU-NATION IS BACK IN GTA 6 | 29s | TheBurntPeanut, Twitch |
 | `xqc-mirror-shave.mp4` | YOU CAN SHAVE JASON IN GTA 6 | 27s | xQc, Twitch |
 | `xqc-collectible-card.mp4` | GTA 6 HAS COLLECTIBLE CARDS | 33s | xQc, Twitch |
+| `lacy-cops-know-outfit.mp4` | GTA 6 COPS REMEMBER YOUR OUTFIT | 20s | Lacy, Twitch (tip) |
+| `lacy-real-hotel.mp4` | HE'S BEEN TO THIS HOTEL IN REAL LIFE | 21s | Lacy, Twitch |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 

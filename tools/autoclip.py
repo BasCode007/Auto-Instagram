@@ -260,11 +260,16 @@ def cmd_scan(a) -> None:
     dur = float(info.get("duration") or 0)
     start = a.start if a.start is not None else max(0.0, dur - a.last * 60) if a.last else 0.0
     end = a.end if a.end is not None else dur
+    prev = json.loads((d / "source.json").read_text()) if (d / "source.json").exists() else {}
+    if a.new and prev.get("scanned_to"):
+        start = max(0.0, prev["scanned_to"] - 20)       # small overlap
+    if end - start < 60:
+        sys.exit(f"[{sid}] nothing new to scan yet ({end - start:.0f}s since last scan)")
     meta = {"source_id": sid, "url": info.get("webpage_url") or a.url,
             "title": info.get("title"), "channel": info.get("uploader") or info.get("channel"),
             "creator": a.creator or info.get("uploader_id") or info.get("uploader"),
             "platform": info.get("extractor_key"), "duration_at_scan": dur,
-            "file": a.file}
+            "file": a.file, "scanned_to": max(end, prev.get("scanned_to", 0))}
     (d / "source.json").write_text(json.dumps(meta, indent=2))
     print(f"[{sid}] {meta['title']}\n  scanning {fmt(start)} - {fmt(end)}")
 
@@ -293,6 +298,7 @@ def cmd_scan(a) -> None:
             rows.append({"kind": kind, "score": round(sc, 1), "start": round(s1, 2),
                          "end": round(e1, 2), "text": text})
     (d / "candidates.json").write_text(json.dumps(rows, indent=2))
+    (d / f"candidates_{int(start)}_{int(end)}.json").write_text(json.dumps(rows, indent=2))
     link = meta["url"]
     md = [f"# Candidates: {meta['title']}", f"Source: {link}  ·  creator: {meta['creator']}",
           f"Scanned {fmt(start)}-{fmt(end)}. Already-used ranges are excluded.", ""]
@@ -470,6 +476,8 @@ def main() -> None:
     s.add_argument("--start", type=float)
     s.add_argument("--end", type=float)
     s.add_argument("--last", type=float, help="only the last N minutes (live streams)")
+    s.add_argument("--new", action="store_true",
+                   help="only what was streamed since the previous scan of this source")
     s.add_argument("--model", default="base.en", help="whisper model for scanning")
     s.add_argument("--reel-len", type=float, default=28)
     s.add_argument("--short-len", type=float, default=60)
