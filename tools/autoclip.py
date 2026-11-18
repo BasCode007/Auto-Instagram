@@ -49,6 +49,22 @@ HYPE = ["oh my god", "no way", "what the", "holy", "bro", "dude", "yo ", "insane
         "oh no", "run", "why", "this game", "unreal", "beautiful", "huge", "massive",
         "chat", "help", "stop", "what is that", "is that", "rockstar", "gta"]
 LAUGH = ["haha", "hahaha", "lmao", "lol", "laugh"]
+# What we're hunting for. Each hit adds to the score and tags the candidate so
+# a reviewer can pick a mix (funny / views / physics / new feature).
+CATEGORIES = {
+    "funny": ["haha", "lmao", "lol", "chat", "i'm dead", "crying", "bro what", "why did",
+              "no no no", "stop", "help", "what was that", "he's dying", "oh my god"],
+    "views": ["look at", "view", "beautiful", "gorgeous", "sunset", "sunrise", "graphics",
+              "detail", "realistic", "scenery", "pretty", "lookout", "from up here",
+              "the water", "clouds", "lighting", "look how", "skyline", "the ocean"],
+    "physics": ["crash", "physics", "ragdoll", "flip", "flew", "fly", "explode", "exploded",
+                "wreck", "damage", "rolled", "bounce", "smash", "destroyed", "boom", "jump",
+                "ramp", "airborne", "off the", "into the water", "fell", "fall"],
+    "new": ["you can", "never seen", "first time", "what is this", "what is that",
+            "wait what", "feature", "didn't know", "no way you can", "new", "how do i",
+            "can i", "is that a"],
+}
+
 # Moments with sexual content/nudity are never clipped (playbook: skip nudity).
 NSFW = ["dick", "cock", "jerk", "naked", "nude", "tits", "titties", "yiddies", "boob",
         "penis", "strip club", "stripper", " sex", "porn", "nipple", "vibrator",
@@ -213,17 +229,20 @@ def score_windows(words, spikes, t0: float, length: float, hop: float = 0.5,
         laugh = sum(text.count(k) for k in LAUGH)
         excl = text.count("!") + text.count("?")
         speech = min(len(ws) / (length * 2.2), 1.0)       # ~2.2 words/s = talky
-        score = energy * 1.0 + hype * 2.5 + laugh * 3 + excl * 0.8 + speech * 6
+        cats = {c: sum(text.count(k) for k in ks) for c, ks in CATEGORIES.items()}
+        score = (energy * 1.0 + hype * 2.5 + laugh * 3 + excl * 0.8 + speech * 6
+                 + sum(min(v, 4) * 2.0 for v in cats.values()))
         if any(k in f" {text}" for k in NSFW):
             t += step
             continue
-        out.append((score, a, b))
+        tags = ",".join(c for c, v in sorted(cats.items(), key=lambda x: -x[1]) if v) or "-"
+        out.append((score, a, b, tags))
         t += step
     out.sort(reverse=True)
     picked = []
-    for sc, a, b in out:
-        if all(b <= pa or a >= pb for _, pa, pb in picked):
-            picked.append((sc, a, b))
+    for sc, a, b, tg in out:
+        if all(b <= pa or a >= pb for _, pa, pb, _ in picked):
+            picked.append((sc, a, b, tg))
     return picked
 
 
@@ -247,8 +266,9 @@ def fmt(t: float) -> str:
 def cmd_scan(a) -> None:
     if a.file:
         f = Path(a.file).resolve()
-        info = {"id": f.stem, "extractor_key": "file", "title": f.stem,
-                "uploader": a.creator or "", "webpage_url": str(f),
+        info = {"id": f"{a.creator or 'file'}-{f.stem}", "extractor_key": a.platform or "file",
+                "title": f.stem, "uploader": a.creator or "",
+                "webpage_url": a.source_url or str(f),
                 "duration": float(subprocess.check_output(
                     ["ffprobe", "-v", "error", "-show_entries", "format=duration",
                      "-of", "csv=p=0", str(f)]).decode())}
@@ -292,11 +312,11 @@ def cmd_scan(a) -> None:
     used = registry.used_ranges(sid)
     rows = []
     for kind, length in (("reel", a.reel_len), ("short", a.short_len)):
-        for sc, s0, e0 in score_windows(words, spikes, start, length, skip=used)[: a.top]:
+        for sc, s0, e0, tg in score_windows(words, spikes, start, length, skip=used)[: a.top]:
             s1, e1 = snap(words, s0, e0)
             text = " ".join(w for w, ws, _ in words if s1 <= ws < e1)
             rows.append({"kind": kind, "score": round(sc, 1), "start": round(s1, 2),
-                         "end": round(e1, 2), "text": text})
+                         "end": round(e1, 2), "tags": tg, "text": text})
     (d / "candidates.json").write_text(json.dumps(rows, indent=2))
     (d / f"candidates_{int(start)}_{int(end)}.json").write_text(json.dumps(rows, indent=2))
     link = meta["url"]
@@ -306,7 +326,8 @@ def cmd_scan(a) -> None:
     for i, r in enumerate(rows, 1):
         ts = f"{link}?t={int(r['start']) // 3600}h{int(r['start']) % 3600 // 60}m{int(r['start']) % 60}s" \
             if "twitch" in link else link
-        md += [f"## {i}. {r['kind']} · score {r['score']} · {fmt(r['start'])}-{fmt(r['end'])} "
+        md += [f"## {i}. {r['kind']} · score {r['score']} · [{r.get('tags', '-')}] · "
+               f"{fmt(r['start'])}-{fmt(r['end'])} "
                f"({r['end'] - r['start']:.0f}s)", f"[open at timestamp]({ts})", "",
                f"> {r['text'][:700]}", "",
                f"`python3 tools/autoclip.py cut {sid} --start {r['start']} --end {r['end']} "
@@ -475,7 +496,9 @@ def main() -> None:
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("scan", help="score a long video/stream for clip moments")
     s.add_argument("url", nargs="?")
-    s.add_argument("--file", help="local video instead of a URL")
+    s.add_argument("--file", help="local video instead of a URL (e.g. a live recording chunk)")
+    s.add_argument("--platform", help="platform name for the credit when using --file (Twitch)")
+    s.add_argument("--source-url", help="public link to credit when using --file")
     s.add_argument("--creator", help="handle to credit, without @")
     s.add_argument("--start", type=float)
     s.add_argument("--end", type=float)
