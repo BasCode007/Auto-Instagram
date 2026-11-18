@@ -4,7 +4,7 @@ Every post that went out. Newest first.
 
 | Date (local) | Time | Platform | Clip / post | Caption (first line) | Credit | Link |
 |---|---|---|---|---|---|---|
-| 2026-11-19 | 03:12 AEDT | TikTok (Vice City Replayz) | lacy-map-first-look | First look at the full GTA 6 map | @lacy | published via vidIQ |
+| 2026-11-19 | 03:12 AEDT | TikTok (Vice City Replayz) | lacy-map-first-look | First look at the full GTA 6 map | @lacy | https://www.tiktok.com/@vicecityreplayzvi/video/7709548825223908629 |
 | 2026-11-19 | 04:40 AEDT | TikTok (Vice City Replayz) | kai-first-time-gta6 | Kai Cenat starts GTA 6 for the first time | @kaicenat | scheduled via vidIQ |
 | 2026-11-19 | 06:10 AEDT | TikTok (Vice City Replayz) | xqc-mirror-shave | You can shave Jason in GTA 6 | @xqc | scheduled via vidIQ |
 | 2026-11-19 | 07:40 AEDT | TikTok (Vice City Replayz) | tg-pet-the-dog | You can pet the dog in GTA 6 | @typicalgamer | scheduled via vidIQ |
