@@ -11,14 +11,15 @@
  "creator": "theburntpeanut",
  "hook": "AMMU-NATION IS *BACK* IN GTA 6",
  "credit": "@theburntpeanut on Twitch",
- "layout": "fit",
+ "layout": "full",
  "fps": 60,
  "no_letterbox": true,
  "preset": "medium",
  "segments": [
   {
    "start": 0.6,
-   "end": 29.2
+   "end": 29.2,
+   "x": 0.5
   }
  ],
  "words": [
@@ -338,5 +339,5 @@
   "tiktok": "Ammu-Nation is back in GTA 6 🎥 @theburntpeanut on Twitch #GTA6 #GTAVI #gta6clips #theburntpeanut",
   "youtube_shorts": "Ammu-Nation is back in GTA 6 #GTA6 #Shorts\n\n🎥 @theburntpeanut on Twitch\nFull stream: https://www.twitch.tv/videos/2932226282"
  },
- "notes": "Cut from https://www.twitch.tv/videos/2932226282 at 1:51:40-1:52:09. Credit is not permission: ask the creator if reachable; take down same day on request."
+ "notes": "Cut from https://www.twitch.tv/videos/2932226282 at 1:51:40-1:52:09. Credit is not permission: ask the creator if reachable; take down same day on request. Gameplay: keep x=0.5 (Jason is centre screen); auto framing is for cinematic shots."
 }

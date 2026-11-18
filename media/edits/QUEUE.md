@@ -2,6 +2,8 @@
 
 ## Launch-night stream clips (post these first, they're the freshest)
 
+`PHONE_CHECK.jpg` shows every clip as it looks on an iPhone in Instagram Reels. Posting setup: see `POSTING.md`.
+
 Facecam on top, gameplay below, word-by-word captions, 1080x1920 at 60 fps. Credit is on screen and in every caption.
 Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 
@@ -19,6 +21,8 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `kai-first-time-gta6.mp4` | KAI CENAT STARTS GTA 6 FOR THE FIRST TIME | 37s | Kai Cenat, Twitch |
 | `lacy-hat-glasses-disguise.mp4` | GTA 6 HAS DISGUISES | 25s | Lacy, Twitch (tip) |
 | `xqc-gym-squats.mp4` | GTA 6 HAS A GYM MINIGAME | 66s | xQc, Twitch (**Shorts length**) |
+| `tg-paradise-taxi.mp4` | YOU CAN CALL A TAXI IN GTA 6 | 65s | TypicalGamer, Twitch (**Shorts length**) |
+| `tg-pet-the-dog.mp4` | YOU CAN PET THE DOG IN GTA 6 | 24s | TypicalGamer, Twitch |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 

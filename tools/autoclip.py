@@ -429,15 +429,18 @@ def cmd_cut(a) -> None:
     off_file = sec.with_suffix(".offset")
     if not sec.exists():
         if meta.get("file"):
-            sh(["ffmpeg", "-v", "error", "-y", "-ss", str(start), "-t", str(end - start),
-                "-i", meta["file"], "-c", "copy", str(sec)])
-            off = 0.0
+            sec = Path(meta["file"])       # local recording: cut straight from it
+            off_file = d / f"sec_{int(start * 10)}_{int(end * 10)}.offset"
+            off = start
         else:
             print(f"downloading {fmt(start)}-{fmt(end)} at full quality ...")
             off = fetch_range(meta["url"], ["1080p60", "1080p", "1440p60", "720p60",
                                             "bv*[height<=1080]+ba", "best"], start, end, sec)
         off_file.write_text(str(off))
-    off = float(off_file.read_text()) if off_file.exists() else 0.0
+    if meta.get("file"):
+        sec, off = Path(meta["file"]), start
+    else:
+        off = float(off_file.read_text()) if off_file.exists() else 0.0
     length = end - start
 
     # no-repeat check: same source + overlapping time, or same scene anywhere
@@ -455,18 +458,25 @@ def cmd_cut(a) -> None:
     words = [[w, round(s + off, 2), round(e + off, 2)] for w, s, e in
              transcribe(decode(sec, off, length), a.model)] if not a.no_captions else []
 
+    keep = []
+    if a.keep:   # "a-b,c-d" absolute source seconds: drop dead air between them
+        for part in a.keep.split(","):
+            a0, b0 = (float(v) for v in part.split("-"))
+            keep.append((max(a0, start), min(b0, end)))
     creator = (a.creator or meta.get("creator") or "").lstrip("@")
     clip_id = a.id or f"{sid.split('-')[0][:2]}-{creator or 'clip'}-{int(start)}".lower()
     clip_id = re.sub(r"[^a-z0-9_-]", "", clip_id.lower())
     plat = platform_name(meta.get("platform") or "")
     spec = {
         "id": clip_id, "pillar": a.pillar, "kind": a.kind,
-        "source": str(sec.relative_to(RAW)), "source_url": meta["url"],
+        "source": str(sec.resolve().relative_to(RAW.resolve())), "source_url": meta["url"],
         "source_range": [start, end], "creator": creator,
         "hook": a.hook, "credit": f"@{creator}" + (f" on {plat}" if plat else "") if creator else "",
         "layout": "stack" if a.facecam else a.layout, "fps": a.fps,
         "no_letterbox": True, "preset": "medium",
-        "segments": [{"start": round(off, 3), "end": round(off + length, 3)}],
+        "segments": ([{"start": round(off + a0 - start, 3), "end": round(off + b0 - start, 3)}
+                      for a0, b0 in keep] if keep else
+                     [{"start": round(off, 3), "end": round(off + length, 3)}]),
         "words": words,
         "captions": platform_captions(a.hook, creator, plat, a.line or "", meta["url"]),
         "notes": f"Cut from {meta['url']} at {fmt(start)}-{fmt(end)}. "
@@ -529,6 +539,8 @@ def main() -> None:
     c.add_argument("--gzoom", type=float, default=1.08,
                    help="zoom gameplay slightly so overlays at the edges drop out")
     c.add_argument("--labels", help="JSON list of extra labels")
+    c.add_argument("--keep", help="only these source ranges, e.g. 150.8-162.9,169.4-181 "
+                   "(removes dead air; all inside --start/--end)")
     c.add_argument("--fps", type=int, default=60)
     c.add_argument("--model", default="small.en", help="whisper model for captions")
     c.add_argument("--no-captions", action="store_true")

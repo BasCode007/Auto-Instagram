@@ -9,7 +9,8 @@
   "segments": [
     {
       "start": 26.4,
-      "end": 27.8
+      "end": 27.8,
+      "x": 0.3
     },
     {
       "start": 19.0,
@@ -67,5 +68,6 @@
     "youtube_shorts": "GTA 6 is out now | Launch Trailer moments #GTA6 #Shorts",
     "x": "GTA 6 is out now.\n\nIt unlocks at midnight local time in each region, on PS5 and Xbox Series X|S.\n\n🎥 @RockstarGames"
   },
-  "notes": "Post the moment it is live in the first region (playbook section 10). Rockstar: midnight local time in all regions. New Zealand is first (11:00 UTC Nov 18). X first, then Reels/TikTok/Shorts."
+  "notes": "Post the moment it is live in the first region (playbook section 10). Rockstar: midnight local time in all regions. New Zealand is first (11:00 UTC Nov 18). X first, then Reels/TikTok/Shorts.",
+  "layout": "full"
 }

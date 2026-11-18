@@ -19,7 +19,10 @@ Takes long videos and live streams and cuts them into short-form clips, never th
 | `log.md`, `scoreboard.csv`, `learning.md`, `takedowns.md` | tracking and the learning loop |
 | `tools/autoclip.py` | long video / live stream → scored moments → cut + captioned shorts |
 | `tools/registry.py`, `registry/used.jsonl` | no-repeat registry (time ranges + scene fingerprints) |
-| `tools/make_clip.py` | renders a clip spec into an upload-ready vertical MP4 |
+| `tools/make_clip.py` | renders a clip spec into an upload-ready vertical MP4 (iPhone safe zones, auto subject framing) |
+| `tools/phone_preview.py` | shows clips inside an iPhone screen with the Reels interface to check framing |
+| `tools/record_live.sh`, `tools/watch_chunks.sh` | record a public live stream in 10-min chunks and scan each finished chunk (for channels with subscriber-only VODs) |
+| `POSTING.md` | connecting Instagram / YouTube / TikTok and the approval-based posting flow |
 | `tools/transcribe.py` | speech → timed caption labels (Whisper) |
 | `tools/post_instagram.py` | publishes a clip as a Reel via the Instagram Graph API (dry run unless `--confirm`) |
 | `tools/fetch_official.sh` | downloads the official trailers from Rockstar's media page |

@@ -38,6 +38,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -45,11 +46,15 @@ FONTS = ROOT / "tools" / "fonts"
 W, H = 1080, 1920
 FPS = 30
 
-# Safe area: Reels/TikTok UI covers roughly the top 220px, the bottom ~420px
-# and a ~130px column on the right. Keep all text inside this box.
-SAFE_LEFT, SAFE_RIGHT = 60, W - 130
-HOOK_TOP = 250
-FG_TOP = 540            # top of the 4:3 foreground in "fit" layout
+# Phone safe area (1080x1920 canvas, checked against Instagram Reels, YouTube
+# Shorts and TikTok on an iPhone): the app header covers the top ~14%, the
+# caption/username block the bottom ~22%, the like/comment/share column the
+# right ~130px, and tall iPhones can zoom-crop ~9% off each side. All text
+# stays inside x 100..940, y 270..1480.
+SAFE_LEFT, SAFE_RIGHT = 100, W - 140
+HOOK_TOP = 270
+SAFE_BOTTOM = 1480
+FG_TOP = 500            # top of the 4:3 foreground in "fit" layout
 FG_H = 810              # 1080 wide * 3/4
 LABEL_TOP = FG_TOP + FG_H + 28
 STACK_FACE_H = 700      # facecam band height in "stack" layout
@@ -219,6 +224,40 @@ def detect_letterbox(src: Path, sw: int, sh: int) -> int:
     return best // 2 * 2
 
 
+def auto_x(src: Path, start: float, end: float, sw: int, sh: int, y_off: int,
+           cw: int) -> float:
+    """Horizontal crop position that keeps the subject in a 9:16 crop.
+
+    Trailer and cinematic shots use shallow focus, so the sharpest region
+    (highest edge energy) is the subject. Sample a few frames, build a column
+    profile of edge energy with a mild centre prior, and centre the crop on
+    it. Returns 0..1 like a manual "x"."""
+    small_w = 320
+    small_h = int(sh * small_w / sw) // 2 * 2
+    n = 5
+    dur = max(0.2, end - start)
+    raw = subprocess.run(
+        ["ffmpeg", "-v", "error", "-ss", f"{start + dur * 0.1:.3f}", "-t", f"{dur * 0.8:.3f}",
+         "-i", str(src), "-vf",
+         f"crop={sw}:{sh}:0:{y_off},fps={n / (dur * 0.8):.4f},scale={small_w}:{small_h},format=gray",
+         "-frames:v", str(n), "-f", "rawvideo", "-"], capture_output=True).stdout
+    px = np.frombuffer(raw, np.uint8)
+    k = len(px) // (small_w * small_h)
+    if k == 0:
+        return 0.5
+    f = px[: k * small_w * small_h].reshape(k, small_h, small_w).astype(np.float32)
+    gx = np.abs(np.diff(f, axis=2))[:, :, :-1]
+    gy = np.abs(np.diff(f, axis=1))[:, :-1, :]
+    col = (gx[:, : gy.shape[1], : gy.shape[2]] + gy[:, :, : gx.shape[2]]).sum(axis=(0, 1))
+    xs = np.linspace(-1, 1, col.size)
+    col = col * (1.0 - 0.35 * xs ** 2)               # gentle centre prior
+    win = max(1, int(col.size * cw / sw))
+    run = np.convolve(col, np.ones(win), mode="valid")
+    best = int(run.argmax())
+    room = col.size - win
+    return float(best / room) if room > 0 else 0.5
+
+
 def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
                    y_off: int = 0, fps: int = FPS, spec: dict | None = None) -> str:
     """Filter chain for input i -> [v{i}] (1080x1920) and [a{i}].
@@ -227,7 +266,8 @@ def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
     """
     spec = spec or {}
     dur = seg["end"] - seg["start"]
-    x = float(seg.get("x", spec.get("gx", 0.5)))
+    x = seg.get("x", spec.get("gx", 0.5))
+    x = 0.5 if x == "auto" else float(x)
     zoom = float(seg.get("zoom", 1.0))
     if layout == "full":
         ch = int(sh / zoom) // 2 * 2
@@ -354,7 +394,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,Inter Display Black,{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,3,5,60,130,0,1
+Style: Cap,Inter Display Black,{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,3,5,{SAFE_LEFT},{W - SAFE_RIGHT},0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -387,10 +427,10 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
             render_hook(spec["hook"], tmp / "hook.png", spec.get("hook_size", 84))
             overlays.append((tmp / "hook.png", 0, hook_end))
         if spec.get("credit"):
-            cy = {"fit": FG_TOP + FG_H - 50, "stack": face_h - 52}.get(layout, H - 470)
+            cy = {"fit": FG_TOP + FG_H - 50, "stack": face_h - 52}.get(layout, SAFE_BOTTOM - 40)
             render_credit(spec["credit"], tmp / "credit.png", cy)
             overlays.append((tmp / "credit.png", 0, total))
-        label_top = {"fit": LABEL_TOP, "stack": face_h + 40}.get(layout, 1280)
+        label_top = {"fit": LABEL_TOP, "stack": face_h + 40}.get(layout, 1180)
         for n, lab in enumerate(spec.get("labels", [])):
             p = tmp / f"label{n}.png"
             render_label(lab["text"], p, lab.get("top", label_top), lab.get("size", 50))
@@ -405,6 +445,12 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
             cmd += ["-loop", "1", "-framerate", str(fps), "-t", f"{total:.3f}",
                     "-i", str(png)]
 
+        if layout == "full":
+            cw = int(sh * 9 / 16)
+            for sg in segs:
+                if sg.get("x", spec.get("gx", "auto")) == "auto":
+                    sg["x"] = round(auto_x(src, sg["start"], sg["end"], sw, sh, y_off, cw), 3)
+            print(f"[{clip_id}] framing: " + ", ".join(str(sg["x"]) for sg in segs))
         parts = [segment_filter(i, s, layout, sw, sh, y_off, fps, spec)
                  for i, s in enumerate(segs)]
         concat_in = "".join(f"[v{i}][a{i}]" for i in range(len(segs)))
@@ -417,7 +463,7 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
             last = nxt
         words = map_words(spec) if spec.get("words") else []
         if words:
-            cap_y = spec.get("caption_y") or {"stack": face_h + 190, "fit": 1440}.get(layout, 1240)
+            cap_y = spec.get("caption_y") or {"stack": face_h + 190, "fit": 1440}.get(layout, 1200)
             ass = tmp / "captions.ass"
             write_ass(words, ass, int(cap_y), int(spec.get("caption_size", 80)))
             parts.append(f"[{last}]subtitles=filename={ass}:fontsdir={FONTS}[subs]")
