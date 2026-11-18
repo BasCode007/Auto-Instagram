@@ -24,7 +24,7 @@
     "title": "🌴LIVE🌴GTA 6🌴 AT 6AM EST🌴STUFF BEFORE🌴ALERT🌴NOT A DRILL🌴NZ FLIGHT TAKEN🌴LIVE🌴QUICK🌴DONT MISS IT🌴ONESHOTTING THE GAME?🌴",
     "vod_access": "public",
     "vod_id": "2932113307",
-    "seen": "2026-11-18T15:49Z"
+    "seen": "2026-11-18T16:51Z"
   },
   "kaicenat": {
     "facecam": [
@@ -39,7 +39,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2932305259",
-    "seen": "2026-11-18T15:49Z"
+    "seen": "2026-11-18T16:51Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -63,7 +63,7 @@
     "title": "GTA 6 | BUNGULATION EDITION | IM IN NEW ZEALAND | #BUNGULATE",
     "vod_access": "public",
     "vod_id": "2932226282",
-    "seen": "2026-11-18T15:49Z"
+    "seen": "2026-11-18T16:51Z"
   },
   "jasontheween": {
     "facecam": null,
@@ -73,7 +73,7 @@
   "rubius": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🌴GTA VI🌴CODIGO CADA 10 MIN🌴DIA HISTORICO🌴",
     "vod_access": "public",
     "vod_id": "2932415021",
@@ -86,12 +86,12 @@
     "title": "🔴[DROPS] GTA 6 EARLY ACCESS🔴",
     "vod_access": "public",
     "vod_id": "2932275268",
-    "seen": "2026-11-18T15:49Z"
+    "seen": "2026-11-18T16:51Z"
   },
   "trymacs": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "5 Tage GTA 6 Stream! | !Loco! !ESN !Emma !Nobomi !Prepmymeal",
     "vod_access": "public",
     "vod_id": "2932202670",
@@ -100,28 +100,44 @@
   "squeezie": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "GTA VI : LE JEU DE LA DÉCENNIE EST LÀ LIVE 137 HEURES",
     "vod_access": "sub-only",
     "vod_id": "2932391486",
     "seen": "2026-11-18T15:49Z"
   },
   "ishowspeed": {
-    "facecam": null,
-    "priority": "normal",
+    "facecam": [
+      0,
+      0.411,
+      0.2,
+      0.233
+    ],
+    "priority": "high",
     "live": true,
     "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-18T15:49Z"
+    "seen": "2026-11-18T16:51Z",
+    "facecam_h": 650,
+    "note": "GTA stream not archived on Twitch: record live"
   },
   "papaplatte": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "☀️ GEILER MANN SPIELT GTA 6 ☀️",
     "vod_access": "public",
     "vod_id": "2932389340",
     "seen": "2026-11-18T15:49Z"
+  },
+  "stableronaldo": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🏖️ GTA 6 🏖️ GIVING AWAY CODES 🏖️ 15K WORTH OF CODES 🏖️ EXCLUSIVE DROPS 🏖️ EXCLUSIVE SUB BADGE 🏖️ [twitter/insta stableronaldo] !sub",
+    "vod_access": "public",
+    "vod_id": "2932442046",
+    "seen": "2026-11-18T16:51Z"
   }
 }
