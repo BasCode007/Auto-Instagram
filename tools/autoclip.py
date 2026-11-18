@@ -283,13 +283,15 @@ def cmd_scan(a) -> None:
     prev = json.loads((d / "source.json").read_text()) if (d / "source.json").exists() else {}
     if a.new and prev.get("scanned_to"):
         start = max(0.0, prev["scanned_to"] - 20)       # small overlap
+        end = min(end, start + 150 * 60)                 # catch up in chunks that finish within a round
     if end - start < 60:
         sys.exit(f"[{sid}] nothing new to scan yet ({end - start:.0f}s since last scan)")
     meta = {"source_id": sid, "url": info.get("webpage_url") or a.url,
             "title": info.get("title"), "channel": info.get("uploader") or info.get("channel"),
             "creator": a.creator or info.get("uploader_id") or info.get("uploader"),
             "platform": info.get("extractor_key"), "duration_at_scan": dur,
-            "file": a.file, "scanned_to": max(end, prev.get("scanned_to", 0))}
+            "file": a.file, "scanned_to": prev.get("scanned_to", 0)}
+    # scanned_to only moves forward once the candidates are written (an interrupted scan is redone)
     (d / "source.json").write_text(json.dumps(meta, indent=2))
     print(f"[{sid}] {meta['title']}\n  scanning {fmt(start)} - {fmt(end)}")
 
@@ -334,6 +336,9 @@ def cmd_scan(a) -> None:
                f"--hook \"...\"`", ""]
     (d / "candidates.md").write_text("\n".join(md))
     print(f"  {len(rows)} candidates -> {d / 'candidates.md'}")
+    if start <= prev.get("scanned_to", 0) + 60:      # contiguous with what was scanned before
+        meta["scanned_to"] = max(end, prev.get("scanned_to", 0))
+        (d / "source.json").write_text(json.dumps(meta, indent=2))
     if a.thumbs:
         thumbs(sid, meta, rows, f"thumbs_{int(start)}_{int(end)}")
 
