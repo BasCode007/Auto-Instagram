@@ -92,8 +92,9 @@ def add(clip_id: str, source_id: str, source_url: str, start: float, end: float,
     rec = {"clip_id": clip_id, "source_id": source_id, "source_url": source_url,
            "creator": creator, "start": round(start, 2), "end": round(end, 2),
            "hashes": hashes}
-    with REG.open("a") as f:
-        f.write(json.dumps(rec) + "\n")
+    # a re-render of the same clip replaces its old entry instead of adding a second one
+    keep = [json.dumps(e) for e in load() if e.get("clip_id") != clip_id]
+    REG.write_text("".join(line + "\n" for line in keep + [json.dumps(rec)]))
 
 
 def used_ranges(source_id: str) -> list[tuple[float, float]]:

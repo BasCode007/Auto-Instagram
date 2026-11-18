@@ -21,6 +21,7 @@ Customized from "Faceless GTA 6 Clipping Page: Full Setup Prompt". GTA 6 only. N
 - **Lengths.** Reels/TikTok: 15 to 45 s. YouTube Shorts: the same clip, or a slightly longer cut (45 to 120 s) when the moment needs it. Never two clips of the same moment, one per platform is fine.
 - **Quality bar: better and faster than other clip pages.** 1080x1920, 60 fps, facecam on top / gameplay below, word-by-word captions, a hook in the first second.
 - **Sources:** Twitch / Kick launch streams and VODs (download fine from the cloud); YouTube videos (blocked from the cloud; see README for running on your own computer).
+- **Creator mix (rough guide, not a quota).** About **50% TheBurntPeanut** (funny, strong engagement), the other **50% split across IShowSpeed, Lacy, xQc and TypicalGamer**. Quality wins: when one creator is having a better or busier stream, clip more of them; never post a weak clip just to hit the mix. Others (Kai Cenat, new discoveries) only when a moment is clearly great. `tools/creator_mix.py` shows the current split.
 
 ### Profile setup checklist (both platforms)
 

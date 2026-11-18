@@ -29,6 +29,9 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `tg-waited-13-years-to-paint.mp4` | HE WAITED 13 YEARS TO PAINT | 25s | TypicalGamer, Twitch (funny) |
 | `peanut-pool-minigame.mp4` | YOU CAN PLAY POOL IN GTA 6 | 47s | TheBurntPeanut, Twitch (new feature) |
 | `speed-home-gym-pullups.mp4` | YOU CAN DO PULL-UPS IN GTA 6 | 34s | IShowSpeed, Twitch (new feature) |
+| `peanut-in-the-clink.mp4` | PEANUT ENDED UP IN GTA 6 JAIL | 41s | TheBurntPeanut, Twitch (funny) |
+| `peanut-robbed-for-a-chain.mp4` | HE ROBBED A STORE TO BUY A CHAIN | 69s | TheBurntPeanut, Twitch (funny, **Shorts length**) |
+| `peanut-return-policy.mp4` | WHAT'S THE RETURN POLICY IN GTA 6? | 45s | TheBurntPeanut, Twitch (funny) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 

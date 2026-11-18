@@ -9,7 +9,8 @@
     "facecam_h": 700,
     "priority": "high",
     "note": "title invites clippers (!CLIPPING)",
-    "live": false
+    "live": false,
+    "target_share": 0.125
   },
   "xqc": {
     "facecam": [
@@ -24,7 +25,8 @@
     "title": "🌴LIVE🌴GTA 6🌴 AT 6AM EST🌴STUFF BEFORE🌴ALERT🌴NOT A DRILL🌴NZ FLIGHT TAKEN🌴LIVE🌴QUICK🌴DONT MISS IT🌴ONESHOTTING THE GAME?🌴",
     "vod_access": "public",
     "vod_id": "2932113307",
-    "seen": "2026-11-18T16:51Z"
+    "seen": "2026-11-18T16:51Z",
+    "target_share": 0.125
   },
   "kaicenat": {
     "facecam": [
@@ -34,7 +36,7 @@
       0.194
     ],
     "facecam_h": 600,
-    "priority": "high",
+    "priority": "normal",
     "live": true,
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
@@ -51,19 +53,21 @@
     "facecam_h": 700,
     "priority": "high",
     "note": "VODs are subscriber-only: record live",
-    "live": false
+    "live": false,
+    "target_share": 0.125
   },
   "theburntpeanut": {
     "facecam": null,
     "layout": "full",
     "gx": 0.5,
-    "priority": "normal",
+    "priority": "top",
     "note": "no webcam (animated avatar): full layout, x=0.5",
     "live": true,
     "title": "GTA 6 | BUNGULATION EDITION | IM IN NEW ZEALAND | #BUNGULATE",
     "vod_access": "public",
     "vod_id": "2932226282",
-    "seen": "2026-11-18T16:51Z"
+    "seen": "2026-11-18T16:51Z",
+    "target_share": 0.5
   },
   "jasontheween": {
     "facecam": null,
@@ -120,7 +124,8 @@
     "vod_id": "2928036561",
     "seen": "2026-11-18T16:51Z",
     "facecam_h": 650,
-    "note": "GTA stream not archived on Twitch: record live"
+    "note": "GTA stream not archived on Twitch: record live",
+    "target_share": 0.125
   },
   "papaplatte": {
     "facecam": null,
