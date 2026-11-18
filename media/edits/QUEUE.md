@@ -27,6 +27,7 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `tg-bridge-chase.mp4` | GTA 6 CHASES ARE INSANE | 37s | TypicalGamer, Twitch (physics/crash) |
 | `tg-only-9-percent.mp4` | HE'S ONLY 9% THROUGH GTA 6 | 25s | TypicalGamer, Twitch |
 | `tg-waited-13-years-to-paint.mp4` | HE WAITED 13 YEARS TO PAINT | 25s | TypicalGamer, Twitch (funny) |
+| `peanut-pool-minigame.mp4` | YOU CAN PLAY POOL IN GTA 6 | 47s | TheBurntPeanut, Twitch (new feature) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 

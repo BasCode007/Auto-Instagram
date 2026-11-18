@@ -462,7 +462,8 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool,
             for sg in segs:
                 if sg.get("x", spec.get("gx", "auto")) == "auto":
                     sg["x"] = round(auto_x(src, sg["start"], sg["end"], sw, sh, y_off, cw), 3)
-            print(f"[{clip_id}] framing: " + ", ".join(str(sg["x"]) for sg in segs))
+            print(f"[{clip_id}] framing: " + ", ".join(
+                str(sg.get("x", spec.get("gx", 0.5))) for sg in segs))
         parts = [segment_filter(i, s, layout, sw, sh, y_off, fps, spec)
                  for i, s in enumerate(segs)]
         concat_in = "".join(f"[v{i}][a{i}]" for i in range(len(segs)))
