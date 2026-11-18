@@ -402,7 +402,19 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     path.write_text(head + "\n".join(lines) + "\n")
 
 
-def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
+# Output profiles. "social" = Instagram Reels / TikTok (1080x1920). "youtube" =
+# YouTube Shorts master: 1440x2560 so YouTube serves its higher-quality VP9
+# encode, with a slower, higher-bitrate x264 encode. Takes longer; looks better.
+PROFILES = {
+    "social": {"size": None, "crf": "20", "preset": None, "maxrate": None, "abr": "192k",
+               "suffix": ""},
+    "youtube": {"size": (1440, 2560), "crf": "16", "preset": "slow", "maxrate": "40M",
+                "abr": "320k", "suffix": "_yt"},
+}
+
+
+def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool,
+          profile: str = "social") -> Path:
     spec = json.loads(spec_path.read_text())
     clip_id = spec["id"]
     src = Path(spec["source"]) if Path(spec["source"]).is_absolute() else raw_dir / spec["source"]
@@ -468,25 +480,33 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
             write_ass(words, ass, int(cap_y), int(spec.get("caption_size", 80)))
             parts.append(f"[{last}]subtitles=filename={ass}:fontsdir={FONTS}[subs]")
             last = "subs"
+        prof = PROFILES[profile]
+        if prof["size"]:
+            pw, ph = prof["size"]
+            parts.append(f"[{last}]scale={pw}:{ph}:flags=lanczos,"
+                         f"unsharp=5:5:0.35:5:5:0.0[up]")
+            last = "up"
         # gentle loudness normalisation so clips sit at a consistent level
         parts.append("[ac]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]")
         out_dir.mkdir(parents=True, exist_ok=True)
-        out = out_dir / f"{clip_id}.mp4"
+        out = out_dir / f"{clip_id}{prof['suffix']}.mp4"
+        preset = "veryfast" if preview else (prof["preset"] or spec.get("preset", "slow"))
+        maxrate = prof["maxrate"] or ("16M" if fps > 30 else "12M")
         cmd += ["-filter_complex", ";".join(parts), "-map", f"[{last}]",
                 "-map", "[aout]", "-t", f"{total:.3f}",
-                "-c:v", "libx264", "-profile:v", "high", "-preset",
-                "veryfast" if preview else spec.get("preset", "slow"), "-crf", "20",
-                "-maxrate", "16M" if fps > 30 else "12M", "-bufsize", "32M",
-                "-pix_fmt", "yuv420p", "-r", str(fps), "-c:a", "aac", "-b:a", "192k",
+                "-c:v", "libx264", "-profile:v", "high", "-preset", preset,
+                "-crf", prof["crf"], "-maxrate", maxrate, "-bufsize", "64M",
+                "-pix_fmt", "yuv420p", "-r", str(fps), "-c:a", "aac", "-b:a", prof["abr"],
                 "-ar", "48000", "-movflags", "+faststart", str(out)]
         subprocess.run(cmd, check=True)
 
-        # Cover frame (Reels/TikTok cover): frame at cover_at seconds
-        cover_at = spec.get("cover_at", min(1.0, total / 2))
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(cover_at), "-i",
-                        str(out), "-frames:v", "1", "-q:v", "2",
-                        str(out_dir / f"{clip_id}_cover.jpg")], check=True)
-        write_captions(spec, out_dir / f"{clip_id}_captions.txt", total)
+        if profile == "social":
+            # Cover frame (Reels/TikTok cover): frame at cover_at seconds
+            cover_at = spec.get("cover_at", min(1.0, total / 2))
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(cover_at), "-i",
+                            str(out), "-frames:v", "1", "-q:v", "2",
+                            str(out_dir / f"{clip_id}_cover.jpg")], check=True)
+            write_captions(spec, out_dir / f"{clip_id}_captions.txt", total)
         return out
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
@@ -511,9 +531,11 @@ def main() -> None:
     ap.add_argument("--raw-dir", type=Path, default=ROOT / "media" / "raw")
     ap.add_argument("--out-dir", type=Path, default=ROOT / "media" / "edits")
     ap.add_argument("--preview", action="store_true", help="fast encode for checking")
+    ap.add_argument("--profile", choices=list(PROFILES), default="social",
+                    help="social = 1080x1920 for Reels/TikTok; youtube = 1440x2560 Shorts master")
     a = ap.parse_args()
     for s in a.specs:
-        out = build(s, a.raw_dir, a.out_dir, a.preview)
+        out = build(s, a.raw_dir, a.out_dir, a.preview, a.profile)
         print(f"rendered {out}")
 
 

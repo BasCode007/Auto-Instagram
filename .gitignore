@@ -6,3 +6,6 @@ media/official/*
 __pycache__/
 *.pyc
 .env
+
+# YouTube 1440p masters are large; they go straight to vidIQ
+media/edits/*_yt.mp4

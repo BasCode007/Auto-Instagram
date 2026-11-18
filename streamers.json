@@ -1,0 +1,127 @@
+{
+  "lacy": {
+    "facecam": [
+      0,
+      0,
+      0.258,
+      0.256
+    ],
+    "facecam_h": 700,
+    "priority": "high",
+    "note": "title invites clippers (!CLIPPING)",
+    "live": false
+  },
+  "xqc": {
+    "facecam": [
+      0,
+      0.505,
+      0.19,
+      0.28
+    ],
+    "facecam_h": 700,
+    "priority": "high",
+    "live": true,
+    "title": "🌴LIVE🌴GTA 6🌴 AT 6AM EST🌴STUFF BEFORE🌴ALERT🌴NOT A DRILL🌴NZ FLIGHT TAKEN🌴LIVE🌴QUICK🌴DONT MISS IT🌴ONESHOTTING THE GAME?🌴",
+    "vod_access": "public",
+    "vod_id": "2932113307",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "kaicenat": {
+    "facecam": [
+      0.005,
+      0.322,
+      0.198,
+      0.194
+    ],
+    "facecam_h": 600,
+    "priority": "high",
+    "live": true,
+    "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
+    "vod_access": "public",
+    "vod_id": "2932305259",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "typicalgamer": {
+    "facecam": [
+      0.008,
+      0.403,
+      0.22,
+      0.247
+    ],
+    "facecam_h": 700,
+    "priority": "high",
+    "note": "VODs are subscriber-only: record live",
+    "live": false
+  },
+  "theburntpeanut": {
+    "facecam": null,
+    "layout": "full",
+    "gx": 0.5,
+    "priority": "normal",
+    "note": "no webcam (animated avatar): full layout, x=0.5",
+    "live": true,
+    "title": "GTA 6 | BUNGULATION EDITION | IM IN NEW ZEALAND | #BUNGULATE",
+    "vod_access": "public",
+    "vod_id": "2932226282",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "jasontheween": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false
+  },
+  "rubius": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🌴GTA VI🌴CODIGO CADA 10 MIN🌴DIA HISTORICO🌴",
+    "vod_access": "public",
+    "vod_id": "2932415021",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "ohnepixel": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🔴[DROPS] GTA 6 EARLY ACCESS🔴",
+    "vod_access": "public",
+    "vod_id": "2932275268",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "trymacs": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "5 Tage GTA 6 Stream! | !Loco! !ESN !Emma !Nobomi !Prepmymeal",
+    "vod_access": "public",
+    "vod_id": "2932202670",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "squeezie": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "GTA VI : LE JEU DE LA DÉCENNIE EST LÀ LIVE 137 HEURES",
+    "vod_access": "sub-only",
+    "vod_id": "2932391486",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "ishowspeed": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
+    "vod_access": "public",
+    "vod_id": "2928036561",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "papaplatte": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "☀️ GEILER MANN SPIELT GTA 6 ☀️",
+    "vod_access": "public",
+    "vod_id": "2932389340",
+    "seen": "2026-11-18T15:49Z"
+  }
+}
