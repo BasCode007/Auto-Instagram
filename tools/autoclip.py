@@ -334,9 +334,38 @@ def thumbs(sid: str, meta: dict, rows: list[dict]) -> None:
 # --------------------------------------------------------------------------
 # cut
 # --------------------------------------------------------------------------
-def platform_captions(hook: str, creator: str, platform: str, line: str) -> dict:
+KEEP_CAPS = {"GTA", "NPC", "NPCS", "PS5", "FPS", "AI", "USA", "UK", "NZ", "OG", "VI"}
+
+
+def sentence_case(text: str) -> str:
+    """'GTA 6 HAS COLLECTIBLE CARDS' -> 'GTA 6 has collectible cards'."""
+    out = []
+    for i, w in enumerate(text.split()):
+        core = re.sub(r"[^A-Za-z0-9]", "", w).upper()
+        if core in KEEP_CAPS or core.startswith("GTA"):
+            out.append(w)
+        else:
+            out.append(w.capitalize() if i == 0 else w.lower())
+    res = " ".join(out)
+    for name in PROPER:
+        res = re.sub(rf"\b{re.escape(name)}\b", name, res, flags=re.I)
+    return res
+
+
+# names that keep their capitals in sentence-case captions (longest first)
+PROPER = sorted([
+    "Jason", "Lucia", "Dolores", "Brian", "Cal", "Boobie", "Dre'Quan", "Raul", "Lori",
+    "Leonida", "Vice City", "Vice-Dale County", "Mariana County", "Kelly County",
+    "Leonard County", "Leonida Keys", "Grassrivers", "Port Gellhorn", "Ambrosia",
+    "Mount Kalaga", "Ammu-Nation", "Hamlet Pawn", "Ratface", "Rockstar", "Los Santos",
+    "Weazel News", "xQc", "Lacy", "TheBurntPeanut", "Twitch", "YouTube", "TikTok",
+], key=len, reverse=True)
+
+
+def platform_captions(hook: str, creator: str, platform: str, line: str,
+                      source_url: str = "") -> dict:
     h = hook.replace("*", "").strip()
-    h_sent = h[:1] + h[1:].lower()
+    h_sent = sentence_case(h)
     tag = re.sub(r"[^A-Za-z0-9]", "", creator or "")
     where = f" on {platform}" if platform else ""
     credit = f"🎥 @{creator}{where}" if creator else ""
@@ -344,7 +373,8 @@ def platform_captions(hook: str, creator: str, platform: str, line: str) -> dict
     return {
         "instagram": f"{h_sent}{body}\n\n{credit}\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #{tag}",
         "tiktok": f"{h_sent} {credit} #GTA6 #GTAVI #gta6clips #{tag}",
-        "youtube_shorts": f"{h_sent} #GTA6 #Shorts\n\n{credit}\nFull stream: (link in source)",
+        "youtube_shorts": f"{h_sent} #GTA6 #Shorts\n\n{credit}"
+                          + (f"\nFull stream: {source_url}" if source_url else ""),
     }
 
 
@@ -407,7 +437,7 @@ def cmd_cut(a) -> None:
         "no_letterbox": True, "preset": "medium",
         "segments": [{"start": round(off, 3), "end": round(off + length, 3)}],
         "words": words,
-        "captions": platform_captions(a.hook, creator, plat, a.line or ""),
+        "captions": platform_captions(a.hook, creator, plat, a.line or "", meta["url"]),
         "notes": f"Cut from {meta['url']} at {fmt(start)}-{fmt(end)}. "
                  "Credit is not permission: ask the creator if reachable; "
                  "take down same day on request.",
