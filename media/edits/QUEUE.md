@@ -12,6 +12,8 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `lacy-fridge.mp4` | JASON'S FRIDGE IS TOO REAL | 22s | Lacy, Twitch |
 | `lacy-shoe-store.mp4` | GTA 6 HAS REAL SHOE STORES | 28s | Lacy, Twitch |
 | `peanut-ammu-nation.mp4` | AMMU-NATION IS BACK IN GTA 6 | 29s | TheBurntPeanut, Twitch |
+| `xqc-mirror-shave.mp4` | YOU CAN SHAVE JASON IN GTA 6 | 27s | xQc, Twitch |
+| `xqc-collectible-card.mp4` | GTA 6 HAS COLLECTIBLE CARDS | 33s | xQc, Twitch |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
