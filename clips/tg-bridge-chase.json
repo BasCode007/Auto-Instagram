@@ -1,0 +1,159 @@
+{
+ "id": "tg-bridge-chase",
+ "pillar": "gameplay clips",
+ "kind": "reel",
+ "source": "live-typicalgamer/rec_20261118T135952_006.mp4",
+ "source_url": "https://www.twitch.tv/typicalgamer",
+ "source_range": [
+  437.4,
+  497.4
+ ],
+ "creator": "typicalgamer",
+ "hook": "GTA 6 CHASES ARE *INSANE*",
+ "credit": "@typicalgamer on Twitch",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 437.4,
+   "end": 471.6
+  },
+  {
+   "start": 494.8,
+   "end": 497.4
+  }
+ ],
+ "words": [
+  [
+   "That's",
+   437.99,
+   438.49
+  ],
+  [
+   "kind",
+   438.49,
+   438.59
+  ],
+  [
+   "of",
+   438.59,
+   438.67
+  ],
+  [
+   "hard",
+   438.67,
+   438.79
+  ],
+  [
+   "to",
+   438.79,
+   438.91
+  ],
+  [
+   "hit",
+   438.91,
+   438.93
+  ],
+  [
+   "him.",
+   438.93,
+   439.85
+  ],
+  [
+   "Oh",
+   439.93,
+   440.41
+  ],
+  [
+   "my",
+   440.41,
+   440.79
+  ],
+  [
+   "oh",
+   440.79,
+   441.27
+  ],
+  [
+   "my",
+   441.27,
+   441.59
+  ],
+  [
+   "gosh",
+   441.59,
+   442.14
+  ],
+  [
+   "That",
+   445.55,
+   446.1
+  ],
+  [
+   "was",
+   446.1,
+   446.66
+  ],
+  [
+   "sick.",
+   446.66,
+   447.2
+  ],
+  [
+   "Oh",
+   448.14,
+   449.24
+  ],
+  [
+   "sniped",
+   449.24,
+   449.82
+  ],
+  [
+   "him",
+   449.82,
+   450.37
+  ],
+  [
+   "There",
+   480.73,
+   481.83
+  ],
+  [
+   "we",
+   481.83,
+   482.93
+  ],
+  [
+   "go",
+   482.93,
+   483.59
+  ],
+  [
+   "Absolutely",
+   495.41,
+   495.96
+  ],
+  [
+   "crazy",
+   495.96,
+   497.06
+  ]
+ ],
+ "captions": {
+  "instagram": "GTA 6 chases are insane\n\nGunfire, a spin-out, then cars launching off the old bridge in the Keys. TypicalGamer: absolutely crazy mission.\n\n🎥 @typicalgamer on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #typicalgamer",
+  "tiktok": "GTA 6 chases are insane 🎥 @typicalgamer on Twitch #GTA6 #GTAVI #gta6clips #typicalgamer",
+  "youtube_shorts": "GTA 6 chases are insane #GTA6 #Shorts\n\n🎥 @typicalgamer on Twitch\nFull stream: https://www.twitch.tv/typicalgamer"
+ },
+ "notes": "Cut from https://www.twitch.tv/typicalgamer at 0:07:17-0:08:17. Credit is not permission: ask the creator if reachable; take down same day on request.",
+ "facecam": [
+  0.008,
+  0.403,
+  0.22,
+  0.247
+ ],
+ "facecam_h": 700,
+ "gzoom": 1.08
+}

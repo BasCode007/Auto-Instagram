@@ -23,6 +23,10 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `xqc-gym-squats.mp4` | GTA 6 HAS A GYM MINIGAME | 66s | xQc, Twitch (**Shorts length**) |
 | `tg-paradise-taxi.mp4` | YOU CAN CALL A TAXI IN GTA 6 | 65s | TypicalGamer, Twitch (**Shorts length**) |
 | `tg-pet-the-dog.mp4` | YOU CAN PET THE DOG IN GTA 6 | 24s | TypicalGamer, Twitch |
+| `tg-fix-up-the-house.mp4` | YOU CAN FIX UP JASON'S HOUSE IN GTA 6 | 75s | TypicalGamer, Twitch (**Shorts length**) |
+| `tg-bridge-chase.mp4` | GTA 6 CHASES ARE INSANE | 37s | TypicalGamer, Twitch (physics/crash) |
+| `tg-only-9-percent.mp4` | HE'S ONLY 9% THROUGH GTA 6 | 25s | TypicalGamer, Twitch |
+| `tg-waited-13-years-to-paint.mp4` | HE WAITED 13 YEARS TO PAINT | 25s | TypicalGamer, Twitch (funny) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
