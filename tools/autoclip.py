@@ -51,7 +51,9 @@ HYPE = ["oh my god", "no way", "what the", "holy", "bro", "dude", "yo ", "insane
 LAUGH = ["haha", "hahaha", "lmao", "lol", "laugh"]
 # Moments with sexual content/nudity are never clipped (playbook: skip nudity).
 NSFW = ["dick", "cock", "jerk", "naked", "nude", "tits", "titties", "yiddies", "boob",
-        "penis", "strip club", "stripper", " sex", "porn", "nipple"]
+        "penis", "strip club", "stripper", " sex", "porn", "nipple", "vibrator",
+        "topless", "horny", "onlyfans"]
+NSFW_RADIUS = 60.0   # nudity scenes run longer than the word that flags them
 
 
 # --------------------------------------------------------------------------
@@ -195,6 +197,9 @@ def score_windows(words, spikes, t0: float, length: float, hop: float = 0.5,
     out = []
     t = 0.0
     lower = [(w.lower(), s) for w, s, _ in words]
+    # whole neighbourhoods around sexual-content words are off limits
+    flagged = [s for w, s in lower if any(k.strip() in w for k in NSFW)]
+    skip = list(skip) + [(f - NSFW_RADIUS, f + NSFW_RADIUS) for f in flagged]
     while t + length <= dur:
         a, b = t + t0, t + t0 + length
         if any(a < e and b > s for s, e in skip):

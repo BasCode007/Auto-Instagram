@@ -11,6 +11,7 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `lacy-snake-dolores.mp4` | JASON HAS A PET SNAKE NAMED DOLORES | 25s | Lacy, Twitch |
 | `lacy-fridge.mp4` | JASON'S FRIDGE IS TOO REAL | 22s | Lacy, Twitch |
 | `lacy-shoe-store.mp4` | GTA 6 HAS REAL SHOE STORES | 28s | Lacy, Twitch |
+| `peanut-ammu-nation.mp4` | AMMU-NATION IS BACK IN GTA 6 | 29s | TheBurntPeanut, Twitch |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
