@@ -29,7 +29,8 @@ Takes long videos and live streams and cuts them into short-form clips, never th
 ```bash
 # 1. Score a stream: pulls audio only, transcribes, ranks moments, skips anything already clipped
 python3 tools/autoclip.py scan https://www.twitch.tv/videos/<id> --last 45 --creator <handle> --thumbs
-#    -> media/raw/<source>/candidates.md (+ thumbs/ frame strips)
+#    -> media/raw/<source>/candidates.md (+ thumbs_<start>_<end>/ frame strips per scan)
+#    later: --new scans only what was streamed since the last scan
 
 # 2. Cut a moment: downloads just that part in 1080p60, checks for repeats, captions it, renders
 python3 tools/autoclip.py cut twitch-<id> --start 7010.5 --end 7049 \

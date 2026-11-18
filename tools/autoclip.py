@@ -301,7 +301,8 @@ def cmd_scan(a) -> None:
     (d / f"candidates_{int(start)}_{int(end)}.json").write_text(json.dumps(rows, indent=2))
     link = meta["url"]
     md = [f"# Candidates: {meta['title']}", f"Source: {link}  ·  creator: {meta['creator']}",
-          f"Scanned {fmt(start)}-{fmt(end)}. Already-used ranges are excluded.", ""]
+          f"Scanned {fmt(start)}-{fmt(end)}. Already-used ranges are excluded.",
+          f"Frame strips: thumbs_{int(start)}_{int(end)}/c<N>.jpg", ""]
     for i, r in enumerate(rows, 1):
         ts = f"{link}?t={int(r['start']) // 3600}h{int(r['start']) % 3600 // 60}m{int(r['start']) % 60}s" \
             if "twitch" in link else link
@@ -313,12 +314,15 @@ def cmd_scan(a) -> None:
     (d / "candidates.md").write_text("\n".join(md))
     print(f"  {len(rows)} candidates -> {d / 'candidates.md'}")
     if a.thumbs:
-        thumbs(sid, meta, rows)
+        thumbs(sid, meta, rows, f"thumbs_{int(start)}_{int(end)}")
 
 
-def thumbs(sid: str, meta: dict, rows: list[dict]) -> None:
-    """Low-res frame strips for each candidate so a human can eyeball them."""
-    d = src_dir(sid) / "thumbs"
+def thumbs(sid: str, meta: dict, rows: list[dict], sub: str = "thumbs") -> None:
+    """Low-res frame strips for each candidate so a human can eyeball them.
+
+    Each scan gets its own folder so strips from an older scan can never be
+    mistaken for the current candidates."""
+    d = src_dir(sid) / sub
     d.mkdir(exist_ok=True)
     for i, r in enumerate(rows, 1):
         low = d / f"c{i}.mp4"

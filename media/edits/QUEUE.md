@@ -16,6 +16,9 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `xqc-collectible-card.mp4` | GTA 6 HAS COLLECTIBLE CARDS | 33s | xQc, Twitch |
 | `lacy-cops-know-outfit.mp4` | GTA 6 COPS REMEMBER YOUR OUTFIT | 20s | Lacy, Twitch (tip) |
 | `lacy-real-hotel.mp4` | HE'S BEEN TO THIS HOTEL IN REAL LIFE | 21s | Lacy, Twitch |
+| `kai-first-time-gta6.mp4` | KAI CENAT STARTS GTA 6 FOR THE FIRST TIME | 37s | Kai Cenat, Twitch |
+| `lacy-hat-glasses-disguise.mp4` | GTA 6 HAS DISGUISES | 25s | Lacy, Twitch (tip) |
+| `xqc-gym-squats.mp4` | GTA 6 HAS A GYM MINIGAME | 66s | xQc, Twitch (**Shorts length**) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
