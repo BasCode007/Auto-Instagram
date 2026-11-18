@@ -390,6 +390,7 @@ PROPER = sorted([
     "Leonard County", "Leonida Keys", "Grassrivers", "Port Gellhorn", "Ambrosia",
     "Mount Kalaga", "Ammu-Nation", "Hamlet Pawn", "Ratface", "Rockstar", "Los Santos",
     "Weazel News", "xQc", "Lacy", "TheBurntPeanut", "Twitch", "YouTube", "TikTok",
+    "Kai Cenat", "Kai", "TypicalGamer", "Paradise Taxi", "Arugula", "Mandy", "Shirley",
 ], key=len, reverse=True)
 
 
