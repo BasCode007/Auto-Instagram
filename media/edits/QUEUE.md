@@ -32,6 +32,8 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `peanut-in-the-clink.mp4` | PEANUT ENDED UP IN GTA 6 JAIL | 41s | TheBurntPeanut, Twitch (funny) |
 | `peanut-robbed-for-a-chain.mp4` | HE ROBBED A STORE TO BUY A CHAIN | 69s | TheBurntPeanut, Twitch (funny, **Shorts length**) |
 | `peanut-return-policy.mp4` | WHAT'S THE RETURN POLICY IN GTA 6? | 45s | TheBurntPeanut, Twitch (funny) |
+| `peanut-bank-account.mp4` | YOU NEED A BANK ACCOUNT IN GTA 6 | 41s | TheBurntPeanut, Twitch (new feature) |
+| `peanut-flat-pack-furniture.mp4` | BUILDING FURNITURE IN GTA 6 IS TOO REAL | 56s | TheBurntPeanut, Twitch (funny) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
