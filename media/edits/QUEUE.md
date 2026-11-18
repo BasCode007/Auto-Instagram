@@ -1,5 +1,21 @@
 # Ready to upload
 
+## Launch-night stream clips (post these first, they're the freshest)
+
+Facecam on top, gameplay below, word-by-word captions, 1080x1920 at 60 fps. Credit is on screen and in every caption.
+Post to **Instagram Reels + YouTube Shorts**; TikTok too.
+
+| Clip | Hook | Length | Source |
+|---|---|---|---|
+| `lacy-map-first-look.mp4` | FIRST LOOK AT THE FULL GTA 6 MAP | 38s | Lacy, Twitch |
+| `lacy-snake-dolores.mp4` | JASON HAS A PET SNAKE NAMED DOLORES | 25s | Lacy, Twitch |
+| `lacy-fridge.mp4` | JASON'S FRIDGE IS TOO REAL | 22s | Lacy, Twitch |
+| `lacy-shoe-store.mp4` | GTA 6 HAS REAL SHOE STORES | 28s | Lacy, Twitch |
+
+Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
+
+## Trailer clips (batch 1)
+
 Batch 1: six vertical clips, all from official Rockstar trailers (rockstargames.com/VI/media).
 Each clip has a `_cover.jpg` (Reel/TikTok cover) and a `_captions.txt` (Instagram, TikTok, Shorts and X captions).
 **Nothing has been posted.** Each one needs your OK first (playbook.md, approval rules).

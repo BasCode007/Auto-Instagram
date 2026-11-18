@@ -12,6 +12,12 @@ Layouts
          Leaves clean space above and below for the hook and labels.
   full : full-bleed 9:16 crop. Set "x" per segment (0 = left edge,
          0.5 = centre, 1 = right edge) to keep the subject in frame.
+  stack: streamer layout. Facecam on top ("facecam": [x, y, w, h] as
+         fractions of the frame), gameplay below ("gx" = horizontal focus).
+
+Captions: give "words": [[word, start, end], ...] in source seconds and the
+clip gets big word-by-word captions with the spoken word highlighted
+(profanity masked). tools/autoclip.py fills this in from Whisper.
 
 Text is drawn with Pillow into transparent PNGs and overlaid by ffmpeg, so
 there is no drawtext escaping to worry about. Wrap a word in *asterisks* in
@@ -46,6 +52,7 @@ HOOK_TOP = 250
 FG_TOP = 540            # top of the 4:3 foreground in "fit" layout
 FG_H = 810              # 1080 wide * 3/4
 LABEL_TOP = FG_TOP + FG_H + 28
+STACK_FACE_H = 700      # facecam band height in "stack" layout
 
 ACCENT = (255, 79, 163)       # neon pink
 ACCENT_2 = (255, 170, 60)     # sunset orange
@@ -213,13 +220,14 @@ def detect_letterbox(src: Path, sw: int, sh: int) -> int:
 
 
 def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
-                   y_off: int = 0) -> str:
+                   y_off: int = 0, fps: int = FPS, spec: dict | None = None) -> str:
     """Filter chain for input i -> [v{i}] (1080x1920) and [a{i}].
 
     sh is the picture height inside the letterbox, y_off its top edge.
     """
+    spec = spec or {}
     dur = seg["end"] - seg["start"]
-    x = float(seg.get("x", 0.5))
+    x = float(seg.get("x", spec.get("gx", 0.5)))
     zoom = float(seg.get("zoom", 1.0))
     if layout == "full":
         ch = int(sh / zoom) // 2 * 2
@@ -227,7 +235,33 @@ def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
         cx = int((sw - cw) * x)
         cy = (sh - ch) // 2 + y_off
         v = (f"[{i}:v]crop={cw}:{ch}:{cx}:{cy},scale={W}:{H}:flags=lanczos,"
-             f"setsar=1,fps={FPS},format=yuv420p[v{i}]")
+             f"setsar=1,fps={fps},format=yuv420p[v{i}]")
+    elif layout == "stack":
+        # facecam band on top, gameplay below (streamer clips)
+        fh_band = int(spec.get("facecam_h", STACK_FACE_H))
+        gh_band = H - fh_band
+        fx, fy, fw, fhh = (float(v) for v in spec["facecam"])   # fractions of frame
+        bx, by, bw, bh = int(fx * sw), int(fy * sh), int(fw * sw), int(fhh * sh)
+        want = W / fh_band                      # band aspect
+        if bw / bh > want:                      # box too wide: trim sides
+            cw, chh = int(bh * want), bh
+        else:                                   # box too tall: trim top/bottom
+            cw, chh = bw, int(bw / want)
+        cw, chh = cw // 2 * 2, chh // 2 * 2
+        fcx = bx + (bw - cw) // 2
+        fcy = by + (bh - chh) // 2
+        # gameplay crop: full frame height, width to match the band aspect
+        gzoom = float(spec.get("gzoom", zoom))
+        gch = int(sh / gzoom) // 2 * 2
+        gcw = min(sw, int(gch * W / gh_band) // 2 * 2)
+        gcx = int((sw - gcw) * x)
+        gcy = (sh - gch) // 2 + y_off
+        v = (f"[{i}:v]split=2[fsrc{i}][gsrc{i}];"
+             f"[fsrc{i}]crop={cw}:{chh}:{fcx}:{fcy + y_off},scale={W}:{fh_band}:"
+             f"flags=lanczos,setsar=1[face{i}];"
+             f"[gsrc{i}]crop={gcw}:{gch}:{gcx}:{gcy},scale={W}:{gh_band}:"
+             f"flags=lanczos,setsar=1[game{i}];"
+             f"[face{i}][game{i}]vstack=inputs=2,fps={fps},format=yuv420p[v{i}]")
     else:  # fit
         ch = int(sh / zoom) // 2 * 2
         cw = int(ch * 4 / 3) // 2 * 2
@@ -239,41 +273,127 @@ def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
              f"scale={W}:{H}:flags=bicubic,setsar=1[bg{i}];"
              f"[fgsrc{i}]crop={cw}:{ch}:{cx}:{cy},scale={W}:{FG_H}:flags=lanczos,"
              f"setsar=1[fg{i}];"
-             f"[bg{i}][fg{i}]overlay=0:{FG_TOP},fps={FPS},format=yuv420p[v{i}]")
+             f"[bg{i}][fg{i}]overlay=0:{FG_TOP},fps={fps},format=yuv420p[v{i}]")
     fade = min(0.06, dur / 4)
     a = (f"[{i}:a]aresample=48000,aformat=channel_layouts=stereo,"
          f"afade=t=in:st=0:d={fade},afade=t=out:st={dur - fade:.3f}:d={fade}[a{i}]")
     return v + ";" + a
 
 
+# --------------------------------------------------------------------------
+# Word-by-word captions (ASS, burned in with libass)
+# --------------------------------------------------------------------------
+PROFANITY = {"fuck": "f*ck", "fucking": "f*cking", "fucked": "f*cked", "shit": "sh*t",
+             "bitch": "b*tch", "motherfucker": "m*therf*cker", "fuckin": "f*ckin",
+             "bullshit": "bullsh*t", "dick": "d*ck", "pussy": "p*ssy", "ass": "a*s"}
+
+
+def _clean_word(w: str) -> str:
+    w = w.replace("{", "").replace("}", "").replace("\\", "").strip()
+    core = re.sub(r"[^a-z]", "", w.lower())
+    if core in PROFANITY:
+        w = re.sub(core, PROFANITY[core], w, flags=re.I)
+    return w.upper()
+
+
+def _ass_time(t: float) -> str:
+    t = max(0.0, t)
+    h, rem = divmod(t, 3600)
+    m, sec = divmod(rem, 60)
+    return f"{int(h)}:{int(m):02d}:{sec:05.2f}"
+
+
+def map_words(spec: dict) -> list[tuple[str, float, float]]:
+    """Words from spec['words'] ([word, start, end] in SOURCE seconds) mapped
+    onto the clip timeline across all segments."""
+    out, offset = [], 0.0
+    for seg in spec["segments"]:
+        for w, ws, we in spec.get("words", []):
+            if ws >= seg["start"] - 0.05 and ws < seg["end"]:
+                out.append((w, max(0, ws - seg["start"]) + offset,
+                            min(we, seg["end"]) - seg["start"] + offset))
+        offset += seg["end"] - seg["start"]
+    return out
+
+
+def write_ass(words, path: Path, y: int, size: int = 80,
+              max_words: int = 3, max_chars: int = 16) -> None:
+    """Chunks of up to 3 words, centred; the word being spoken is highlighted."""
+    chunks, cur = [], []
+    for w in words:
+        txt = _clean_word(w[0])
+        if not txt:
+            continue
+        gap = cur and (w[1] - cur[-1][2] > 0.7)
+        too_long = cur and len(" ".join(c[0] for c in cur + [(txt,)])) > max_chars
+        ends_sentence = cur and cur[-1][0][-1:] in ".?!"
+        if cur and (len(cur) >= max_words or gap or too_long or ends_sentence):
+            chunks.append(cur)
+            cur = []
+        cur.append((txt, w[1], w[2]))
+    if cur:
+        chunks.append(cur)
+    hi = "&H000AD6FF&"   # ASS colours are &HAABBGGRR -> #FFD60A (yellow)
+    lines = []
+    for ci, ch in enumerate(chunks):
+        nxt_start = chunks[ci + 1][0][1] if ci + 1 < len(chunks) else ch[-1][2] + 0.4
+        for wi, (txt, ws, we) in enumerate(ch):
+            end = ch[wi + 1][1] if wi + 1 < len(ch) else min(we + 0.35, nxt_start)
+            parts = []
+            for wj, (t2, _, _) in enumerate(ch):
+                parts.append(f"{{\\c{hi}}}{t2}{{\\c&H00FFFFFF&}}" if wj == wi else t2)
+            pop = "{\\fscx108\\fscy108\\t(0,90,\\fscx100\\fscy100)}" if wi == 0 else ""
+            lines.append(f"Dialogue: 0,{_ass_time(ws)},{_ass_time(max(end, ws + 0.08))},"
+                         f"Cap,,0,0,0,,{{\\pos({W // 2},{y})}}{pop}{' '.join(parts)}")
+    head = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Display Black,{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,3,5,60,130,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    path.write_text(head + "\n".join(lines) + "\n")
+
+
 def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
     spec = json.loads(spec_path.read_text())
     clip_id = spec["id"]
-    src = raw_dir / spec["source"]
+    src = Path(spec["source"]) if Path(spec["source"]).is_absolute() else raw_dir / spec["source"]
     if not src.exists():
         sys.exit(f"[{clip_id}] missing source {src}. Download it first "
                  f"(see media/raw/SOURCES.md).")
     sw, full_h = probe_size(src)
-    sh = spec.get("content_height") or detect_letterbox(src, sw, full_h)
+    sh = spec.get("content_height") or (full_h if spec.get("no_letterbox")
+                                         else detect_letterbox(src, sw, full_h))
     y_off = (full_h - sh) // 2
     layout = spec.get("layout", "fit")
+    fps = int(spec.get("fps", FPS))
     segs = spec["segments"]
     total = sum(s["end"] - s["start"] for s in segs)
+    face_h = int(spec.get("facecam_h", STACK_FACE_H))
 
     tmp = Path(tempfile.mkdtemp(prefix=f"clip_{clip_id}_"))
     try:
         overlays = []  # (png, start, end)
-        hook_end = spec.get("hook_until", total)
-        render_hook(spec["hook"], tmp / "hook.png", spec.get("hook_size", 84))
-        overlays.append((tmp / "hook.png", 0, hook_end))
+        hook_end = spec.get("hook_until", 3.5 if layout == "stack" else total)
+        if spec.get("hook"):
+            render_hook(spec["hook"], tmp / "hook.png", spec.get("hook_size", 84))
+            overlays.append((tmp / "hook.png", 0, hook_end))
         if spec.get("credit"):
-            cy = FG_TOP + FG_H - 50 if layout == "fit" else H - 470
+            cy = {"fit": FG_TOP + FG_H - 50, "stack": face_h - 52}.get(layout, H - 470)
             render_credit(spec["credit"], tmp / "credit.png", cy)
             overlays.append((tmp / "credit.png", 0, total))
+        label_top = {"fit": LABEL_TOP, "stack": face_h + 40}.get(layout, 1280)
         for n, lab in enumerate(spec.get("labels", [])):
             p = tmp / f"label{n}.png"
-            top = lab.get("top", LABEL_TOP if layout == "fit" else 1280)
-            render_label(lab["text"], p, top, lab.get("size", 50))
+            render_label(lab["text"], p, lab.get("top", label_top), lab.get("size", 50))
             overlays.append((p, lab["start"], lab["end"]))
 
         cmd = ["ffmpeg", "-v", "error", "-y"]
@@ -282,10 +402,11 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
                     "-i", str(src)]
         first_png = len(segs)
         for png, _, _ in overlays:
-            cmd += ["-loop", "1", "-framerate", str(FPS), "-t", f"{total:.3f}",
+            cmd += ["-loop", "1", "-framerate", str(fps), "-t", f"{total:.3f}",
                     "-i", str(png)]
 
-        parts = [segment_filter(i, s, layout, sw, sh, y_off) for i, s in enumerate(segs)]
+        parts = [segment_filter(i, s, layout, sw, sh, y_off, fps, spec)
+                 for i, s in enumerate(segs)]
         concat_in = "".join(f"[v{i}][a{i}]" for i in range(len(segs)))
         parts.append(f"{concat_in}concat=n={len(segs)}:v=1:a=1[vc][ac]")
         last = "vc"
@@ -294,6 +415,13 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
             parts.append(f"[{last}][{first_png + k}:v]overlay=0:0:"
                          f"enable='between(t,{st},{en})':shortest=1[{nxt}]")
             last = nxt
+        words = map_words(spec) if spec.get("words") else []
+        if words:
+            cap_y = spec.get("caption_y") or {"stack": face_h + 190, "fit": 1440}.get(layout, 1240)
+            ass = tmp / "captions.ass"
+            write_ass(words, ass, int(cap_y), int(spec.get("caption_size", 80)))
+            parts.append(f"[{last}]subtitles=filename={ass}:fontsdir={FONTS}[subs]")
+            last = "subs"
         # gentle loudness normalisation so clips sit at a consistent level
         parts.append("[ac]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]")
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -301,10 +429,10 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool) -> Path:
         cmd += ["-filter_complex", ";".join(parts), "-map", f"[{last}]",
                 "-map", "[aout]", "-t", f"{total:.3f}",
                 "-c:v", "libx264", "-profile:v", "high", "-preset",
-                "veryfast" if preview else "slow", "-crf", "20",
-                "-maxrate", "12M", "-bufsize", "24M", "-pix_fmt", "yuv420p",
-                "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
-                "-movflags", "+faststart", str(out)]
+                "veryfast" if preview else spec.get("preset", "slow"), "-crf", "20",
+                "-maxrate", "16M" if fps > 30 else "12M", "-bufsize", "32M",
+                "-pix_fmt", "yuv420p", "-r", str(fps), "-c:a", "aac", "-b:a", "192k",
+                "-ar", "48000", "-movflags", "+faststart", str(out)]
         subprocess.run(cmd, check=True)
 
         # Cover frame (Reels/TikTok cover): frame at cover_at seconds

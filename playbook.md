@@ -6,13 +6,21 @@ Customized from "Faceless GTA 6 Clipping Page: Full Setup Prompt". GTA 6 only. N
 
 | | |
 |---|---|
-| Page name | **TBD** (distinct and searchable; never copy a big page's name) |
+| Page name | **TBD** (accounts being created; distinct and searchable, never copy a big page's name) |
 | Handle | **TBD**, same on every platform, includes "GTA6" if free |
-| Platforms | Instagram (Reels) + TikTok, linked. Add X / YouTube Shorts later if wanted |
-| Time zone | **TBD** |
-| Approval hours | **TBD** |
-| Niche angle | Default until you pick: **fast official news + clean clips** (launch week), then tips |
-| Tools | Editor: `tools/make_clip.py` (ffmpeg). Scheduler: none yet. Storage: this repo |
+| Platforms | **Main: Instagram Reels + YouTube Shorts.** TikTok gets the extra clips (bulk uploads). All Creator accounts |
+| Time zone | **Sydney, Australia (AEDT, UTC+11).** GTA 6 unlocks here at 00:00 Nov 19 AEDT (13:00 UTC Nov 18) |
+| Approval hours | Owner is up through launch night posting live |
+| Niche angle | **Every side of GTA 6, as fast as possible.** Launch-week focus: first reactions, map, NPCs, funny moments, hidden details, from the biggest streams and videos |
+| Core workflow | **Long video / live stream → many short clips** (`tools/autoclip.py`). One moment = one clip, never cut twice |
+| Tools | Clipper: `tools/autoclip.py` + `tools/make_clip.py`. Scheduler: none yet (manual upload). Storage: this repo |
+
+### Content rules from the owner
+
+- **No repeats.** A moment (same source + time range, or the same scene from a different upload) is clipped once. `registry/used.jsonl` enforces it; `autoclip.py cut` refuses repeats.
+- **Lengths.** Reels/TikTok: 15 to 45 s. YouTube Shorts: the same clip, or a slightly longer cut (45 to 120 s) when the moment needs it. Never two clips of the same moment, one per platform is fine.
+- **Quality bar: better and faster than other clip pages.** 1080x1920, 60 fps, facecam on top / gameplay below, word-by-word captions, a hook in the first second.
+- **Sources:** Twitch / Kick launch streams and VODs (download fine from the cloud); YouTube videos (blocked from the cloud; see README for running on your own computer).
 
 ### Profile setup checklist (both platforms)
 
@@ -115,13 +123,11 @@ any sponsorship or paid promo, any plan upgrade or purchase, any change to name 
 
 ## Open questions for you
 
-1. Page name, handle, and which platforms are already created.
-2. Niche angle (one main lane).
-3. Time zone and hours you're awake to approve posts.
-4. Which tools are connected (scheduler, storage) and whether I can post directly or you upload.
-5. Posts per day per platform (suggested: 1 to 2 Reels, 1 to 3 TikToks).
-6. What needs your approval (suggested: see approval rules above).
-7. Creators you like or want to avoid.
-8. Voiceover style: text-only (current default), AI voice, or your own voice off camera.
+Answered: platforms (IG + Shorts main, TikTok extras), angle (every side of GTA 6, fast), time zone (Sydney), workflow (long video → shorts, no repeats).
 
-Don't start posting until 1 to 4 are answered.
+Still open:
+1. Page name and handle (once the accounts exist).
+2. Upload: manual for now. Connecting Instagram / YouTube to an API or scheduler lets clips go out the moment you approve them.
+3. Posts per day per platform. Launch week suggestion: as many strong clips as we can cut, every 1 to 2 hours.
+4. Creators you like or want to avoid.
+5. Voiceover style: text-only (current default), AI voice, or your own voice off camera.

@@ -21,6 +21,23 @@ New Zealand unlocks first (00:00 NZDT = 11:00 UTC Nov 18), then Australia (00:00
 Search X, TikTok and Twitch for "GTA 6" + "New Zealand" / "NZ" / "Australia" in those windows to find the first real gameplay.
 Ask before using a clip; credit always.
 
+## Live on GTA 6 at launch (seen in the Twitch GTA VI directory, 2026-11-18 ~12:30 UTC)
+
+| Channel | Language | Notes |
+|---|---|---|
+| twitch.tv/lacy | EN | 24/7 marathon; title includes **!CLIPPING** (invites clippers). Facecam top-left: `--facecam 0,0,0.258,0.256` |
+| twitch.tv/xqc | EN | flew to NZ to play early |
+| twitch.tv/theburntpeanut | EN | playing from NZ |
+| twitch.tv/typicalgamer | EN | marathon, playing from NZ |
+| twitch.tv/jasontheween | EN | playthrough |
+| twitch.tv/ohnepixel | EN | |
+| twitch.tv/alanzoka | PT | huge Brazilian audience |
+| twitch.tv/montanablack88 · twitch.tv/trymacs · twitch.tv/pietsmiet | DE | |
+
+Australian streamers to check right after the Sydney unlock (00:00 AEDT = 13:00 UTC): Loserfruit, Lachlan, Muselk, Crayator, LazarBeam. Confirm each is live on GTA 6 before scanning.
+
+Find more live: https://www.twitch.tv/directory/category/grand-theft-auto-vi?sort=VIEWER_COUNT
+
 ## Creators and streamers (Day 2 task: grow to 20+, verify handles)
 
 Big GTA creators/streamers to monitor after launch. Confirm each handle and whether they allow clipping before using anything.
