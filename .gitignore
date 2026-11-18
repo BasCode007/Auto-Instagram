@@ -1,0 +1,8 @@
+# Source footage is large; re-download with tools/fetch_official.sh
+media/raw/*
+!media/raw/SOURCES.md
+media/official/*
+!media/official/.gitkeep
+__pycache__/
+*.pyc
+.env
