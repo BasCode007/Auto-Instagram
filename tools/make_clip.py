@@ -364,6 +364,9 @@ def write_ass(words, path: Path, y: int, size: int = 80,
         txt = _clean_word(w[0])
         if not txt:
             continue
+        if txt[0] in "-'" and cur:   # Whisper splits "pull-ups" / "y'all" into two tokens
+            cur[-1] = (cur[-1][0] + txt, cur[-1][1], w[2])
+            continue
         gap = cur and (w[1] - cur[-1][2] > 0.7)
         too_long = cur and len(" ".join(c[0] for c in cur + [(txt,)])) > max_chars
         ends_sentence = cur and cur[-1][0][-1:] in ".?!"

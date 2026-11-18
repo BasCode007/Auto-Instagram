@@ -28,6 +28,7 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `tg-only-9-percent.mp4` | HE'S ONLY 9% THROUGH GTA 6 | 25s | TypicalGamer, Twitch |
 | `tg-waited-13-years-to-paint.mp4` | HE WAITED 13 YEARS TO PAINT | 25s | TypicalGamer, Twitch (funny) |
 | `peanut-pool-minigame.mp4` | YOU CAN PLAY POOL IN GTA 6 | 47s | TheBurntPeanut, Twitch (new feature) |
+| `speed-home-gym-pullups.mp4` | YOU CAN DO PULL-UPS IN GTA 6 | 34s | IShowSpeed, Twitch (new feature) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
