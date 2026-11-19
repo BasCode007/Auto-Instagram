@@ -53,7 +53,7 @@
     "facecam_h": 700,
     "priority": "high",
     "note": "VODs are subscriber-only: record live",
-    "live": true,
+    "live": false,
     "target_share": 0.125,
     "title": "🔴 GTA 6 MARATHON! (EARLY ACCESS) 🔴 TOKEN HUNT PAUSED 🔴",
     "vod_access": "sub-only",
@@ -90,11 +90,11 @@
   "ohnepixel": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "🔴[DROPS] GTA 6 EARLY ACCESS🔴",
+    "live": true,
+    "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
-    "vod_id": "2932275268",
-    "seen": "2026-11-18T21:50Z"
+    "vod_id": "2933599748",
+    "seen": "2026-11-19T12:51Z"
   },
   "trymacs": {
     "facecam": null,
@@ -108,11 +108,11 @@
   "squeezie": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "GTA VI : LE JEU DE LA DÉCENNIE EST LÀ LIVE 137 HEURES",
+    "live": true,
+    "title": "GTA 6 ON CONTINUE LIVE 233H",
     "vod_access": "sub-only",
-    "vod_id": "2932391486",
-    "seen": "2026-11-18T15:49Z"
+    "vod_id": "2933622673",
+    "seen": "2026-11-19T12:51Z"
   },
   "ishowspeed": {
     "facecam": [
@@ -126,7 +126,7 @@
     "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-19T10:51Z",
+    "seen": "2026-11-19T12:51Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -210,7 +210,7 @@
     "title": "OG LEONIDAS NATIVE PLAYS GTA 6!! BASED ON HIS THUGGALICIOUS LOCO LIFE!!",
     "vod_access": "public",
     "vod_id": "2933174196",
-    "seen": "2026-11-19T10:51Z"
+    "seen": "2026-11-19T12:51Z"
   },
   "jerma985": {
     "facecam": null,
@@ -219,12 +219,12 @@
     "title": "Guys, I don't think this many people should be on the Elevator!!!!",
     "vod_access": "public",
     "vod_id": "2933227596",
-    "seen": "2026-11-19T10:51Z"
+    "seen": "2026-11-19T12:51Z"
   },
   "brucedropemoff": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "GTA 6 EXTRAVAGANZA 😮‍💨🫪 HOLYYYYYY VIBES 🫪🫵🏾 NUN LIKE DEM 🫵🏾 GREAT GAMEPLAY ONLY (FULLY LOCKED) | !sub !prime !game !socials",
     "vod_access": "public",
     "vod_id": "2908972219",
@@ -318,12 +318,12 @@
     "title": "PS5 GTA6 11/19",
     "vod_access": "public",
     "vod_id": "2933426778",
-    "seen": "2026-11-19T10:51Z"
+    "seen": "2026-11-19T12:51Z"
   },
   "mrdzinold": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🌊🌴☀️ GTA VI 🌊🌴☀️ START 0:00 🔥 || !STRONA",
     "vod_access": "public",
     "vod_id": "2929605097",
@@ -336,12 +336,12 @@
     "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 | !Friendlyfire !discord !ptsmt",
     "vod_access": "public",
     "vod_id": "2933492867",
-    "seen": "2026-11-19T10:51Z"
+    "seen": "2026-11-19T12:51Z"
   },
   "chowh1": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[DROP] 🌴 GTA EN MODE PMU 🌴 !giveaway !vpn !holy",
     "vod_access": "sub-only",
     "vod_id": "2933423885",
@@ -350,7 +350,7 @@
   "darkviperau": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[PS5 Pro] [HOURLY GIVEAWAYS] Day 2 of GTA VI #ad !Sting",
     "vod_access": "public",
     "vod_id": "2933527020",
@@ -359,10 +359,37 @@
   "maxim": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "Hype oder 30 FPS? GTA Tag 1 | !pmm !razer !snocks !koro !holzkern #Werbung",
     "vod_access": "public",
     "vod_id": "2933415962",
     "seen": "2026-11-19T10:51Z"
+  },
+  "eliasn97": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "[DROPS] GTA VI GRIND 🔥 | !iconleague !doku !eligella !gaming",
+    "vod_access": "none",
+    "vod_id": null,
+    "seen": "2026-11-19T12:51Z"
+  },
+  "domingo": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "GTA VI : Jason & Lucia vont retourner Vice City",
+    "vod_access": "sub-only",
+    "vod_id": "2933600681",
+    "seen": "2026-11-19T12:51Z"
+  },
+  "imantado": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "[DROPS de KEYS] 🏝️ GTA VI #2 🏝️ SOY FELIZ 💦 Sorteo de GTA entre SUBS",
+    "vod_access": "sub-only",
+    "vod_id": "2933579119",
+    "seen": "2026-11-19T12:51Z"
   }
 }
