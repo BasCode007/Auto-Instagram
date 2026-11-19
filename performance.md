@@ -28,3 +28,15 @@ Updated each hourly round from vidIQ (YouTube: vidiq_user_videos; Instagram: vid
 | Peanut ended up in GTA 6 jail | TheBurntPeanut | 0 (just posted) | | | |
 
 Peanut leads on Instagram too.
+
+## Instagram Reels, 19 Nov 18:50 AEDT
+
+| Reel | Creator | Views | Likes | Avg watched | Skip rate |
+|---|---|---|---|---|---|
+| He robbed a store to buy a chain | TheBurntPeanut | **1,536** | **22** | 41% | 13.5% |
+| Peanut ended up in GTA 6 jail | TheBurntPeanut | 158 | 1 | 46% | 18.1% |
+| Kai Cenat starts GTA 6 for the first time | Kai Cenat | 138 | 1 | | 33.9% |
+| First look at the full GTA 6 map | Lacy | 108 | 1 | | |
+| Why are there cars in the dirt bike race? | TheBurntPeanut | just posted | | | |
+
+Peanut story clips (a full mini-story with a payoff) are the clear winner: the 69 s robbery Reel has 10x the views of anything else.
