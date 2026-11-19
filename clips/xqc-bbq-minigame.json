@@ -1,0 +1,265 @@
+{
+ "id": "xqc-bbq-minigame",
+ "pillar": "new feature",
+ "kind": "reel",
+ "source": "twitch-2932113307/sec_555600_556000.mp4",
+ "source_url": "https://www.twitch.tv/videos/2932113307",
+ "source_range": [
+  55560.0,
+  55600.0
+ ],
+ "creator": "xqc",
+ "hook": "YOU CAN *GRILL BURGERS* IN GTA 6",
+ "credit": "@xqc on Twitch",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 5.15,
+   "end": 45.15
+  }
+ ],
+ "words": [
+  [
+   "Really?",
+   6.8,
+   7.38
+  ],
+  [
+   "I'm",
+   7.56,
+   7.64
+  ],
+  [
+   "at",
+   7.64,
+   7.68
+  ],
+  [
+   "it?",
+   7.68,
+   8.0
+  ],
+  [
+   "Look",
+   8.62,
+   8.68
+  ],
+  [
+   "at",
+   8.68,
+   8.7
+  ],
+  [
+   "this.",
+   8.7,
+   9.24
+  ],
+  [
+   "Here",
+   10.62,
+   10.7
+  ],
+  [
+   "we",
+   10.7,
+   10.8
+  ],
+  [
+   "go.",
+   10.8,
+   11.12
+  ],
+  [
+   "Woah.",
+   12.8,
+   13.44
+  ],
+  [
+   "That",
+   13.5,
+   13.62
+  ],
+  [
+   "one's",
+   13.62,
+   13.88
+  ],
+  [
+   "mine.",
+   13.88,
+   14.16
+  ],
+  [
+   "Oh",
+   16.58,
+   16.92
+  ],
+  [
+   "shit.",
+   16.92,
+   17.3
+  ],
+  [
+   "Shazza",
+   19.02,
+   19.34
+  ],
+  [
+   "dazazza.",
+   19.34,
+   20.02
+  ],
+  [
+   "Press.",
+   23.29,
+   23.81
+  ],
+  [
+   "Oh",
+   24.43,
+   24.73
+  ],
+  [
+   "yeah.",
+   24.73,
+   25.31
+  ],
+  [
+   "Press.",
+   27.23,
+   27.71
+  ],
+  [
+   "Flip.",
+   29.55,
+   30.19
+  ],
+  [
+   "They're",
+   30.83,
+   31.09
+  ],
+  [
+   "cooking",
+   31.09,
+   31.23
+  ],
+  [
+   "fast,",
+   31.23,
+   31.81
+  ],
+  [
+   "huh?",
+   31.91,
+   32.15
+  ],
+  [
+   "Press.",
+   33.65,
+   34.29
+  ],
+  [
+   "Flip.",
+   35.59,
+   36.23
+  ],
+  [
+   "Just",
+   36.41,
+   36.53
+  ],
+  [
+   "give",
+   36.53,
+   36.69
+  ],
+  [
+   "it",
+   36.69,
+   36.79
+  ],
+  [
+   "a",
+   36.79,
+   36.87
+  ],
+  [
+   "little.",
+   36.87,
+   37.03
+  ],
+  [
+   "Press.",
+   40.13,
+   40.51
+  ],
+  [
+   "There",
+   40.63,
+   40.69
+  ],
+  [
+   "we",
+   40.69,
+   40.85
+  ],
+  [
+   "go.",
+   40.85,
+   41.11
+  ],
+  [
+   "Flip.",
+   41.89,
+   42.13
+  ],
+  [
+   "No.",
+   42.51,
+   42.63
+  ],
+  [
+   "I",
+   42.91,
+   42.93
+  ],
+  [
+   "want",
+   42.93,
+   43.07
+  ],
+  [
+   "mine",
+   43.07,
+   43.25
+  ],
+  [
+   "burnt.",
+   43.25,
+   43.71
+  ],
+  [
+   "Okay.",
+   44.35,
+   44.61
+  ]
+ ],
+ "captions": {
+  "instagram": "You can grill burgers in GTA 6\n\nJason flipping burgers on the deck, and xQc is fully locked in.\n\n🎥 @xqc on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #xqc",
+  "tiktok": "You can grill burgers in GTA 6 🎥 @xqc on Twitch #GTA6 #GTAVI #gta6clips #xqc",
+  "youtube_shorts": "You can grill burgers in GTA 6 #GTA6 #Shorts\n\n🎥 @xqc on Twitch\nFull stream: https://www.twitch.tv/videos/2932113307"
+ },
+ "notes": "Cut from https://www.twitch.tv/videos/2932113307 at 15:26:00-15:26:40. Credit is not permission: ask the creator if reachable; take down same day on request.",
+ "facecam": [
+  0.0,
+  0.505,
+  0.19,
+  0.28
+ ],
+ "facecam_h": 700,
+ "gzoom": 1.08
+}

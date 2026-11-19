@@ -37,6 +37,7 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `peanut-bank-account.mp4` | YOU NEED A BANK ACCOUNT IN GTA 6 | 41s | TheBurntPeanut, Twitch (new feature). **YouTube: posted by hand** (youtube.com/shorts/aYvcVHQBj0k) |
 | `peanut-flat-pack-furniture.mp4` | BUILDING FURNITURE IN GTA 6 IS TOO REAL | 56s | TheBurntPeanut, Twitch (funny) |
 | `peanut-dirt-bike-race.mp4` | WHY ARE THERE CARS IN THE DIRT BIKE RACE? | 47s | TheBurntPeanut, Twitch (physics, TikTok-safe) |
+| `xqc-bbq-minigame.mp4` | YOU CAN GRILL BURGERS IN GTA 6 | 40s | xQc, Twitch (new feature, TikTok-safe) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
