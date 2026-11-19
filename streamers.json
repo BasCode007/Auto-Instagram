@@ -9,8 +9,12 @@
     "facecam_h": 700,
     "priority": "high",
     "note": "title invites clippers (!CLIPPING)",
-    "live": false,
-    "target_share": 0.125
+    "live": true,
+    "target_share": 0.125,
+    "title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "vod_access": "public",
+    "vod_id": "2932194507",
+    "seen": "2026-11-19T15:51Z"
   },
   "xqc": {
     "facecam": [
@@ -41,7 +45,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2932305259",
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -76,7 +80,7 @@
   "jasontheween": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🔴GTA VI🔴UP EARLY GAMING🔴LETS GO🔴TODAY WILL BE A GOOD DAY🔴YIPPEE!🔴",
     "vod_access": "public",
     "vod_id": "2933588799",
@@ -98,7 +102,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
     "vod_id": "2933599748",
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   },
   "trymacs": {
     "facecam": null,
@@ -116,7 +120,7 @@
     "title": "GTA 6 ON CONTINUE LIVE 233H",
     "vod_access": "sub-only",
     "vod_id": "2933622673",
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   },
   "ishowspeed": {
     "facecam": [
@@ -130,7 +134,7 @@
     "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-19T14:51Z",
+    "seen": "2026-11-19T15:51Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -156,11 +160,11 @@
   "illojuan": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "Yo estuve aquí ❤️ - Grand Theft Auto VI #1",
+    "live": true,
+    "title": "DÍA 2 🦩 INSTALANDO GTA VI POR TERCERA VEZ 🙀 A GOZARLO FUERTE 💖 - Grand Theft Auto VI #2",
     "vod_access": "public",
-    "vod_id": "2932866051",
-    "seen": "2026-11-19T00:50Z"
+    "vod_id": "2933789253",
+    "seen": "2026-11-19T15:51Z"
   },
   "zackrawrr": {
     "facecam": null,
@@ -376,7 +380,7 @@
     "title": "[DROPS] GTA VI GRIND 🔥 | !iconleague !doku !eligella !gaming",
     "vod_access": "none",
     "vod_id": null,
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   },
   "domingo": {
     "facecam": null,
@@ -385,7 +389,7 @@
     "title": "GTA VI : Jason & Lucia vont retourner Vice City",
     "vod_access": "sub-only",
     "vod_id": "2933600681",
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   },
   "imantado": {
     "facecam": null,
@@ -403,7 +407,7 @@
     "title": "VICE CITY BABYYYYYYYYYYY",
     "vod_access": "public",
     "vod_id": "2933657204",
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   },
   "cohhcarnage": {
     "facecam": null,
@@ -412,7 +416,7 @@
     "title": "[!SubGift] GTA 6 (First Look) - Let's see what this game has to offer! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2933635259",
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   },
   "youngmulti": {
     "facecam": null,
@@ -421,7 +425,7 @@
     "title": "[EN/ES CC] 🛑 PREMIERA NOWEGO NUMERU \"ZA KAŻDYM RA2EM\" O 18:00 🛑 MÓJ PIERWSZY RAZ W GTA 6 🛑 | DARMOWY SUB -> !prime !OperaGX !holy",
     "vod_access": "sub-only",
     "vod_id": "2933648161",
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   },
   "hutchmf": {
     "facecam": null,
@@ -430,6 +434,6 @@
     "title": "{DROPS} GTA6 GIVEAWAYS ALL DAY !Kalshi #ad",
     "vod_access": "public",
     "vod_id": "2933605288",
-    "seen": "2026-11-19T14:51Z"
+    "seen": "2026-11-19T15:51Z"
   }
 }
