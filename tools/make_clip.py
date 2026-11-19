@@ -350,6 +350,13 @@ def _clean_word(w: str) -> str:
     core = re.sub(r"[^a-z]", "", w.lower())
     if core in PROFANITY:
         w = re.sub(core, PROFANITY[core], w, flags=re.I)
+    elif core and MUTE_RE.match(core):
+        # any other swear form ("fuck's", "shitty"): star the first vowel after the
+        # first letter, or the second letter when there is none
+        i = next((k for k, ch in enumerate(w) if k > 0 and ch.lower() in "aeiou"), None)
+        if i is None:
+            i = next(k for k, ch in enumerate(w) if k > 0 and ch.isalpha())
+        w = w[:i] + "*" + w[i + 1:]
     return w.upper()
 
 
