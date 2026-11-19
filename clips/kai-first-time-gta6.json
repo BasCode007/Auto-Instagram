@@ -1,260 +1,265 @@
 {
- "id": "kai-first-time-gta6",
- "pillar": "gameplay clips",
- "kind": "reel",
- "source": "twitch-2932305259/sec_12474_12840.mp4",
- "source_url": "https://www.twitch.tv/videos/2932305259",
- "source_range": [
-  1247.4,
-  1284.0
- ],
- "creator": "kaicenat",
- "hook": "KAI CENAT STARTS *GTA 6* FOR THE FIRST TIME",
- "credit": "@kaicenat on Twitch",
- "layout": "stack",
- "fps": 60,
- "no_letterbox": true,
- "preset": "medium",
- "segments": [
-  {
-   "start": 7.4,
-   "end": 44.0
+  "id": "kai-first-time-gta6",
+  "pillar": "gameplay clips",
+  "kind": "reel",
+  "source": "twitch-2932305259/sec_12474_12840.mp4",
+  "source_url": "https://www.twitch.tv/videos/2932305259",
+  "source_range": [
+    1247.4,
+    1284.0
+  ],
+  "creator": "kaicenat",
+  "hook": "KAI CENAT STARTS *GTA 6* FOR THE FIRST TIME",
+  "credit": "@kaicenat on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 7.4,
+      "end": 44.0
+    }
+  ],
+  "words": [
+    [
+      "This",
+      8.02,
+      8.5
+    ],
+    [
+      "looks",
+      8.5,
+      8.68
+    ],
+    [
+      "so",
+      8.68,
+      8.9
+    ],
+    [
+      "good",
+      8.9,
+      9.4
+    ],
+    [
+      "The",
+      19.05,
+      19.49
+    ],
+    [
+      "Hamlet",
+      19.49,
+      19.93
+    ],
+    [
+      "Correctional",
+      19.93,
+      20.39
+    ],
+    [
+      "Facility",
+      20.39,
+      20.81
+    ],
+    [
+      "See",
+      22.69,
+      23.13
+    ],
+    [
+      "is",
+      23.13,
+      23.57
+    ],
+    [
+      "it",
+      23.57,
+      23.69
+    ],
+    [
+      "really",
+      23.69,
+      23.87
+    ],
+    [
+      "you?",
+      23.87,
+      24.61
+    ],
+    [
+      "All",
+      25.77,
+      26.21
+    ],
+    [
+      "damn",
+      26.21,
+      26.65
+    ],
+    [
+      "Well,",
+      33.72,
+      34.16
+    ],
+    [
+      "there's",
+      34.24,
+      34.4
+    ],
+    [
+      "no",
+      34.4,
+      34.58
+    ],
+    [
+      "way",
+      34.58,
+      34.78
+    ],
+    [
+      "we",
+      34.78,
+      34.94
+    ],
+    [
+      "have",
+      34.94,
+      35.16
+    ],
+    [
+      "this",
+      35.16,
+      35.36
+    ],
+    [
+      "game",
+      35.36,
+      35.58
+    ],
+    [
+      "right",
+      35.58,
+      35.76
+    ],
+    [
+      "now,",
+      35.76,
+      36.02
+    ],
+    [
+      "bro.",
+      36.02,
+      36.28
+    ],
+    [
+      "There's",
+      36.28,
+      36.7
+    ],
+    [
+      "no",
+      36.7,
+      36.92
+    ],
+    [
+      "way",
+      36.92,
+      37.12
+    ],
+    [
+      "I",
+      37.12,
+      37.22
+    ],
+    [
+      "have",
+      37.22,
+      37.4
+    ],
+    [
+      "this",
+      37.4,
+      37.58
+    ],
+    [
+      "game",
+      37.58,
+      37.8
+    ],
+    [
+      "right",
+      37.8,
+      37.98
+    ],
+    [
+      "now",
+      37.98,
+      38.48
+    ],
+    [
+      "There's",
+      41.46,
+      41.94
+    ],
+    [
+      "no",
+      41.94,
+      42.16
+    ],
+    [
+      "way",
+      42.16,
+      42.42
+    ],
+    [
+      "I",
+      42.42,
+      42.56
+    ],
+    [
+      "actually",
+      42.56,
+      43.0
+    ],
+    [
+      "have",
+      43.0,
+      43.24
+    ],
+    [
+      "this",
+      43.24,
+      43.46
+    ],
+    [
+      "game",
+      43.46,
+      43.72
+    ],
+    [
+      "right",
+      43.72,
+      43.94
+    ]
+  ],
+  "captions": {
+    "instagram": "Kai Cenat starts GTA 6 for the first time\n\nThe opening titles roll and Kai can't believe it's real.\n\n🎥 @kaicenat on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #kaicenat",
+    "tiktok": "Kai Cenat starts GTA 6 for the first time 🎥 @kaicenat on Twitch #GTA6 #GTAVI #gta6clips #kaicenat",
+    "youtube_shorts": "Kai Cenat starts GTA 6 for the first time #GTA6 #Shorts\n\n🎥 @kaicenat on Twitch\nFull stream: https://www.twitch.tv/videos/2932305259"
+  },
+  "notes": "Cut from https://www.twitch.tv/videos/2932305259 at 0:20:47-0:21:24. Credit is not permission: ask the creator if reachable; take down same day on request.",
+  "facecam": [
+    0.005,
+    0.322,
+    0.198,
+    0.194
+  ],
+  "facecam_h": 600,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
   }
- ],
- "words": [
-  [
-   "This",
-   8.02,
-   8.5
-  ],
-  [
-   "looks",
-   8.5,
-   8.68
-  ],
-  [
-   "so",
-   8.68,
-   8.9
-  ],
-  [
-   "good",
-   8.9,
-   9.4
-  ],
-  [
-   "The",
-   19.05,
-   19.49
-  ],
-  [
-   "Hamlet",
-   19.49,
-   19.93
-  ],
-  [
-   "Correctional",
-   19.93,
-   20.39
-  ],
-  [
-   "Facility",
-   20.39,
-   20.81
-  ],
-  [
-   "See",
-   22.69,
-   23.13
-  ],
-  [
-   "is",
-   23.13,
-   23.57
-  ],
-  [
-   "it",
-   23.57,
-   23.69
-  ],
-  [
-   "really",
-   23.69,
-   23.87
-  ],
-  [
-   "you?",
-   23.87,
-   24.61
-  ],
-  [
-   "All",
-   25.77,
-   26.21
-  ],
-  [
-   "damn",
-   26.21,
-   26.65
-  ],
-  [
-   "Well,",
-   33.72,
-   34.16
-  ],
-  [
-   "there's",
-   34.24,
-   34.4
-  ],
-  [
-   "no",
-   34.4,
-   34.58
-  ],
-  [
-   "way",
-   34.58,
-   34.78
-  ],
-  [
-   "we",
-   34.78,
-   34.94
-  ],
-  [
-   "have",
-   34.94,
-   35.16
-  ],
-  [
-   "this",
-   35.16,
-   35.36
-  ],
-  [
-   "game",
-   35.36,
-   35.58
-  ],
-  [
-   "right",
-   35.58,
-   35.76
-  ],
-  [
-   "now,",
-   35.76,
-   36.02
-  ],
-  [
-   "bro.",
-   36.02,
-   36.28
-  ],
-  [
-   "There's",
-   36.28,
-   36.7
-  ],
-  [
-   "no",
-   36.7,
-   36.92
-  ],
-  [
-   "way",
-   36.92,
-   37.12
-  ],
-  [
-   "I",
-   37.12,
-   37.22
-  ],
-  [
-   "have",
-   37.22,
-   37.4
-  ],
-  [
-   "this",
-   37.4,
-   37.58
-  ],
-  [
-   "game",
-   37.58,
-   37.8
-  ],
-  [
-   "right",
-   37.8,
-   37.98
-  ],
-  [
-   "now",
-   37.98,
-   38.48
-  ],
-  [
-   "There's",
-   41.46,
-   41.94
-  ],
-  [
-   "no",
-   41.94,
-   42.16
-  ],
-  [
-   "way",
-   42.16,
-   42.42
-  ],
-  [
-   "I",
-   42.42,
-   42.56
-  ],
-  [
-   "actually",
-   42.56,
-   43.0
-  ],
-  [
-   "have",
-   43.0,
-   43.24
-  ],
-  [
-   "this",
-   43.24,
-   43.46
-  ],
-  [
-   "game",
-   43.46,
-   43.72
-  ],
-  [
-   "right",
-   43.72,
-   43.94
-  ]
- ],
- "captions": {
-  "instagram": "Kai Cenat starts GTA 6 for the first time\n\nThe opening titles roll and Kai can't believe it's real.\n\n🎥 @kaicenat on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #kaicenat",
-  "tiktok": "Kai Cenat starts GTA 6 for the first time 🎥 @kaicenat on Twitch #GTA6 #GTAVI #gta6clips #kaicenat",
-  "youtube_shorts": "Kai Cenat starts GTA 6 for the first time #GTA6 #Shorts\n\n🎥 @kaicenat on Twitch\nFull stream: https://www.twitch.tv/videos/2932305259"
- },
- "notes": "Cut from https://www.twitch.tv/videos/2932305259 at 0:20:47-0:21:24. Credit is not permission: ask the creator if reachable; take down same day on request.",
- "facecam": [
-  0.005,
-  0.322,
-  0.198,
-  0.194
- ],
- "facecam_h": 600,
- "gzoom": 1.08
 }

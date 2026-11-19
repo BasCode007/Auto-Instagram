@@ -1,265 +1,270 @@
 {
- "id": "xqc-gym-squats",
- "pillar": "gameplay clips",
- "kind": "short",
- "source": "twitch-2932113307/sec_252795_253450.mp4",
- "source_url": "https://www.twitch.tv/videos/2932113307",
- "source_range": [
-  25279.5,
-  25345.0
- ],
- "creator": "xqc",
- "hook": "GTA 6 HAS A *GYM MINIGAME*",
- "credit": "@xqc on Twitch",
- "layout": "stack",
- "fps": 60,
- "no_letterbox": true,
- "preset": "medium",
- "segments": [
-  {
-   "start": 6.034,
-   "end": 71.534
+  "id": "xqc-gym-squats",
+  "pillar": "gameplay clips",
+  "kind": "short",
+  "source": "twitch-2932113307/sec_252795_253450.mp4",
+  "source_url": "https://www.twitch.tv/videos/2932113307",
+  "source_range": [
+    25279.5,
+    25345.0
+  ],
+  "creator": "xqc",
+  "hook": "GTA 6 HAS A *GYM MINIGAME*",
+  "credit": "@xqc on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 6.034,
+      "end": 71.534
+    }
+  ],
+  "words": [
+    [
+      "Come",
+      6.65,
+      7.15
+    ],
+    [
+      "on!",
+      7.15,
+      7.67
+    ],
+    [
+      "You",
+      7.73,
+      7.91
+    ],
+    [
+      "won't",
+      7.91,
+      8.07
+    ],
+    [
+      "learn!",
+      8.07,
+      8.25
+    ],
+    [
+      "Dang",
+      9.11,
+      9.39
+    ],
+    [
+      "it!",
+      9.39,
+      9.99
+    ],
+    [
+      "Holy",
+      10.59,
+      10.81
+    ],
+    [
+      "shit.",
+      10.81,
+      11.23
+    ],
+    [
+      "So",
+      14.38,
+      14.44
+    ],
+    [
+      "surely",
+      14.44,
+      14.6
+    ],
+    [
+      "now",
+      14.6,
+      14.78
+    ],
+    [
+      "it's",
+      14.78,
+      14.86
+    ],
+    [
+      "done.",
+      14.86,
+      15.02
+    ],
+    [
+      "One",
+      24.2,
+      24.66
+    ],
+    [
+      "more?",
+      24.66,
+      24.96
+    ],
+    [
+      "The",
+      25.24,
+      25.3
+    ],
+    [
+      "squats?",
+      25.3,
+      25.72
+    ],
+    [
+      "Chad,",
+      30.11,
+      30.11
+    ],
+    [
+      "this",
+      30.29,
+      30.61
+    ],
+    [
+      "is",
+      30.61,
+      30.77
+    ],
+    [
+      "just",
+      30.77,
+      30.79
+    ],
+    [
+      "real",
+      30.79,
+      31.05
+    ],
+    [
+      "hard",
+      31.05,
+      31.33
+    ],
+    [
+      "working.",
+      31.33,
+      31.61
+    ],
+    [
+      "Come",
+      49.15,
+      49.27
+    ],
+    [
+      "on.",
+      49.27,
+      49.43
+    ],
+    [
+      "Come",
+      51.67,
+      51.93
+    ],
+    [
+      "on.",
+      51.93,
+      52.11
+    ],
+    [
+      "Come",
+      55.5,
+      55.7
+    ],
+    [
+      "on.",
+      55.7,
+      56.0
+    ],
+    [
+      "Oh",
+      56.18,
+      56.48
+    ],
+    [
+      "no!",
+      59.23,
+      59.47
+    ],
+    [
+      "Oh",
+      59.91,
+      60.01
+    ],
+    [
+      "no,",
+      60.01,
+      60.11
+    ],
+    [
+      "I",
+      60.19,
+      60.25
+    ],
+    [
+      "went",
+      60.25,
+      60.39
+    ],
+    [
+      "down",
+      60.39,
+      60.53
+    ],
+    [
+      "too",
+      60.53,
+      60.63
+    ],
+    [
+      "fast!",
+      60.63,
+      60.83
+    ],
+    [
+      "Not",
+      68.97,
+      69.37
+    ],
+    [
+      "bad.",
+      69.37,
+      69.53
+    ],
+    [
+      "What",
+      70.15,
+      70.55
+    ],
+    [
+      "a",
+      70.55,
+      70.65
+    ],
+    [
+      "workout.",
+      70.65,
+      70.83
+    ]
+  ],
+  "captions": {
+    "instagram": "GTA 6 has a gym minigame\n\nSquats, reps and failed lifts. Working out builds Jason's stats; xQc was not built for it.\n\n🎥 @xqc on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #xqc",
+    "tiktok": "GTA 6 has a gym minigame 🎥 @xqc on Twitch #GTA6 #GTAVI #gta6clips #xqc",
+    "youtube_shorts": "GTA 6 has a gym minigame #GTA6 #Shorts\n\n🎥 @xqc on Twitch\nFull stream: https://www.twitch.tv/videos/2932113307"
+  },
+  "notes": "Cut from https://www.twitch.tv/videos/2932113307 at 7:01:19-7:02:25. Credit is not permission: ask the creator if reachable; take down same day on request.",
+  "facecam": [
+    0.0,
+    0.505,
+    0.19,
+    0.28
+  ],
+  "facecam_h": 700,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
   }
- ],
- "words": [
-  [
-   "Come",
-   6.65,
-   7.15
-  ],
-  [
-   "on!",
-   7.15,
-   7.67
-  ],
-  [
-   "You",
-   7.73,
-   7.91
-  ],
-  [
-   "won't",
-   7.91,
-   8.07
-  ],
-  [
-   "learn!",
-   8.07,
-   8.25
-  ],
-  [
-   "Dang",
-   9.11,
-   9.39
-  ],
-  [
-   "it!",
-   9.39,
-   9.99
-  ],
-  [
-   "Holy",
-   10.59,
-   10.81
-  ],
-  [
-   "shit.",
-   10.81,
-   11.23
-  ],
-  [
-   "So",
-   14.38,
-   14.44
-  ],
-  [
-   "surely",
-   14.44,
-   14.6
-  ],
-  [
-   "now",
-   14.6,
-   14.78
-  ],
-  [
-   "it's",
-   14.78,
-   14.86
-  ],
-  [
-   "done.",
-   14.86,
-   15.02
-  ],
-  [
-   "One",
-   24.2,
-   24.66
-  ],
-  [
-   "more?",
-   24.66,
-   24.96
-  ],
-  [
-   "The",
-   25.24,
-   25.3
-  ],
-  [
-   "squats?",
-   25.3,
-   25.72
-  ],
-  [
-   "Chad,",
-   30.11,
-   30.11
-  ],
-  [
-   "this",
-   30.29,
-   30.61
-  ],
-  [
-   "is",
-   30.61,
-   30.77
-  ],
-  [
-   "just",
-   30.77,
-   30.79
-  ],
-  [
-   "real",
-   30.79,
-   31.05
-  ],
-  [
-   "hard",
-   31.05,
-   31.33
-  ],
-  [
-   "working.",
-   31.33,
-   31.61
-  ],
-  [
-   "Come",
-   49.15,
-   49.27
-  ],
-  [
-   "on.",
-   49.27,
-   49.43
-  ],
-  [
-   "Come",
-   51.67,
-   51.93
-  ],
-  [
-   "on.",
-   51.93,
-   52.11
-  ],
-  [
-   "Come",
-   55.5,
-   55.7
-  ],
-  [
-   "on.",
-   55.7,
-   56.0
-  ],
-  [
-   "Oh",
-   56.18,
-   56.48
-  ],
-  [
-   "no!",
-   59.23,
-   59.47
-  ],
-  [
-   "Oh",
-   59.91,
-   60.01
-  ],
-  [
-   "no,",
-   60.01,
-   60.11
-  ],
-  [
-   "I",
-   60.19,
-   60.25
-  ],
-  [
-   "went",
-   60.25,
-   60.39
-  ],
-  [
-   "down",
-   60.39,
-   60.53
-  ],
-  [
-   "too",
-   60.53,
-   60.63
-  ],
-  [
-   "fast!",
-   60.63,
-   60.83
-  ],
-  [
-   "Not",
-   68.97,
-   69.37
-  ],
-  [
-   "bad.",
-   69.37,
-   69.53
-  ],
-  [
-   "What",
-   70.15,
-   70.55
-  ],
-  [
-   "a",
-   70.55,
-   70.65
-  ],
-  [
-   "workout.",
-   70.65,
-   70.83
-  ]
- ],
- "captions": {
-  "instagram": "GTA 6 has a gym minigame\n\nSquats, reps and failed lifts. Working out builds Jason's stats; xQc was not built for it.\n\n🎥 @xqc on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #xqc",
-  "tiktok": "GTA 6 has a gym minigame 🎥 @xqc on Twitch #GTA6 #GTAVI #gta6clips #xqc",
-  "youtube_shorts": "GTA 6 has a gym minigame #GTA6 #Shorts\n\n🎥 @xqc on Twitch\nFull stream: https://www.twitch.tv/videos/2932113307"
- },
- "notes": "Cut from https://www.twitch.tv/videos/2932113307 at 7:01:19-7:02:25. Credit is not permission: ask the creator if reachable; take down same day on request.",
- "facecam": [
-  0.0,
-  0.505,
-  0.19,
-  0.28
- ],
- "facecam_h": 700,
- "gzoom": 1.08
 }

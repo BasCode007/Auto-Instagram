@@ -62,5 +62,10 @@
     "x": "Meet Brian Heder.\n\nA drug runner from the golden age of smuggling in the Keys. He lets Jason live rent-free, as long as he helps with local shakedowns.\n\n🎥 @RockstarGames"
   },
   "notes": "Character facts from rockstargames.com/VI/only-in-leonida. Dialogue captions are a hand-checked Whisper transcript of Trailer 2.",
-  "layout": "full"
+  "layout": "full",
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
 }

@@ -1,235 +1,240 @@
 {
- "id": "tg-pet-the-dog",
- "pillar": "gameplay clips",
- "kind": "reel",
- "source": "live-typicalgamer/rec_20261118T135952_003.mp4",
- "source_url": "https://www.twitch.tv/typicalgamer",
- "source_range": [
-  248.4,
-  272.6
- ],
- "creator": "typicalgamer",
- "hook": "YOU CAN *PET THE DOG* IN GTA 6",
- "credit": "@typicalgamer on Twitch",
- "layout": "stack",
- "fps": 60,
- "no_letterbox": true,
- "preset": "medium",
- "segments": [
-  {
-   "start": 248.4,
-   "end": 272.6
+  "id": "tg-pet-the-dog",
+  "pillar": "gameplay clips",
+  "kind": "reel",
+  "source": "live-typicalgamer/rec_20261118T135952_003.mp4",
+  "source_url": "https://www.twitch.tv/typicalgamer",
+  "source_range": [
+    248.4,
+    272.6
+  ],
+  "creator": "typicalgamer",
+  "hook": "YOU CAN *PET THE DOG* IN GTA 6",
+  "credit": "@typicalgamer on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 248.4,
+      "end": 272.6
+    }
+  ],
+  "words": [
+    [
+      "Thank",
+      248.54,
+      248.7
+    ],
+    [
+      "you",
+      248.7,
+      249.44
+    ],
+    [
+      "She",
+      250.0,
+      250.52
+    ],
+    [
+      "like",
+      250.52,
+      250.74
+    ],
+    [
+      "genuinely",
+      250.74,
+      251.48
+    ],
+    [
+      "looks",
+      251.48,
+      251.9
+    ],
+    [
+      "so",
+      251.9,
+      252.32
+    ],
+    [
+      "realistic.",
+      252.32,
+      252.9
+    ],
+    [
+      "I",
+      253.5,
+      254.3
+    ],
+    [
+      "Don't",
+      254.3,
+      254.38
+    ],
+    [
+      "know",
+      254.38,
+      254.48
+    ],
+    [
+      "how",
+      254.48,
+      254.58
+    ],
+    [
+      "to",
+      254.58,
+      254.68
+    ],
+    [
+      "describe",
+      254.68,
+      255.08
+    ],
+    [
+      "it",
+      255.08,
+      255.26
+    ],
+    [
+      "like",
+      255.26,
+      255.34
+    ],
+    [
+      "she",
+      255.34,
+      255.46
+    ],
+    [
+      "looks",
+      255.46,
+      255.6
+    ],
+    [
+      "so",
+      255.6,
+      255.76
+    ],
+    [
+      "realistic.",
+      255.76,
+      256.02
+    ],
+    [
+      "Oh",
+      256.08,
+      256.48
+    ],
+    [
+      "Arugula.",
+      256.48,
+      257.34
+    ],
+    [
+      "Oh",
+      257.82,
+      258.62
+    ],
+    [
+      "my",
+      258.62,
+      259.22
+    ],
+    [
+      "gosh",
+      259.22,
+      260.16
+    ],
+    [
+      "Keeping",
+      260.16,
+      260.62
+    ],
+    [
+      "it",
+      260.62,
+      260.8
+    ],
+    [
+      "true.",
+      260.8,
+      261.04
+    ],
+    [
+      "Oh",
+      261.68,
+      262.48
+    ],
+    [
+      "My",
+      263.04,
+      263.58
+    ],
+    [
+      "god,",
+      263.58,
+      264.28
+    ],
+    [
+      "so",
+      264.28,
+      265.1
+    ],
+    [
+      "adorable",
+      265.1,
+      265.82
+    ],
+    [
+      "It's",
+      267.54,
+      268.34
+    ],
+    [
+      "so",
+      268.34,
+      268.62
+    ],
+    [
+      "cute.",
+      268.62,
+      269.3
+    ],
+    [
+      "Oh",
+      269.88,
+      270.68
+    ],
+    [
+      "my",
+      270.68,
+      270.92
+    ],
+    [
+      "gosh",
+      270.92,
+      271.58
+    ]
+  ],
+  "captions": {
+    "instagram": "You can pet the dog in GTA 6\n\nHis neighbour's dog Arugula got the full TypicalGamer treatment.\n\n🎥 @typicalgamer on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #typicalgamer",
+    "tiktok": "You can pet the dog in GTA 6 🎥 @typicalgamer on Twitch #GTA6 #GTAVI #gta6clips #typicalgamer",
+    "youtube_shorts": "You can pet the dog in GTA 6 #GTA6 #Shorts\n\n🎥 @typicalgamer on Twitch\nFull stream: https://www.twitch.tv/typicalgamer"
+  },
+  "notes": "Cut from https://www.twitch.tv/typicalgamer at 0:04:08-0:04:32. Credit is not permission: ask the creator if reachable; take down same day on request.",
+  "facecam": [
+    0.008,
+    0.403,
+    0.22,
+    0.247
+  ],
+  "facecam_h": 700,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
   }
- ],
- "words": [
-  [
-   "Thank",
-   248.54,
-   248.7
-  ],
-  [
-   "you",
-   248.7,
-   249.44
-  ],
-  [
-   "She",
-   250.0,
-   250.52
-  ],
-  [
-   "like",
-   250.52,
-   250.74
-  ],
-  [
-   "genuinely",
-   250.74,
-   251.48
-  ],
-  [
-   "looks",
-   251.48,
-   251.9
-  ],
-  [
-   "so",
-   251.9,
-   252.32
-  ],
-  [
-   "realistic.",
-   252.32,
-   252.9
-  ],
-  [
-   "I",
-   253.5,
-   254.3
-  ],
-  [
-   "Don't",
-   254.3,
-   254.38
-  ],
-  [
-   "know",
-   254.38,
-   254.48
-  ],
-  [
-   "how",
-   254.48,
-   254.58
-  ],
-  [
-   "to",
-   254.58,
-   254.68
-  ],
-  [
-   "describe",
-   254.68,
-   255.08
-  ],
-  [
-   "it",
-   255.08,
-   255.26
-  ],
-  [
-   "like",
-   255.26,
-   255.34
-  ],
-  [
-   "she",
-   255.34,
-   255.46
-  ],
-  [
-   "looks",
-   255.46,
-   255.6
-  ],
-  [
-   "so",
-   255.6,
-   255.76
-  ],
-  [
-   "realistic.",
-   255.76,
-   256.02
-  ],
-  [
-   "Oh",
-   256.08,
-   256.48
-  ],
-  [
-   "Arugula.",
-   256.48,
-   257.34
-  ],
-  [
-   "Oh",
-   257.82,
-   258.62
-  ],
-  [
-   "my",
-   258.62,
-   259.22
-  ],
-  [
-   "gosh",
-   259.22,
-   260.16
-  ],
-  [
-   "Keeping",
-   260.16,
-   260.62
-  ],
-  [
-   "it",
-   260.62,
-   260.8
-  ],
-  [
-   "true.",
-   260.8,
-   261.04
-  ],
-  [
-   "Oh",
-   261.68,
-   262.48
-  ],
-  [
-   "My",
-   263.04,
-   263.58
-  ],
-  [
-   "god,",
-   263.58,
-   264.28
-  ],
-  [
-   "so",
-   264.28,
-   265.1
-  ],
-  [
-   "adorable",
-   265.1,
-   265.82
-  ],
-  [
-   "It's",
-   267.54,
-   268.34
-  ],
-  [
-   "so",
-   268.34,
-   268.62
-  ],
-  [
-   "cute.",
-   268.62,
-   269.3
-  ],
-  [
-   "Oh",
-   269.88,
-   270.68
-  ],
-  [
-   "my",
-   270.68,
-   270.92
-  ],
-  [
-   "gosh",
-   270.92,
-   271.58
-  ]
- ],
- "captions": {
-  "instagram": "You can pet the dog in GTA 6\n\nHis neighbour's dog Arugula got the full TypicalGamer treatment.\n\n🎥 @typicalgamer on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #typicalgamer",
-  "tiktok": "You can pet the dog in GTA 6 🎥 @typicalgamer on Twitch #GTA6 #GTAVI #gta6clips #typicalgamer",
-  "youtube_shorts": "You can pet the dog in GTA 6 #GTA6 #Shorts\n\n🎥 @typicalgamer on Twitch\nFull stream: https://www.twitch.tv/typicalgamer"
- },
- "notes": "Cut from https://www.twitch.tv/typicalgamer at 0:04:08-0:04:32. Credit is not permission: ask the creator if reachable; take down same day on request.",
- "facecam": [
-  0.008,
-  0.403,
-  0.22,
-  0.247
- ],
- "facecam_h": 700,
- "gzoom": 1.08
 }

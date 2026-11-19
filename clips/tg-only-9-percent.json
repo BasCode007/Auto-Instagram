@@ -1,337 +1,342 @@
 {
- "id": "tg-only-9-percent",
- "pillar": "gameplay clips",
- "kind": "reel",
- "source": "live-typicalgamer/rec_20261118T135952_007.mp4",
- "source_url": "https://www.twitch.tv/typicalgamer",
- "source_range": [
-  389.6,
-  415.0
- ],
- "creator": "typicalgamer",
- "hook": "HE'S ONLY *9% THROUGH* GTA 6",
- "credit": "@typicalgamer on Twitch",
- "layout": "stack",
- "fps": 60,
- "no_letterbox": true,
- "preset": "medium",
- "segments": [
-  {
-   "start": 389.6,
-   "end": 401.3,
-   "x": 0.5
+  "id": "tg-only-9-percent",
+  "pillar": "gameplay clips",
+  "kind": "reel",
+  "source": "live-typicalgamer/rec_20261118T135952_007.mp4",
+  "source_url": "https://www.twitch.tv/typicalgamer",
+  "source_range": [
+    389.6,
+    415.0
+  ],
+  "creator": "typicalgamer",
+  "hook": "HE'S ONLY *9% THROUGH* GTA 6",
+  "credit": "@typicalgamer on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 389.6,
+      "end": 401.3,
+      "x": 0.5
+    },
+    {
+      "start": 401.3,
+      "end": 415.0,
+      "x": 0.985
+    }
+  ],
+  "words": [
+    [
+      "Dude",
+      389.6,
+      390.14
+    ],
+    [
+      "GTA",
+      390.14,
+      390.88
+    ],
+    [
+      "6",
+      390.88,
+      391.24
+    ],
+    [
+      "online",
+      391.24,
+      391.52
+    ],
+    [
+      "is",
+      391.52,
+      391.72
+    ],
+    [
+      "gonna",
+      391.72,
+      391.84
+    ],
+    [
+      "be",
+      391.84,
+      391.98
+    ],
+    [
+      "insane.",
+      391.98,
+      392.28
+    ],
+    [
+      "I",
+      392.36,
+      392.44
+    ],
+    [
+      "just",
+      392.44,
+      392.54
+    ],
+    [
+      "want",
+      392.54,
+      392.64
+    ],
+    [
+      "to",
+      392.64,
+      392.74
+    ],
+    [
+      "throw",
+      392.74,
+      392.84
+    ],
+    [
+      "that",
+      392.84,
+      393.06
+    ],
+    [
+      "out",
+      393.06,
+      393.24
+    ],
+    [
+      "there",
+      393.24,
+      393.68
+    ],
+    [
+      "Put",
+      395.02,
+      395.46
+    ],
+    [
+      "this",
+      395.46,
+      395.6
+    ],
+    [
+      "down",
+      395.6,
+      395.8
+    ],
+    [
+      "here",
+      395.8,
+      396.24
+    ],
+    [
+      "All",
+      397.2,
+      397.64
+    ],
+    [
+      "right",
+      397.64,
+      397.84
+    ],
+    [
+      "now.",
+      397.84,
+      398.18
+    ],
+    [
+      "How",
+      398.18,
+      398.38
+    ],
+    [
+      "do",
+      398.38,
+      398.46
+    ],
+    [
+      "I",
+      398.46,
+      398.62
+    ],
+    [
+      "save",
+      398.62,
+      398.86
+    ],
+    [
+      "I",
+      398.86,
+      399.04
+    ],
+    [
+      "think",
+      399.04,
+      399.18
+    ],
+    [
+      "it",
+      399.18,
+      399.3
+    ],
+    [
+      "do",
+      399.3,
+      399.52
+    ],
+    [
+      "I",
+      399.52,
+      399.6
+    ],
+    [
+      "just",
+      399.6,
+      399.74
+    ],
+    [
+      "go",
+      399.74,
+      399.92
+    ],
+    [
+      "through",
+      399.92,
+      400.04
+    ],
+    [
+      "here",
+      400.04,
+      400.3
+    ],
+    [
+      "game",
+      400.3,
+      401.52
+    ],
+    [
+      "save",
+      401.52,
+      402.3
+    ],
+    [
+      "game",
+      402.3,
+      402.66
+    ],
+    [
+      "Does",
+      406.39,
+      406.83
+    ],
+    [
+      "it",
+      406.83,
+      406.91
+    ],
+    [
+      "show",
+      406.91,
+      407.05
+    ],
+    [
+      "your",
+      407.05,
+      407.19
+    ],
+    [
+      "percentage?",
+      407.19,
+      407.55
+    ],
+    [
+      "I'm",
+      407.57,
+      407.91
+    ],
+    [
+      "9",
+      407.91,
+      408.13
+    ],
+    [
+      "%",
+      408.13,
+      408.45
+    ],
+    [
+      "done",
+      408.45,
+      408.73
+    ],
+    [
+      "the",
+      408.73,
+      408.89
+    ],
+    [
+      "game",
+      408.89,
+      409.25
+    ],
+    [
+      "what?",
+      409.25,
+      410.15
+    ],
+    [
+      "No,",
+      411.81,
+      412.25
+    ],
+    [
+      "no,",
+      412.25,
+      412.69
+    ],
+    [
+      "no,",
+      412.69,
+      412.93
+    ],
+    [
+      "no,",
+      412.93,
+      413.27
+    ],
+    [
+      "no,",
+      413.27,
+      413.59
+    ],
+    [
+      "no,",
+      413.59,
+      414.13
+    ],
+    [
+      "no",
+      414.13,
+      414.69
+    ]
+  ],
+  "captions": {
+    "instagram": "He's only 9% through GTA 6\n\nHours into his marathon, TypicalGamer checked his save file. 9%. This game is massive.\n\n🎥 @typicalgamer on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #typicalgamer",
+    "tiktok": "He's only 9% through GTA 6 🎥 @typicalgamer on Twitch #GTA6 #GTAVI #gta6clips #typicalgamer",
+    "youtube_shorts": "He's only 9% through GTA 6 #GTA6 #Shorts\n\n🎥 @typicalgamer on Twitch\nFull stream: https://www.twitch.tv/typicalgamer"
   },
-  {
-   "start": 401.3,
-   "end": 415.0,
-   "x": 0.985
+  "notes": "Cut from https://www.twitch.tv/typicalgamer at 0:06:29-0:06:55. Credit is not permission: ask the creator if reachable; take down same day on request. Save-screen part framed right so the '(9%)' headline is fully visible; captions moved down so they don't cover it.",
+  "facecam": [
+    0.008,
+    0.403,
+    0.22,
+    0.247
+  ],
+  "facecam_h": 700,
+  "gzoom": 1.08,
+  "caption_y": 1330,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
   }
- ],
- "words": [
-  [
-   "Dude",
-   389.6,
-   390.14
-  ],
-  [
-   "GTA",
-   390.14,
-   390.88
-  ],
-  [
-   "6",
-   390.88,
-   391.24
-  ],
-  [
-   "online",
-   391.24,
-   391.52
-  ],
-  [
-   "is",
-   391.52,
-   391.72
-  ],
-  [
-   "gonna",
-   391.72,
-   391.84
-  ],
-  [
-   "be",
-   391.84,
-   391.98
-  ],
-  [
-   "insane.",
-   391.98,
-   392.28
-  ],
-  [
-   "I",
-   392.36,
-   392.44
-  ],
-  [
-   "just",
-   392.44,
-   392.54
-  ],
-  [
-   "want",
-   392.54,
-   392.64
-  ],
-  [
-   "to",
-   392.64,
-   392.74
-  ],
-  [
-   "throw",
-   392.74,
-   392.84
-  ],
-  [
-   "that",
-   392.84,
-   393.06
-  ],
-  [
-   "out",
-   393.06,
-   393.24
-  ],
-  [
-   "there",
-   393.24,
-   393.68
-  ],
-  [
-   "Put",
-   395.02,
-   395.46
-  ],
-  [
-   "this",
-   395.46,
-   395.6
-  ],
-  [
-   "down",
-   395.6,
-   395.8
-  ],
-  [
-   "here",
-   395.8,
-   396.24
-  ],
-  [
-   "All",
-   397.2,
-   397.64
-  ],
-  [
-   "right",
-   397.64,
-   397.84
-  ],
-  [
-   "now.",
-   397.84,
-   398.18
-  ],
-  [
-   "How",
-   398.18,
-   398.38
-  ],
-  [
-   "do",
-   398.38,
-   398.46
-  ],
-  [
-   "I",
-   398.46,
-   398.62
-  ],
-  [
-   "save",
-   398.62,
-   398.86
-  ],
-  [
-   "I",
-   398.86,
-   399.04
-  ],
-  [
-   "think",
-   399.04,
-   399.18
-  ],
-  [
-   "it",
-   399.18,
-   399.3
-  ],
-  [
-   "do",
-   399.3,
-   399.52
-  ],
-  [
-   "I",
-   399.52,
-   399.6
-  ],
-  [
-   "just",
-   399.6,
-   399.74
-  ],
-  [
-   "go",
-   399.74,
-   399.92
-  ],
-  [
-   "through",
-   399.92,
-   400.04
-  ],
-  [
-   "here",
-   400.04,
-   400.3
-  ],
-  [
-   "game",
-   400.3,
-   401.52
-  ],
-  [
-   "save",
-   401.52,
-   402.3
-  ],
-  [
-   "game",
-   402.3,
-   402.66
-  ],
-  [
-   "Does",
-   406.39,
-   406.83
-  ],
-  [
-   "it",
-   406.83,
-   406.91
-  ],
-  [
-   "show",
-   406.91,
-   407.05
-  ],
-  [
-   "your",
-   407.05,
-   407.19
-  ],
-  [
-   "percentage?",
-   407.19,
-   407.55
-  ],
-  [
-   "I'm",
-   407.57,
-   407.91
-  ],
-  [
-   "9",
-   407.91,
-   408.13
-  ],
-  [
-   "%",
-   408.13,
-   408.45
-  ],
-  [
-   "done",
-   408.45,
-   408.73
-  ],
-  [
-   "the",
-   408.73,
-   408.89
-  ],
-  [
-   "game",
-   408.89,
-   409.25
-  ],
-  [
-   "what?",
-   409.25,
-   410.15
-  ],
-  [
-   "No,",
-   411.81,
-   412.25
-  ],
-  [
-   "no,",
-   412.25,
-   412.69
-  ],
-  [
-   "no,",
-   412.69,
-   412.93
-  ],
-  [
-   "no,",
-   412.93,
-   413.27
-  ],
-  [
-   "no,",
-   413.27,
-   413.59
-  ],
-  [
-   "no,",
-   413.59,
-   414.13
-  ],
-  [
-   "no",
-   414.13,
-   414.69
-  ]
- ],
- "captions": {
-  "instagram": "He's only 9% through GTA 6\n\nHours into his marathon, TypicalGamer checked his save file. 9%. This game is massive.\n\n🎥 @typicalgamer on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #typicalgamer",
-  "tiktok": "He's only 9% through GTA 6 🎥 @typicalgamer on Twitch #GTA6 #GTAVI #gta6clips #typicalgamer",
-  "youtube_shorts": "He's only 9% through GTA 6 #GTA6 #Shorts\n\n🎥 @typicalgamer on Twitch\nFull stream: https://www.twitch.tv/typicalgamer"
- },
- "notes": "Cut from https://www.twitch.tv/typicalgamer at 0:06:29-0:06:55. Credit is not permission: ask the creator if reachable; take down same day on request. Save-screen part framed right so the '(9%)' headline is fully visible; captions moved down so they don't cover it.",
- "facecam": [
-  0.008,
-  0.403,
-  0.22,
-  0.247
- ],
- "facecam_h": 700,
- "gzoom": 1.08,
- "caption_y": 1330
 }

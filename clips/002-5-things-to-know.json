@@ -71,5 +71,10 @@
     "x": "5 things to know before you play GTA 6:\n\n- Unlocks at midnight local time\n- Pre-load is up to 212 GB\n- Targets 30 FPS on PS5 and Xbox Series X|S\n- Also on Xbox Cloud Gaming, with Remote Play\n- Free printable Leonida map on the official site Nov 19\n\n🎥 @RockstarGames"
   },
   "notes": "Every fact is in facts.md with its Rockstar Newswire link. After launch, swap item 1 for a post-launch tip.",
-  "layout": "full"
+  "layout": "full",
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
 }

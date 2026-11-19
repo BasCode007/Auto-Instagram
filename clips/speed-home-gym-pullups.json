@@ -1,194 +1,199 @@
 {
- "id": "speed-home-gym-pullups",
- "pillar": "new feature",
- "kind": "reel",
- "source": "live-ishowspeed/rec_20261118T165154_000.mp4",
- "source_url": "https://www.twitch.tv/ishowspeed",
- "source_range": [
-  97.0,
-  140.0
- ],
- "creator": "ishowspeed",
- "hook": "YOU CAN DO *PULL-UPS* IN GTA 6",
- "credit": "@ishowspeed on Twitch",
- "layout": "stack",
- "fps": 60,
- "no_letterbox": true,
- "preset": "medium",
- "segments": [
-  {
-   "start": 97.0,
-   "end": 118.5
+  "id": "speed-home-gym-pullups",
+  "pillar": "new feature",
+  "kind": "reel",
+  "source": "live-ishowspeed/rec_20261118T165154_000.mp4",
+  "source_url": "https://www.twitch.tv/ishowspeed",
+  "source_range": [
+    97.0,
+    140.0
+  ],
+  "creator": "ishowspeed",
+  "hook": "YOU CAN DO *PULL-UPS* IN GTA 6",
+  "credit": "@ishowspeed on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 97.0,
+      "end": 118.5
+    },
+    {
+      "start": 127.5,
+      "end": 140.0
+    }
+  ],
+  "words": [
+    [
+      "Might",
+      97.75,
+      98.33
+    ],
+    [
+      "be",
+      98.33,
+      98.49
+    ],
+    [
+      "looking",
+      98.49,
+      98.65
+    ],
+    [
+      "like",
+      98.65,
+      98.87
+    ],
+    [
+      "prom",
+      98.87,
+      99.19
+    ],
+    [
+      "or",
+      99.19,
+      99.35
+    ],
+    [
+      "an",
+      99.35,
+      99.47
+    ],
+    [
+      "auto",
+      99.47,
+      100.01
+    ],
+    [
+      "They",
+      102.13,
+      102.83
+    ],
+    [
+      "only",
+      102.83,
+      102.95
+    ],
+    [
+      "got",
+      102.95,
+      103.11
+    ],
+    [
+      "pull",
+      103.11,
+      103.51
+    ],
+    [
+      "-ups",
+      103.51,
+      104.11
+    ],
+    [
+      "They",
+      107.62,
+      107.97
+    ],
+    [
+      "got",
+      107.97,
+      108.67
+    ],
+    [
+      "pull",
+      108.67,
+      109.05
+    ],
+    [
+      "-ups",
+      109.05,
+      110.37
+    ],
+    [
+      "Yo",
+      126.54,
+      126.89
+    ],
+    [
+      "this",
+      130.66,
+      131.36
+    ],
+    [
+      "game",
+      131.36,
+      131.76
+    ],
+    [
+      "fire",
+      131.76,
+      132.34
+    ],
+    [
+      "bro,",
+      132.34,
+      132.84
+    ],
+    [
+      "you",
+      132.84,
+      133.88
+    ],
+    [
+      "can",
+      136.22,
+      136.4
+    ],
+    [
+      "do",
+      136.4,
+      136.62
+    ],
+    [
+      "pull",
+      136.62,
+      136.94
+    ],
+    [
+      "up",
+      136.94,
+      137.12
+    ],
+    [
+      "to",
+      137.12,
+      137.28
+    ],
+    [
+      "this",
+      137.28,
+      137.42
+    ],
+    [
+      "game",
+      137.42,
+      137.7
+    ]
+  ],
+  "captions": {
+    "instagram": "You can do pull-ups in GTA 6\n\nIShowSpeed found the home gym at Jason's place and started repping pull-ups.\n\n🎥 @ishowspeed on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #ishowspeed",
+    "tiktok": "You can do pull-ups in GTA 6 🎥 @ishowspeed on Twitch #GTA6 #GTAVI #gta6clips #ishowspeed",
+    "youtube_shorts": "You can do pull-ups in GTA 6 #GTA6 #Shorts\n\n🎥 @ishowspeed on Twitch\nFull stream: https://www.twitch.tv/ishowspeed"
   },
-  {
-   "start": 127.5,
-   "end": 140.0
+  "notes": "Cut from https://www.twitch.tv/ishowspeed at 0:01:37-0:02:20. Credit is not permission: ask the creator if reachable; take down same day on request.",
+  "facecam": [
+    0.0,
+    0.422,
+    0.2,
+    0.222
+  ],
+  "facecam_h": 650,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
   }
- ],
- "words": [
-  [
-   "Might",
-   97.75,
-   98.33
-  ],
-  [
-   "be",
-   98.33,
-   98.49
-  ],
-  [
-   "looking",
-   98.49,
-   98.65
-  ],
-  [
-   "like",
-   98.65,
-   98.87
-  ],
-  [
-   "prom",
-   98.87,
-   99.19
-  ],
-  [
-   "or",
-   99.19,
-   99.35
-  ],
-  [
-   "an",
-   99.35,
-   99.47
-  ],
-  [
-   "auto",
-   99.47,
-   100.01
-  ],
-  [
-   "They",
-   102.13,
-   102.83
-  ],
-  [
-   "only",
-   102.83,
-   102.95
-  ],
-  [
-   "got",
-   102.95,
-   103.11
-  ],
-  [
-   "pull",
-   103.11,
-   103.51
-  ],
-  [
-   "-ups",
-   103.51,
-   104.11
-  ],
-  [
-   "They",
-   107.62,
-   107.97
-  ],
-  [
-   "got",
-   107.97,
-   108.67
-  ],
-  [
-   "pull",
-   108.67,
-   109.05
-  ],
-  [
-   "-ups",
-   109.05,
-   110.37
-  ],
-  [
-   "Yo",
-   126.54,
-   126.89
-  ],
-  [
-   "this",
-   130.66,
-   131.36
-  ],
-  [
-   "game",
-   131.36,
-   131.76
-  ],
-  [
-   "fire",
-   131.76,
-   132.34
-  ],
-  [
-   "bro,",
-   132.34,
-   132.84
-  ],
-  [
-   "you",
-   132.84,
-   133.88
-  ],
-  [
-   "can",
-   136.22,
-   136.4
-  ],
-  [
-   "do",
-   136.4,
-   136.62
-  ],
-  [
-   "pull",
-   136.62,
-   136.94
-  ],
-  [
-   "up",
-   136.94,
-   137.12
-  ],
-  [
-   "to",
-   137.12,
-   137.28
-  ],
-  [
-   "this",
-   137.28,
-   137.42
-  ],
-  [
-   "game",
-   137.42,
-   137.7
-  ]
- ],
- "captions": {
-  "instagram": "You can do pull-ups in GTA 6\n\nIShowSpeed found the home gym at Jason's place and started repping pull-ups.\n\n🎥 @ishowspeed on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #ishowspeed",
-  "tiktok": "You can do pull-ups in GTA 6 🎥 @ishowspeed on Twitch #GTA6 #GTAVI #gta6clips #ishowspeed",
-  "youtube_shorts": "You can do pull-ups in GTA 6 #GTA6 #Shorts\n\n🎥 @ishowspeed on Twitch\nFull stream: https://www.twitch.tv/ishowspeed"
- },
- "notes": "Cut from https://www.twitch.tv/ishowspeed at 0:01:37-0:02:20. Credit is not permission: ask the creator if reachable; take down same day on request.",
- "facecam": [
-  0.0,
-  0.422,
-  0.2,
-  0.222
- ],
- "facecam_h": 650,
- "gzoom": 1.08
 }

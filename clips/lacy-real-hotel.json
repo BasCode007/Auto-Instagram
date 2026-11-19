@@ -1,155 +1,160 @@
 {
- "id": "lacy-real-hotel",
- "pillar": "gameplay clips",
- "kind": "reel",
- "source": "twitch-2932194507/sec_85265_85470.mp4",
- "source_url": "https://www.twitch.tv/videos/2932194507",
- "source_range": [
-  8526.5,
-  8547.0
- ],
- "creator": "lacy",
- "hook": "HE'S BEEN TO THIS HOTEL *IN REAL LIFE*",
- "credit": "@lacy on Twitch",
- "layout": "stack",
- "fps": 60,
- "no_letterbox": true,
- "preset": "medium",
- "segments": [
-  {
-   "start": 7.9,
-   "end": 28.4
+  "id": "lacy-real-hotel",
+  "pillar": "gameplay clips",
+  "kind": "reel",
+  "source": "twitch-2932194507/sec_85265_85470.mp4",
+  "source_url": "https://www.twitch.tv/videos/2932194507",
+  "source_range": [
+    8526.5,
+    8547.0
+  ],
+  "creator": "lacy",
+  "hook": "HE'S BEEN TO THIS HOTEL *IN REAL LIFE*",
+  "credit": "@lacy on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 7.9,
+      "end": 28.4
+    }
+  ],
+  "words": [
+    [
+      "My",
+      10.19,
+      10.69
+    ],
+    [
+      "god,",
+      10.69,
+      11.05
+    ],
+    [
+      "I've",
+      11.05,
+      11.31
+    ],
+    [
+      "been",
+      11.31,
+      11.49
+    ],
+    [
+      "here",
+      11.49,
+      11.69
+    ],
+    [
+      "before",
+      11.69,
+      11.97
+    ],
+    [
+      "in",
+      11.97,
+      12.21
+    ],
+    [
+      "real",
+      12.21,
+      12.39
+    ],
+    [
+      "life",
+      12.39,
+      13.25
+    ],
+    [
+      "Bro,",
+      13.25,
+      14.09
+    ],
+    [
+      "I've",
+      17.2,
+      17.44
+    ],
+    [
+      "been",
+      17.44,
+      17.62
+    ],
+    [
+      "to",
+      17.62,
+      17.74
+    ],
+    [
+      "this",
+      17.74,
+      17.9
+    ],
+    [
+      "hotel",
+      17.9,
+      18.54
+    ],
+    [
+      "Shit,",
+      25.48,
+      25.98
+    ],
+    [
+      "okay.",
+      26.04,
+      26.36
+    ],
+    [
+      "I'm",
+      26.38,
+      26.5
+    ],
+    [
+      "lowkey",
+      26.5,
+      26.74
+    ],
+    [
+      "discover",
+      26.74,
+      27.04
+    ],
+    [
+      "some",
+      27.04,
+      27.32
+    ],
+    [
+      "shit",
+      27.32,
+      27.54
+    ],
+    [
+      "now",
+      27.54,
+      27.82
+    ]
+  ],
+  "captions": {
+    "instagram": "He's been to this hotel in real life\n\nLacy rode into downtown Vice City and recognised a hotel he's stayed at.\n\n🎥 @lacy on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #lacy",
+    "tiktok": "He's been to this hotel in real life 🎥 @lacy on Twitch #GTA6 #GTAVI #gta6clips #lacy",
+    "youtube_shorts": "He's been to this hotel in real life #GTA6 #Shorts\n\n🎥 @lacy on Twitch\nFull stream: https://www.twitch.tv/videos/2932194507"
+  },
+  "notes": "Cut from https://www.twitch.tv/videos/2932194507 at 2:22:06-2:22:27. Credit is not permission: ask the creator if reachable; take down same day on request.",
+  "facecam": [
+    0.0,
+    0.0,
+    0.258,
+    0.256
+  ],
+  "facecam_h": 700,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
   }
- ],
- "words": [
-  [
-   "My",
-   10.19,
-   10.69
-  ],
-  [
-   "god,",
-   10.69,
-   11.05
-  ],
-  [
-   "I've",
-   11.05,
-   11.31
-  ],
-  [
-   "been",
-   11.31,
-   11.49
-  ],
-  [
-   "here",
-   11.49,
-   11.69
-  ],
-  [
-   "before",
-   11.69,
-   11.97
-  ],
-  [
-   "in",
-   11.97,
-   12.21
-  ],
-  [
-   "real",
-   12.21,
-   12.39
-  ],
-  [
-   "life",
-   12.39,
-   13.25
-  ],
-  [
-   "Bro,",
-   13.25,
-   14.09
-  ],
-  [
-   "I've",
-   17.2,
-   17.44
-  ],
-  [
-   "been",
-   17.44,
-   17.62
-  ],
-  [
-   "to",
-   17.62,
-   17.74
-  ],
-  [
-   "this",
-   17.74,
-   17.9
-  ],
-  [
-   "hotel",
-   17.9,
-   18.54
-  ],
-  [
-   "Shit,",
-   25.48,
-   25.98
-  ],
-  [
-   "okay.",
-   26.04,
-   26.36
-  ],
-  [
-   "I'm",
-   26.38,
-   26.5
-  ],
-  [
-   "lowkey",
-   26.5,
-   26.74
-  ],
-  [
-   "discover",
-   26.74,
-   27.04
-  ],
-  [
-   "some",
-   27.04,
-   27.32
-  ],
-  [
-   "shit",
-   27.32,
-   27.54
-  ],
-  [
-   "now",
-   27.54,
-   27.82
-  ]
- ],
- "captions": {
-  "instagram": "He's been to this hotel in real life\n\nLacy rode into downtown Vice City and recognised a hotel he's stayed at.\n\n🎥 @lacy on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #lacy",
-  "tiktok": "He's been to this hotel in real life 🎥 @lacy on Twitch #GTA6 #GTAVI #gta6clips #lacy",
-  "youtube_shorts": "He's been to this hotel in real life #GTA6 #Shorts\n\n🎥 @lacy on Twitch\nFull stream: https://www.twitch.tv/videos/2932194507"
- },
- "notes": "Cut from https://www.twitch.tv/videos/2932194507 at 2:22:06-2:22:27. Credit is not permission: ask the creator if reachable; take down same day on request.",
- "facecam": [
-  0.0,
-  0.0,
-  0.258,
-  0.256
- ],
- "facecam_h": 700,
- "gzoom": 1.08
 }

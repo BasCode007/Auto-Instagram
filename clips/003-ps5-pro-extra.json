@@ -66,5 +66,10 @@
     "x": "GTA 6 on PS5 Pro:\n\n- Ray-traced shadows, only on PS5 Pro\n- Sharper image through PSSR\n- All consoles target 30 FPS\n\n🎥 @RockstarGames"
   },
   "notes": "Source: Rockstar Newswire, Nov 10 2026 (Pre-Load Grand Theft Auto VI Now). Ask in comments which console people use; good reply bait.",
-  "layout": "full"
+  "layout": "full",
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
 }

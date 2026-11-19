@@ -51,6 +51,18 @@ Never clickbait anything the clip doesn't deliver. Never sound like Rockstar.
 Pillars: official news · tips and tutorials · gameplay clips (credited) · GTA 5 nostalgia · spotlights · countdown/daily recap · questions.
 Quality beats volume. Skip a slot rather than post something weak or unverified.
 
+## TikTok: staying eligible for the For You feed
+
+TikTok keeps four kinds of content out of For You (the "FYF eligibility standards"): behavioural health, sensitive and mature themes, integrity and authenticity, regulated goods. For a GTA clip page that means:
+
+- **No clip built around guns, gun shops, armed robbery, drugs or alcohol** on TikTok. Fictional or not, weapons and drugs are "regulated goods". Those clips go to YouTube and Instagram only (`"platforms": {"tiktok": false}` in the clip spec).
+- **Swear words are muted in the audio** (`make_clip.py` does it automatically from the word timings) as well as masked in the captions. No slurs, sexual jokes, nudity or self-harm jokes ("I'll kill myself") at all.
+- **Add something original to every clip**: our hook, captions, a tight cut, the credit. A plain re-upload of someone else's stream counts as "unoriginal content" (integrity and authenticity).
+- **New accounts:** use the account like a person for the first days (watch and like GTA videos, finish the bio and avatar, post one or two clips natively from the phone with a trending sound) before scheduling lots of posts through vidIQ. Space posts at least 90 minutes apart.
+- **Never Promote clips of other creators' streams.** Ads must be original content, so Promote rejects them (the refund goes back to the Promote balance).
+- **Keep "Audience controls" off.** If the profile says "This creator turned on audience controls" to logged-out viewers, the account or its videos are limited to adults (18+) and get almost no For You reach.
+- If a video shows "not eligible for recommendation" in its analytics, appeal it from the video's analytics page, then check Settings and privacy → Account → Account status.
+
 ## Clip rules (every clip)
 
 1. Hook on screen in the first second.

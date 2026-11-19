@@ -328,6 +328,23 @@ PROFANITY = {"fuck": "f*ck", "fucking": "f*cking", "fucked": "f*cked", "shit": "
              "bullshit": "bullsh*t", "dick": "d*ck", "pussy": "p*ssy", "ass": "a*s"}
 
 
+MUTE_RE = re.compile(r"^(f+u+c*k+\w*|motherf\w*|sh+i+t+\w*|bullshit\w*|bitch\w*|cunt\w*|nigg\w*|"
+                     r"pussy|dick\w*|ass|asshole\w*|cock\w*|whore\w*|slut\w*|fag\w*|retard\w*)$")
+
+
+def mute_windows(words, pad: float = 0.06) -> list[tuple[float, float]]:
+    """Clip-time ranges to silence: strong swear words and slurs.
+
+    TikTok/Instagram limit For You / Explore reach for heavy profanity, so the
+    audio is muted under those words (captions already mask them)."""
+    out = []
+    for w, s, e in words:
+        core = re.sub(r"[^a-z]", "", w.lower())
+        if core and MUTE_RE.match(core):
+            out.append((max(0.0, s - pad), e + pad))
+    return out
+
+
 def _clean_word(w: str) -> str:
     w = w.replace("{", "").replace("}", "").replace("\\", "").strip()
     core = re.sub(r"[^a-z]", "", w.lower())
@@ -490,8 +507,14 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool,
             parts.append(f"[{last}]scale={pw}:{ph}:flags=lanczos,"
                          f"unsharp=5:5:0.35:5:5:0.0[up]")
             last = "up"
-        # gentle loudness normalisation so clips sit at a consistent level
-        parts.append("[ac]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]")
+        # mute swear words, then gentle loudness normalisation
+        mutes = mute_windows(words) if spec.get("mute_profanity", True) else []
+        mute_f = ""
+        if mutes:
+            expr = "+".join(f"between(t,{a:.2f},{b:.2f})" for a, b in mutes)
+            mute_f = f"volume=0:enable='{expr}',"
+            print(f"[{clip_id}] muted {len(mutes)} swear word(s)")
+        parts.append(f"[ac]{mute_f}loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]")
         out_dir.mkdir(parents=True, exist_ok=True)
         out = out_dir / f"{clip_id}{prof['suffix']}.mp4"
         preset = "veryfast" if preview else (prof["preset"] or spec.get("preset", "slow"))

@@ -55,5 +55,10 @@
     "x": "Leonida social media is unhinged.\n\n🎥 @RockstarGames"
   },
   "notes": "Skips the suggestive car-roof/club shots and a nude frame (Trailer 1, 54.0-54.7s) from this part of the trailer. Check the final cut before posting.",
-  "layout": "full"
+  "layout": "full",
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
 }

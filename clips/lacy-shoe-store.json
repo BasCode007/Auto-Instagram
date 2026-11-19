@@ -1,229 +1,234 @@
 {
- "id": "lacy-shoe-store",
- "pillar": "gameplay clips",
- "kind": "reel",
- "source": "twitch-2932194507/sec_83315_83720.mp4",
- "source_url": "https://www.twitch.tv/videos/2932194507",
- "source_range": [
-  8331.5,
-  8372.0
- ],
- "creator": "lacy",
- "hook": "GTA 6 HAS *REAL SHOE STORES*",
- "credit": "@lacy on Twitch",
- "layout": "stack",
- "fps": 60,
- "no_letterbox": true,
- "preset": "medium",
- "segments": [
-  {
-   "start": 0.0,
-   "end": 14.7
+  "id": "lacy-shoe-store",
+  "pillar": "gameplay clips",
+  "kind": "reel",
+  "source": "twitch-2932194507/sec_83315_83720.mp4",
+  "source_url": "https://www.twitch.tv/videos/2932194507",
+  "source_range": [
+    8331.5,
+    8372.0
+  ],
+  "creator": "lacy",
+  "hook": "GTA 6 HAS *REAL SHOE STORES*",
+  "credit": "@lacy on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 14.7
+    },
+    {
+      "start": 27.0,
+      "end": 40.5
+    }
+  ],
+  "words": [
+    [
+      "My",
+      4.24,
+      4.7
+    ],
+    [
+      "god,",
+      4.7,
+      4.98
+    ],
+    [
+      "oh",
+      5.28,
+      6.58
+    ],
+    [
+      "my",
+      6.58,
+      6.74
+    ],
+    [
+      "god.",
+      6.74,
+      6.94
+    ],
+    [
+      "I'm",
+      6.96,
+      7.06
+    ],
+    [
+      "going",
+      7.06,
+      7.16
+    ],
+    [
+      "to",
+      7.16,
+      7.3
+    ],
+    [
+      "the",
+      7.3,
+      7.38
+    ],
+    [
+      "shoe",
+      7.38,
+      7.52
+    ],
+    [
+      "store.",
+      7.52,
+      7.84
+    ],
+    [
+      "Oh,",
+      9.1,
+      9.7
+    ],
+    [
+      "I",
+      9.7,
+      9.84
+    ],
+    [
+      "know",
+      9.84,
+      10.02
+    ],
+    [
+      "what",
+      10.02,
+      10.16
+    ],
+    [
+      "this",
+      10.16,
+      10.38
+    ],
+    [
+      "is",
+      10.38,
+      10.58
+    ],
+    [
+      "better",
+      10.58,
+      10.8
+    ],
+    [
+      "be",
+      10.8,
+      11.4
+    ],
+    [
+      "I'm",
+      12.38,
+      12.98
+    ],
+    [
+      "gonna",
+      12.98,
+      13.12
+    ],
+    [
+      "see",
+      13.12,
+      13.38
+    ],
+    [
+      "some",
+      13.38,
+      13.62
+    ],
+    [
+      "yetis",
+      13.62,
+      14.64
+    ],
+    [
+      "Do",
+      17.49,
+      18.09
+    ],
+    [
+      "you",
+      20.88,
+      21.48
+    ],
+    [
+      "mind",
+      21.48,
+      21.94
+    ],
+    [
+      "It's",
+      25.14,
+      25.74
+    ],
+    [
+      "an",
+      25.74,
+      25.9
+    ],
+    [
+      "actual",
+      25.9,
+      26.64
+    ],
+    [
+      "shoe",
+      26.64,
+      27.14
+    ],
+    [
+      "store",
+      27.14,
+      27.66
+    ],
+    [
+      "GTA",
+      30.76,
+      31.36
+    ],
+    [
+      "what",
+      31.36,
+      31.92
+    ],
+    [
+      "is",
+      31.92,
+      32.18
+    ],
+    [
+      "this",
+      32.18,
+      32.62
+    ],
+    [
+      "bro?",
+      32.62,
+      33.12
+    ]
+  ],
+  "captions": {
+    "instagram": "GTA 6 has real shoe stores\n\nYou can walk straight in. Lacy was not ready.\n\n🎥 @lacy on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #lacy",
+    "tiktok": "GTA 6 has real shoe stores 🎥 @lacy on Twitch #GTA6 #GTAVI #gta6clips #lacy",
+    "youtube_shorts": "GTA 6 has real shoe stores #GTA6 #Shorts\n\n🎥 @lacy on Twitch\nFull stream: https://www.twitch.tv/videos/2932194507"
   },
-  {
-   "start": 27.0,
-   "end": 40.5
+  "notes": "Cut from https://www.twitch.tv/videos/2932194507 at 2:18:51-2:19:32. Credit is not permission: ask the creator if reachable; take down same day on request. Edited out a crude line between 14.7s and 27.0s of the section.",
+  "facecam": [
+    0.0,
+    0.0,
+    0.258,
+    0.256
+  ],
+  "facecam_h": 700,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
   }
- ],
- "words": [
-  [
-   "My",
-   4.24,
-   4.7
-  ],
-  [
-   "god,",
-   4.7,
-   4.98
-  ],
-  [
-   "oh",
-   5.28,
-   6.58
-  ],
-  [
-   "my",
-   6.58,
-   6.74
-  ],
-  [
-   "god.",
-   6.74,
-   6.94
-  ],
-  [
-   "I'm",
-   6.96,
-   7.06
-  ],
-  [
-   "going",
-   7.06,
-   7.16
-  ],
-  [
-   "to",
-   7.16,
-   7.3
-  ],
-  [
-   "the",
-   7.3,
-   7.38
-  ],
-  [
-   "shoe",
-   7.38,
-   7.52
-  ],
-  [
-   "store.",
-   7.52,
-   7.84
-  ],
-  [
-   "Oh,",
-   9.1,
-   9.7
-  ],
-  [
-   "I",
-   9.7,
-   9.84
-  ],
-  [
-   "know",
-   9.84,
-   10.02
-  ],
-  [
-   "what",
-   10.02,
-   10.16
-  ],
-  [
-   "this",
-   10.16,
-   10.38
-  ],
-  [
-   "is",
-   10.38,
-   10.58
-  ],
-  [
-   "better",
-   10.58,
-   10.8
-  ],
-  [
-   "be",
-   10.8,
-   11.4
-  ],
-  [
-   "I'm",
-   12.38,
-   12.98
-  ],
-  [
-   "gonna",
-   12.98,
-   13.12
-  ],
-  [
-   "see",
-   13.12,
-   13.38
-  ],
-  [
-   "some",
-   13.38,
-   13.62
-  ],
-  [
-   "yetis",
-   13.62,
-   14.64
-  ],
-  [
-   "Do",
-   17.49,
-   18.09
-  ],
-  [
-   "you",
-   20.88,
-   21.48
-  ],
-  [
-   "mind",
-   21.48,
-   21.94
-  ],
-  [
-   "It's",
-   25.14,
-   25.74
-  ],
-  [
-   "an",
-   25.74,
-   25.9
-  ],
-  [
-   "actual",
-   25.9,
-   26.64
-  ],
-  [
-   "shoe",
-   26.64,
-   27.14
-  ],
-  [
-   "store",
-   27.14,
-   27.66
-  ],
-  [
-   "GTA",
-   30.76,
-   31.36
-  ],
-  [
-   "what",
-   31.36,
-   31.92
-  ],
-  [
-   "is",
-   31.92,
-   32.18
-  ],
-  [
-   "this",
-   32.18,
-   32.62
-  ],
-  [
-   "bro?",
-   32.62,
-   33.12
-  ]
- ],
- "captions": {
-  "instagram": "GTA 6 has real shoe stores\n\nYou can walk straight in. Lacy was not ready.\n\n🎥 @lacy on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #lacy",
-  "tiktok": "GTA 6 has real shoe stores 🎥 @lacy on Twitch #GTA6 #GTAVI #gta6clips #lacy",
-  "youtube_shorts": "GTA 6 has real shoe stores #GTA6 #Shorts\n\n🎥 @lacy on Twitch\nFull stream: https://www.twitch.tv/videos/2932194507"
- },
- "notes": "Cut from https://www.twitch.tv/videos/2932194507 at 2:18:51-2:19:32. Credit is not permission: ask the creator if reachable; take down same day on request. Edited out a crude line between 14.7s and 27.0s of the section.",
- "facecam": [
-  0.0,
-  0.0,
-  0.258,
-  0.256
- ],
- "facecam_h": 700,
- "gzoom": 1.08
 }

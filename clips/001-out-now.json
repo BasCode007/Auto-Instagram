@@ -69,5 +69,10 @@
     "x": "GTA 6 is out now.\n\nIt unlocks at midnight local time in each region, on PS5 and Xbox Series X|S.\n\n🎥 @RockstarGames"
   },
   "notes": "Post the moment it is live in the first region (playbook section 10). Rockstar: midnight local time in all regions. New Zealand is first (11:00 UTC Nov 18). X first, then Reels/TikTok/Shorts.",
-  "layout": "full"
+  "layout": "full",
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
 }
