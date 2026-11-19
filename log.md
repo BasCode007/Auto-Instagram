@@ -35,3 +35,21 @@ Every post that went out. Newest first.
 | 2026-11-19 | 07:40 AEDT | TikTok (Vice City Replayz) | tg-pet-the-dog | You can pet the dog in GTA 6 | @typicalgamer | https://www.tiktok.com/@vicecityreplayzvi/video/7709614050312850708 |
 | 2026-11-19 | 09:10 AEDT | TikTok (Vice City Replayz) | lacy-cops-know-outfit | GTA 6 cops remember your outfit | @lacy | https://www.tiktok.com/@vicecityreplayzvi/video/7709637226774154504 |
 | 2026-11-19 | 10:40 AEDT | TikTok (Vice City Replayz) | tg-fix-up-the-house | You can fix up Jason's house in GTA 6 | @typicalgamer | https://www.tiktok.com/@vicecityreplayzvi/video/7709660466062085397 |
+| 2026-11-20 | 07:05 AEDT | Instagram (@vicecityreplayz2026) | peanut-wins-street-race | Peanut won his first street race | @theburntpeanut | scheduled via vidIQ (post e1c8c22d) |
+| 2026-11-20 | 07:20 AEDT | TikTok (Vice City Replayz) | peanut-wins-street-race | Peanut won his first street race | @theburntpeanut | scheduled via vidIQ (post e1c8c22d) |
+| 2026-11-20 | 07:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-alligator-wasted | Lacy tried to fight an alligator in GTA 6 | @lacy | scheduled via vidIQ (post 46921ac5) |
+| 2026-11-20 | 08:50 AEDT | TikTok (Vice City Replayz) | lacy-alligator-wasted | Lacy tried to fight an alligator in GTA 6 | @lacy | scheduled via vidIQ (post 46921ac5) |
+| 2026-11-20 | 08:05 AEDT | Instagram (@vicecityreplayz2026) | peanut-polite-carjacking | Peanut is the politest car thief in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 774f3744) |
+| 2026-11-20 | 10:20 AEDT | TikTok (Vice City Replayz) | peanut-polite-carjacking | Peanut is the politest car thief in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 774f3744) |
+| 2026-11-20 | 08:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-snake-dolores | Jason has a pet snake named Dolores | @lacy | scheduled via vidIQ (post 642382d0) |
+| 2026-11-20 | 09:05 AEDT | Instagram (@vicecityreplayz2026) | peanut-pool-minigame | You can play pool in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 42b40fa0) |
+| 2026-11-20 | 09:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-hat-glasses-disguise | GTA 6 has disguises | @lacy | scheduled via vidIQ (post 09b34adb) |
+| 2026-11-20 | 11:50 AEDT | TikTok (Vice City Replayz) | lacy-hat-glasses-disguise | GTA 6 has disguises | @lacy | scheduled via vidIQ (post 09b34adb) |
+| 2026-11-20 | 10:05 AEDT | Instagram (@vicecityreplayz2026) | peanut-bank-account | You need a bank account in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 4ec07f3d) |
+| 2026-11-20 | 13:20 AEDT | TikTok (Vice City Replayz) | peanut-bank-account | You need a bank account in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 4ec07f3d) |
+| 2026-11-20 | 10:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-fridge | Jason's fridge is too real | @lacy | scheduled via vidIQ (post 3d50cd0d) |
+| 2026-11-20 | 14:50 AEDT | TikTok (Vice City Replayz) | lacy-fridge | Jason's fridge is too real | @lacy | scheduled via vidIQ (post 3d50cd0d) |
+| 2026-11-20 | 11:05 AEDT | Instagram (@vicecityreplayz2026) | peanut-ammu-nation | Ammu-Nation is back in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 8851237c) |
+| 2026-11-20 | 11:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-cops-know-outfit | GTA 6 cops remember your outfit | @lacy | scheduled via vidIQ (post 01540ef0) |
+| 2026-11-20 | 12:05 AEDT | Instagram (@vicecityreplayz2026) | lacy-shoe-store | GTA 6 has real shoe stores | @lacy | scheduled via vidIQ (post 85c9e330) |
+| 2026-11-20 | 16:20 AEDT | TikTok (Vice City Replayz) | lacy-shoe-store | GTA 6 has real shoe stores | @lacy | scheduled via vidIQ (post 85c9e330) |
