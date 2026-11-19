@@ -23,6 +23,12 @@ Customized from "Faceless GTA 6 Clipping Page: Full Setup Prompt". GTA 6 only. N
 - **Sources:** Twitch / Kick launch streams and VODs (download fine from the cloud); YouTube videos (blocked from the cloud; see README for running on your own computer).
 - **Creator mix (rough guide, not a quota).** About **50% TheBurntPeanut** (funny, strong engagement), the other **50% split across IShowSpeed, Lacy, xQc and TypicalGamer**. Quality wins: when one creator is having a better or busier stream, clip more of them; never post a weak clip just to hit the mix. Others (Kai Cenat, new discoveries) only when a moment is clearly great. `tools/creator_mix.py` shows the current split.
 
+### Creator on screen, no watermark (owner, 20 Nov)
+
+- **The creator must be visible in every clip.** Use the stack layout: their cam on top, gameplay below. Lacy: facecam `0,0,0.258,0.256`. TheBurntPeanut has no webcam but shows a peanut avatar bottom-left: day-2+ footage `--facecam 0.14,0.66,0.31,0.34 --facecam-h 640`; day-1 footage `0.10,0.70,0.285,0.30`. Check a frame first; the avatar can move between streams.
+- **No on-screen "@creator on Twitch" credit.** `make_clip.py` no longer draws it (set `"credit_on_screen": true` to bring it back). The credit lives in the caption/description: "🎥 Name, twitch.tv/channel".
+- Fact videos keep their full-screen phone shots but drop the watermark too.
+
 ### Content mix: reactions + "did you know" facts (owner, 20 Nov)
 
 Mostly reactions and funny stream moments (they win: 1.2k to 1.6k views per Peanut Reel), plus **about 1 fact video for every 3 reactions**.

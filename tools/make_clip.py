@@ -465,8 +465,10 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool,
         if spec.get("hook"):
             render_hook(spec["hook"], tmp / "hook.png", spec.get("hook_size", 84))
             overlays.append((tmp / "hook.png", 0, hook_end))
-        if spec.get("credit"):
-            cy = {"fit": FG_TOP + FG_H - 50, "stack": face_h - 52}.get(layout, SAFE_BOTTOM - 40)
+        # owner, 20 Nov: no on-screen credit watermark; the creator is credited in the
+        # caption/description instead. Set "credit_on_screen": true to bring it back.
+        if spec.get("credit") and spec.get("credit_on_screen"):
+            cy ={"fit": FG_TOP + FG_H - 50, "stack": face_h - 52}.get(layout, SAFE_BOTTOM - 40)
             render_credit(spec["credit"], tmp / "credit.png", cy)
             overlays.append((tmp / "credit.png", 0, total))
         label_top = {"fit": LABEL_TOP, "stack": face_h + 40}.get(layout, 1180)

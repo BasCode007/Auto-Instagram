@@ -11,7 +11,7 @@
  "creator": "theburntpeanut",
  "hook": "PEANUT WALKED INTO A *SWAT RAID* IN GTA 6",
  "credit": "@theburntpeanut on Twitch",
- "layout": "full",
+ "layout": "stack",
  "fps": 60,
  "no_letterbox": true,
  "preset": "medium",
@@ -544,7 +544,14 @@
   "youtube_shorts": "Peanut walked into a swat raid in GTA 6 #GTA6 #Shorts\n\n\ud83c\udfa5 @theburntpeanut on Twitch\nFull stream: https://www.twitch.tv/videos/2934030540"
  },
  "notes": "Cut from https://www.twitch.tv/videos/2934030540 at 0:42:37-0:43:46. Credit is not permission: ask the creator if reachable; take down same day on request.",
- "gx": 0.5,
+ "facecam": [
+  0.14,
+  0.66,
+  0.31,
+  0.34
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
  "platforms": {
   "instagram": true,
   "tiktok": true,
