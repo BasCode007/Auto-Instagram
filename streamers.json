@@ -45,7 +45,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2932305259",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -102,7 +102,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
     "vod_id": "2933599748",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
   },
   "trymacs": {
     "facecam": null,
@@ -120,7 +120,7 @@
     "title": "GTA 6 ON CONTINUE LIVE 233H",
     "vod_access": "sub-only",
     "vod_id": "2933858131",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
   },
   "ishowspeed": {
     "facecam": [
@@ -134,7 +134,7 @@
     "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-19T17:51Z",
+    "seen": "2026-11-19T18:50Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -155,7 +155,7 @@
     "title": "🏖️ GTA 6 🏖️ BEST POV 🏖PLAYING ALL DAY 🏖️DAY 2 🏖️ EXCLUSIVE DROPS 🏖️ EXCLUSIVE SUB BADGE 🏖️ [twitter/insta stableronaldo] !sub",
     "vod_access": "public",
     "vod_id": "2933798318",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
   },
   "illojuan": {
     "facecam": null,
@@ -164,7 +164,7 @@
     "title": "DÍA 2 🦩 INSTALANDO GTA VI POR TERCERA VEZ 🙀 A GOZARLO FUERTE 💖 - Grand Theft Auto VI #2",
     "vod_access": "public",
     "vod_id": "2933789253",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
   },
   "zackrawrr": {
     "facecam": null,
@@ -209,7 +209,7 @@
     "title": "[680/730] 🏖 DAY 2 🏖️ FIRST TIME PLAYING GTA 6 🏖️ MY HOME STATE OF FLORIDA 🏖️",
     "vod_access": "public",
     "vod_id": "2933861646",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
   },
   "yourragegaming": {
     "facecam": null,
@@ -380,7 +380,7 @@
     "title": "[DROPS] GTA VI GRIND 🔥 | !iconleague !doku !eligella !gaming",
     "vod_access": "public",
     "vod_id": "2912173226",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
   },
   "domingo": {
     "facecam": null,
@@ -407,12 +407,12 @@
     "title": "VICE CITY BABYYYYYYYYYYY",
     "vod_access": "public",
     "vod_id": "2933657204",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
   },
   "cohhcarnage": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[!SubGift] GTA 6 (First Look) - Let's see what this game has to offer! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2933635259",
@@ -430,7 +430,7 @@
   "hutchmf": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "{DROPS} GTA6 GIVEAWAYS ALL DAY !Kalshi #ad",
     "vod_access": "public",
     "vod_id": "2933605288",
@@ -443,6 +443,24 @@
     "title": "IT HAS BEGUN GTA GRIND ALL DAY LOCK IN JOIN JOIN JOIN",
     "vod_access": "public",
     "vod_id": "2933806710",
-    "seen": "2026-11-19T17:51Z"
+    "seen": "2026-11-19T18:50Z"
+  },
+  "demonzz1": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "15/16 Start GTA6, po 23 Robin Hood: Faceci w rajtuzach. Pozdrawiam <3",
+    "vod_access": "public",
+    "vod_id": "2933723740",
+    "seen": "2026-11-19T18:50Z"
+  },
+  "tumblurr": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "GTA6 PARTE 2💥🌴 PS5 CONTEST !trade😱⏳ 30% STORIA⏳ CODICI GTA ORE ⏰21:30/23:30/1:30⏰ #adv",
+    "vod_access": "public",
+    "vod_id": "2933948258",
+    "seen": "2026-11-19T18:50Z"
   }
 }
