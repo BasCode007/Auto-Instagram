@@ -36,6 +36,7 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `peanut-return-policy.mp4` | WHAT'S THE RETURN POLICY IN GTA 6? | 45s | TheBurntPeanut, Twitch (funny) |
 | `peanut-bank-account.mp4` | YOU NEED A BANK ACCOUNT IN GTA 6 | 41s | TheBurntPeanut, Twitch (new feature). **YouTube: posted by hand** (youtube.com/shorts/aYvcVHQBj0k) |
 | `peanut-flat-pack-furniture.mp4` | BUILDING FURNITURE IN GTA 6 IS TOO REAL | 56s | TheBurntPeanut, Twitch (funny) |
+| `peanut-dirt-bike-race.mp4` | WHY ARE THERE CARS IN THE DIRT BIKE RACE? | 47s | TheBurntPeanut, Twitch (physics, TikTok-safe) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
