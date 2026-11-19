@@ -25,7 +25,7 @@
     "title": "🌴LIVE🌴GTA 6🌴 AT 6AM EST🌴STUFF BEFORE🌴ALERT🌴NOT A DRILL🌴NZ FLIGHT TAKEN🌴LIVE🌴QUICK🌴DONT MISS IT🌴ONESHOTTING THE GAME?🌴",
     "vod_access": "public",
     "vod_id": "2932113307",
-    "seen": "2026-11-19T04:51Z",
+    "seen": "2026-11-19T05:28Z",
     "target_share": 0.125
   },
   "kaicenat": {
@@ -41,7 +41,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2932305259",
-    "seen": "2026-11-19T04:51Z"
+    "seen": "2026-11-19T05:28Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -66,7 +66,7 @@
     "title": "GTA 6 | BUNGULATION EDITION | IM IN NEW ZEALAND | #BUNGULATE",
     "vod_access": "public",
     "vod_id": "2932226282",
-    "seen": "2026-11-19T04:51Z",
+    "seen": "2026-11-19T05:28Z",
     "target_share": 0.5
   },
   "jasontheween": {
@@ -122,7 +122,7 @@
     "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-19T04:51Z",
+    "seen": "2026-11-19T05:28Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -143,7 +143,7 @@
     "title": "🏖️ GTA 6 🏖️ BEST POV 🏖️PLAYING ALL DAY 🏖️ VICE CITY️ 🏖️ EXCLUSIVE DROPS 🏖️ EXCLUSIVE SUB BADGE 🏖️ [twitter/insta stableronaldo] !sub",
     "vod_access": "public",
     "vod_id": "2932442046",
-    "seen": "2026-11-19T04:51Z"
+    "seen": "2026-11-19T05:28Z"
   },
   "illojuan": {
     "facecam": null,
@@ -170,7 +170,7 @@
     "title": "🟨LOSING MY MIND🟨",
     "vod_access": "public",
     "vod_id": "2932003293",
-    "seen": "2026-11-19T04:51Z"
+    "seen": "2026-11-19T05:28Z"
   },
   "auronplay": {
     "facecam": null,
@@ -184,7 +184,7 @@
   "hasanabi": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🗽DROPS ON! EARLY ACCESS🗽GTAVI🗽FUNDRAISER FOR GTA- MELT THE ICE: NILC AND CHIRLA🚉🗽 !donate",
     "vod_access": "public",
     "vod_id": "2932641914",
@@ -203,9 +203,54 @@
     "facecam": null,
     "priority": "normal",
     "live": true,
-    "title": "FLORIDA MAN PLAYS GTA 6 FOR THE FIRST TIME!!!!!",
+    "title": "OG LEONIDAS NATIVE PLAYS GTA 6!! BASED ON HIS THUGGALICIOUS LOCO LIFE!!",
     "vod_access": "public",
     "vod_id": "2933174196",
-    "seen": "2026-11-19T04:51Z"
+    "seen": "2026-11-19T05:28Z"
+  },
+  "jerma985": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "Guys, I don't think this many people should be on the Elevator!!!!",
+    "vod_access": "public",
+    "vod_id": "2933227596",
+    "seen": "2026-11-19T05:28Z"
+  },
+  "brucedropemoff": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "GTA 6 EXTRAVAGANZA 😮‍💨🫪 HOLYYYYYY VIBES 🫪🫵🏾 NUN LIKE DEM 🫵🏾 GREAT GAMEPLAY ONLY (FULLY LOCKED) | !sub !prime !game !socials",
+    "vod_access": "public",
+    "vod_id": "2908972219",
+    "seen": "2026-11-19T05:28Z"
+  },
+  "carola": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "EXTENSIBLE A 1 SEMANA ---- LLEGÓ EL DÍA🌴🌴🌴GTA VI 🌴🌴🌴",
+    "vod_access": "public",
+    "vod_id": "2932848195",
+    "seen": "2026-11-19T05:28Z"
+  },
+  "fanum": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🟢 GTA 6 EARLY PLAYTHROUGH 🟢 OMG 🟢 ITS FINALLY HERE 🟢 DAY 1 🟢 LETS GO 🟢 AHHHHHH 🟢",
+    "vod_access": "public",
+    "vod_id": "2932675314",
+    "seen": "2026-11-19T05:28Z"
+  },
+  "gotaga": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "C’EST L’HEURE DE GTA VI, LE GOTY !!!",
+    "vod_access": "sub-only",
+    "vod_id": "2932778922",
+    "seen": "2026-11-19T05:28Z"
   }
 }
