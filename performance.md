@@ -40,3 +40,25 @@ Peanut leads on Instagram too.
 | Why are there cars in the dirt bike race? | TheBurntPeanut | just posted | | | |
 
 Peanut story clips (a full mini-story with a payoff) are the clear winner: the 69 s robbery Reel has 10x the views of anything else.
+
+## 20 Nov 07:50 AEDT (19 Nov 20:50 UTC)
+
+**Instagram Reels** (all-time totals; 9,036 views across the page)
+
+| Reel | Creator | Views | Likes | Shares | Avg watched |
+|---|---|---|---|---|---|
+| Building furniture in GTA 6 is too real | TheBurntPeanut | **1,575** | **44** | **18** | 42% |
+| He robbed a store to buy a chain | TheBurntPeanut | 1,574 | 22 | 0 | 42% |
+| First look at the full GTA 6 map | Lacy | 1,463 | 22 | 1 | 50% |
+| Peanut ended up in GTA 6 jail | TheBurntPeanut | 1,355 | 11 | 0 | 47% |
+| Why are there cars in the dirt bike race? | TheBurntPeanut | 1,320 | 20 | 10 | 44% |
+| What's the return policy in GTA 6? | TheBurntPeanut | 1,264 | 21 | 0 | 76% |
+| You can grill burgers (xQc) | xQc | 187 | 0 | 0 | 31% |
+| You can do pull-ups (Speed) | IShowSpeed | 148 | 2 | 0 | 38% |
+| Kai Cenat starts GTA 6 | Kai Cenat | 141 | 1 | 0 | |
+| Peanut won his first street race | TheBurntPeanut | 125 (45 min old) | 1 | 0 | 20% |
+| You can shave Jason (xQc) | xQc | 2 | 0 | 0 | |
+
+**YouTube Shorts:** owner's "Trying to open a peanut bank account..." **1,176** views, 17 likes. Our generic "You can X in GTA 6" Shorts: 1 to 36 views. The owner's "peanut flat pack furniture" upload is stuck as private with no duration (upload probably didn't finish).
+
+**Read:** every Peanut Reel and Lacy's map Reel cleared 1.2k; xQc, Speed and Kai stalled under 200. Focus on Peanut and Lacy is right. The furniture Reel's 18 shares say relatable "too real" moments travel. The street race Reel is only 20% watched at 51 s: keep clips tighter (30 to 45 s) unless the story needs more.
