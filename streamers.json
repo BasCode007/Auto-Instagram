@@ -13,8 +13,8 @@
     "target_share": 0.125,
     "title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
     "vod_access": "public",
-    "vod_id": "2932194507",
-    "seen": "2026-11-19T15:51Z"
+    "vod_id": "2933767012",
+    "seen": "2026-11-19T16:51Z"
   },
   "xqc": {
     "facecam": [
@@ -45,7 +45,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2932305259",
-    "seen": "2026-11-19T15:51Z"
+    "seen": "2026-11-19T16:51Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -102,7 +102,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
     "vod_id": "2933599748",
-    "seen": "2026-11-19T15:51Z"
+    "seen": "2026-11-19T16:51Z"
   },
   "trymacs": {
     "facecam": null,
@@ -119,8 +119,8 @@
     "live": true,
     "title": "GTA 6 ON CONTINUE LIVE 233H",
     "vod_access": "sub-only",
-    "vod_id": "2933622673",
-    "seen": "2026-11-19T15:51Z"
+    "vod_id": "2933858131",
+    "seen": "2026-11-19T16:51Z"
   },
   "ishowspeed": {
     "facecam": [
@@ -134,7 +134,7 @@
     "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-19T15:51Z",
+    "seen": "2026-11-19T16:51Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -151,11 +151,11 @@
   "stableronaldo": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "🏖️ GTA 6 🏖️ BEST POV 🏖️PLAYING ALL DAY 🏖️ VICE CITY️ 🏖️ EXCLUSIVE DROPS 🏖️ EXCLUSIVE SUB BADGE 🏖️ [twitter/insta stableronaldo] !sub",
+    "live": true,
+    "title": "🏖️ GTA 6 🏖️ BEST POV 🏖PLAYING ALL DAY 🏖️DAY 2 🏖️ EXCLUSIVE DROPS 🏖️ EXCLUSIVE SUB BADGE 🏖️ [twitter/insta stableronaldo] !sub",
     "vod_access": "public",
-    "vod_id": "2932442046",
-    "seen": "2026-11-19T05:28Z"
+    "vod_id": "2933798318",
+    "seen": "2026-11-19T16:51Z"
   },
   "illojuan": {
     "facecam": null,
@@ -164,7 +164,7 @@
     "title": "DÍA 2 🦩 INSTALANDO GTA VI POR TERCERA VEZ 🙀 A GOZARLO FUERTE 💖 - Grand Theft Auto VI #2",
     "vod_access": "public",
     "vod_id": "2933789253",
-    "seen": "2026-11-19T15:51Z"
+    "seen": "2026-11-19T16:51Z"
   },
   "zackrawrr": {
     "facecam": null,
@@ -378,14 +378,14 @@
     "priority": "normal",
     "live": true,
     "title": "[DROPS] GTA VI GRIND 🔥 | !iconleague !doku !eligella !gaming",
-    "vod_access": "none",
-    "vod_id": null,
-    "seen": "2026-11-19T15:51Z"
+    "vod_access": "public",
+    "vod_id": "2912173226",
+    "seen": "2026-11-19T16:51Z"
   },
   "domingo": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "GTA VI : Jason & Lucia vont retourner Vice City",
     "vod_access": "sub-only",
     "vod_id": "2933600681",
@@ -407,7 +407,7 @@
     "title": "VICE CITY BABYYYYYYYYYYY",
     "vod_access": "public",
     "vod_id": "2933657204",
-    "seen": "2026-11-19T15:51Z"
+    "seen": "2026-11-19T16:51Z"
   },
   "cohhcarnage": {
     "facecam": null,
@@ -416,12 +416,12 @@
     "title": "[!SubGift] GTA 6 (First Look) - Let's see what this game has to offer! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2933635259",
-    "seen": "2026-11-19T15:51Z"
+    "seen": "2026-11-19T16:51Z"
   },
   "youngmulti": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[EN/ES CC] 🛑 PREMIERA NOWEGO NUMERU \"ZA KAŻDYM RA2EM\" O 18:00 🛑 MÓJ PIERWSZY RAZ W GTA 6 🛑 | DARMOWY SUB -> !prime !OperaGX !holy",
     "vod_access": "sub-only",
     "vod_id": "2933648161",
@@ -434,6 +434,15 @@
     "title": "{DROPS} GTA6 GIVEAWAYS ALL DAY !Kalshi #ad",
     "vod_access": "public",
     "vod_id": "2933605288",
-    "seen": "2026-11-19T15:51Z"
+    "seen": "2026-11-19T16:51Z"
+  },
+  "joe_bartolozzi": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "IT HAS BEGUN GTA GRIND ALL DAY LOCK IN JOIN JOIN JOIN",
+    "vod_access": "public",
+    "vod_id": "2933806710",
+    "seen": "2026-11-19T16:51Z"
   }
 }
