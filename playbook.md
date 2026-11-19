@@ -46,7 +46,7 @@ Never clickbait anything the clip doesn't deliver. Never sound like Rockstar.
 |---|---|---|
 | Late morning | 11:00 | Official news recap or HOW TO tip |
 | Early evening | 18:00 | Gameplay clip, spotlight, or nostalgia one-liner |
-| Launch week only | every 1 to 2 hours in the first 48h after unlock | first-look gameplay, map, hidden details, early tips |
+| Launch week only | **every 30 minutes per account** (owner's call, 19 Nov), as long as the clips are good | first-look gameplay, map, hidden details, funny moments, new features |
 
 Pillars: official news · tips and tutorials · gameplay clips (credited) · GTA 5 nostalgia · spotlights · countdown/daily recap · questions.
 Quality beats volume. Skip a slot rather than post something weak or unverified.
