@@ -1,0 +1,215 @@
+{
+ "id": "speed-bike-song",
+ "pillar": "funny",
+ "kind": "reel",
+ "source": "live-ishowspeed/rec_20261119T063143_003.mp4",
+ "source_url": "https://www.twitch.tv/ishowspeed",
+ "source_range": [
+  515.0,
+  556.0
+ ],
+ "creator": "ishowspeed",
+ "hook": "SPEED MADE A *GTA 6 SONG* ON A BIKE",
+ "credit": "@ishowspeed on Twitch",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 515.0,
+   "end": 556.0
+  }
+ ],
+ "words": [
+  [
+   "Worth",
+   515.14,
+   515.64
+  ],
+  [
+   "it.",
+   515.64,
+   516.36
+  ],
+  [
+   "Oh,",
+   519.81,
+   521.05
+  ],
+  [
+   "a",
+   522.49,
+   522.67
+  ],
+  [
+   "bite",
+   522.67,
+   522.87
+  ],
+  [
+   "cool",
+   522.87,
+   523.49
+  ],
+  [
+   "Running",
+   530.21,
+   530.83
+  ],
+  [
+   "down",
+   530.83,
+   531.17
+  ],
+  [
+   "Miami",
+   531.17,
+   531.85
+  ],
+  [
+   "with",
+   531.85,
+   532.97
+  ],
+  [
+   "my",
+   532.97,
+   533.41
+  ],
+  [
+   "bike",
+   533.41,
+   534.03
+  ],
+  [
+   "Cruising",
+   535.57,
+   536.19
+  ],
+  [
+   "down",
+   536.19,
+   536.45
+  ],
+  [
+   "in",
+   536.45,
+   536.67
+  ],
+  [
+   "Miami",
+   536.67,
+   537.35
+  ],
+  [
+   "with",
+   537.35,
+   538.37
+  ],
+  [
+   "my",
+   538.37,
+   538.77
+  ],
+  [
+   "black",
+   538.77,
+   539.31
+  ],
+  [
+   "bike",
+   539.31,
+   540.01
+  ],
+  [
+   "Playing",
+   541.11,
+   541.81
+  ],
+  [
+   "GTA",
+   541.81,
+   542.31
+  ],
+  [
+   "6",
+   542.31,
+   543.33
+  ],
+  [
+   "with",
+   543.33,
+   544.31
+  ],
+  [
+   "my",
+   544.31,
+   544.69
+  ],
+  [
+   "black",
+   544.69,
+   545.21
+  ],
+  [
+   "body",
+   545.21,
+   545.77
+  ],
+  [
+   "I'm",
+   549.6,
+   550.32
+  ],
+  [
+   "closing",
+   550.32,
+   550.86
+  ],
+  [
+   "down",
+   550.86,
+   551.3
+  ],
+  [
+   "my",
+   551.3,
+   551.6
+  ],
+  [
+   "Miami",
+   551.6,
+   552.66
+  ],
+  [
+   "with",
+   552.66,
+   553.62
+  ],
+  [
+   "my",
+   555.54,
+   555.76
+  ],
+  [
+   "black",
+   555.76,
+   555.98
+  ]
+ ],
+ "captions": {
+  "instagram": "Speed made a GTA 6 song on a bike\n\nCruising down in Miami with my black bike. IShowSpeed is locked in.\n\n🎥 @ishowspeed on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #ishowspeed",
+  "tiktok": "Speed made a GTA 6 song on a bike 🎥 @ishowspeed on Twitch #GTA6 #GTAVI #gta6clips #ishowspeed",
+  "youtube_shorts": "Speed made a GTA 6 song on a bike #GTA6 #Shorts\n\n🎥 @ishowspeed on Twitch\nFull stream: https://www.twitch.tv/ishowspeed"
+ },
+ "notes": "Cut from https://www.twitch.tv/ishowspeed at 0:08:35-0:09:16. Credit is not permission: ask the creator if reachable; take down same day on request.",
+ "facecam": [
+  0.0,
+  0.422,
+  0.2,
+  0.222
+ ],
+ "facecam_h": 650,
+ "gzoom": 1.08
+}

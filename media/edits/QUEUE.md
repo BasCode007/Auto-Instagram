@@ -41,6 +41,7 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `peanut-polite-carjacking.mp4` | PEANUT IS THE POLITEST CAR THIEF IN GTA 6 | 42s | TheBurntPeanut, Twitch (funny) |
 | `peanut-wins-street-race.mp4` | PEANUT WON HIS FIRST STREET RACE | 51s | TheBurntPeanut, Twitch |
 | `speed-too-expensive-for-lucia.mp4` | SPEED WON'T PAY $4,000 FOR LUCIA'S OUTFIT | 37s | IShowSpeed, Twitch (funny) |
+| `speed-bike-song.mp4` | SPEED MADE A GTA 6 SONG ON A BIKE | 41s | IShowSpeed, Twitch (funny) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
