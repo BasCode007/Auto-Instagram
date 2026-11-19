@@ -43,6 +43,7 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "media" / "raw"
 CLIPS = ROOT / "clips"
 SR = 16000
+YELL_DB = 14   # dB above the local median that counts as yelling
 
 HYPE = ["oh my god", "no way", "what the", "holy", "bro", "dude", "yo ", "insane",
         "crazy", "look at", "wait", "are you kidding", "let's go", "lets go",
@@ -52,6 +53,9 @@ LAUGH = ["haha", "hahaha", "lmao", "lol", "laugh"]
 # What we're hunting for. Each hit adds to the score and tags the candidate so
 # a reviewer can pick a mix (funny / views / physics / new feature).
 CATEGORIES = {
+    # streamer reacting to chat (owner asked for chat-triggered moments)
+    "chat": ["chat", "you guys", "y'all", "chat said", "chat look", "chat is", "chat what",
+             "chat why", "chat stop", "chat i", "mods", "donation", "subs", "read that"],
     "funny": ["haha", "lmao", "lol", "chat", "i'm dead", "crying", "bro what", "why did",
               "no no no", "stop", "help", "what was that", "he's dying", "oh my god"],
     "views": ["look at", "view", "beautiful", "gorgeous", "sunset", "sunrise", "graphics",
@@ -230,8 +234,12 @@ def score_windows(words, spikes, t0: float, length: float, hop: float = 0.5,
         excl = text.count("!") + text.count("?")
         speech = min(len(ws) / (length * 2.2), 1.0)       # ~2.2 words/s = talky
         cats = {c: sum(text.count(k) for k in ks) for c, ks in CATEGORIES.items()}
+        # yelling: half-second steps far above the streamer's normal level
+        yell = int((sp > YELL_DB).sum())
         score = (energy * 1.0 + hype * 2.5 + laugh * 3 + excl * 0.8 + speech * 6
-                 + sum(min(v, 4) * 2.0 for v in cats.values()))
+                 + sum(min(v, 4) * 2.0 for v in cats.values()) + min(yell, 12) * 2.5)
+        if yell >= 3:
+            cats["yelling"] = yell
         if any(k in f" {text}" for k in NSFW):
             t += step
             continue

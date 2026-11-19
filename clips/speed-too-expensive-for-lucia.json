@@ -1,0 +1,115 @@
+{
+ "id": "speed-too-expensive-for-lucia",
+ "pillar": "funny",
+ "kind": "reel",
+ "source": "live-ishowspeed/rec_20261119T063143_000.mp4",
+ "source_url": "https://www.twitch.tv/ishowspeed",
+ "source_range": [
+  178.0,
+  215.0
+ ],
+ "creator": "ishowspeed",
+ "hook": "SPEED WON'T PAY *$4,000* FOR LUCIA'S OUTFIT",
+ "credit": "@ishowspeed on Twitch",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 178.0,
+   "end": 215.0
+  }
+ ],
+ "words": [
+  [
+   "Four",
+   187.01,
+   187.61
+  ],
+  [
+   "thousand",
+   187.61,
+   188.29
+  ],
+  [
+   "bro.",
+   188.29,
+   188.69
+  ],
+  [
+   "Hell",
+   189.01,
+   189.21
+  ],
+  [
+   "nah",
+   189.21,
+   189.71
+  ],
+  [
+   "bro.",
+   189.71,
+   190.01
+  ],
+  [
+   "I'm",
+   191.03,
+   191.83
+  ],
+  [
+   "sorry",
+   191.83,
+   192.09
+  ],
+  [
+   "Lucia",
+   192.09,
+   192.55
+  ],
+  [
+   "like",
+   192.55,
+   193.11
+  ],
+  [
+   "nah,",
+   193.11,
+   193.57
+  ],
+  [
+   "that's",
+   193.57,
+   193.81
+  ],
+  [
+   "way",
+   193.81,
+   193.93
+  ],
+  [
+   "too",
+   193.93,
+   194.11
+  ],
+  [
+   "much",
+   194.11,
+   194.51
+  ]
+ ],
+ "captions": {
+  "instagram": "Speed won't pay $4,000 for Lucia's outfit\n\nIShowSpeed took Lucia clothes shopping in GTA 6 and saw the price tag.\n\n🎥 @ishowspeed on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #ishowspeed",
+  "tiktok": "Speed won't pay $4,000 for Lucia's outfit 🎥 @ishowspeed on Twitch #GTA6 #GTAVI #gta6clips #ishowspeed",
+  "youtube_shorts": "Speed won't pay $4,000 for Lucia's outfit #GTA6 #Shorts\n\n🎥 @ishowspeed on Twitch\nFull stream: https://www.twitch.tv/ishowspeed"
+ },
+ "notes": "Cut from https://www.twitch.tv/ishowspeed at 0:02:58-0:03:35. Credit is not permission: ask the creator if reachable; take down same day on request.",
+ "facecam": [
+  0.0,
+  0.422,
+  0.2,
+  0.222
+ ],
+ "facecam_h": 650,
+ "gzoom": 1.08
+}

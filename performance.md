@@ -18,3 +18,13 @@ Updated each hourly round from vidIQ (YouTube: vidiq_user_videos; Instagram: vid
 **Early read (one data point, keep testing):**
 - TheBurntPeanut is far ahead. Keep him at ~50% or more of clips.
 - The winning title names the creator and tells the story in plain words ("Trying to open a peanut bank account at the local branch"), with long-tail tags (`peanut bank account`, `bank manager`, `gta 6 gameplay`). Our generic "You can X in GTA 6" titles are doing worse. New YouTube titles: creator + what happens, e.g. "Peanut robbed a store just to afford a chain in GTA 6".
+
+## Instagram Reels, 19 Nov 17:50 AEDT (first hour)
+
+| Reel | Creator | Views | Likes | Avg watched | Skip rate |
+|---|---|---|---|---|---|
+| He robbed a store to buy a chain | TheBurntPeanut | **184** | 3 | 33% (22 s of 69 s) | 7.6% |
+| Kai Cenat starts GTA 6 for the first time | Kai Cenat | 75 | 1 | | |
+| Peanut ended up in GTA 6 jail | TheBurntPeanut | 0 (just posted) | | | |
+
+Peanut leads on Instagram too.

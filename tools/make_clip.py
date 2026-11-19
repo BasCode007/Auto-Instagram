@@ -274,7 +274,7 @@ def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
         cw = int(ch * 9 / 16) // 2 * 2
         cx = int((sw - cw) * x)
         cy = (sh - ch) // 2 + y_off
-        v = (f"[{i}:v]crop={cw}:{ch}:{cx}:{cy},scale={W}:{H}:flags=lanczos,"
+        v = (f"[{i}:v]scale={sw}:{sh + 2 * y_off}:flags=bicubic,setsar=1,crop={cw}:{ch}:{cx}:{cy},scale={W}:{H}:flags=lanczos,"
              f"setsar=1,fps={fps},format=yuv420p[v{i}]")
     elif layout == "stack":
         # facecam band on top, gameplay below (streamer clips)
@@ -296,7 +296,7 @@ def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
         gcw = min(sw, int(gch * W / gh_band) // 2 * 2)
         gcx = int((sw - gcw) * x)
         gcy = (sh - gch) // 2 + y_off
-        v = (f"[{i}:v]split=2[fsrc{i}][gsrc{i}];"
+        v = (f"[{i}:v]scale={sw}:{sh + 2 * y_off}:flags=bicubic,setsar=1,split=2[fsrc{i}][gsrc{i}];"
              f"[fsrc{i}]crop={cw}:{chh}:{fcx}:{fcy + y_off},scale={W}:{fh_band}:"
              f"flags=lanczos,setsar=1[face{i}];"
              f"[gsrc{i}]crop={gcw}:{gch}:{gcx}:{gcy},scale={W}:{gh_band}:"
@@ -307,7 +307,7 @@ def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
         cw = int(ch * 4 / 3) // 2 * 2
         cx = int((sw - cw) * x)
         cy = (sh - ch) // 2 + y_off
-        v = (f"[{i}:v]split=2[bgsrc{i}][fgsrc{i}];"
+        v = (f"[{i}:v]scale={sw}:{sh + 2 * y_off}:flags=bicubic,setsar=1,split=2[bgsrc{i}][fgsrc{i}];"
              f"[bgsrc{i}]crop={sw}:{sh}:0:{y_off},scale=-2:{H // 4},crop={W // 4}:{H // 4},"
              f"boxblur=12:2,eq=brightness=-0.18:saturation=1.25,"
              f"scale={W}:{H}:flags=bicubic,setsar=1[bg{i}];"
