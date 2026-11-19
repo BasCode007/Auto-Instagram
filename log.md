@@ -4,6 +4,7 @@ Every post that went out. Newest first.
 
 | Date (local) | Time | Platform | Clip / post | Caption (first line) | Credit | Link |
 |---|---|---|---|---|---|---|
+| 2026-11-19 | ~13:00 AEDT | YouTube Shorts (Vice City Replayz) | peanut-bank-account | Trying to open a bank account (posted by hand) | @theburntpeanut | https://youtube.com/shorts/aYvcVHQBj0k |
 | 2026-11-19 | 13:10 AEDT (goes public) | YouTube Shorts (Vice City Replayz) | kai-first-time-gta6 | Kai Cenat starts GTA 6 for the first time | @kaicenat | https://www.youtube.com/watch?v=YRQ0j_Sp3ro |
 | 2026-11-19 | 14:05 AEDT (goes public) | YouTube Shorts (Vice City Replayz) | lacy-map-first-look | First look at the full GTA 6 map | @lacy | https://www.youtube.com/watch?v=Kb7ST4aOD5U |
 | 2026-11-19 | 15:05 AEDT (goes public) | YouTube Shorts (Vice City Replayz) | xqc-mirror-shave | You can shave Jason in GTA 6 | @xqc | refused: YouTube daily upload limit, retry 20 Nov |
