@@ -41,7 +41,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2932305259",
-    "seen": "2026-11-19T08:51Z"
+    "seen": "2026-11-19T09:51Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -122,7 +122,7 @@
     "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-19T08:51Z",
+    "seen": "2026-11-19T09:51Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -170,7 +170,7 @@
     "title": "🟨LOSING MY MIND🟨",
     "vod_access": "public",
     "vod_id": "2932003293",
-    "seen": "2026-11-19T08:51Z"
+    "seen": "2026-11-19T09:51Z"
   },
   "auronplay": {
     "facecam": null,
@@ -206,7 +206,7 @@
     "title": "OG LEONIDAS NATIVE PLAYS GTA 6!! BASED ON HIS THUGGALICIOUS LOCO LIFE!!",
     "vod_access": "public",
     "vod_id": "2933174196",
-    "seen": "2026-11-19T08:51Z"
+    "seen": "2026-11-19T09:51Z"
   },
   "jerma985": {
     "facecam": null,
@@ -215,7 +215,7 @@
     "title": "Guys, I don't think this many people should be on the Elevator!!!!",
     "vod_access": "public",
     "vod_id": "2933227596",
-    "seen": "2026-11-19T08:51Z"
+    "seen": "2026-11-19T09:51Z"
   },
   "brucedropemoff": {
     "facecam": null,
@@ -224,7 +224,7 @@
     "title": "GTA 6 EXTRAVAGANZA 😮‍💨🫪 HOLYYYYYY VIBES 🫪🫵🏾 NUN LIKE DEM 🫵🏾 GREAT GAMEPLAY ONLY (FULLY LOCKED) | !sub !prime !game !socials",
     "vod_access": "public",
     "vod_id": "2908972219",
-    "seen": "2026-11-19T08:51Z"
+    "seen": "2026-11-19T09:51Z"
   },
   "carola": {
     "facecam": null,
@@ -233,12 +233,12 @@
     "title": "EXTENSIBLE A 1 SEMANA ---- LLEGÓ EL DÍA🌴🌴🌴GTA VI 🌴🌴🌴",
     "vod_access": "public",
     "vod_id": "2932848195",
-    "seen": "2026-11-19T08:51Z"
+    "seen": "2026-11-19T09:51Z"
   },
   "fanum": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🟢 GTA 6 EARLY PLAYTHROUGH 🟢 OMG 🟢 ITS FINALLY HERE 🟢 DAY 1 🟢 LETS GO 🟢 AHHHHHH 🟢",
     "vod_access": "public",
     "vod_id": "2932675314",
@@ -269,12 +269,12 @@
     "title": "So, is this \"Grand Theft Auto VI\" game kinda cool?",
     "vod_access": "public",
     "vod_id": "2933224962",
-    "seen": "2026-11-19T08:51Z"
+    "seen": "2026-11-19T09:51Z"
   },
   "supertf": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "WOW SO MANY EXCITING THINGS HAPPENING NONE AS EXCITING AS THE BIG TF GOING LIVE ONCE MORE THOUGH",
     "vod_access": "public",
     "vod_id": "2932996177",
@@ -287,7 +287,7 @@
     "title": "GTAVI DAY 1 (also live on YT)",
     "vod_access": "public",
     "vod_id": "2932982359",
-    "seen": "2026-11-19T08:51Z"
+    "seen": "2026-11-19T09:51Z"
   },
   "moistcr1tikal": {
     "facecam": null,
@@ -301,10 +301,37 @@
   "mistermv": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "GTA VI comme tout le monde !emma !vero",
     "vod_access": "sub-only",
     "vod_id": "2932681979",
     "seen": "2026-11-19T08:51Z"
+  },
+  "blusewilly_retry": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "PS5 GTA6 11/19",
+    "vod_access": "public",
+    "vod_id": "2933426778",
+    "seen": "2026-11-19T09:51Z"
+  },
+  "mrdzinold": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🌊🌴☀️ GTA VI 🌊🌴☀️ START 0:00 🔥 || !STRONA",
+    "vod_access": "public",
+    "vod_id": "2929605097",
+    "seen": "2026-11-19T09:51Z"
+  },
+  "pietsmiet": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 | !Friendlyfire !discord !ptsmt",
+    "vod_access": "public",
+    "vod_id": "2933492867",
+    "seen": "2026-11-19T09:51Z"
   }
 }
