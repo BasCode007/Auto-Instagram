@@ -6,10 +6,9 @@ name="$1"; creator="$2"; platform="$3"; chan="$4"
 dir="$(dirname "$0")/../media/raw/live-$name"
 done_list="$dir/.scanned"; touch "$done_list"
 while true; do
-  files=$(ls "$dir"/rec_*.mp4 2>/dev/null | sort)
-  newest=$(echo "$files" | tail -1)
+  # record_live.sh writes <chunk>.part.mp4 and renames it when the chunk is complete
+  files=$(ls "$dir"/rec_*.mp4 2>/dev/null | grep -v '\.part\.mp4$' | sort)
   for f in $files; do
-    [ "$f" = "$newest" ] && continue                 # still being written
     grep -qxF "$f" "$done_list" && continue
     echo "$(date -u +%T) scanning $(basename "$f")"
     python3 "$(dirname "$0")/autoclip.py" scan --file "$f" --creator "$creator" \
