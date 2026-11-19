@@ -53,3 +53,9 @@ Every post that went out. Newest first.
 | 2026-11-20 | 11:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-cops-know-outfit | GTA 6 cops remember your outfit | @lacy | scheduled via vidIQ (post 01540ef0) |
 | 2026-11-20 | 12:05 AEDT | Instagram (@vicecityreplayz2026) | lacy-shoe-store | GTA 6 has real shoe stores | @lacy | scheduled via vidIQ (post 85c9e330) |
 | 2026-11-20 | 16:20 AEDT | TikTok (Vice City Replayz) | lacy-shoe-store | GTA 6 has real shoe stores | @lacy | scheduled via vidIQ (post 85c9e330) |
+| 2026-11-20 | 12:35 AEDT | Instagram (@vicecityreplayz2026) | peanut-please-dont-see-me | Peanut begging not to get caught in GTA 6 | @theburntpeanut | scheduled via vidIQ (post bc13d0a1) |
+| 2026-11-20 | 17:50 AEDT | TikTok (Vice City Replayz) | peanut-please-dont-see-me | Peanut begging not to get caught in GTA 6 | @theburntpeanut | scheduled via vidIQ (post bc13d0a1) |
+| 2026-11-20 | 13:05 AEDT | Instagram (@vicecityreplayz2026) | peanut-swat-raid | Peanut walked into a SWAT raid in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 8b79932c) |
+| 2026-11-20 | 19:20 AEDT | TikTok (Vice City Replayz) | peanut-swat-raid | Peanut walked into a SWAT raid in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 8b79932c) |
+| 2026-11-20 | 13:35 AEDT | Instagram (@vicecityreplayz2026) | fact-scooter-bros-app | Did you know GTA 6 delivers your car? | @theburntpeanut | scheduled via vidIQ (post 1f5ab2d8) |
+| 2026-11-20 | 20:50 AEDT | TikTok (Vice City Replayz) | fact-scooter-bros-app | Did you know GTA 6 delivers your car? | @theburntpeanut | scheduled via vidIQ (post 1f5ab2d8) |
