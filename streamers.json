@@ -37,11 +37,11 @@
     ],
     "facecam_h": 600,
     "priority": "normal",
-    "live": false,
+    "live": true,
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2932305259",
-    "seen": "2026-11-19T09:51Z"
+    "seen": "2026-11-19T13:51Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -94,7 +94,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
     "vod_id": "2933599748",
-    "seen": "2026-11-19T12:51Z"
+    "seen": "2026-11-19T13:51Z"
   },
   "trymacs": {
     "facecam": null,
@@ -112,7 +112,7 @@
     "title": "GTA 6 ON CONTINUE LIVE 233H",
     "vod_access": "sub-only",
     "vod_id": "2933622673",
-    "seen": "2026-11-19T12:51Z"
+    "seen": "2026-11-19T13:51Z"
   },
   "ishowspeed": {
     "facecam": [
@@ -126,7 +126,7 @@
     "title": "🔴PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE!",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-19T12:51Z",
+    "seen": "2026-11-19T13:51Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -206,7 +206,7 @@
   "yourragegaming": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "OG LEONIDAS NATIVE PLAYS GTA 6!! BASED ON HIS THUGGALICIOUS LOCO LIFE!!",
     "vod_access": "public",
     "vod_id": "2933174196",
@@ -219,7 +219,7 @@
     "title": "Guys, I don't think this many people should be on the Elevator!!!!",
     "vod_access": "public",
     "vod_id": "2933227596",
-    "seen": "2026-11-19T12:51Z"
+    "seen": "2026-11-19T13:51Z"
   },
   "brucedropemoff": {
     "facecam": null,
@@ -314,7 +314,7 @@
   "blusewilly_retry": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "PS5 GTA6 11/19",
     "vod_access": "public",
     "vod_id": "2933426778",
@@ -332,7 +332,7 @@
   "pietsmiet": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 | !Friendlyfire !discord !ptsmt",
     "vod_access": "public",
     "vod_id": "2933492867",
@@ -372,7 +372,7 @@
     "title": "[DROPS] GTA VI GRIND 🔥 | !iconleague !doku !eligella !gaming",
     "vod_access": "none",
     "vod_id": null,
-    "seen": "2026-11-19T12:51Z"
+    "seen": "2026-11-19T13:51Z"
   },
   "domingo": {
     "facecam": null,
@@ -381,7 +381,7 @@
     "title": "GTA VI : Jason & Lucia vont retourner Vice City",
     "vod_access": "sub-only",
     "vod_id": "2933600681",
-    "seen": "2026-11-19T12:51Z"
+    "seen": "2026-11-19T13:51Z"
   },
   "imantado": {
     "facecam": null,
@@ -390,6 +390,42 @@
     "title": "[DROPS de KEYS] 🏝️ GTA VI #2 🏝️ SOY FELIZ 💦 Sorteo de GTA entre SUBS",
     "vod_access": "sub-only",
     "vod_id": "2933579119",
-    "seen": "2026-11-19T12:51Z"
+    "seen": "2026-11-19T13:51Z"
+  },
+  "alanzoka": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "VICE CITY BABYYYYYYYYYYY",
+    "vod_access": "public",
+    "vod_id": "2933657204",
+    "seen": "2026-11-19T13:51Z"
+  },
+  "cohhcarnage": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "[!SubGift] GTA 6 (First Look) - Let's see what this game has to offer! - PS5 Pro - !Emberville (Jan 7th!)",
+    "vod_access": "public",
+    "vod_id": "2933635259",
+    "seen": "2026-11-19T13:51Z"
+  },
+  "youngmulti": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "[EN/ES CC] 🛑 PREMIERA NOWEGO NUMERU \"ZA KAŻDYM RA2EM\" O 18:00 🛑 MÓJ PIERWSZY RAZ W GTA 6 🛑 | DARMOWY SUB -> !prime !OperaGX !holy",
+    "vod_access": "sub-only",
+    "vod_id": "2933648161",
+    "seen": "2026-11-19T13:51Z"
+  },
+  "hutchmf": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "{DROPS} GTA6 GIVEAWAYS ALL DAY !Kalshi #ad",
+    "vod_access": "public",
+    "vod_id": "2933605288",
+    "seen": "2026-11-19T13:51Z"
   }
 }
