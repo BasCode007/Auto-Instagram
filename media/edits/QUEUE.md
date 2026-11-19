@@ -38,6 +38,7 @@ Post to **Instagram Reels + YouTube Shorts**; TikTok too.
 | `peanut-flat-pack-furniture.mp4` | BUILDING FURNITURE IN GTA 6 IS TOO REAL | 56s | TheBurntPeanut, Twitch (funny) |
 | `peanut-dirt-bike-race.mp4` | WHY ARE THERE CARS IN THE DIRT BIKE RACE? | 47s | TheBurntPeanut, Twitch (physics, TikTok-safe) |
 | `xqc-bbq-minigame.mp4` | YOU CAN GRILL BURGERS IN GTA 6 | 40s | xQc, Twitch (new feature, TikTok-safe) |
+| `peanut-polite-carjacking.mp4` | PEANUT IS THE POLITEST CAR THIEF IN GTA 6 | 42s | TheBurntPeanut, Twitch (funny) |
 
 Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
 
