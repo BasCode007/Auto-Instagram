@@ -23,6 +23,18 @@ Customized from "Faceless GTA 6 Clipping Page: Full Setup Prompt". GTA 6 only. N
 - **Sources:** Twitch / Kick launch streams and VODs (download fine from the cloud); YouTube videos (blocked from the cloud; see README for running on your own computer).
 - **Creator mix (rough guide, not a quota).** About **50% TheBurntPeanut** (funny, strong engagement), the other **50% split across IShowSpeed, Lacy, xQc and TypicalGamer**. Quality wins: when one creator is having a better or busier stream, clip more of them; never post a weak clip just to hit the mix. Others (Kai Cenat, new discoveries) only when a moment is clearly great. `tools/creator_mix.py` shows the current split.
 
+### Content mix: reactions + "did you know" facts (owner, 20 Nov)
+
+Mostly reactions and funny stream moments (they win: 1.2k to 1.6k views per Peanut Reel), plus **about 1 fact video for every 3 reactions**.
+
+Fact video recipe (`clips/fact-*.json`):
+1. A real discovery seen on stream (a feature, app, price, rule, mechanic). Every fact must be readable on screen in the footage or in an official Rockstar source; list them in the spec's `facts`. No rumours, no story or mission spoilers.
+2. Background footage from the creator's Twitch stream/VOD, credited on screen and in the caption exactly like a clip. Not other pages' reposts, and no YouTube downloads.
+3. Script: hook "Did you know..." line, 4 to 6 short lines, payoff, "Follow for more GTA 6 secrets." About 30 to 40 s.
+4. Voice: vidIQ `vidiq_voiceover_generate` with `scriptLines` (Liam, TX3LPaxmHKxFdv7VOQHJ; ~28 credits per video). Line timings set the scene cuts.
+5. Render picture with `make_clip.py` (no words, `caption_y` 1640 so captions sit under phone screens), then burn voiceover captions (`write_ass` on a whisper transcript of the MP3) and mix: game audio at 15%, voice on top, loudnorm -14 LUFS.
+6. Instagram topic tag `#GTA6Tips`; TikTok `#gta6tips`.
+
 ### Profile setup checklist (both platforms)
 
 - [ ] Bio: `GTA 6 news, tips and the best clips, fast. Fan page, not affiliated with Rockstar Games.` Never "official".
