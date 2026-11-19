@@ -65,7 +65,8 @@ def looks_english(title: str) -> bool:
     non_en = ["jogando", "directo", "stunden", "neuseeland", "aus ", "ao vivo", "en vivo",
               "drops aktiv", "verlosung", "codigo", "giornata", "maratona", "interdit",
               "tage", "spielt", "geiler", "dia ", "le jeu", "heures", "jeu ", "spiel", "deutsch",
-              "español", "francais", "français", "partida", "juego", "jugando", "neuer", "mit "]
+              "español", "francais", "français", "partida", "juego", "jugando", "neuer", "mit ",
+              "desde", "años", "aquí", "yo estuve", "estuve", "esperando"]
     t = title.lower()
     return not any(w in t for w in non_en)
 
