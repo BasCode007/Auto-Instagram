@@ -59,3 +59,7 @@ Every post that went out. Newest first.
 | 2026-11-20 | 19:20 AEDT | TikTok (Vice City Replayz) | peanut-swat-raid | Peanut walked into a SWAT raid in GTA 6 | @theburntpeanut | scheduled via vidIQ (post 8b79932c) |
 | 2026-11-20 | 13:35 AEDT | Instagram (@vicecityreplayz2026) | fact-scooter-bros-app | Did you know GTA 6 delivers your car? | @theburntpeanut | scheduled via vidIQ (post 1f5ab2d8) |
 | 2026-11-20 | 20:50 AEDT | TikTok (Vice City Replayz) | fact-scooter-bros-app | Did you know GTA 6 delivers your car? | @theburntpeanut | scheduled via vidIQ (post 1f5ab2d8) |
+| 2026-11-20 | 14:35 AEDT | Instagram (@vicecityreplayz2026) | peanut-official-business | "Ma'am, I need this car. Official business." | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-20 | 22:20 AEDT | TikTok (Vice City Replayz) | peanut-official-business | "Ma'am, I need this car. Official business." | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-20 | 14:30 AEDT | YouTube (Vice City Replayz) | peanut-robbed-for-a-chain | Peanut robbed a store just to afford a chain in GTA 6 | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-20 | 15:00 AEDT | YouTube (Vice City Replayz) | peanut-return-policy | Peanut tried to return his shopping in GTA 6 | @theburntpeanut | scheduled via vidIQ |

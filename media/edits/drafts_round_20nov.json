@@ -1,12 +1,26 @@
 {
- "status": "awaiting approval",
+ "status": "approved 20 Nov 03:0xZ, scheduled (IG moved to 03:35Z)",
  "drafts": [
   {
    "clip": "peanut-official-business",
    "postId": "1d9ca299-307b-4d1f-84ef-1a97495a8deb",
    "revision": "3e59a937-6ca12fba",
-   "ig": "2026-11-20T03:05Z",
+   "ig": "2026-11-20T03:35Z",
    "tt": "2026-11-20T11:20Z"
+  },
+  {
+   "clip": "peanut-robbed-for-a-chain",
+   "platform": "youtube",
+   "postId": "3ed8d9ca-75a9-42b8-ae85-1fb0dae7421f",
+   "title": "Peanut robbed a store just to afford a chain in GTA 6",
+   "yt": "2026-11-20T03:30Z"
+  },
+  {
+   "clip": "peanut-return-policy",
+   "platform": "youtube",
+   "postId": "485e1b38-b61d-487a-9306-a5745c0ffaae",
+   "title": "Peanut tried to return his shopping in GTA 6",
+   "yt": "2026-11-20T04:00Z"
   }
  ]
 }
