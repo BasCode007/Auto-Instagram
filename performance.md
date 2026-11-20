@@ -78,3 +78,17 @@ Peanut story clips (a full mini-story with a payoff) are the clear winner: the 6
 | Lacy tried to fight an alligator | Lacy | reaction | **0** | 0 | |
 
 Page total 11,351 views. **Read:** again only the Peanut mini-story (carjacking) broke 1k; "You can X in GTA 6" feature clips sit at ~150 no matter the creator. The alligator (0) and snake (1) Reels got no distribution at all after 4+ hours: likely held back by Instagram (animal content flag?), worth the owner checking those two in the app for a warning. Lean harder into Peanut stories with a payoff; fewer plain feature clips.
+
+## 20 Nov 15:50 AEDT (04:50 UTC)
+
+| Reel | Type | Views | Likes | Saves | Avg watched |
+|---|---|---|---|---|---|
+| Did you know your GTA 6 phone steals cars? (45 min old) | fact | 146 | 5 | **4** | 37% |
+| "Ma'am, I need this car. Official business." | reaction (new style) | 209 | 1 | 0 | 41% |
+| Did you know GTA 6 delivers your car? | fact | 127 | 2 | 0 | 35% (skip 49%) |
+| Peanut walked into a SWAT raid (69 s) | reaction | 140 | 1 | 0 | 27% |
+| Peanut begging not to get caught | reaction | 149 | 3 | 0 | 40% |
+| GTA 6 has real shoe stores (Lacy) | feature | **0** | 0 | 0 | |
+| GTA 6 cops remember your outfit (Lacy) | tip | 167 | 2 | 0 | 67% |
+
+Page total 12,221. **Read:** every Reel since the overnight batch sits at 130 to 210 views: the page's baseline reach. Nothing new has broken out like the first-day Peanut stories (1.2k to 1.6k). The key cloner fact video has the most saves of any post (4 in 45 min), a good sign for fact videos. Third Lacy Reel with 0 views (alligator, snake, shoe store): owner to check those in the app. The 69 s SWAT Reel is only 27% watched: keep reactions under 45 s.
