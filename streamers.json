@@ -45,7 +45,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2934866208",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -99,10 +99,10 @@
     "facecam": null,
     "priority": "normal",
     "live": true,
-    "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
+    "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH...🔴",
     "vod_access": "public",
     "vod_id": "2934862154",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "trymacs": {
     "facecam": null,
@@ -130,11 +130,11 @@
       0.233
     ],
     "priority": "high",
-    "live": false,
+    "live": true,
     "title": "🔴 GTA 6 FINALE LAST MISSION 90% RIGHT NOW GET IN HERE 🔴 EARLY ACCESS GAMEPLAY 🔴 63M ON YOUTUBE 🔴",
     "vod_access": "public",
-    "vod_id": "2928036561",
-    "seen": "2026-11-20T13:51Z",
+    "vod_id": "2934870795",
+    "seen": "2026-11-20T15:51Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -187,11 +187,11 @@
   "auronplay": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "🚨 !DROPS ON 🌴 GTA VI DESDE PS5 PRO 🌴ESTUVE ESPERANDO 13 AÑOS POR ESTE MOMENTO 🌴",
+    "live": true,
+    "title": "🚨 !DROPS ON 🌴 ADIVINA QUÉ VAMOS A JUGAR HOY... 🌴 PISTA, INICIA CON GTA Y ACABA CON 6 🌴",
     "vod_access": "public",
-    "vod_id": "2932698524",
-    "seen": "2026-11-19T00:50Z"
+    "vod_id": "2934943615",
+    "seen": "2026-11-20T15:51Z"
   },
   "hasanabi": {
     "facecam": null,
@@ -263,7 +263,7 @@
     "title": "#PourLUCIA on live en aprem carrément",
     "vod_access": "sub-only",
     "vod_id": "2934916050",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "elmariana": {
     "facecam": null,
@@ -322,7 +322,7 @@
   "blusewilly_retry": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "PS5 GTA6 11/20",
     "vod_access": "public",
     "vod_id": "2934677378",
@@ -389,7 +389,7 @@
     "title": "GTA VI : PREMIER BRAQUAGE POUR JASON & LUCIA ?",
     "vod_access": "sub-only",
     "vod_id": "2934861314",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "imantado": {
     "facecam": null,
@@ -407,7 +407,7 @@
     "title": "VICE CITY BABYYYYYYYYYYY",
     "vod_access": "public",
     "vod_id": "2934932597",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "cohhcarnage": {
     "facecam": null,
@@ -416,7 +416,7 @@
     "title": "[Drops] GTA 6 CONTINUES! - !SubGift - Let's see what this game has to offer! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2934872080",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "youngmulti": {
     "facecam": null,
@@ -434,7 +434,7 @@
     "title": "[DROPS] GIVEAWAYS~ DAY 3 OF GTA6 STORY PROGRESS! UNLOCKED THE CLOAKZ... FURRY NETWORK!",
     "vod_access": "public",
     "vod_id": "2934897780",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "joe_bartolozzi": {
     "facecam": null,
@@ -542,7 +542,7 @@
     "title": "2K 60FPS • FIRST POV • GTA 6 • DAY 3",
     "vod_access": "public",
     "vod_id": "2934815498",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "handofblood": {
     "facecam": null,
@@ -551,12 +551,12 @@
     "title": "🎮 Mein erstes Mal GTA VI | !Drops 🎮",
     "vod_access": "public",
     "vod_id": "2934852868",
-    "seen": "2026-11-20T14:51Z"
+    "seen": "2026-11-20T15:51Z"
   },
   "nickmercs": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[DROPS] GTA 6 IS BETTER THAN WE THOUGHT! 🔥",
     "vod_access": "public",
     "vod_id": "2934876295",
