@@ -62,6 +62,6 @@ Every post that went out. Newest first.
 | 2026-11-20 | 14:35 AEDT | Instagram (@vicecityreplayz2026) | peanut-official-business | "Ma'am, I need this car. Official business." | @theburntpeanut | scheduled via vidIQ |
 | 2026-11-20 | 22:20 AEDT | TikTok (Vice City Replayz) | peanut-official-business | "Ma'am, I need this car. Official business." | @theburntpeanut | scheduled via vidIQ |
 | 2026-11-20 | 14:30 AEDT | YouTube (Vice City Replayz) | peanut-robbed-for-a-chain | Peanut robbed a store just to afford a chain in GTA 6 | @theburntpeanut | scheduled via vidIQ |
-| 2026-11-20 | 15:00 AEDT | YouTube (Vice City Replayz) | peanut-return-policy | Peanut tried to return his shopping in GTA 6 | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-20 | 15:30 AEDT | YouTube (Vice City Replayz) | peanut-return-policy | Peanut tried to return his shopping in GTA 6 | @theburntpeanut | scheduled via vidIQ |
 | 2026-11-20 | 15:05 AEDT | Instagram (@vicecityreplayz2026) | fact-phone-key-cloner | Did you know your GTA 6 phone steals cars? | @theburntpeanut | scheduled via vidIQ |
-| 2026-11-20 | 15:30 AEDT | YouTube (Vice City Replayz) | fact-phone-key-cloner | Your GTA 6 phone has a key cloner that steals cars | @theburntpeanut | https://www.youtube.com/watch?v=1bGHQyGr6Rc |
+| 2026-11-20 | 15:00 AEDT | YouTube (Vice City Replayz) | fact-phone-key-cloner | Your GTA 6 phone has a key cloner that steals cars | @theburntpeanut | https://www.youtube.com/watch?v=1bGHQyGr6Rc |
