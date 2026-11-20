@@ -44,8 +44,8 @@
     "live": true,
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
-    "vod_id": "2932305259",
-    "seen": "2026-11-20T11:50Z"
+    "vod_id": "2934866208",
+    "seen": "2026-11-20T12:52Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -98,11 +98,11 @@
   "ohnepixel": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
+    "live": true,
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
-    "vod_id": "2933599748",
-    "seen": "2026-11-19T21:50Z"
+    "vod_id": "2934862154",
+    "seen": "2026-11-20T12:52Z"
   },
   "trymacs": {
     "facecam": null,
@@ -131,10 +131,10 @@
     ],
     "priority": "high",
     "live": true,
-    "title": "🔴 PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE ! ┃ 63M ON YOUTUBE SOON 🔴",
+    "title": "🔴 GTA 6 FINALE LAST MISSION 90% RIGHT NOW GET IN HERE 🔴 EARLY ACCESS GAMEPLAY 🔴 63M ON YOUTUBE 🔴",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-20T11:50Z",
+    "seen": "2026-11-20T12:52Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -214,7 +214,7 @@
   "yourragegaming": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "CONTINUING GTA 6 STORYMODE DAY 2!!! (10% OF THE WAY DONE)",
     "vod_access": "public",
     "vod_id": "2934505601",
@@ -223,7 +223,7 @@
   "jerma985": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "Keepin it rolling, even if that means downhill screaming",
     "vod_access": "public",
     "vod_id": "2934543908",
@@ -326,7 +326,7 @@
     "title": "PS5 GTA6 11/20",
     "vod_access": "public",
     "vod_id": "2934677378",
-    "seen": "2026-11-20T11:50Z"
+    "seen": "2026-11-20T12:52Z"
   },
   "mrdzinold": {
     "facecam": null,
@@ -344,12 +344,12 @@
     "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 !wer | !Friendlyfire !discord !ptsmt",
     "vod_access": "public",
     "vod_id": "2934751593",
-    "seen": "2026-11-20T11:50Z"
+    "seen": "2026-11-20T12:52Z"
   },
   "chowh1": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[DROP] 🌴 GTA EN MODE PMU - 180FPS🌴 !giveaway !vpn !holy",
     "vod_access": "sub-only",
     "vod_id": "2934723605",
@@ -358,11 +358,11 @@
   "darkviperau": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "[PS5 Pro] [HOURLY GIVEAWAYS] Day 2 of GTA VI #ad !Sting",
+    "live": true,
+    "title": "[PS5 Pro] [HOURLY GIVEAWAYS] Day 3 of GTA VI",
     "vod_access": "public",
-    "vod_id": "2933527020",
-    "seen": "2026-11-19T10:51Z"
+    "vod_id": "2934782281",
+    "seen": "2026-11-20T12:52Z"
   },
   "maxim": {
     "facecam": null,
@@ -385,20 +385,20 @@
   "domingo": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "GTA VI : Jason & Lucia vont retourner Vice City",
+    "live": true,
+    "title": "GTA VI : PREMIER BRAQUAGE POUR JASON & LUCIA ?",
     "vod_access": "sub-only",
-    "vod_id": "2933600681",
-    "seen": "2026-11-19T15:51Z"
+    "vod_id": "2934861314",
+    "seen": "2026-11-20T12:52Z"
   },
   "imantado": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "[DROPS de KEYS] 🏝️ GTA VI #2 🏝️ SOY FELIZ 💦 Sorteo de GTA entre SUBS",
+    "live": true,
+    "title": "[DROPS de KEYS] 🏝️ GTA VI #3 🏝️ Lo hacemos ÉPICO 💦 Sorteo de GTA entre SUBS",
     "vod_access": "sub-only",
-    "vod_id": "2933579119",
-    "seen": "2026-11-19T13:51Z"
+    "vod_id": "2934839679",
+    "seen": "2026-11-20T12:52Z"
   },
   "alanzoka": {
     "facecam": null,
@@ -539,9 +539,18 @@
     "facecam": null,
     "priority": "normal",
     "live": true,
-    "title": "GTA 6 [2K 60fps dlss 5]",
+    "title": "2K 60FPS • FIRST POV • GTA 6 • DAY 3",
     "vod_access": "public",
     "vod_id": "2934815498",
-    "seen": "2026-11-20T11:50Z"
+    "seen": "2026-11-20T12:52Z"
+  },
+  "handofblood": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🎮 HEUTE mein erste Mal GTA VI | !Drops 🎮",
+    "vod_access": "public",
+    "vod_id": "2934852868",
+    "seen": "2026-11-20T12:52Z"
   }
 }
