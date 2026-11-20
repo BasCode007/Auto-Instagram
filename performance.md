@@ -62,3 +62,19 @@ Peanut story clips (a full mini-story with a payoff) are the clear winner: the 6
 **YouTube Shorts:** owner's "Trying to open a peanut bank account..." **1,176** views, 17 likes. Our generic "You can X in GTA 6" Shorts: 1 to 36 views. The owner's "peanut flat pack furniture" upload is stuck as private with no duration (upload probably didn't finish).
 
 **Read:** every Peanut Reel and Lacy's map Reel cleared 1.2k; xQc, Speed and Kai stalled under 200. Focus on Peanut and Lacy is right. The furniture Reel's 18 shares say relatable "too real" moments travel. The street race Reel is only 20% watched at 51 s: keep clips tighter (30 to 45 s) unless the story needs more.
+
+## 20 Nov 11:50 AEDT (00:50 UTC): overnight batch on Instagram
+
+| Reel | Creator | Type | Views | Likes | Avg watched |
+|---|---|---|---|---|---|
+| Peanut is the politest car thief | TheBurntPeanut | reaction/story | **1,414** | 20 | 45% |
+| Peanut won his first street race | TheBurntPeanut | reaction | 198 | 2 | 23% |
+| Jason's fridge is too real | Lacy | feature | 175 | 0 | 60% |
+| Ammu-Nation is back | TheBurntPeanut | feature | 167 | 4 | 44% |
+| GTA 6 has disguises | Lacy | feature/tip | 159 | 0 | 57% |
+| You need a bank account | TheBurntPeanut | feature | 147 | 2 | 32% |
+| You can play pool | TheBurntPeanut | feature | 146 | 2 (7 shares) | 35% |
+| Jason's pet snake Dolores | Lacy | feature | **1** | 0 | |
+| Lacy tried to fight an alligator | Lacy | reaction | **0** | 0 | |
+
+Page total 11,351 views. **Read:** again only the Peanut mini-story (carjacking) broke 1k; "You can X in GTA 6" feature clips sit at ~150 no matter the creator. The alligator (0) and snake (1) Reels got no distribution at all after 4+ hours: likely held back by Instagram (animal content flag?), worth the owner checking those two in the app for a warning. Lean harder into Peanut stories with a payoff; fewer plain feature clips.
