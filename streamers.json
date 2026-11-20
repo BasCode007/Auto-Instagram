@@ -9,12 +9,12 @@
     "facecam_h": 700,
     "priority": "high",
     "note": "title invites clippers (!CLIPPING)",
-    "live": false,
+    "live": true,
     "target_share": 0.125,
-    "title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️ LIVE 24/7 🦩️ !CLIPPING !COM",
+    "title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM",
     "vod_access": "public",
     "vod_id": "2933767012",
-    "seen": "2026-11-20T10:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "xqc": {
     "facecam": [
@@ -45,7 +45,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2934866208",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -102,7 +102,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH...🔴",
     "vod_access": "public",
     "vod_id": "2934862154",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "trymacs": {
     "facecam": null,
@@ -131,10 +131,10 @@
     ],
     "priority": "high",
     "live": true,
-    "title": "🔴 GTA 6 FINALE LAST MISSION 90% RIGHT NOW GET IN HERE 🔴 EARLY ACCESS GAMEPLAY 🔴 63M ON YOUTUBE 🔴",
+    "title": "🔴 GTA 6 FINALE LAST MISSION 98% RIGHT NOW GET IN HERE 🔴 EARLY ACCESS GAMEPLAY 🔴 63M ON YOUTUBE 🔴",
     "vod_access": "public",
     "vod_id": "2934870795",
-    "seen": "2026-11-20T15:51Z",
+    "seen": "2026-11-20T16:50Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -191,7 +191,7 @@
     "title": "🚨 !DROPS ON 🌴 ADIVINA QUÉ VAMOS A JUGAR HOY... 🌴 PISTA, INICIA CON GTA Y ACABA CON 6 🌴",
     "vod_access": "public",
     "vod_id": "2934943615",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "hasanabi": {
     "facecam": null,
@@ -259,7 +259,7 @@
   "gotaga": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "#PourLUCIA on live en aprem carrément",
     "vod_access": "sub-only",
     "vod_id": "2934916050",
@@ -389,7 +389,7 @@
     "title": "GTA VI : PREMIER BRAQUAGE POUR JASON & LUCIA ?",
     "vod_access": "sub-only",
     "vod_id": "2934861314",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "imantado": {
     "facecam": null,
@@ -407,7 +407,7 @@
     "title": "VICE CITY BABYYYYYYYYYYY",
     "vod_access": "public",
     "vod_id": "2934932597",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "cohhcarnage": {
     "facecam": null,
@@ -416,7 +416,7 @@
     "title": "[Drops] GTA 6 CONTINUES! - !SubGift - Let's see what this game has to offer! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2934872080",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "youngmulti": {
     "facecam": null,
@@ -434,7 +434,7 @@
     "title": "[DROPS] GIVEAWAYS~ DAY 3 OF GTA6 STORY PROGRESS! UNLOCKED THE CLOAKZ... FURRY NETWORK!",
     "vod_access": "public",
     "vod_id": "2934897780",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "joe_bartolozzi": {
     "facecam": null,
@@ -542,7 +542,7 @@
     "title": "2K 60FPS • FIRST POV • GTA 6 • DAY 3",
     "vod_access": "public",
     "vod_id": "2934815498",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "handofblood": {
     "facecam": null,
@@ -551,7 +551,7 @@
     "title": "🎮 Mein erstes Mal GTA VI | !Drops 🎮",
     "vod_access": "public",
     "vod_id": "2934852868",
-    "seen": "2026-11-20T15:51Z"
+    "seen": "2026-11-20T16:50Z"
   },
   "nickmercs": {
     "facecam": null,
