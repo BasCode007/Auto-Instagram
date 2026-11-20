@@ -9,12 +9,12 @@
     "facecam_h": 700,
     "priority": "high",
     "note": "title invites clippers (!CLIPPING)",
-    "live": false,
+    "live": true,
     "target_share": 0.125,
-    "title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️ LIVE 24/7 🦩️ !CLIPPING !COM",
     "vod_access": "public",
     "vod_id": "2933767012",
-    "seen": "2026-11-19T16:51Z"
+    "seen": "2026-11-20T02:51Z"
   },
   "xqc": {
     "facecam": [
@@ -29,7 +29,7 @@
     "title": "🥥60 FPS GTA 6🥥LIVE🥥FINISHING PLAYTHROUGH🥥NOW🥥LONG STREAM PROBABLY🥥VERY COOL🥥LOCK IT IN🥥",
     "vod_access": "public",
     "vod_id": "2934155295",
-    "seen": "2026-11-20T01:50Z",
+    "seen": "2026-11-20T02:51Z",
     "target_share": 0.125
   },
   "kaicenat": {
@@ -45,7 +45,7 @@
     "title": "🌴PLAYING GTA 6 FOR THE FIRST TIME🌴",
     "vod_access": "public",
     "vod_id": "2932305259",
-    "seen": "2026-11-20T01:50Z"
+    "seen": "2026-11-20T02:51Z"
   },
   "typicalgamer": {
     "facecam": [
@@ -74,7 +74,7 @@
     "title": "GTA 6 | DAY 2 | VICE CITY | SUPER CARS/HYPER CARS | #1 GTA 6 DRIVER | #BUNGULATE",
     "vod_access": "public",
     "vod_id": "2934030540",
-    "seen": "2026-11-20T01:50Z",
+    "seen": "2026-11-20T02:51Z",
     "target_share": 0.5
   },
   "jasontheween": {
@@ -134,7 +134,7 @@
     "title": "🔴 PLAYING GTA 6 EARLY ACCESS GAMEPLAY GET IN HERE ! ┃ 63M ON YOUTUBE SOON 🔴",
     "vod_access": "public",
     "vod_id": "2928036561",
-    "seen": "2026-11-20T01:50Z",
+    "seen": "2026-11-20T02:51Z",
     "facecam_h": 650,
     "note": "GTA stream not archived on Twitch: record live",
     "target_share": 0.125
@@ -155,7 +155,7 @@
     "title": "💸 GTA 6 💸 BEST POV 💸 PLAYING ALL DAY 💸 DAY 2 💸 EXCLUSIVE DROPS 💸 EXCLUSIVE SUB BADGE 💸 [twitter/insta stableronaldo] !sub",
     "vod_access": "public",
     "vod_id": "2933798318",
-    "seen": "2026-11-20T01:50Z"
+    "seen": "2026-11-20T02:51Z"
   },
   "illojuan": {
     "facecam": null,
@@ -169,7 +169,7 @@
   "zackrawrr": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[DROPS ON] UNBANNED GTA 6 RELEASE STREAM FOREVER WOW BIG DAY HUGE DRAMA NEW GAMES BIG NEWS REACTS !restedXP #WWMPartner | @asmongold247",
     "vod_access": "public",
     "vod_id": "2933941381",
@@ -182,7 +182,7 @@
     "title": "🟨LOSING MY MIND🟨",
     "vod_access": "public",
     "vod_id": "2932628190",
-    "seen": "2026-11-20T01:50Z"
+    "seen": "2026-11-20T02:51Z"
   },
   "auronplay": {
     "facecam": null,
@@ -200,7 +200,7 @@
     "title": "CHUD FATIGUE ON GTA🚉TRUMPxXIxPUTIN SUMMIT🗽DROPS ON!🗽GTAVI🗽FUNDRAISER FOR GTA- MELT THE ICE: NILC AND CHIRLA🚉🗽 !donate",
     "vod_access": "public",
     "vod_id": "2934025082",
-    "seen": "2026-11-20T01:50Z"
+    "seen": "2026-11-20T02:51Z"
   },
   "jynxzi": {
     "facecam": null,
@@ -214,11 +214,11 @@
   "yourragegaming": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "OG LEONIDAS NATIVE PLAYS GTA 6!! BASED ON HIS THUGGALICIOUS LOCO LIFE!!",
+    "live": true,
+    "title": "CONTINUING GTA 6 STORYMODE DAY 2!!! (10% OF THE WAY DONE)",
     "vod_access": "public",
-    "vod_id": "2933174196",
-    "seen": "2026-11-19T12:51Z"
+    "vod_id": "2934505601",
+    "seen": "2026-11-20T02:51Z"
   },
   "jerma985": {
     "facecam": null,
@@ -259,7 +259,7 @@
   "gotaga": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "#Chillnight tout pour LUCIA.",
     "vod_access": "sub-only",
     "vod_id": "2934162771",
@@ -457,7 +457,7 @@
   "tumblurr": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "GTA6 PARTE 2💥🌴 PS5 CONTEST !trade😱⏳ 30% STORIA⏳ CODICI GTA ORE ⏰21:30/23:30/1:30⏰ #adv",
     "vod_access": "public",
     "vod_id": "2933948258",
@@ -479,15 +479,33 @@
     "title": "[DROPS] HELLO :D ⭐🖤 GRINDING GTA VI!! ⭐🖤 CODE GIVEAWAYS ⭐🖤 I AM TATTED UP ⭐🖤 REDBULL DECORATED MY ROOM :D @EMIRU247 !wowguild !giveaway",
     "vod_access": "public",
     "vod_id": "2934110897",
-    "seen": "2026-11-20T01:50Z"
+    "seen": "2026-11-20T02:51Z"
   },
   "ludwig": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[DROPS ON] 🚘 GTA VI MARATHON 🚔 GIVING AWAY GAME CODES EVERY HOUR 🚔 !RedBull !AT&T !Alienware #GameChanger",
     "vod_access": "public",
     "vod_id": "2934132437",
     "seen": "2026-11-20T01:50Z"
+  },
+  "vanillamace": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "GTA 6 WOOOOO",
+    "vod_access": "public",
+    "vod_id": "2931957537",
+    "seen": "2026-11-20T02:51Z"
+  },
+  "summit1g": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "GTA6 CHILLIN - !journey for %10 off - !starforge @StarforgeSystems",
+    "vod_access": "public",
+    "vod_id": "2934276428",
+    "seen": "2026-11-20T02:51Z"
   }
 }
