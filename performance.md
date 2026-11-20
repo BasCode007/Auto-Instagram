@@ -92,3 +92,17 @@ Page total 11,351 views. **Read:** again only the Peanut mini-story (carjacking)
 | GTA 6 cops remember your outfit (Lacy) | tip | 167 | 2 | 0 | 67% |
 
 Page total 12,221. **Read:** every Reel since the overnight batch sits at 130 to 210 views: the page's baseline reach. Nothing new has broken out like the first-day Peanut stories (1.2k to 1.6k). The key cloner fact video has the most saves of any post (4 in 45 min), a good sign for fact videos. Third Lacy Reel with 0 views (alligator, snake, shoe store): owner to check those in the app. The 69 s SWAT Reel is only 27% watched: keep reactions under 45 s.
+
+## 21 Nov 08:50 AEDT (20 Nov 21:50 UTC)
+
+Instagram page total 12,683 views, 2 followers. No new post has gone out since the key cloner Reel at 15:05 AEDT 20 Nov: 5 drafts are waiting for owner approval.
+
+| Post | Type | Views | Likes | Saves | Avg watched |
+|---|---|---|---|---|---|
+| IG: Did you know your GTA 6 phone steals cars? | fact | 159 | 5 | **4** | **53%** |
+| IG: "Ma'am, I need this car" | reaction | 210 | 1 | 0 | 42% |
+| IG: Did you know GTA 6 delivers your car? | fact | 127 | 2 | 0 | 35% |
+| YT: Your GTA 6 phone has a key cloner | fact | **46** | 1 | | |
+| YT: Peanut tried to return his shopping | reaction | 3 | 0 | | |
+
+**Read:** the key cloner fact video is our best-held post of the day (most saves, 53% watched on IG, top new YouTube Short). Fact videos with a clear on-screen discovery are worth keeping at 1 in 3 or more. The return-policy Short is stuck at 3 views (likely held back by YouTube, as with the missing chain Short).
