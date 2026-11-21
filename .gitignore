@@ -12,3 +12,4 @@ media/edits/*_yt.mp4
 
 # Finished clips live in vidIQ and are sent to the owner directly; not in git
 media/edits/*.mp4
+media/longform/
