@@ -162,3 +162,17 @@ Still open:
 3. Posts per day per platform. Launch week suggestion: as many strong clips as we can cut, every 1 to 2 hours.
 4. Creators you like or want to avoid.
 5. Voiceover style: text-only (current default), AI voice, or your own voice off camera.
+
+### Narrated story Shorts: main format (owner said "go", 21 Nov)
+
+Based on research/competitor-vicepulse.md (VicePulse: 18.4M views in 8 weeks with 14-25 s narrated Shorts).
+
+1. **Length:** narrated stories 15-25 s; reactions 20-35 s max; nothing over 40 s.
+2. **Hook in the first 2 s:** narrator line plus top banner that challenges or teases: "There's a ... in GTA 6?!", "You can't ...", "Stop saying ...", "Imagine ...", "Nobody noticed ...".
+3. **Story:** 4-5 lines at about 3 words/s: hook, what happened, the twist, payoff, a question for comments ("Would you ...?"). End on the payoff with no outro, so it loops.
+4. **Facts:** every claim must be visible in the footage (list them in `facts`). No speculation, no made-up numbers, no non-GTA-6 footage. This is our edge over channels using modded GTA 5.
+5. **Picture:** real Twitch footage only. Creator stays visible in a smaller top band (`facecam_h` about 480-540) so the game fills most of the screen. Punch in with per-segment `"zoom"` and `"y"` so the key thing (creature, text, number) is big on a phone.
+6. **Voice:** vidIQ Liam (TX3LPaxmHKxFdv7VOQHJ, `scriptLines`), line timings set the cuts; game audio 15%; word-by-word captions (whisper on the MP3 + `write_ass`).
+7. **Titles:** a broad GTA 6 question, not the streamer's name: "There's A Bigfoot Hiding In GTA 6?!". Creator credit in the description and caption.
+8. **YouTube pace:** 3-4 Shorts a day, spread 16:00-23:00 UTC (US afternoon/evening). Best first. Instagram stays every 30 min, TikTok every 90 min.
+9. **Template:** clips/story-skunk-ape.json.

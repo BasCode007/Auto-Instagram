@@ -291,11 +291,12 @@ def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
         fcx = bx + (bw - cw) // 2
         fcy = by + (bh - chh) // 2
         # gameplay crop: full frame height, width to match the band aspect
-        gzoom = float(spec.get("gzoom", zoom))
+        # per-segment "zoom" (punch-in) and "y" (0 top .. 1 bottom) win over spec "gzoom"
+        gzoom = float(seg.get("zoom", spec.get("gzoom", 1.0)))
         gch = int(sh / gzoom) // 2 * 2
         gcw = min(sw, int(gch * W / gh_band) // 2 * 2)
         gcx = int((sw - gcw) * x)
-        gcy = (sh - gch) // 2 + y_off
+        gcy = int((sh - gch) * float(seg.get("y", 0.5))) + y_off
         v = (f"[{i}:v]scale={sw}:{sh + 2 * y_off}:flags=bicubic,setsar=1,split=2[fsrc{i}][gsrc{i}];"
              f"[fsrc{i}]crop={cw}:{chh}:{fcx}:{fcy + y_off},scale={W}:{fh_band}:"
              f"flags=lanczos,setsar=1[face{i}];"

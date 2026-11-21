@@ -1,0 +1,75 @@
+{
+ "id": "story-skunk-ape",
+ "pillar": "narrated story",
+ "kind": "reel",
+ "source": "twitch-2935449800/sec_325050_325900.mp4",
+ "source_url": "https://www.twitch.tv/videos/2935449800",
+ "source_range": [
+  32500,
+  32590
+ ],
+ "creator": "theburntpeanut",
+ "hook": "THERE'S A *BIGFOOT* IN GTA 6?!",
+ "credit": "@theburntpeanut on Twitch",
+ "layout": "stack",
+ "facecam": [
+  0.06,
+  0.69,
+  0.33,
+  0.29
+ ],
+ "facecam_h": 534,
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 41.0,
+   "end": 44.24,
+   "x": 0.5,
+   "zoom": 1.8,
+   "y": 0.15
+  },
+  {
+   "start": 44.24,
+   "end": 48.76,
+   "x": 0.5
+  },
+  {
+   "start": 72.5,
+   "end": 74.93,
+   "x": 0.5
+  },
+  {
+   "start": 82.0,
+   "end": 84.59,
+   "x": 0.5,
+   "zoom": 1.3
+  },
+  {
+   "start": 84.59,
+   "end": 88.0,
+   "x": 0.5,
+   "zoom": 1.3
+  }
+ ],
+ "words": [],
+ "caption_y": 1760,
+ "voiceover": {
+  "audio": "https://assets.vidiq.com/voiceovers/ca76f78c-d497-41e8-890c-459d833fda35/6b3ee314-c870-4f7e-8297-991aa53d6478.mp3",
+  "voice": "Liam (vidIQ)",
+  "game_volume": 0.15
+ },
+ "facts": [
+  "Ape-like figure standing in Grassrivers swamp grass, seen on TheBurntPeanut's stream (screen)",
+  "Group text 'Cal, Jason, Lucia': 'Yo check it! I knew I heard some crazy shit out in the Rivers...' with a photo (screen)",
+  "Poster: 'HAVE YOU SEEN SKUNK APE???' ... '461-555-0139' 'CALL KIRK' (screen)"
+ ],
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "captions": {},
+ "notes": "First narrated-story test (VicePulse style). Footage https://www.twitch.tv/videos/2935449800 at 9:01:40-9:03:10."
+}
