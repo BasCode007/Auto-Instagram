@@ -55,8 +55,15 @@ def main(spec_path: str):
     parts = []
     n = len(spec["clips"])
     for i, c in enumerate(spec["clips"]):
-        cs = json.loads((ROOT / "clips" / f"{c['id']}.json").read_text())
-        src = ROOT / "media/raw" / cs["source"]
+        if c.get("file"):   # a downloaded Twitch clip: {"file", "words_json"}
+            src = ROOT / c["file"]
+            words = json.loads((ROOT / c["words_json"]).read_text()).get(src.name, [])
+            dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                                 "-of", "csv=p=0", str(src)], text=True))
+            cs = {"segments": [{"start": 0.0, "end": dur}], "words": words}
+        else:
+            cs = json.loads((ROOT / "clips" / f"{c['id']}.json").read_text())
+            src = ROOT / "media/raw" / cs["source"]
         segs = cs["segments"]
         if c.get("trim"):
             segs = [{"start": c["trim"][0], "end": c["trim"][1]}]
@@ -66,7 +73,7 @@ def main(spec_path: str):
             banner = spec.get("banner") if (i == 0 and j == 0) else None
             part(src, g["start"], g["end"], cs.get("words", []), out, label, banner)
             parts.append(out)
-        print(f"  #{n - i} {c['id']}")
+        print(f"  #{n - i} {c.get('id', c.get('file'))}")
     lst = work / "list.txt"
     lst.write_text("".join(f"file '{p}'\n" for p in parts))
     final = ROOT / "media/longform" / f"{spec['id']}.mp4"

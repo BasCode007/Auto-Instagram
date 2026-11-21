@@ -12,6 +12,9 @@
 | YOU CAN'T DO THIS IN GTA 6.. | ProjectSupreme | 73K | 13:44 | Things removed/changed |
 | GTA 6 ONLINE - Everything To Know | More Immortal (21K) | 149K (3.7x) | 10:33 | Explainer |
 
+## Decision (owner, 21 Nov)
+Only **Funniest Moments #1** now. The others are saved for later; on 25 Nov (reminder set) ask the owner whether to make another one from this list, with projected credits. Long-form must be spaced out much more than Shorts. Funniest Moments episodes should mix funny clips from all of GTA 6 on Twitch (top clips directory), not only our streamers.
+
 ## Our options (real footage only, no streamer names/faces in narrated ones)
 1. **"GTA 6 Funniest Moments #1"**: 8-12 min compilation, numbered series. Fails, physics, NPC chaos, cop chases. Built from the moments we already find every hour (Peanut, Lacy, Speed). Streamers' reactions kept in this one, so it needs their voices; on-screen credit optional.
 2. **"25 GTA 6 Details Nobody Told You About"**: 8-10 min narrated (Liam), no faces, no stream audio. Re-use our fact finds (BuckMe interest, key cloner, hunger, Scooter Bros delivery, car stat cards, Skunk Ape poster) + new ones. Same style as our fact Shorts, so each section can also be cut into Shorts.
