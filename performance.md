@@ -106,3 +106,8 @@ Instagram page total 12,683 views, 2 followers. No new post has gone out since t
 | YT: Peanut tried to return his shopping | reaction | 3 | 0 | | |
 
 **Read:** the key cloner fact video is our best-held post of the day (most saves, 53% watched on IG, top new YouTube Short). Fact videos with a clear on-screen discovery are worth keeping at 1 in 3 or more. The return-policy Short is stuck at 3 views (likely held back by YouTube, as with the missing chain Short).
+
+## Snapshot 21 Nov 19:55 AEDT (08:55Z)
+- IG (6 followers): fact-buckme-interest 138 views / 3 saves / 54% watched in 45 min (best start today); speed-pool-rules 200 views, 52% watched; fact-hunger 154; speed-mike-tyson 156; fact-car-stat-card 137 (1 save); peanut-randy-voicemail 133 but only 24% watched (too long, slow start). Key cloner fact still best overall: 163 views, 4 saves, 1 share.
+- YouTube: key cloner fact 68 views (still the leader); new Shorts 0-5 views so far. TypicalGamer-era Shorts 34-55.
+- Lesson: fact videos keep winning on retention and saves (~52-54% watched). Reactions over 45 s drop to 24-27% watched; keep reactions tight (under 40 s) and get the payoff in early.
