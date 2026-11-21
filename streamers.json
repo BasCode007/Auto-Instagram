@@ -81,10 +81,10 @@
     "facecam": null,
     "priority": "normal",
     "live": true,
-    "title": "🔴GTA VI FINALE🔴98% DONE🔴",
+    "title": "🔴GTA VI FINALE🔴100% DONE🔴",
     "vod_access": "public",
     "vod_id": "2936160211",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
   },
   "rubius": {
     "facecam": null,
@@ -102,7 +102,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
     "vod_id": "2936064102",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
   },
   "trymacs": {
     "facecam": null,
@@ -191,7 +191,7 @@
     "title": "CÓDIGOS PARA SUBS 🚨 !DROPS ON 🌴 GTA VI INJUGABLE 🌴 LO DIGO Y ME DOY EL LUJAZO *Lo funan*",
     "vod_access": "public",
     "vod_id": "2936129297",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
   },
   "hasanabi": {
     "facecam": null,
@@ -227,7 +227,7 @@
     "title": "Grand Theft Apple",
     "vod_access": "public",
     "vod_id": "2935760785",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
   },
   "brucedropemoff": {
     "facecam": null,
@@ -322,7 +322,7 @@
   "blusewilly_retry": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "PS5 GTA6 11/21",
     "vod_access": "public",
     "vod_id": "2935840531",
@@ -389,7 +389,7 @@
     "title": "GTA VI : LUCIA & JASON EN BRAQUAGE",
     "vod_access": "sub-only",
     "vod_id": "2936036532",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
   },
   "imantado": {
     "facecam": null,
@@ -407,7 +407,7 @@
     "title": "sabadão com mais gta 6 bb",
     "vod_access": "public",
     "vod_id": "2936135145",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
   },
   "cohhcarnage": {
     "facecam": null,
@@ -416,7 +416,7 @@
     "title": "[Drops] GTA 6 IS AWESOME! - !SubGift - !Beanie is BACK in the store! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2936066900",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
   },
   "youngmulti": {
     "facecam": null,
@@ -565,11 +565,11 @@
   "michou": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "GTAAAA on débarque enfin à VICE CITY ! (je me suis levé a 16h je suis décalé à l'aide)",
+    "live": true,
+    "title": "GTAAAA je vais faire peter VICE CITY ! (live jusqu'a 5h du mat)",
     "vod_access": "public",
-    "vod_id": "2935131576",
-    "seen": "2026-11-20T22:51Z"
+    "vod_id": "2936191907",
+    "seen": "2026-11-21T16:51Z"
   },
   "cellbit": {
     "facecam": null,
@@ -641,7 +641,7 @@
     "title": "[DROP] + 1 sub (non prime) = badge ou emote GTA VI - LET'S PLAY COMPLET - EPISODE 4",
     "vod_access": "sub-only",
     "vod_id": "2936070865",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
   },
   "vegetta777": {
     "facecam": null,
@@ -650,6 +650,15 @@
     "title": "GTA 6 - Una NUEVA VIDA #4",
     "vod_access": "public",
     "vod_id": "2936152235",
-    "seen": "2026-11-21T15:51Z"
+    "seen": "2026-11-21T16:51Z"
+  },
+  "missmikkaa": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "DROPS ✅ [PS5 PRO] GOTY? GTA 6 FINALLY!! | Best reviewed game of ALL TIME?? Insane | @MissMikkaa on Socials",
+    "vod_access": "public",
+    "vod_id": "2936155770",
+    "seen": "2026-11-21T16:51Z"
   }
 }
