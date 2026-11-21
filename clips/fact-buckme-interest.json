@@ -1,0 +1,76 @@
+{
+ "id": "fact-buckme-interest",
+ "pillar": "did you know",
+ "kind": "reel",
+ "source": "twitch-2935449800/fact_buckme_src.mp4",
+ "source_url": "https://www.twitch.tv/videos/2935449800",
+ "source_range": [
+  12220,
+  12325
+ ],
+ "creator": "theburntpeanut",
+ "hook": "GTA 6 HAS A BANK APP THAT PAYS *INTEREST*",
+ "credit": "@theburntpeanut on Twitch",
+ "layout": "stack",
+ "facecam": [
+  0.14,
+  0.66,
+  0.31,
+  0.34
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 41,
+   "end": 45.05,
+   "x": 0.5
+  },
+  {
+   "start": 14.0,
+   "end": 21.55,
+   "x": 1.0
+  },
+  {
+   "start": 52,
+   "end": 56.68,
+   "x": 0.5
+  },
+  {
+   "start": 68,
+   "end": 73.07,
+   "x": 0.5
+  },
+  {
+   "start": 80,
+   "end": 82.43,
+   "x": 0.5
+  }
+ ],
+ "words": [],
+ "caption_y": 1820,
+ "voiceover": {
+  "audio": "https://assets.vidiq.com/voiceovers/ca76f78c-d497-41e8-890c-459d833fda35/a6de7e59-f437-4c55-bbce-32e856d89d9f.mp3",
+  "voice": "Liam (vidIQ)",
+  "game_volume": 0.15
+ },
+ "facts": [
+  "Notification: 'BuckMe - We're Bucking you: $20,000 in interest...' (screen)",
+  "BuckMe app: Checking Account $289,976 / $290,076, Family Savings $120,100 / $120,000, Goal $500K, '$380,000 to next goal' (screen)",
+  "BuckMe Premium shown on the card (screen)"
+ ],
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "captions": {
+  "instagram": "Did you know GTA 6 has a bank app that pays interest?",
+  "tiktok": "Did you know GTA 6 has a bank app that pays interest? \ud83c\udfa5 TheBurntPeanut on Twitch #GTA6 #GTAVI #gta6tips #theburntpeanut",
+  "youtube_shorts": "GTA 6 has a bank app that pays interest #GTA6 #Shorts"
+ },
+ "notes": "Voiceover fact video. Footage: https://www.twitch.tv/videos/2935449800 at 3:23:40-3:25:25. Avoid the Chapter IV title card just before."
+}
