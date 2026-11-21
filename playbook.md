@@ -184,5 +184,5 @@ Based on research/competitor-vicepulse.md (VicePulse: 18.4M views in 8 weeks wit
 3. **Narrated stories and fact videos: clean picture, voice only.**
    - Streamer audio at 0 (game/stream audio fully muted; voiceover only, optional quiet music).
    - No facecam, no avatar, no streamer overlays: `layout: "full"` 9:16 crop of the gameplay, `x`/`zoom`/`y` per segment to keep the action centred and corner overlays out.
-   - The narration never names the streamer or the stream. Footage credit stays in the description/caption only ("Gameplay: twitch.tv/<channel>").
+   - The narration never names the streamer or the stream, and there is no credit line anywhere (owner's call, 21 Nov): not on screen, not in the caption or description.
 4. **Reactions** (streamer moments) keep the stack layout with the creator visible and their voice, 20-35 s.
