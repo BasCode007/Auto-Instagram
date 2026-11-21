@@ -9,7 +9,7 @@
     "facecam_h": 700,
     "priority": "high",
     "note": "title invites clippers (!CLIPPING)",
-    "live": true,
+    "live": false,
     "target_share": 0.125,
     "title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 4 🍹️IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM",
     "vod_access": "public",
@@ -102,7 +102,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
     "vod_id": "2936064102",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   },
   "trymacs": {
     "facecam": null,
@@ -187,11 +187,11 @@
   "auronplay": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "🚨 !DROPS ON 🌴 ADIVINA QUÉ VAMOS A JUGAR HOY... 🌴 PISTA, INICIA CON GTA Y ACABA CON 6 🌴",
+    "live": true,
+    "title": "🚨 !DROPS ON 🌴 GTA VI INJUGABLE 🌴 LO DIGO Y ME DOY EL LUJAZO *Lo funan*",
     "vod_access": "public",
-    "vod_id": "2934943615",
-    "seen": "2026-11-20T19:51Z"
+    "vod_id": "2936129297",
+    "seen": "2026-11-21T14:51Z"
   },
   "hasanabi": {
     "facecam": null,
@@ -227,7 +227,7 @@
     "title": "Grand Theft Apple",
     "vod_access": "public",
     "vod_id": "2935760785",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   },
   "brucedropemoff": {
     "facecam": null,
@@ -326,12 +326,12 @@
     "title": "PS5 GTA6 11/21",
     "vod_access": "public",
     "vod_id": "2935840531",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   },
   "mrdzinold": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🌊🌴☀️ DZIEŃ 3 W SŁONECZNYM VICE CITY [60FPS]🌊🌴☀️ || !STRONA",
     "vod_access": "public",
     "vod_id": "2934796972",
@@ -344,7 +344,7 @@
     "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 !wer | !Friendlyfire !discord !ptsmt",
     "vod_access": "public",
     "vod_id": "2935939430",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   },
   "chowh1": {
     "facecam": null,
@@ -389,7 +389,7 @@
     "title": "GTA VI : LUCIA & JASON EN BRAQUAGE",
     "vod_access": "sub-only",
     "vod_id": "2936036532",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   },
   "imantado": {
     "facecam": null,
@@ -398,16 +398,16 @@
     "title": "[DROPS de KEYS] 🏝️ GTA VI #4 🏝️ Jason planchabragas? 💦 Sorteo de GTA entre SUBS",
     "vod_access": "sub-only",
     "vod_id": "2936057587",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   },
   "alanzoka": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "VICE CITY BABYYYYYYYYYYY",
+    "live": true,
+    "title": "sabadão com mais gta 6 bb",
     "vod_access": "public",
-    "vod_id": "2935456380",
-    "seen": "2026-11-21T00:54Z"
+    "vod_id": "2936135145",
+    "seen": "2026-11-21T14:51Z"
   },
   "cohhcarnage": {
     "facecam": null,
@@ -416,7 +416,7 @@
     "title": "[Drops] GTA 6 IS AWESOME! - !SubGift - Let's see what this game has to offer! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2936066900",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   },
   "youngmulti": {
     "facecam": null,
@@ -587,7 +587,7 @@
     "title": "🔴DROPS🔴REAL LATINA PLAYS GTA!| !ironmart !glamb !omocat !cheeky !ht !starforge !tts !merch !razer",
     "vod_access": "public",
     "vod_id": "2935731348",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   },
   "chloeyummyyy": {
     "facecam": null,
@@ -641,6 +641,6 @@
     "title": "[DROP] + 1 sub (non prime) = badge ou emote GTA VI - LET'S PLAY COMPLET - EPISODE 4",
     "vod_access": "sub-only",
     "vod_id": "2936070865",
-    "seen": "2026-11-21T13:51Z"
+    "seen": "2026-11-21T14:51Z"
   }
 }
