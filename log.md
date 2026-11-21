@@ -94,3 +94,4 @@ Every post that went out. Newest first.
 | 2026-11-21 | 22:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-downtime-rant | Lacy vs GTA 6 downtime | @lacy | scheduled via vidIQ |
 | 2026-11-21 | 22:45 AEDT | YouTube (Vice City Replayz) | lacy-downtime-rant | Lacy vs GTA 6 downtime | @lacy | scheduled via vidIQ |
 | 2026-11-21 | 02:00 AEDT | TikTok (Vice City Replayz) | lacy-downtime-rant | Lacy vs GTA 6 downtime | @lacy | scheduled via vidIQ |
+| 2026-11-22 | 04:05 AEDT | YouTube (Vice City Replayz) | story-skunk-ape | There's A Bigfoot Hiding In GTA 6?! | @theburntpeanut | scheduled via vidIQ (narrated story test) |
