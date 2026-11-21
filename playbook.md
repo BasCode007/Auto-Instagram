@@ -176,3 +176,13 @@ Based on research/competitor-vicepulse.md (VicePulse: 18.4M views in 8 weeks wit
 7. **Titles:** a broad GTA 6 question, not the streamer's name: "There's A Bigfoot Hiding In GTA 6?!". Creator credit in the description and caption.
 8. **YouTube pace:** 3-4 Shorts a day, spread 16:00-23:00 UTC (US afternoon/evening). Best first. Instagram stays every 30 min, TikTok every 90 min.
 9. **Template:** clips/story-skunk-ape.json.
+
+### Owner rules, 21 Nov (evening): override anything above that conflicts
+
+1. **Preview first.** Every new clip is sent to the owner in chat to watch before any draft is made. Nothing is drafted or posted without a preview and an explicit yes.
+2. **Hashtags: at least 10 on every post, every platform** (Instagram caption, TikTok caption, YouTube Shorts description). Always: #GTA6 #GTAVI #GTA6Clips #ViceCity #GrandTheftAuto #GTA6Gameplay #Gaming #GamingClips #RockstarGames #Leonida, then 2-4 topic tags (#GTA6Funny, #GTA6Secrets, #GTA6Tips, #GTA6Physics...), plus #Shorts on YouTube. Creator hashtag only on reaction clips.
+3. **Narrated stories and fact videos: clean picture, voice only.**
+   - Streamer audio at 0 (game/stream audio fully muted; voiceover only, optional quiet music).
+   - No facecam, no avatar, no streamer overlays: `layout: "full"` 9:16 crop of the gameplay, `x`/`zoom`/`y` per segment to keep the action centred and corner overlays out.
+   - The narration never names the streamer or the stream. Footage credit stays in the description/caption only ("Gameplay: twitch.tv/<channel>").
+4. **Reactions** (streamer moments) keep the stack layout with the creator visible and their voice, 20-35 s.
