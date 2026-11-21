@@ -437,5 +437,10 @@
     0.256
   ],
   "facecam_h": 700,
-  "gzoom": 1.08
+  "gzoom": 1.08,
+  "platforms": [
+    "instagram",
+    "youtube",
+    "tiktok"
+  ]
 }
