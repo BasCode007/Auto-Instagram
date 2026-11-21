@@ -65,3 +65,17 @@ Every post that went out. Newest first.
 | 2026-11-20 | 15:30 AEDT | YouTube (Vice City Replayz) | peanut-return-policy | Peanut tried to return his shopping in GTA 6 | @theburntpeanut | scheduled via vidIQ |
 | 2026-11-20 | 15:05 AEDT | Instagram (@vicecityreplayz2026) | fact-phone-key-cloner | Did you know your GTA 6 phone steals cars? | @theburntpeanut | scheduled via vidIQ |
 | 2026-11-20 | 15:00 AEDT | YouTube (Vice City Replayz) | fact-phone-key-cloner | Your GTA 6 phone has a key cloner that steals cars | @theburntpeanut | https://www.youtube.com/watch?v=1bGHQyGr6Rc |
+| 2026-11-21 | 12:05 AEDT | Instagram (@vicecityreplayz2026) | peanut-randy-voicemail | Pick up the phone, Randy | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 12:15 AEDT | YouTube (Vice City Replayz) | peanut-randy-voicemail | Pick up the phone, Randy | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 12:20 AEDT | TikTok (Vice City Replayz) | peanut-randy-voicemail | Pick up the phone, Randy | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 12:35 AEDT | Instagram (@vicecityreplayz2026) | fact-car-stat-card | Did you know every GTA 6 car has a stat card? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 12:45 AEDT | YouTube (Vice City Replayz) | fact-car-stat-card | Did you know every GTA 6 car has a stat card? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 13:50 AEDT | TikTok (Vice City Replayz) | fact-car-stat-card | Did you know every GTA 6 car has a stat card? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 13:05 AEDT | Instagram (@vicecityreplayz2026) | speed-mike-tyson-bouncer | Speed thinks this bouncer is Mike Tyson | @ishowspeed | scheduled via vidIQ |
+| 2026-11-21 | 13:15 AEDT | YouTube (Vice City Replayz) | speed-mike-tyson-bouncer | Speed thinks this bouncer is Mike Tyson | @ishowspeed | scheduled via vidIQ |
+| 2026-11-21 | 13:35 AEDT | Instagram (@vicecityreplayz2026) | fact-hunger | Did you know you can get hungry in GTA 6? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 13:45 AEDT | YouTube (Vice City Replayz) | fact-hunger | Did you know you can get hungry in GTA 6? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 15:20 AEDT | TikTok (Vice City Replayz) | fact-hunger | Did you know you can get hungry in GTA 6? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 14:05 AEDT | Instagram (@vicecityreplayz2026) | speed-pool-rules | Speed vs the GTA 6 pool table | @ishowspeed | scheduled via vidIQ |
+| 2026-11-21 | 14:15 AEDT | YouTube (Vice City Replayz) | speed-pool-rules | Speed vs the GTA 6 pool table | @ishowspeed | scheduled via vidIQ |
+| 2026-11-21 | 16:50 AEDT | TikTok (Vice City Replayz) | speed-pool-rules | Speed vs the GTA 6 pool table | @ishowspeed | scheduled via vidIQ |

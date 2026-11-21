@@ -34,48 +34,49 @@
   {
    "clip": "fact-car-stat-card",
    "type": "fact voiceover",
-   "status": "awaiting approval",
+   "status": "approved 21 Nov, scheduled",
    "postId": "35a21684-3199-4529-8b82-4e5890048307",
    "revision": "263efeed-73321db7-e1075ca5",
-   "ig": "2026-11-20T05:45Z",
-   "yt": "2026-11-20T06:00Z",
-   "tt": "2026-11-20T12:50Z"
+   "ig": "2026-11-21T01:35Z",
+   "yt": "2026-11-21T01:45Z",
+   "tt": "2026-11-21T02:50Z"
   },
   {
    "clip": "speed-mike-tyson-bouncer",
-   "status": "awaiting approval",
+   "status": "approved 21 Nov, scheduled",
    "postId": "5b00b379-5c9c-4aa9-8384-66fd4e55c76e",
    "revision": "17678b54-a98901c7",
-   "ig": "2026-11-20T10:45Z",
-   "yt": "2026-11-20T11:00Z"
+   "ig": "2026-11-21T02:05Z",
+   "yt": "2026-11-21T02:15Z",
+   "tt": null
   },
   {
    "clip": "fact-hunger",
    "type": "fact voiceover",
-   "status": "awaiting approval",
+   "status": "approved 21 Nov, scheduled",
    "postId": "677be4db-ca82-4b41-b845-8f3f947b7549",
    "revision": "55686f45-5ea25be0-64e2b917",
-   "ig": "2026-11-20T12:15Z",
-   "yt": "2026-11-20T12:30Z",
-   "tt": "2026-11-20T14:20Z"
+   "ig": "2026-11-21T02:35Z",
+   "yt": "2026-11-21T02:45Z",
+   "tt": "2026-11-21T04:20Z"
   },
   {
    "clip": "peanut-randy-voicemail",
-   "status": "awaiting approval",
+   "status": "approved 21 Nov, scheduled",
    "postId": "d77ba248-d8e6-49b2-bbbf-42013d7e2a4d",
    "revision": "38294561-3d597ea2-ca9c3cbe",
-   "ig": "2026-11-20T13:15Z",
-   "yt": "2026-11-20T13:30Z",
-   "tt": "2026-11-20T15:50Z"
+   "ig": "2026-11-21T01:05Z",
+   "yt": "2026-11-21T01:15Z",
+   "tt": "2026-11-21T01:20Z"
   },
   {
    "clip": "speed-pool-rules",
-   "status": "awaiting approval",
+   "status": "approved 21 Nov, scheduled",
    "postId": "406b57f8-4449-4e95-ab07-bdba158a0b45",
    "revision": "78566fec-a6484893-b84993f4",
-   "ig": "2026-11-20T19:15Z",
-   "yt": "2026-11-20T19:30Z",
-   "tt": "2026-11-20T21:20Z"
+   "ig": "2026-11-21T03:05Z",
+   "yt": "2026-11-21T03:15Z",
+   "tt": "2026-11-21T05:50Z"
   }
  ]
 }
