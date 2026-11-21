@@ -80,7 +80,7 @@
   "jasontheween": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🔴GTA VI FINALE🔴100% DONE🔴",
     "vod_access": "public",
     "vod_id": "2936160211",
@@ -102,7 +102,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
     "vod_id": "2936064102",
-    "seen": "2026-11-21T16:51Z"
+    "seen": "2026-11-21T17:50Z"
   },
   "trymacs": {
     "facecam": null,
@@ -151,11 +151,11 @@
   "stableronaldo": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "💰GTA 6 PLAYTHROUGH💰60 FPS GAMEPLAY💰I LIKE THE GAME💰SHUT UP💰EXCLUSIVE BADGE💰GOOD VIBES💰[twitter/insta stableronaldo] !sub !com !ultra",
+    "live": true,
+    "title": "🦩GTA 6 PLAYTHROUGH🦩60 FPS GAMEPLAY🦩I LIKE THE GAME🦩SHUT UP🦩EXCLUSIVE BADGE🦩GOOD VIBES🦩[twitter/insta stableronaldo] !sub !com !ultra",
     "vod_access": "public",
-    "vod_id": "2935093413",
-    "seen": "2026-11-21T03:50Z"
+    "vod_id": "2936324446",
+    "seen": "2026-11-21T17:50Z"
   },
   "illojuan": {
     "facecam": null,
@@ -191,7 +191,7 @@
     "title": "CÓDIGOS PARA SUBS 🚨 !DROPS ON 🌴 GTA VI INJUGABLE 🌴 LO DIGO Y ME DOY EL LUJAZO *Lo funan*",
     "vod_access": "public",
     "vod_id": "2936129297",
-    "seen": "2026-11-21T16:51Z"
+    "seen": "2026-11-21T17:50Z"
   },
   "hasanabi": {
     "facecam": null,
@@ -227,7 +227,7 @@
     "title": "Grand Theft Apple",
     "vod_access": "public",
     "vod_id": "2935760785",
-    "seen": "2026-11-21T16:51Z"
+    "seen": "2026-11-21T17:50Z"
   },
   "brucedropemoff": {
     "facecam": null,
@@ -389,7 +389,7 @@
     "title": "GTA VI : LUCIA & JASON EN BRAQUAGE",
     "vod_access": "sub-only",
     "vod_id": "2936036532",
-    "seen": "2026-11-21T16:51Z"
+    "seen": "2026-11-21T17:50Z"
   },
   "imantado": {
     "facecam": null,
@@ -406,13 +406,13 @@
     "live": true,
     "title": "sabadão com mais gta 6 bb",
     "vod_access": "public",
-    "vod_id": "2936135145",
-    "seen": "2026-11-21T16:51Z"
+    "vod_id": "2936272189",
+    "seen": "2026-11-21T17:50Z"
   },
   "cohhcarnage": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[Drops] GTA 6 IS AWESOME! - !SubGift - !Beanie is BACK in the store! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2936066900",
@@ -466,11 +466,11 @@
   "lirik": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "[60FPS] GTAing Pt. 3 of ?",
+    "live": true,
+    "title": "GTAing Pt. 4 of ?",
     "vod_access": "public",
-    "vod_id": "2935090050",
-    "seen": "2026-11-20T21:51Z"
+    "vod_id": "2936297170",
+    "seen": "2026-11-21T17:50Z"
   },
   "emiru": {
     "facecam": null,
@@ -569,7 +569,7 @@
     "title": "GTAAAA je vais faire peter VICE CITY ! (live jusqu'a 5h du mat)",
     "vod_access": "public",
     "vod_id": "2936191907",
-    "seen": "2026-11-21T16:51Z"
+    "seen": "2026-11-21T17:50Z"
   },
   "cellbit": {
     "facecam": null,
@@ -641,7 +641,7 @@
     "title": "[DROP] + 1 sub (non prime) = badge ou emote GTA VI - LET'S PLAY COMPLET - EPISODE 4",
     "vod_access": "sub-only",
     "vod_id": "2936070865",
-    "seen": "2026-11-21T16:51Z"
+    "seen": "2026-11-21T17:50Z"
   },
   "vegetta777": {
     "facecam": null,
@@ -650,7 +650,7 @@
     "title": "GTA 6 - Una NUEVA VIDA #4",
     "vod_access": "public",
     "vod_id": "2936152235",
-    "seen": "2026-11-21T16:51Z"
+    "seen": "2026-11-21T17:50Z"
   },
   "missmikkaa": {
     "facecam": null,
@@ -659,6 +659,15 @@
     "title": "DROPS ✅ [PS5 PRO] GOTY? GTA 6 FINALLY!! | Best reviewed game of ALL TIME?? Insane | @MissMikkaa on Socials",
     "vod_access": "public",
     "vod_id": "2936155770",
-    "seen": "2026-11-21T16:51Z"
+    "seen": "2026-11-21T17:50Z"
+  },
+  "elajjaz": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "[Drops, PS5 Pro] GTA 6 RELEASE (Day 3!) - Yes the game is really tight🪑",
+    "vod_access": "public",
+    "vod_id": "2936158697",
+    "seen": "2026-11-21T17:50Z"
   }
 }
