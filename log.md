@@ -85,3 +85,12 @@ Every post that went out. Newest first.
 | 2026-11-21 | 19:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-freed-cows-trampled | Lacy tried to free the cows | @lacy | scheduled via vidIQ |
 | 2026-11-21 | 19:45 AEDT | YouTube (Vice City Replayz) | lacy-freed-cows-trampled | Lacy tried to free the cows | @lacy | scheduled via vidIQ |
 | 2026-11-21 | 21:30 AEDT | TikTok (Vice City Replayz) | lacy-freed-cows-trampled | Lacy tried to free the cows | @lacy | scheduled via vidIQ |
+| 2026-11-21 | 21:35 AEDT | Instagram (@vicecityreplayz2026) | peanut-skunk-ape | Peanut saw Bigfoot in GTA 6 | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 21:45 AEDT | YouTube (Vice City Replayz) | peanut-skunk-ape | Peanut saw Bigfoot in GTA 6 | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 23:00 AEDT | TikTok (Vice City Replayz) | peanut-skunk-ape | Peanut saw Bigfoot in GTA 6 | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 22:05 AEDT | Instagram (@vicecityreplayz2026) | peanut-golf-cart-heist | Peanut stole a golf cart | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 22:15 AEDT | YouTube (Vice City Replayz) | peanut-golf-cart-heist | Peanut stole a golf cart | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 00:30 AEDT | TikTok (Vice City Replayz) | peanut-golf-cart-heist | Peanut stole a golf cart | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 22:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-downtime-rant | Lacy vs GTA 6 downtime | @lacy | scheduled via vidIQ |
+| 2026-11-21 | 22:45 AEDT | YouTube (Vice City Replayz) | lacy-downtime-rant | Lacy vs GTA 6 downtime | @lacy | scheduled via vidIQ |
+| 2026-11-21 | 02:00 AEDT | TikTok (Vice City Replayz) | lacy-downtime-rant | Lacy vs GTA 6 downtime | @lacy | scheduled via vidIQ |
