@@ -79,3 +79,9 @@ Every post that went out. Newest first.
 | 2026-11-21 | 14:05 AEDT | Instagram (@vicecityreplayz2026) | speed-pool-rules | Speed vs the GTA 6 pool table | @ishowspeed | scheduled via vidIQ |
 | 2026-11-21 | 14:15 AEDT | YouTube (Vice City Replayz) | speed-pool-rules | Speed vs the GTA 6 pool table | @ishowspeed | scheduled via vidIQ |
 | 2026-11-21 | 16:50 AEDT | TikTok (Vice City Replayz) | speed-pool-rules | Speed vs the GTA 6 pool table | @ishowspeed | scheduled via vidIQ |
+| 2026-11-21 | 19:05 AEDT | Instagram (@vicecityreplayz2026) | fact-buckme-interest | Did you know GTA 6 has a bank app that pays interest? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 19:15 AEDT | YouTube (Vice City Replayz) | fact-buckme-interest | Did you know GTA 6 has a bank app that pays interest? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 20:00 AEDT | TikTok (Vice City Replayz) | fact-buckme-interest | Did you know GTA 6 has a bank app that pays interest? | @theburntpeanut | scheduled via vidIQ |
+| 2026-11-21 | 19:35 AEDT | Instagram (@vicecityreplayz2026) | lacy-freed-cows-trampled | Lacy tried to free the cows | @lacy | scheduled via vidIQ |
+| 2026-11-21 | 19:45 AEDT | YouTube (Vice City Replayz) | lacy-freed-cows-trampled | Lacy tried to free the cows | @lacy | scheduled via vidIQ |
+| 2026-11-21 | 21:30 AEDT | TikTok (Vice City Replayz) | lacy-freed-cows-trampled | Lacy tried to free the cows | @lacy | scheduled via vidIQ |
