@@ -1,0 +1,235 @@
+{
+ "id": "speed-mike-tyson-bouncer",
+ "pillar": "funny",
+ "kind": "reel",
+ "source": "live-ishowspeed/rec_20261120T085155_000.mp4",
+ "source_url": "https://www.twitch.tv/ishowspeed",
+ "source_range": [
+  335.0,
+  378.0
+ ],
+ "creator": "ishowspeed",
+ "hook": "SPEED THINKS THIS BOUNCER IS *MIKE TYSON*",
+ "credit": "@ishowspeed on Twitch",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 335.0,
+   "end": 378.0
+  }
+ ],
+ "words": [
+  [
+   "You",
+   335.0,
+   335.4
+  ],
+  [
+   "ain't",
+   335.4,
+   336.64
+  ],
+  [
+   "shit,",
+   336.64,
+   336.64
+  ],
+  [
+   "motherfucker!",
+   336.68,
+   337.0
+  ],
+  [
+   "Pussy",
+   338.44,
+   338.96
+  ],
+  [
+   "ass",
+   338.96,
+   339.3
+  ],
+  [
+   "niggas!",
+   339.3,
+   339.88
+  ],
+  [
+   "They",
+   339.88,
+   340.02
+  ],
+  [
+   "lying",
+   340.02,
+   340.56
+  ],
+  [
+   "just",
+   340.56,
+   340.9
+  ],
+  [
+   "came",
+   340.9,
+   341.1
+  ],
+  [
+   "out",
+   341.1,
+   341.28
+  ],
+  [
+   "of",
+   341.28,
+   341.38
+  ],
+  [
+   "nowhere",
+   341.38,
+   341.6
+  ],
+  [
+   "like",
+   341.6,
+   341.94
+  ],
+  [
+   "that.",
+   341.94,
+   342.46
+  ],
+  [
+   "You",
+   342.8,
+   342.88
+  ],
+  [
+   "serious,",
+   342.88,
+   343.34
+  ],
+  [
+   "huh?",
+   343.66,
+   343.66
+  ],
+  [
+   "I'ma",
+   343.92,
+   344.06
+  ],
+  [
+   "tear",
+   344.06,
+   344.22
+  ],
+  [
+   "that",
+   344.22,
+   344.44
+  ],
+  [
+   "ass",
+   344.44,
+   344.76
+  ],
+  [
+   "out.",
+   344.76,
+   345.08
+  ],
+  [
+   "What?",
+   345.56,
+   345.7
+  ],
+  [
+   "What",
+   353.28,
+   353.92
+  ],
+  [
+   "the",
+   353.92,
+   354.16
+  ],
+  [
+   "f",
+   354.16,
+   354.44
+  ],
+  [
+   "-",
+   354.44,
+   355.14
+  ],
+  [
+   "Oh",
+   355.14,
+   355.44
+  ],
+  [
+   "nah.",
+   355.44,
+   355.86
+  ],
+  [
+   "Who",
+   361.77,
+   362.41
+  ],
+  [
+   "the",
+   362.41,
+   363.05
+  ],
+  [
+   "fuck",
+   365.07,
+   365.27
+  ],
+  [
+   "is",
+   365.27,
+   365.39
+  ],
+  [
+   "this,",
+   365.39,
+   365.51
+  ],
+  [
+   "Mike",
+   365.65,
+   365.75
+  ],
+  [
+   "Tyson?",
+   365.75,
+   366.03
+  ]
+ ],
+ "captions": {
+  "instagram": "Speed thinks this bouncer is mike tyson\n\nJason picked a fight in the club. Speed recognised the bouncer straight away.\n\n\ud83c\udfa5 @ishowspeed on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #ishowspeed",
+  "tiktok": "Speed thinks this bouncer is mike tyson \ud83c\udfa5 @ishowspeed on Twitch #GTA6 #GTAVI #gta6clips #ishowspeed",
+  "youtube_shorts": "Speed thinks this bouncer is mike tyson #GTA6 #Shorts\n\n\ud83c\udfa5 @ishowspeed on Twitch\nFull stream: https://www.twitch.tv/ishowspeed"
+ },
+ "notes": "Cut from https://www.twitch.tv/ishowspeed at 0:05:35-0:06:18. Credit is not permission: ask the creator if reachable; take down same day on request. TikTok off: profanity in game subtitles + fight.",
+ "facecam": [
+  0.008,
+  0.43,
+  0.195,
+  0.215
+ ],
+ "facecam_h": 700,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": false,
+  "youtube": true
+ }
+}

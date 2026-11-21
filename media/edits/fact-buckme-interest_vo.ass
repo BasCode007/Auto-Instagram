@@ -1,0 +1,74 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Display Black,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,3,5,100,140,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.20,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}DID{\c&H00FFFFFF&} YOU KNOW
+Dialogue: 0,0:00:00.20,0:00:00.38,Cap,,0,0,0,,{\pos(540,1820)}DID {\c&H000AD6FF&}YOU{\c&H00FFFFFF&} KNOW
+Dialogue: 0,0:00:00.38,0:00:00.58,Cap,,0,0,0,,{\pos(540,1820)}DID YOU {\c&H000AD6FF&}KNOW{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.58,0:00:00.98,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}GTA{\c&H00FFFFFF&} 6 HAS
+Dialogue: 0,0:00:00.98,0:00:01.38,Cap,,0,0,0,,{\pos(540,1820)}GTA {\c&H000AD6FF&}6{\c&H00FFFFFF&} HAS
+Dialogue: 0,0:00:01.38,0:00:01.62,Cap,,0,0,0,,{\pos(540,1820)}GTA 6 {\c&H000AD6FF&}HAS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.62,0:00:01.82,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}A{\c&H00FFFFFF&} BANKING APP
+Dialogue: 0,0:00:01.82,0:00:02.08,Cap,,0,0,0,,{\pos(540,1820)}A {\c&H000AD6FF&}BANKING{\c&H00FFFFFF&} APP
+Dialogue: 0,0:00:02.08,0:00:02.50,Cap,,0,0,0,,{\pos(540,1820)}A BANKING {\c&H000AD6FF&}APP{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.50,0:00:02.72,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THAT{\c&H00FFFFFF&} PAYS YOU
+Dialogue: 0,0:00:02.72,0:00:03.00,Cap,,0,0,0,,{\pos(540,1820)}THAT {\c&H000AD6FF&}PAYS{\c&H00FFFFFF&} YOU
+Dialogue: 0,0:00:03.00,0:00:03.22,Cap,,0,0,0,,{\pos(540,1820)}THAT PAYS {\c&H000AD6FF&}YOU{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.22,0:00:03.99,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}INTEREST?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.10,0:00:04.28,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}IT'S{\c&H00FFFFFF&} CALLED
+Dialogue: 0,0:00:04.28,0:00:04.56,Cap,,0,0,0,,{\pos(540,1820)}IT'S {\c&H000AD6FF&}CALLED{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.56,0:00:05.49,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}BUCKME.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.70,0:00:05.92,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THE{\c&H00FFFFFF&} BURNT PEANUT
+Dialogue: 0,0:00:05.92,0:00:06.12,Cap,,0,0,0,,{\pos(540,1820)}THE {\c&H000AD6FF&}BURNT{\c&H00FFFFFF&} PEANUT
+Dialogue: 0,0:00:06.12,0:00:06.48,Cap,,0,0,0,,{\pos(540,1820)}THE BURNT {\c&H000AD6FF&}PEANUT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.48,0:00:06.74,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}WOKE{\c&H00FFFFFF&} UP TO
+Dialogue: 0,0:00:06.74,0:00:06.92,Cap,,0,0,0,,{\pos(540,1820)}WOKE {\c&H000AD6FF&}UP{\c&H00FFFFFF&} TO
+Dialogue: 0,0:00:06.92,0:00:07.08,Cap,,0,0,0,,{\pos(540,1820)}WOKE UP {\c&H000AD6FF&}TO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.08,0:00:07.67,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THIS.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.04,0:00:08.32,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}WE'RE{\c&H00FFFFFF&} BUCKING
+Dialogue: 0,0:00:08.32,0:00:08.70,Cap,,0,0,0,,{\pos(540,1820)}WE'RE {\c&H000AD6FF&}BUCKING{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.70,0:00:09.31,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}YOU.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.36,0:00:09.72,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}$20{\c&H00FFFFFF&} ,000 IN
+Dialogue: 0,0:00:09.72,0:00:10.44,Cap,,0,0,0,,{\pos(540,1820)}$20 {\c&H000AD6FF&},000{\c&H00FFFFFF&} IN
+Dialogue: 0,0:00:10.44,0:00:10.90,Cap,,0,0,0,,{\pos(540,1820)}$20 ,000 {\c&H000AD6FF&}IN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.90,0:00:11.61,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}INTEREST.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.64,0:00:11.80,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}BUT{\c&H00FFFFFF&} IT GOES
+Dialogue: 0,0:00:11.80,0:00:11.92,Cap,,0,0,0,,{\pos(540,1820)}BUT {\c&H000AD6FF&}IT{\c&H00FFFFFF&} GOES
+Dialogue: 0,0:00:11.92,0:00:12.10,Cap,,0,0,0,,{\pos(540,1820)}BUT IT {\c&H000AD6FF&}GOES{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.10,0:00:12.38,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}INTO{\c&H00FFFFFF&} A FAMILY
+Dialogue: 0,0:00:12.38,0:00:12.56,Cap,,0,0,0,,{\pos(540,1820)}INTO {\c&H000AD6FF&}A{\c&H00FFFFFF&} FAMILY
+Dialogue: 0,0:00:12.56,0:00:12.86,Cap,,0,0,0,,{\pos(540,1820)}INTO A {\c&H000AD6FF&}FAMILY{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.86,0:00:13.32,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}SAVINGS{\c&H00FFFFFF&} ACCOUNT
+Dialogue: 0,0:00:13.32,0:00:13.78,Cap,,0,0,0,,{\pos(540,1820)}SAVINGS {\c&H000AD6FF&}ACCOUNT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.78,0:00:14.26,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}WITH{\c&H00FFFFFF&} A GOAL
+Dialogue: 0,0:00:14.26,0:00:14.40,Cap,,0,0,0,,{\pos(540,1820)}WITH {\c&H000AD6FF&}A{\c&H00FFFFFF&} GOAL
+Dialogue: 0,0:00:14.40,0:00:14.62,Cap,,0,0,0,,{\pos(540,1820)}WITH A {\c&H000AD6FF&}GOAL{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.62,0:00:14.86,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}OF{\c&H00FFFFFF&} $500 ,000.
+Dialogue: 0,0:00:14.86,0:00:15.44,Cap,,0,0,0,,{\pos(540,1820)}OF {\c&H000AD6FF&}$500{\c&H00FFFFFF&} ,000.
+Dialogue: 0,0:00:15.44,0:00:16.34,Cap,,0,0,0,,{\pos(540,1820)}OF $500 {\c&H000AD6FF&},000.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.34,0:00:16.62,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}PEANUT{\c&H00FFFFFF&} WAS
+Dialogue: 0,0:00:16.62,0:00:16.80,Cap,,0,0,0,,{\pos(540,1820)}PEANUT {\c&H000AD6FF&}WAS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.80,0:00:17.06,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}SITTING{\c&H00FFFFFF&} ON $120
+Dialogue: 0,0:00:17.06,0:00:17.26,Cap,,0,0,0,,{\pos(540,1820)}SITTING {\c&H000AD6FF&}ON{\c&H00FFFFFF&} $120
+Dialogue: 0,0:00:17.26,0:00:18.10,Cap,,0,0,0,,{\pos(540,1820)}SITTING ON {\c&H000AD6FF&}$120{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.10,0:00:18.90,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&},000{\c&H00FFFFFF&} WITH $380
+Dialogue: 0,0:00:18.90,0:00:19.24,Cap,,0,0,0,,{\pos(540,1820)},000 {\c&H000AD6FF&}WITH{\c&H00FFFFFF&} $380
+Dialogue: 0,0:00:19.24,0:00:20.18,Cap,,0,0,0,,{\pos(540,1820)},000 WITH {\c&H000AD6FF&}$380{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.18,0:00:20.72,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&},000{\c&H00FFFFFF&} TO GO.
+Dialogue: 0,0:00:20.72,0:00:20.90,Cap,,0,0,0,,{\pos(540,1820)},000 {\c&H000AD6FF&}TO{\c&H00FFFFFF&} GO.
+Dialogue: 0,0:00:20.90,0:00:21.42,Cap,,0,0,0,,{\pos(540,1820)},000 TO {\c&H000AD6FF&}GO.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.42,0:00:21.64,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}FOLLOW{\c&H00FFFFFF&} FOR MORE
+Dialogue: 0,0:00:21.64,0:00:21.88,Cap,,0,0,0,,{\pos(540,1820)}FOLLOW {\c&H000AD6FF&}FOR{\c&H00FFFFFF&} MORE
+Dialogue: 0,0:00:21.88,0:00:22.10,Cap,,0,0,0,,{\pos(540,1820)}FOLLOW FOR {\c&H000AD6FF&}MORE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.10,0:00:22.54,Cap,,0,0,0,,{\pos(540,1820)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}GTA{\c&H00FFFFFF&} 6 SECRETS.
+Dialogue: 0,0:00:22.54,0:00:22.98,Cap,,0,0,0,,{\pos(540,1820)}GTA {\c&H000AD6FF&}6{\c&H00FFFFFF&} SECRETS.
+Dialogue: 0,0:00:22.98,0:00:23.67,Cap,,0,0,0,,{\pos(540,1820)}GTA 6 {\c&H000AD6FF&}SECRETS.{\c&H00FFFFFF&}

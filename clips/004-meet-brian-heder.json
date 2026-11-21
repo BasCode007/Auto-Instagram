@@ -1,0 +1,71 @@
+{
+  "id": "004-meet-brian-heder",
+  "pillar": "spotlights",
+  "source": "GTAVI_Trailer_2.mp4",
+  "source_url": "https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Trailer_2/GTAVI_Trailer_2.mp4 (official Trailer 2, rockstargames.com/VI/media)",
+  "hook": "JASON'S LANDLORD IS *A DRUG RUNNER*",
+  "hook_size": 80,
+  "credit": "Footage: Rockstar Games",
+  "cover_at": 2.2,
+  "segments": [
+    {
+      "start": 8.15,
+      "end": 25.6
+    }
+  ],
+  "labels": [
+    {
+      "start": 1.25,
+      "end": 3.2,
+      "text": "\"What are you doing up there?\""
+    },
+    {
+      "start": 3.5,
+      "end": 5.4,
+      "text": "\"I'm just fixing some leaks.\""
+    },
+    {
+      "start": 5.5,
+      "end": 7.55,
+      "text": "\"Seriously, dude, you got some time on your hands.\""
+    },
+    {
+      "start": 7.55,
+      "end": 10.4,
+      "text": "\"I got some properties with paying tenants.\""
+    },
+    {
+      "start": 10.6,
+      "end": 12.1,
+      "text": "\"That's why you came by?\""
+    },
+    {
+      "start": 12.15,
+      "end": 14.3,
+      "text": "\"Just go get me my checks.\""
+    },
+    {
+      "start": 14.35,
+      "end": 15.6,
+      "text": "\"See you, Brian.\""
+    },
+    {
+      "start": 15.9,
+      "end": 17.45,
+      "text": "\"Love you, Jason.\""
+    }
+  ],
+  "captions": {
+    "instagram": "Meet Brian Heder.\n\nPer Rockstar, Brian is a classic drug runner from the golden age of smuggling in the Keys. He lets Jason live rent-free at one of his properties, as long as Jason helps with local shakedowns.\n\n🎥 @rockstargames\n\n#GTA6 #GTAVI #LeonidaKeys #RockstarGames #JasonDuval",
+    "tiktok": "Jason's landlord is a drug runner. Meet Brian Heder. 🎥 @rockstargames #GTA6 #GTAVI #gaming #Leonida",
+    "youtube_shorts": "Meet Brian Heder, Jason's landlord in GTA 6 #GTA6 #Shorts",
+    "x": "Meet Brian Heder.\n\nA drug runner from the golden age of smuggling in the Keys. He lets Jason live rent-free, as long as he helps with local shakedowns.\n\n🎥 @RockstarGames"
+  },
+  "notes": "Character facts from rockstargames.com/VI/only-in-leonida. Dialogue captions are a hand-checked Whisper transcript of Trailer 2.",
+  "layout": "full",
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
+}

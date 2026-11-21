@@ -1,0 +1,78 @@
+# Ready to upload
+
+**Already posted (any platform, including by hand): `media/edits/posted.json`. Check it before drafting.**
+
+## Launch-night stream clips (post these first, they're the freshest)
+
+`PHONE_CHECK.jpg` shows every clip as it looks on an iPhone in Instagram Reels. Posting setup: see `POSTING.md`.
+
+Facecam on top, gameplay below, word-by-word captions, 1080x1920 at 60 fps. Credit is on screen and in every caption.
+Post to **Instagram Reels + YouTube Shorts**; TikTok too.
+
+| Clip | Hook | Length | Source |
+|---|---|---|---|
+| `lacy-map-first-look.mp4` | FIRST LOOK AT THE FULL GTA 6 MAP | 38s | Lacy, Twitch |
+| `lacy-snake-dolores.mp4` | JASON HAS A PET SNAKE NAMED DOLORES | 25s | Lacy, Twitch |
+| `lacy-fridge.mp4` | JASON'S FRIDGE IS TOO REAL | 22s | Lacy, Twitch |
+| `lacy-shoe-store.mp4` | GTA 6 HAS REAL SHOE STORES | 28s | Lacy, Twitch |
+| `peanut-ammu-nation.mp4` | AMMU-NATION IS BACK IN GTA 6 | 29s | TheBurntPeanut, Twitch |
+| `xqc-mirror-shave.mp4` | YOU CAN SHAVE JASON IN GTA 6 | 27s | xQc, Twitch |
+| `xqc-collectible-card.mp4` | GTA 6 HAS COLLECTIBLE CARDS | 33s | xQc, Twitch |
+| `lacy-cops-know-outfit.mp4` | GTA 6 COPS REMEMBER YOUR OUTFIT | 20s | Lacy, Twitch (tip) |
+| `lacy-real-hotel.mp4` | HE'S BEEN TO THIS HOTEL IN REAL LIFE | 21s | Lacy, Twitch |
+| `kai-first-time-gta6.mp4` | KAI CENAT STARTS GTA 6 FOR THE FIRST TIME | 37s | Kai Cenat, Twitch |
+| `lacy-hat-glasses-disguise.mp4` | GTA 6 HAS DISGUISES | 25s | Lacy, Twitch (tip) |
+| `xqc-gym-squats.mp4` | GTA 6 HAS A GYM MINIGAME | 66s | xQc, Twitch (**Shorts length**) |
+| `tg-paradise-taxi.mp4` | YOU CAN CALL A TAXI IN GTA 6 | 65s | TypicalGamer, Twitch (**Shorts length**) |
+| `tg-pet-the-dog.mp4` | YOU CAN PET THE DOG IN GTA 6 | 24s | TypicalGamer, Twitch |
+| `tg-fix-up-the-house.mp4` | YOU CAN FIX UP JASON'S HOUSE IN GTA 6 | 75s | TypicalGamer, Twitch (**Shorts length**) |
+| `tg-bridge-chase.mp4` | GTA 6 CHASES ARE INSANE | 37s | TypicalGamer, Twitch (physics/crash) |
+| `tg-only-9-percent.mp4` | HE'S ONLY 9% THROUGH GTA 6 | 25s | TypicalGamer, Twitch |
+| `tg-waited-13-years-to-paint.mp4` | HE WAITED 13 YEARS TO PAINT | 25s | TypicalGamer, Twitch (funny) |
+| `peanut-pool-minigame.mp4` | YOU CAN PLAY POOL IN GTA 6 | 47s | TheBurntPeanut, Twitch (new feature) |
+| `speed-home-gym-pullups.mp4` | YOU CAN DO PULL-UPS IN GTA 6 | 34s | IShowSpeed, Twitch (new feature) |
+| `peanut-in-the-clink.mp4` | PEANUT ENDED UP IN GTA 6 JAIL | 41s | TheBurntPeanut, Twitch (funny) |
+| `peanut-robbed-for-a-chain.mp4` | HE ROBBED A STORE TO BUY A CHAIN | 69s | TheBurntPeanut, Twitch (funny, **Shorts length**) |
+| `peanut-return-policy.mp4` | WHAT'S THE RETURN POLICY IN GTA 6? | 45s | TheBurntPeanut, Twitch (funny) |
+| `peanut-bank-account.mp4` | YOU NEED A BANK ACCOUNT IN GTA 6 | 41s | TheBurntPeanut, Twitch (new feature). **YouTube: posted by hand** (youtube.com/shorts/aYvcVHQBj0k) |
+| `peanut-flat-pack-furniture.mp4` | BUILDING FURNITURE IN GTA 6 IS TOO REAL | 56s | TheBurntPeanut, Twitch (funny) |
+| `peanut-dirt-bike-race.mp4` | WHY ARE THERE CARS IN THE DIRT BIKE RACE? | 47s | TheBurntPeanut, Twitch (physics, TikTok-safe) |
+| `xqc-bbq-minigame.mp4` | YOU CAN GRILL BURGERS IN GTA 6 | 40s | xQc, Twitch (new feature, TikTok-safe) |
+| `peanut-polite-carjacking.mp4` | PEANUT IS THE POLITEST CAR THIEF IN GTA 6 | 42s | TheBurntPeanut, Twitch (funny) |
+| `peanut-wins-street-race.mp4` | PEANUT WON HIS FIRST STREET RACE | 51s | TheBurntPeanut, Twitch |
+| `speed-too-expensive-for-lucia.mp4` | SPEED WON'T PAY $4,000 FOR LUCIA'S OUTFIT | 37s | IShowSpeed, Twitch (funny) |
+| `speed-bike-song.mp4` | SPEED MADE A GTA 6 SONG ON A BIKE | 41s | IShowSpeed, Twitch (funny) |
+| `lacy-alligator-wasted.mp4` | LACY TRIED TO FIGHT AN ALLIGATOR IN GTA 6 | 36s | Lacy, Twitch (funny) |
+
+Lacy's stream title includes `!CLIPPING`; he invites clippers. Keep the credit on every post.
+
+## Trailer clips (batch 1)
+
+Batch 1: six vertical clips, all from official Rockstar trailers (rockstargames.com/VI/media).
+Each clip has a `_cover.jpg` (Reel/TikTok cover) and a `_captions.txt` (Instagram, TikTok, Shorts and X captions).
+**Nothing has been posted.** Each one needs your OK first (playbook.md, approval rules).
+
+| Order | Clip | Length | Pillar | When to post |
+|---|---|---|---|---|
+| 1 | `001-out-now.mp4`: GTA 6 IS OUT NOW | 22s | official news | The moment it's visibly live in the first region (NZ unlocks 11:00 UTC Nov 18). Confirm with real player posts first. |
+| 2 | `002-5-things-to-know.mp4`: 5 THINGS TO KNOW BEFORE YOU PLAY | 16s | tips | Launch day, late morning |
+| 3 | `005-13-years-los-santos.mp4`: 13 YEARS OF LOS SANTOS | 11s | nostalgia | Launch day, evening |
+| 4 | `003-ps5-pro-extra.mp4`: PS5 PRO GETS SOMETHING EXTRA | 13s | spotlight | Day 2 |
+| 5 | `004-meet-brian-heder.mp4`: JASON'S LANDLORD IS A DRUG RUNNER | 17s | spotlight | Day 2 or 3 |
+| 6 | `006-only-in-leonida.mp4`: LEONIDA SOCIAL MEDIA IS UNHINGED | 10s | gameplay clip | Day 3 |
+
+## Manual upload (until a scheduler or API is connected)
+
+**Instagram (Reel):** + → Reel → pick the MP4 → Next → paste the INSTAGRAM caption from `_captions.txt` →
+Edit cover → "Add from camera roll" → `_cover.jpg` → keep "Also share to feed" on → Share.
+
+**TikTok:** + → Upload → pick the MP4 → Next → paste the TIKTOK caption → Select cover → Post.
+
+**If a platform mutes the audio** (trailer songs are licensed): mute the original sound in the app and add a trending sound from the app's library.
+
+After posting, add a row to log.md and scoreboard.csv (post_id, date, time, platform, pillar, hook, length, credit). Fill views at 12h, 24h and 72h.
+
+## Automated Instagram posting
+
+`python3 tools/post_instagram.py clips/<id>.json` shows exactly what would be posted.
+Add `--confirm` to publish. It needs `IG_USER_ID` and `IG_ACCESS_TOKEN` in `.env`. The Instagram connection in the build session didn't authenticate, so this hasn't been run live yet.

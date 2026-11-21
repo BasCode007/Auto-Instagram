@@ -1,0 +1,230 @@
+{
+  "id": "lacy-fridge",
+  "pillar": "gameplay clips",
+  "kind": "reel",
+  "source": "twitch-2932194507/sec_69185_69410.mp4",
+  "source_url": "https://www.twitch.tv/videos/2932194507",
+  "source_range": [
+    6918.5,
+    6941.0
+  ],
+  "creator": "lacy",
+  "hook": "JASON'S FRIDGE IS *TOO REAL*",
+  "credit": "@lacy on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 22.5
+    }
+  ],
+  "words": [
+    [
+      "We",
+      0.08,
+      0.6
+    ],
+    [
+      "got",
+      0.6,
+      0.72
+    ],
+    [
+      "going",
+      0.72,
+      0.84
+    ],
+    [
+      "on",
+      0.84,
+      0.94
+    ],
+    [
+      "in",
+      0.94,
+      1.04
+    ],
+    [
+      "the",
+      1.04,
+      1.12
+    ],
+    [
+      "fridge",
+      1.12,
+      1.24
+    ],
+    [
+      "hold",
+      1.24,
+      1.4
+    ],
+    [
+      "on",
+      1.4,
+      2.6
+    ],
+    [
+      "a",
+      2.6,
+      2.86
+    ],
+    [
+      "Beer",
+      2.86,
+      3.36
+    ],
+    [
+      "a",
+      3.36,
+      3.7
+    ],
+    [
+      "protein",
+      3.7,
+      4.32
+    ],
+    [
+      "shake",
+      4.32,
+      4.86
+    ],
+    [
+      "and",
+      4.86,
+      5.84
+    ],
+    [
+      "a",
+      5.84,
+      5.96
+    ],
+    [
+      "water.",
+      5.96,
+      6.42
+    ],
+    [
+      "Yeah,",
+      6.74,
+      7.18
+    ],
+    [
+      "we",
+      7.18,
+      7.3
+    ],
+    [
+      "gotta",
+      7.3,
+      7.42
+    ],
+    [
+      "go",
+      7.42,
+      7.58
+    ],
+    [
+      "shopping",
+      7.58,
+      7.9
+    ],
+    [
+      "Yeah,",
+      9.02,
+      9.46
+    ],
+    [
+      "we",
+      9.46,
+      9.7
+    ],
+    [
+      "gotta",
+      9.7,
+      9.82
+    ],
+    [
+      "go",
+      9.82,
+      9.98
+    ],
+    [
+      "shopping",
+      9.98,
+      10.22
+    ],
+    [
+      "bro",
+      10.22,
+      10.68
+    ],
+    [
+      "Brother",
+      11.22,
+      11.66
+    ],
+    [
+      "I'm",
+      11.66,
+      11.86
+    ],
+    [
+      "gonna",
+      11.86,
+      11.9
+    ],
+    [
+      "starve",
+      11.9,
+      12.4
+    ],
+    [
+      "to",
+      12.4,
+      12.6
+    ],
+    [
+      "death.",
+      12.6,
+      12.74
+    ],
+    [
+      "Where's",
+      12.8,
+      13.04
+    ],
+    [
+      "the",
+      13.04,
+      13.18
+    ],
+    [
+      "food?",
+      13.18,
+      13.66
+    ]
+  ],
+  "captions": {
+    "instagram": "Jason's fridge is too real\n\nA beer, a protein shake and a water. Jason needs groceries.\n\n🎥 @lacy on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #lacy",
+    "tiktok": "Jason's fridge is too real 🎥 @lacy on Twitch #GTA6 #GTAVI #gta6clips #lacy",
+    "youtube_shorts": "Jason's fridge is too real #GTA6 #Shorts\n\n🎥 @lacy on Twitch\nFull stream: https://www.twitch.tv/videos/2932194507"
+  },
+  "notes": "Cut from https://www.twitch.tv/videos/2932194507 at 1:55:18-1:55:41. Credit is not permission: ask the creator if reachable; take down same day on request.",
+  "facecam": [
+    0.0,
+    0.0,
+    0.258,
+    0.256
+  ],
+  "facecam_h": 700,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
+}

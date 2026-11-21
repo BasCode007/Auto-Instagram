@@ -1,0 +1,75 @@
+{
+ "id": "fact-hunger",
+ "pillar": "did you know",
+ "kind": "reel",
+ "source": "twitch-2934030540/fact_hunger_src.mp4",
+ "source_url": "https://www.twitch.tv/videos/2934030540",
+ "source_range": [
+  54650,
+  54700
+ ],
+ "creator": "theburntpeanut",
+ "hook": "DID YOU KNOW YOU CAN GET *HUNGRY* IN GTA 6?",
+ "credit": "@theburntpeanut on Twitch",
+ "layout": "stack",
+ "facecam": [
+  0.14,
+  0.66,
+  0.31,
+  0.34
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 24.5,
+   "end": 27.43,
+   "x": 0.5
+  },
+  {
+   "start": 16.8,
+   "end": 22.76,
+   "x": 1.0
+  },
+  {
+   "start": 27.5,
+   "end": 31.47,
+   "x": 0.5
+  },
+  {
+   "start": 39.0,
+   "end": 43.44,
+   "x": 0.5
+  },
+  {
+   "start": 34.0,
+   "end": 36.59,
+   "x": 0.5
+  }
+ ],
+ "words": [],
+ "caption_y": 1250,
+ "voiceover": {
+  "audio": "https://assets.vidiq.com/voiceovers/ca76f78c-d497-41e8-890c-459d833fda35/90f40328-e250-44a0-97f5-4201c7fd9d5d.mp3",
+  "voice": "Liam (vidIQ)",
+  "game_volume": 0.15
+ },
+ "facts": [
+  "Notification on screen: 'Hungry - Health recovery is affected until fed.' (screen)",
+  "Peanut walks into a Stop 'n' Snack store at the gas station (screen)"
+ ],
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "captions": {
+  "instagram": "Did you know you can get hungry in GTA 6?",
+  "tiktok": "Did you know you can get hungry in GTA 6? \ud83c\udfa5 TheBurntPeanut on Twitch #GTA6 #GTAVI #gta6tips #theburntpeanut",
+  "youtube_shorts": "You can get hungry in GTA 6 #GTA6 #Shorts"
+ },
+ "notes": "Voiceover fact video. Footage: https://www.twitch.tv/videos/2934030540 at 15:10:50-15:11:40."
+}

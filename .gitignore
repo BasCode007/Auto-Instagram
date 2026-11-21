@@ -1,0 +1,15 @@
+# Source footage is large; re-download with tools/fetch_official.sh
+media/raw/*
+!media/raw/SOURCES.md
+media/official/*
+!media/official/.gitkeep
+__pycache__/
+*.pyc
+.env
+
+# YouTube 1440p masters are large; they go straight to vidIQ
+media/edits/*_yt.mp4
+
+# Finished clips live in vidIQ and are sent to the owner directly; not in git
+media/edits/*.mp4
+media/longform/

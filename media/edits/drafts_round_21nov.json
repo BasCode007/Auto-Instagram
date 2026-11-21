@@ -1,0 +1,59 @@
+{
+ "status": "awaiting approval",
+ "drafts": [
+  {
+   "clip": "fact-buckme-interest",
+   "type": "fact voiceover",
+   "postId": "86b807b0-1124-40ee-beb4-e0fa8f1f5853",
+   "revision": "0c5aa7cc-2ba9f615-9ed81a8a",
+   "ig": "2026-11-21T03:35Z",
+   "yt": "2026-11-21T03:45Z",
+   "tt": "2026-11-21T07:20Z",
+   "status": "published/scheduled (IG/TT scheduled; YT OvS0FdQBIRQ / 9FkCG57UwCU)"
+  },
+  {
+   "clip": "lacy-freed-cows-trampled",
+   "postId": "7060ee2c-10d1-484c-9006-9aa7f2f0dec1",
+   "revision": "8a771a1a-e05722af-e25bccd9",
+   "ig": "2026-11-21T05:35Z",
+   "yt": "2026-11-21T05:45Z",
+   "tt": "2026-11-21T08:50Z",
+   "status": "published/scheduled (IG/TT scheduled; YT OvS0FdQBIRQ / 9FkCG57UwCU)"
+  },
+  {
+   "clip": "peanut-golf-cart-heist",
+   "postId": "b2915ecd-c416-4d39-95dc-2601ccc09e3c",
+   "revision": "30c2cd97-57dd8860-ef0f270f",
+   "ig": "2026-11-21T10:05Z",
+   "yt": "2026-11-21T10:15Z",
+   "tt": "2026-11-21T13:30Z",
+   "status": "published/scheduled (YT OwPdRBNcECw)"
+  },
+  {
+   "clip": "lacy-downtime-rant",
+   "postId": "0a99eba8-a20e-4f39-8094-380ff7944861",
+   "revision": "7dea3049-accf3d71-b4d31217",
+   "ig": "2026-11-21T10:35Z",
+   "yt": "2026-11-21T10:45Z",
+   "tt": "2026-11-21T15:00Z",
+   "status": "published/scheduled (YT zfut0hCAhAM)"
+  },
+  {
+   "clip": "peanut-skunk-ape",
+   "postId": "18c3d380-012e-4944-b1e7-54a02b43c682",
+   "revision": "483d4c2b-5b645a84-b9b84403",
+   "ig": "2026-11-21T09:35Z",
+   "yt": "2026-11-21T09:45Z",
+   "tt": "2026-11-21T12:00Z",
+   "status": "published/scheduled (YT BUEYJQLocBM)"
+  },
+  {
+   "clip": "story-skunk-ape",
+   "type": "narrated story",
+   "postId": "3175239e-a7ed-486f-9233-d76bf5551f1a",
+   "revision": "f23451a1",
+   "yt": "2026-11-21T17:05Z",
+   "status": "published/scheduled (YT c16ZdGetrE8)"
+  }
+ ]
+}

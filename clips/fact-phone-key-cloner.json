@@ -1,0 +1,76 @@
+{
+ "id": "fact-phone-key-cloner",
+ "pillar": "did you know",
+ "kind": "reel",
+ "source": "twitch-2934030540/fact_cloner_src.mp4",
+ "source_url": "https://www.twitch.tv/videos/2934030540",
+ "source_range": [
+  27520,
+  28135
+ ],
+ "creator": "theburntpeanut",
+ "hook": "DID YOU KNOW YOUR GTA 6 PHONE *STEALS CARS*?",
+ "credit": "@theburntpeanut on Twitch",
+ "layout": "stack",
+ "facecam": [
+  0.14,
+  0.66,
+  0.31,
+  0.34
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 13,
+   "end": 16.63
+  },
+  {
+   "start": 24,
+   "end": 29.8
+  },
+  {
+   "start": 29.8,
+   "end": 34.4
+  },
+  {
+   "start": 34.4,
+   "end": 37.95
+  },
+  {
+   "start": 56.0,
+   "end": 61.88
+  },
+  {
+   "start": 64.5,
+   "end": 66.93
+  }
+ ],
+ "words": [],
+ "caption_y": 1700,
+ "voiceover": {
+  "audio": "https://assets.vidiq.com/voiceovers/ca76f78c-d497-41e8-890c-459d833fda35/05fa3822-211d-48bc-a4d2-af75cbc068b8.mp3",
+  "voice": "Liam (vidIQ)",
+  "game_volume": 0.15
+ },
+ "facts": [
+  "Phone Settings has a 'Third-Party Plugins' section listing cop_scanner_v3.1.9 and key_cloner_v1.6.9 (screen)",
+  "Key cloner description: 'close range key cloner that reads and replicates nearby vehicle fobs in seconds' (screen)",
+  "Notification: 'Keyless vehicles can now be stolen with the key cloner' (screen)",
+  "The garage has a whiteboard list of cars; Peanut photographed it with the phone camera (screen + his commentary 'take a pic to steal the cars')"
+ ],
+ "platforms": {
+  "instagram": true,
+  "tiktok": false,
+  "youtube": true
+ },
+ "captions": {
+  "instagram": "Did you know your GTA 6 phone steals cars?",
+  "tiktok": "",
+  "youtube_shorts": "Did you know your GTA 6 phone steals cars? #GTA6 #Shorts"
+ },
+ "notes": "Voiceover fact video. Footage: https://www.twitch.tv/videos/2934030540 at 7:38:40-7:39:20 and 7:48:25-7:48:52. TikTok off: car theft how-to (regulated/criminal how-to risk)."
+}

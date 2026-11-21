@@ -1,0 +1,59 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Display Black,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,3,5,100,140,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.28,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THERE'S{\c&H00FFFFFF&} A
+Dialogue: 0,0:00:00.28,0:00:00.44,Cap,,0,0,0,,{\pos(540,1760)}THERE'S {\c&H000AD6FF&}A{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.44,0:00:00.88,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}BIGFOOT{\c&H00FFFFFF&} HIDING
+Dialogue: 0,0:00:00.88,0:00:01.26,Cap,,0,0,0,,{\pos(540,1760)}BIGFOOT {\c&H000AD6FF&}HIDING{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.26,0:00:01.52,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}IN{\c&H00FFFFFF&} GTA 6'S
+Dialogue: 0,0:00:01.52,0:00:01.80,Cap,,0,0,0,,{\pos(540,1760)}IN {\c&H000AD6FF&}GTA{\c&H00FFFFFF&} 6'S
+Dialogue: 0,0:00:01.80,0:00:02.32,Cap,,0,0,0,,{\pos(540,1760)}IN GTA {\c&H000AD6FF&}6'S{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.32,0:00:03.29,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}SWAMPS.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.38,0:00:03.48,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THE{\c&H00FFFFFF&} BURNT PEANUT
+Dialogue: 0,0:00:03.48,0:00:03.70,Cap,,0,0,0,,{\pos(540,1760)}THE {\c&H000AD6FF&}BURNT{\c&H00FFFFFF&} PEANUT
+Dialogue: 0,0:00:03.70,0:00:04.14,Cap,,0,0,0,,{\pos(540,1760)}THE BURNT {\c&H000AD6FF&}PEANUT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.14,0:00:04.58,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}SPOTTED{\c&H00FFFFFF&} IT IN
+Dialogue: 0,0:00:04.58,0:00:04.82,Cap,,0,0,0,,{\pos(540,1760)}SPOTTED {\c&H000AD6FF&}IT{\c&H00FFFFFF&} IN
+Dialogue: 0,0:00:04.82,0:00:04.94,Cap,,0,0,0,,{\pos(540,1760)}SPOTTED IT {\c&H000AD6FF&}IN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.94,0:00:05.06,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THE{\c&H00FFFFFF&} GRASS AND
+Dialogue: 0,0:00:05.06,0:00:05.42,Cap,,0,0,0,,{\pos(540,1760)}THE {\c&H000AD6FF&}GRASS{\c&H00FFFFFF&} AND
+Dialogue: 0,0:00:05.42,0:00:05.76,Cap,,0,0,0,,{\pos(540,1760)}THE GRASS {\c&H000AD6FF&}AND{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.76,0:00:06.06,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}CHASED{\c&H00FFFFFF&} IT
+Dialogue: 0,0:00:06.06,0:00:06.26,Cap,,0,0,0,,{\pos(540,1760)}CHASED {\c&H000AD6FF&}IT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.26,0:00:06.74,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}STRAIGHT{\c&H00FFFFFF&} INTO
+Dialogue: 0,0:00:06.74,0:00:07.00,Cap,,0,0,0,,{\pos(540,1760)}STRAIGHT {\c&H000AD6FF&}INTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.00,0:00:07.20,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THE{\c&H00FFFFFF&} WATER.
+Dialogue: 0,0:00:07.20,0:00:07.85,Cap,,0,0,0,,{\pos(540,1760)}THE {\c&H000AD6FF&}WATER.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.90,0:00:08.16,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THEN{\c&H00FFFFFF&} CAL TEXTED
+Dialogue: 0,0:00:08.16,0:00:08.54,Cap,,0,0,0,,{\pos(540,1760)}THEN {\c&H000AD6FF&}CAL{\c&H00FFFFFF&} TEXTED
+Dialogue: 0,0:00:08.54,0:00:08.94,Cap,,0,0,0,,{\pos(540,1760)}THEN CAL {\c&H000AD6FF&}TEXTED{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.94,0:00:09.22,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}HIM{\c&H00FFFFFF&} THIS POSTER.
+Dialogue: 0,0:00:09.22,0:00:09.44,Cap,,0,0,0,,{\pos(540,1760)}HIM {\c&H000AD6FF&}THIS{\c&H00FFFFFF&} POSTER.
+Dialogue: 0,0:00:09.44,0:00:10.25,Cap,,0,0,0,,{\pos(540,1760)}HIM THIS {\c&H000AD6FF&}POSTER.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.30,0:00:10.38,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}HAVE{\c&H00FFFFFF&} YOU SEEN
+Dialogue: 0,0:00:10.36,0:00:10.52,Cap,,0,0,0,,{\pos(540,1760)}HAVE {\c&H000AD6FF&}YOU{\c&H00FFFFFF&} SEEN
+Dialogue: 0,0:00:10.52,0:00:10.78,Cap,,0,0,0,,{\pos(540,1760)}HAVE YOU {\c&H000AD6FF&}SEEN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.78,0:00:11.24,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}SKUNK{\c&H00FFFFFF&} APE?
+Dialogue: 0,0:00:11.24,0:00:11.93,Cap,,0,0,0,,{\pos(540,1760)}SKUNK {\c&H000AD6FF&}APE?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.02,0:00:12.18,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}CALL{\c&H00FFFFFF&} KIRK.
+Dialogue: 0,0:00:12.18,0:00:12.77,Cap,,0,0,0,,{\pos(540,1760)}CALL {\c&H000AD6FF&}KIRK.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.84,0:00:12.96,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}IT{\c&H00FFFFFF&} EVEN HAS
+Dialogue: 0,0:00:12.96,0:00:13.18,Cap,,0,0,0,,{\pos(540,1760)}IT {\c&H000AD6FF&}EVEN{\c&H00FFFFFF&} HAS
+Dialogue: 0,0:00:13.18,0:00:13.38,Cap,,0,0,0,,{\pos(540,1760)}IT EVEN {\c&H000AD6FF&}HAS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.38,0:00:13.54,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}A{\c&H00FFFFFF&} PHONE NUMBER.
+Dialogue: 0,0:00:13.54,0:00:13.78,Cap,,0,0,0,,{\pos(540,1760)}A {\c&H000AD6FF&}PHONE{\c&H00FFFFFF&} NUMBER.
+Dialogue: 0,0:00:13.78,0:00:14.49,Cap,,0,0,0,,{\pos(540,1760)}A PHONE {\c&H000AD6FF&}NUMBER.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.62,0:00:14.74,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}WOULD{\c&H00FFFFFF&} YOU CALL
+Dialogue: 0,0:00:14.74,0:00:14.88,Cap,,0,0,0,,{\pos(540,1760)}WOULD {\c&H000AD6FF&}YOU{\c&H00FFFFFF&} CALL
+Dialogue: 0,0:00:14.88,0:00:15.10,Cap,,0,0,0,,{\pos(540,1760)}WOULD YOU {\c&H000AD6FF&}CALL{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.10,0:00:15.61,Cap,,0,0,0,,{\pos(540,1760)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}IT?{\c&H00FFFFFF&}

@@ -1,0 +1,155 @@
+{
+  "id": "xqc-collectible-card",
+  "pillar": "gameplay clips",
+  "kind": "reel",
+  "source": "twitch-2932113307/sec_225490_225815.mp4",
+  "source_url": "https://www.twitch.tv/videos/2932113307",
+  "source_range": [
+    22549.0,
+    22581.5
+  ],
+  "creator": "xqc",
+  "hook": "GTA 6 HAS *COLLECTIBLE CARDS*",
+  "credit": "@xqc on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 4.1,
+      "end": 36.6
+    }
+  ],
+  "words": [
+    [
+      "Oh,",
+      4.5,
+      5.1
+    ],
+    [
+      "collectable",
+      5.26,
+      7.38
+    ],
+    [
+      "card.",
+      7.38,
+      7.64
+    ],
+    [
+      "Oh,",
+      8.38,
+      9.12
+    ],
+    [
+      "heck",
+      9.16,
+      9.3
+    ],
+    [
+      "yeah.",
+      9.3,
+      9.68
+    ],
+    [
+      "Ew!",
+      10.76,
+      11.12
+    ],
+    [
+      "Wogester?",
+      13.26,
+      14.02
+    ],
+    [
+      "Wait,",
+      22.1,
+      22.54
+    ],
+    [
+      "not",
+      22.72,
+      22.76
+    ],
+    [
+      "a",
+      22.76,
+      22.92
+    ],
+    [
+      "dude.",
+      22.92,
+      23.04
+    ],
+    [
+      "Um,",
+      26.65,
+      27.05
+    ],
+    [
+      "I",
+      29.11,
+      29.45
+    ],
+    [
+      "can",
+      29.45,
+      29.59
+    ],
+    [
+      "pawn",
+      29.59,
+      29.83
+    ],
+    [
+      "it.",
+      29.83,
+      30.07
+    ],
+    [
+      "Oh,",
+      30.97,
+      31.07
+    ],
+    [
+      "heck",
+      31.09,
+      31.31
+    ],
+    [
+      "yeah.",
+      31.31,
+      31.69
+    ],
+    [
+      "75",
+      34.14,
+      34.54
+    ],
+    [
+      "bucks!",
+      34.54,
+      35.06
+    ]
+  ],
+  "captions": {
+    "instagram": "GTA 6 has collectible cards\n\nxQc found a Ratface card on a bench. Hamlet Pawn buys it for $75.\n\n🎥 @xqc on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #xqc",
+    "tiktok": "GTA 6 has collectible cards 🎥 @xqc on Twitch #GTA6 #GTAVI #gta6clips #xqc",
+    "youtube_shorts": "GTA 6 has collectible cards #GTA6 #Shorts\n\n🎥 @xqc on Twitch\nFull stream: https://www.twitch.tv/videos/2932113307"
+  },
+  "notes": "Cut from https://www.twitch.tv/videos/2932113307 at 6:15:49-6:16:21. Credit is not permission: ask the creator if reachable; take down same day on request.",
+  "facecam": [
+    0.0,
+    0.505,
+    0.19,
+    0.28
+  ],
+  "facecam_h": 700,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
+}

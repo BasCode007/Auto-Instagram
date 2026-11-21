@@ -1,0 +1,81 @@
+{
+ "id": "fact-car-stat-card",
+ "pillar": "did you know",
+ "kind": "reel",
+ "source": "twitch-2934030540/fact_statcard_src.mp4",
+ "source_url": "https://www.twitch.tv/videos/2934030540",
+ "source_range": [
+  34030,
+  34105
+ ],
+ "creator": "theburntpeanut",
+ "hook": "DID YOU KNOW EVERY GTA 6 CAR HAS A *STAT CARD*?",
+ "credit": "@theburntpeanut on Twitch",
+ "layout": "stack",
+ "facecam": [
+  0.14,
+  0.66,
+  0.31,
+  0.34
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 13,
+   "end": 16.47,
+   "x": 0.5
+  },
+  {
+   "start": 44.5,
+   "end": 50.22,
+   "x": 1.0
+  },
+  {
+   "start": 50.22,
+   "end": 54.09,
+   "x": 1.0
+  },
+  {
+   "start": 4,
+   "end": 10.53,
+   "x": 0.5
+  },
+  {
+   "start": 54.09,
+   "end": 59.5,
+   "x": 1.0
+  },
+  {
+   "start": 70,
+   "end": 72.51,
+   "x": 0.5
+  }
+ ],
+ "words": [],
+ "caption_y": 1250,
+ "voiceover": {
+  "audio": "https://assets.vidiq.com/voiceovers/ca76f78c-d497-41e8-890c-459d833fda35/212d064f-4dba-4e78-9e5a-602e2c6804ba.mp3",
+  "voice": "Liam (vidIQ)",
+  "game_volume": 0.15
+ },
+ "facts": [
+  "Car info card shows ACCESS, SECURITY, TRACKER, SELL VALUE, COST TO REGISTER (screen)",
+  "Progen Purple Drank Emerus: Access Unlocked, Security Deactivated, Tracker None, Sell value $30,000, Cost to register $29,900 (screen)",
+  "Found in a shipping container while on Randy's job 'Steal the Coquette D10' on Waxman Island (map screen)"
+ ],
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "captions": {
+  "instagram": "Did you know every GTA 6 car has a stat card?",
+  "tiktok": "Did you know every GTA 6 car has a stat card? \ud83c\udfa5 TheBurntPeanut on Twitch #GTA6 #GTAVI #gta6tips #theburntpeanut",
+  "youtube_shorts": "Every car in GTA 6 has a stat card #GTA6 #Shorts"
+ },
+ "notes": "Voiceover fact video. Footage: https://www.twitch.tv/videos/2934030540 at 9:27:10-9:28:25."
+}

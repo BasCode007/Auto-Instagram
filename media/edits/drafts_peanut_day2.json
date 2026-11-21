@@ -1,0 +1,27 @@
+{
+ "status": "approved by owner 19 Nov ~22:30Z, scheduled",
+ "drafts": [
+  {
+   "clip": "peanut-please-dont-see-me",
+   "postId": "bc13d0a1-f124-42a7-ac6e-012b1ce8162d",
+   "revision": "a45e4726-eb3cb628",
+   "ig": "2026-11-20T01:35Z",
+   "tt": "2026-11-20T06:50Z"
+  },
+  {
+   "clip": "peanut-swat-raid",
+   "postId": "8b79932c-21bb-4dbd-b089-9badd10e1a83",
+   "revision": "ca640b74-e41ad25a",
+   "ig": "2026-11-20T02:05Z",
+   "tt": "2026-11-20T08:20Z"
+  },
+  {
+   "clip": "fact-scooter-bros-app",
+   "type": "fact voiceover",
+   "postId": "1f5ab2d8-b235-42dd-bca8-6668e806dc5d",
+   "revision": "28f7db28-a6f05358",
+   "ig": "2026-11-20T02:35Z",
+   "tt": "2026-11-20T09:50Z"
+  }
+ ]
+}

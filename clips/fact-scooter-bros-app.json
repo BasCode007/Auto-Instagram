@@ -1,0 +1,71 @@
+{
+ "id": "fact-scooter-bros-app",
+ "pillar": "did you know",
+ "kind": "reel",
+ "source": "twitch-2934030540/fact_scooter_src.mp4",
+ "source_url": "https://www.twitch.tv/videos/2934030540",
+ "source_range": [
+  1880,
+  2050
+ ],
+ "creator": "theburntpeanut",
+ "hook": "DID YOU KNOW GTA 6 *DELIVERS* YOUR CAR?",
+ "credit": "@theburntpeanut on Twitch",
+ "layout": "full",
+ "gx": 0.5,
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 77.0,
+   "end": 80.97
+  },
+  {
+   "start": 47,
+   "end": 51.83
+  },
+  {
+   "start": 51.83,
+   "end": 60.42
+  },
+  {
+   "start": 70,
+   "end": 76.53
+  },
+  {
+   "start": 154.5,
+   "end": 159.33
+  },
+  {
+   "start": 159.5,
+   "end": 165.75
+  }
+ ],
+ "words": [],
+ "voiceover": {
+  "audio": "https://assets.vidiq.com/voiceovers/ca76f78c-d497-41e8-890c-459d833fda35/49c938c2-3a1a-412c-b1de-2333be42aa15.mp3",
+  "voice": "Liam (vidIQ)",
+  "game_volume": 0.15,
+  "captions_ass": "media/edits/fact-scooter-bros-app_vo.ass"
+ },
+ "facts": [
+  "Impounded cars are listed in the Scooter Bros app (My Vehicles > Impounded Vehicles), seen on Peanut's phone 19 Nov",
+  "Retrieval: $100 base rate plus $604 for retrieval and delivery distance = $704 (screen)",
+  "Scooter Bros Premium: one-time $12,500, 3 free deliveries a day (screen)",
+  "Requesting an impounded vehicle uses up your remaining daily credits (screen, Retrieve 3/3)",
+  "Notification: Scooter Bros '82 Ruiner has been delivered (screen)"
+ ],
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "captions": {
+  "instagram": "Did you know GTA 6 delivers your car?",
+  "tiktok": "Did you know GTA 6 delivers your car? \ud83c\udfa5 TheBurntPeanut on Twitch #GTA6 #GTAVI #gta6tips #theburntpeanut",
+  "youtube_shorts": "Did you know GTA 6 delivers your car? #GTA6 #Shorts"
+ },
+ "notes": "Voiceover fact video. Footage from https://www.twitch.tv/videos/2934030540 at 31:20-34:10, credited on screen and in caption.",
+ "caption_y": 1640
+}

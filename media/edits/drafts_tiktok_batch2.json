@@ -1,0 +1,10 @@
+{
+  "platform": "TIKTOK", "account": "Vice City Replayz", "settings": "public, comments on, music confirmed",
+  "status": "drafts awaiting approval",
+  "drafts": [
+    {"clip": "tg-bridge-chase", "postId": "e8aaa8da-5175-43d2-a42f-6a384b8b68aa", "revision": "0f354606", "planned": "2026-11-19T01:10:00Z"},
+    {"clip": "peanut-pool-minigame", "postId": "9c4f284b-6164-472e-a8e8-ccc3fb26ce04", "revision": "c3b55fa8", "planned": "2026-11-19T02:40:00Z"},
+    {"clip": "tg-paradise-taxi", "postId": "63f9526b-9a19-4a53-97b4-75b90efe3513", "revision": "bca859cb", "planned": "2026-11-19T04:10:00Z"},
+    {"clip": "lacy-snake-dolores", "postId": "85d3fba3-08a4-477c-bc27-13b6ab22ccdc", "revision": "4e4e891e", "planned": "2026-11-19T05:40:00Z"}
+  ]
+}
