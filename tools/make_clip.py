@@ -273,7 +273,7 @@ def segment_filter(i: int, seg: dict, layout: str, sw: int, sh: int,
         ch = int(sh / zoom) // 2 * 2
         cw = int(ch * 9 / 16) // 2 * 2
         cx = int((sw - cw) * x)
-        cy = (sh - ch) // 2 + y_off
+        cy = int((sh - ch) * float(seg.get("y", 0.5))) + y_off
         v = (f"[{i}:v]scale={sw}:{sh + 2 * y_off}:flags=bicubic,setsar=1,crop={cw}:{ch}:{cx}:{cy},scale={W}:{H}:flags=lanczos,"
              f"setsar=1,fps={fps},format=yuv420p[v{i}]")
     elif layout == "stack":
