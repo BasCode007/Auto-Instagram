@@ -70,7 +70,7 @@
     "gx": 0.5,
     "priority": "top",
     "note": "no webcam (animated avatar): full layout, x=0.5",
-    "live": true,
+    "live": false,
     "title": "[DROPS] GTA 6 | DAY 4 | BIGFOOT, ALIENS & BUGATTIS | WE RIDE FOR RANDY | #BUNGULATE",
     "vod_access": "public",
     "vod_id": "2936706130",
@@ -98,11 +98,11 @@
   "ohnepixel": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
+    "live": true,
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH🔴",
     "vod_access": "public",
-    "vod_id": "2936064102",
-    "seen": "2026-11-21T20:51Z"
+    "vod_id": "2937242599",
+    "seen": "2026-11-22T12:50Z"
   },
   "trymacs": {
     "facecam": null,
@@ -263,7 +263,7 @@
     "title": "(61%)🌴Canard of all time qui vise les genoux #PourLUCIA",
     "vod_access": "sub-only",
     "vod_id": "2937188497",
-    "seen": "2026-11-22T12:23Z"
+    "seen": "2026-11-22T12:50Z"
   },
   "elmariana": {
     "facecam": null,
@@ -326,7 +326,7 @@
     "title": "PS5 GTA6 11/22",
     "vod_access": "public",
     "vod_id": "2937042127",
-    "seen": "2026-11-22T12:23Z"
+    "seen": "2026-11-22T12:50Z"
   },
   "mrdzinold": {
     "facecam": null,
@@ -344,12 +344,12 @@
     "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 !wer | !Friendlyfire !discord !ptsmt",
     "vod_access": "public",
     "vod_id": "2937117566",
-    "seen": "2026-11-22T12:23Z"
+    "seen": "2026-11-22T12:50Z"
   },
   "chowh1": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[DROP]🌴1 SUB = BADGE ou EMOTE GTA6 - MODE PMU 180FPS 🌴 !!holy !vpn",
     "vod_access": "sub-only",
     "vod_id": "2937105024",
@@ -386,10 +386,10 @@
     "facecam": null,
     "priority": "normal",
     "live": true,
-    "title": "ON CONTINUE GTA",
+    "title": "GTA VI : NOUVEAU DÉPART POUR JASON & LUCIA ?",
     "vod_access": "sub-only",
     "vod_id": "2937218402",
-    "seen": "2026-11-22T12:23Z"
+    "seen": "2026-11-22T12:50Z"
   },
   "imantado": {
     "facecam": null,
@@ -488,7 +488,7 @@
     "title": "🚘DAY 3 NON-LETHAL GTA VI RUN [DROPS ON] 🚘🚔 GIVING AWAY GAME CODES EVERY HOUR 🚔 !RedBull !AT&T !Alienware #GameChanger",
     "vod_access": "public",
     "vod_id": "2936392772",
-    "seen": "2026-11-22T12:23Z"
+    "seen": "2026-11-22T12:50Z"
   },
   "vanillamace": {
     "facecam": null,
@@ -583,11 +583,11 @@
   "ironmouse": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "🔴DROPS🔴REAL LATINA PLAYS GTA!| !ironmart !glamb !omocat !cheeky !ht !starforge !tts !merch !razer",
+    "live": true,
+    "title": "🔴DROPS🔴REAL LIFE LATINA STREAMING AND MAKING BAD DECISIONS!| !ironmart !glamb !omocat !cheeky !ht !starforge !tts !merch !razer",
     "vod_access": "public",
-    "vod_id": "2935731348",
-    "seen": "2026-11-21T14:51Z"
+    "vod_id": "2936891362",
+    "seen": "2026-11-22T12:50Z"
   },
   "chloeyummyyy": {
     "facecam": null,
@@ -601,7 +601,7 @@
   "samueletienne": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "MARATHON GTA ! LIVE 7 JOURS NON STOP !! (là c'est le dimanche )",
     "vod_access": "sub-only",
     "vod_id": "2936212688",
@@ -745,7 +745,7 @@
   "singsing": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "GTA 6 DAY 4",
     "vod_access": "public",
     "vod_id": "2937125905",
@@ -754,7 +754,7 @@
   "peter": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "UP TO SOME ILLEGAL ANTICS🏖️Chapter 1🏖️🏖️ GTA VI [Day 4]",
     "vod_access": "public",
     "vod_id": "2936972834",
@@ -763,10 +763,19 @@
   "banduracartel": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "12:00 🌴GTA VI - OSTATNIA MISJA | [96/100%] 🌴#3 !strona !wk !betclic !moza !pirate",
     "vod_access": "public",
     "vod_id": "2937183786",
     "seen": "2026-11-22T12:23Z"
+  },
+  "dannyaarons": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "FINISHING CHAPTER 1 NOW LOL 🔥 GETTING EVERY COLLECTIBLE CARD 🔥 GRINDING MISSIONS 🔥 RTG FUT CHAMPS 🔥 !boohooman !kf !futgenie !fotmob",
+    "vod_access": "public",
+    "vod_id": "2936218524",
+    "seen": "2026-11-22T12:50Z"
   }
 }
