@@ -12,13 +12,13 @@
    "clip": "fact-47k-car",
    "postId": "8329687a-f10c-44b2-a423-efeb0cde9f91",
    "revision": "04df9327",
-   "publish_round_utc": "2026-11-22T22:50"
+   "publish_round_utc": "2026-11-23T16:50"
   },
   {
    "clip": "funniest-1 (long-form)",
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
    "revision": "20c24db9",
-   "publish_round_utc": "2026-11-23T17:50"
+   "publish_round_utc": "2026-11-23T18:50"
   }
  ],
  "scheduled_ig_tt": [
@@ -35,5 +35,5 @@
    "tt": "05:05Z"
   }
  ],
- "note": "16:50-20:50 rounds lost to repeated session worker restarts; apples went out at 21:52, the rest shifted."
+ "note": "16:50-20:50 rounds lost to repeated session worker restarts; apples went out at 21:52, the rest shifted. 22:50 round also lost to a restart; car Short moved to 23 Nov 16:50, Funniest #1 to 23 Nov 18:50."
 }
