@@ -111,3 +111,9 @@ Instagram page total 12,683 views, 2 followers. No new post has gone out since t
 - IG (6 followers): fact-buckme-interest 138 views / 3 saves / 54% watched in 45 min (best start today); speed-pool-rules 200 views, 52% watched; fact-hunger 154; speed-mike-tyson 156; fact-car-stat-card 137 (1 save); peanut-randy-voicemail 133 but only 24% watched (too long, slow start). Key cloner fact still best overall: 163 views, 4 saves, 1 share.
 - YouTube: key cloner fact 68 views (still the leader); new Shorts 0-5 views so far. TypicalGamer-era Shorts 34-55.
 - Lesson: fact videos keep winning on retention and saves (~52-54% watched). Reactions over 45 s drop to 24-27% watched; keep reactions tight (under 40 s) and get the payoff in early.
+
+## Snapshot 22 Nov 11:50 AEDT (00:50Z), daily check
+- vidIQ credits: 1,727 left (renews 18 Dec). Spend since new budget: ~10.
+- IG: 10 followers (up from 6). Last 2 days of Reels mostly 140-215 views. Best retention: speed-mike-tyson 74% watched, BuckMe fact 64% watched + 4 saves, key cloner fact 4 saves + 1 share. Golf cart 178 views 44%; Bigfoot reaction 167 / 41%; Lacy downtime 146 / 40%. Lacy cows only 5 views (31% watched, 67% skip): likely held back; avoid near-duplicates of animal clips.
+- YouTube: new Shorts still 1-15 views each (Speed pool 15, hunger fact 14). Owner's own "peanut bank account" Short is still the channel's best at 1,275. YouTube is not distributing our reaction Shorts yet; next YouTube posts should be the trend formats (fights, glitches, physics, NPC chaos) with broad titles.
+- Pending owner approval: Funniest Moments #1 (long-form), loserfruit-infinite-apples (reaction Short).
