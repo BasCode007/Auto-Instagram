@@ -24,3 +24,4 @@ Only **Funniest Moments #1** now. The others are saved for later; on 25 Nov (rem
 - twitch-2935449800 (TheBurntPeanut day 3) 9:01:40-9:03:10 Skunk Ape sighting + "Have you seen Skunk Ape? Call Kirk" poster
 - twitch-2935449800 3:23:40-3:25:25 BuckMe app interest
 - (see clips/fact-*.json for the other fact segments)
+- twitch-2936706130 (Peanut day 4) ~1:00:00 pawn shop gun wall + map marker "Collectible Weapon" at a pawn shop: possible fact video once we see what the collectible is
