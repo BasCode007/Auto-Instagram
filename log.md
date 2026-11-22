@@ -99,3 +99,9 @@ Every post that went out. Newest first.
 | 2026-11-22 | 14:35 AEDT | TikTok (Vice City Replayz) | loserfruit-infinite-apples | GTA 6 has infinite apples?! | @loserfruit | scheduled via vidIQ |
 | 2026-11-22 | 14:35 AEDT | Instagram (@vicecityreplayz2026) | fact-47k-car | $47,000 on ONE car in GTA 6?! | (none) | scheduled via vidIQ |
 | 2026-11-22 | 16:05 AEDT | TikTok (Vice City Replayz) | fact-47k-car | $47,000 on ONE car in GTA 6?! | (none) | scheduled via vidIQ |
+
+## 22 Nov 13:50 UTC round
+- Live: OhnePixel (VOD 2937242599) scanned 0:00-1:20. Mostly chat trivia, nothing usable. Others live were sub-only or non-English.
+- Twitch top clips (24 h): Speed "slaps a delusional NPC" → built `speed-delusional-npc` (reaction, 33 s), sent for preview. Lacy "best driver" chase (heavy swearing, weak) and xQc crash clip (club footage + error screen) skipped.
+- Skipped for rules: Kai strip-club clip, Jynxzi sock/Lucia clips, every "ending/finale" clip (spoilers).
+- Counts awaiting approval: reactions 4 (Speed x3, CaseOh), narrated 0, fact 0.

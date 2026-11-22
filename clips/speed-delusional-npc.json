@@ -1,0 +1,36 @@
+{
+ "id": "speed-delusional-npc",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/1394199314__PhilanthropicGleamingSnailDuDudu-rTe42Bz2OmgWyUAx.mp4",
+ "source_url": "https://www.twitch.tv/ishowspeed/clip/PhilanthropicGleamingSnailDuDudu-rTe42Bz2OmgWyUAx",
+ "source_range": null,
+ "creator": "ishowspeed",
+ "hook": "THIS GTA 6 NPC THINKS SHE'S A *10*",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 2.5,
+   "end": 35.6,
+   "x": 0.5
+  }
+ ],
+ "words": [],
+ "notes": "Reaction Short, IShowSpeed top clip (24h): an NPC rants at Speed ('I'm not supposed to feel pain, it's in my contract', 'I'm a 10'). Cut at 35.6 s to leave out the crude lines after 45 s. Clip has burned-in captions, so ours are off.",
+ "facecam": [
+  0.0,
+  0.426,
+  0.203,
+  0.222
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}
