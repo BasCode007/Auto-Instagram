@@ -1,0 +1,37 @@
+{
+ "approved": "owner 'Yes to all' 22 Nov 02:2x UTC",
+ "youtube_queue": [
+  {
+   "clip": "loserfruit-infinite-apples",
+   "postId": "88a0603b-c214-4920-987e-e38da368f45a",
+   "revision": "c1ccef9b",
+   "publish_round_utc": "2026-11-22T16:50"
+  },
+  {
+   "clip": "fact-47k-car",
+   "postId": "8329687a-f10c-44b2-a423-efeb0cde9f91",
+   "revision": "04df9327",
+   "publish_round_utc": "2026-11-22T17:50"
+  },
+  {
+   "clip": "funniest-1 (long-form)",
+   "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
+   "revision": "20c24db9",
+   "publish_round_utc": "2026-11-22T18:50"
+  }
+ ],
+ "scheduled_ig_tt": [
+  {
+   "clip": "loserfruit-infinite-apples",
+   "postId": "abf51c0e-454d-4627-a359-785147028b7c",
+   "ig": "03:05Z",
+   "tt": "03:35Z"
+  },
+  {
+   "clip": "fact-47k-car",
+   "postId": "2302f350-7fb4-4c4a-a8eb-4f7f0c43d14b",
+   "ig": "03:35Z",
+   "tt": "05:05Z"
+  }
+ ]
+}

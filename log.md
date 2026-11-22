@@ -95,3 +95,7 @@ Every post that went out. Newest first.
 | 2026-11-21 | 22:45 AEDT | YouTube (Vice City Replayz) | lacy-downtime-rant | Lacy vs GTA 6 downtime | @lacy | scheduled via vidIQ |
 | 2026-11-21 | 02:00 AEDT | TikTok (Vice City Replayz) | lacy-downtime-rant | Lacy vs GTA 6 downtime | @lacy | scheduled via vidIQ |
 | 2026-11-22 | 04:05 AEDT | YouTube (Vice City Replayz) | story-skunk-ape | There's A Bigfoot Hiding In GTA 6?! | @theburntpeanut | scheduled via vidIQ (narrated story test) |
+| 2026-11-22 | 14:05 AEDT | Instagram (@vicecityreplayz2026) | loserfruit-infinite-apples | GTA 6 has infinite apples?! | @loserfruit | scheduled via vidIQ |
+| 2026-11-22 | 14:35 AEDT | TikTok (Vice City Replayz) | loserfruit-infinite-apples | GTA 6 has infinite apples?! | @loserfruit | scheduled via vidIQ |
+| 2026-11-22 | 14:35 AEDT | Instagram (@vicecityreplayz2026) | fact-47k-car | $47,000 on ONE car in GTA 6?! | (none) | scheduled via vidIQ |
+| 2026-11-22 | 16:05 AEDT | TikTok (Vice City Replayz) | fact-47k-car | $47,000 on ONE car in GTA 6?! | (none) | scheduled via vidIQ |
