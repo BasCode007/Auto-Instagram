@@ -111,3 +111,9 @@ Every post that went out. Newest first.
 - Twitch top clips (24 h), reviewed 5: built `peanut-canal-teeter` (reaction, 31 s, Peanut "still falls in"), sent for preview.
 - Skipped: Peanut monkey clip (dark, story scene), OhnePixel "instant karma" (night, too dark), Kai NPC clip (crude), Ludwig "side gig" (same traffic footage as the insurance-fraud lead).
 - Awaiting approval: reactions 5 (Speed x3, CaseOh, Peanut canal), narrated 0, fact 0.
+
+## 22 Nov 15:50 UTC round
+- vidIQ balance: 1,694 credits (1,564 renewable + 130 add-on), renews 18 Dec. Nothing spent since the morning check.
+- Live: only OhnePixel among big English channels (scanned already); the rest are non-English.
+- Category top clips (24 h): downloaded 4 new ones, none usable. Ludwig "highlights" is the same barber scene plus the map menu. WoolieVersus "QA POWERRR" (fence glitch) and Quin69 (night race) are too dark. Carola "timing" is all loading screens.
+- Awaiting approval: reactions 5, narrated 0, fact 0.
