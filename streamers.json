@@ -74,7 +74,7 @@
     "title": "[DROPS] GTA 6 | DAY 4 | BIGFOOT, ALIENS & BUGATTIS | WE RIDE FOR RANDY | #BUNGULATE",
     "vod_access": "public",
     "vod_id": "2936706130",
-    "seen": "2026-11-22T11:50Z",
+    "seen": "2026-11-22T12:23Z",
     "target_share": 0.5
   },
   "jasontheween": {
@@ -262,8 +262,8 @@
     "live": true,
     "title": "(61%)🌴Canard of all time qui vise les genoux #PourLUCIA",
     "vod_access": "sub-only",
-    "vod_id": "2936240266",
-    "seen": "2026-11-22T11:50Z"
+    "vod_id": "2937188497",
+    "seen": "2026-11-22T12:23Z"
   },
   "elmariana": {
     "facecam": null,
@@ -326,7 +326,7 @@
     "title": "PS5 GTA6 11/22",
     "vod_access": "public",
     "vod_id": "2937042127",
-    "seen": "2026-11-22T11:50Z"
+    "seen": "2026-11-22T12:23Z"
   },
   "mrdzinold": {
     "facecam": null,
@@ -344,7 +344,7 @@
     "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 !wer | !Friendlyfire !discord !ptsmt",
     "vod_access": "public",
     "vod_id": "2937117566",
-    "seen": "2026-11-22T11:50Z"
+    "seen": "2026-11-22T12:23Z"
   },
   "chowh1": {
     "facecam": null,
@@ -353,7 +353,7 @@
     "title": "[DROP]🌴1 SUB = BADGE ou EMOTE GTA6 - MODE PMU 180FPS 🌴 !!holy !vpn",
     "vod_access": "sub-only",
     "vod_id": "2937105024",
-    "seen": "2026-11-22T11:50Z"
+    "seen": "2026-11-22T12:23Z"
   },
   "darkviperau": {
     "facecam": null,
@@ -385,11 +385,11 @@
   "domingo": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "GTA VI : LUCIA & JASON EN BRAQUAGE",
+    "live": true,
+    "title": "ON CONTINUE GTA",
     "vod_access": "sub-only",
-    "vod_id": "2936036532",
-    "seen": "2026-11-21T18:51Z"
+    "vod_id": "2937218402",
+    "seen": "2026-11-22T12:23Z"
   },
   "imantado": {
     "facecam": null,
@@ -488,7 +488,7 @@
     "title": "🚘DAY 3 NON-LETHAL GTA VI RUN [DROPS ON] 🚘🚔 GIVING AWAY GAME CODES EVERY HOUR 🚔 !RedBull !AT&T !Alienware #GameChanger",
     "vod_access": "public",
     "vod_id": "2936392772",
-    "seen": "2026-11-22T11:50Z"
+    "seen": "2026-11-22T12:23Z"
   },
   "vanillamace": {
     "facecam": null,
@@ -601,11 +601,11 @@
   "samueletienne": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
+    "live": true,
     "title": "MARATHON GTA ! LIVE 7 JOURS NON STOP !! (là c'est le dimanche )",
     "vod_access": "sub-only",
     "vod_id": "2936212688",
-    "seen": "2026-11-22T10:51Z"
+    "seen": "2026-11-22T12:23Z"
   },
   "marlon": {
     "facecam": null,
@@ -736,7 +736,7 @@
   "ennaouii": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🏝️🍹⛱️ GTA6 D2 !vpn",
     "vod_access": "public",
     "vod_id": "2937087608",
@@ -745,19 +745,28 @@
   "singsing": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
+    "live": true,
     "title": "GTA 6 DAY 4",
     "vod_access": "public",
     "vod_id": "2937125905",
-    "seen": "2026-11-22T10:51Z"
+    "seen": "2026-11-22T12:23Z"
   },
   "peter": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
+    "live": true,
     "title": "UP TO SOME ILLEGAL ANTICS🏖️Chapter 1🏖️🏖️ GTA VI [Day 4]",
     "vod_access": "public",
     "vod_id": "2936972834",
-    "seen": "2026-11-22T10:51Z"
+    "seen": "2026-11-22T12:23Z"
+  },
+  "banduracartel": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "12:00 🌴GTA VI - OSTATNIA MISJA | [96/100%] 🌴#3 !strona !wk !betclic !moza !pirate",
+    "vod_access": "public",
+    "vod_id": "2937183786",
+    "seen": "2026-11-22T12:23Z"
   }
 }

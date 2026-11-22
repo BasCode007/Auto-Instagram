@@ -1,0 +1,36 @@
+{
+ "id": "speed-bridge-jump",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/759536846__CoweringRockyTarsierDancingBanana-Fv-uPtKT633rNeq2.mp4",
+ "source_url": "https://www.twitch.tv/ishowspeed/clip/CoweringRockyTarsierDancingBanana-Fv-uPtKT633rNeq2",
+ "source_range": null,
+ "creator": "ishowspeed",
+ "hook": "SPEED JUMPED OFF A *BRIDGE* \ud83d\udc80",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 34.32,
+   "x": 0.45
+  }
+ ],
+ "words": [],
+ "notes": "Reaction Short from a top Twitch clip (24h). Clip already has the streamer's own captions, so ours are off.",
+ "facecam": [
+  0.0,
+  0.426,
+  0.203,
+  0.222
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}
