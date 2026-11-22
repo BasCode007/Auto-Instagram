@@ -31,3 +31,13 @@ Biggest funny moments on TikTok/IG (views, x creator median):
 Patterns: split-screen (facecam top, game bottom); "GTA 6 FUNNY MOMENTS" text in the first second; multi-streamer glitch compilations are the strongest repeatable format; captions short, emoji 😭💀😂.
 Common hashtags on the winners: #gta6 #gta #gtavi #gaming #gta6gameplay #gtaclips #funny #funnymoments #streamclips #twitch #fyp #viral #reels #grandtheftauto6 + streamer tag (#lacy #kaicenat #ishowspeed #n3on #ohnepixel).
 Ideas to act on: a "GTA 6 bugs and glitches" Short/compilation series from Twitch clips; NPC reaction moments; jobs (power washing, roofing).
+
+## 22 Nov 2026, 12:50 UTC (vidIQ trending Shorts since 20 Nov)
+- GothamChess "CHESS IN GTA 6": 5.3M views (15 s). There's a playable chess activity; a "GTA 6 has chess?!" discovery Short is worth hunting for in streams.
+- Memes still dominate the top (GelNox 782K in under a day, 8 s). DarkViperAU "Before GTA 6 meme in GTA 6" 160K.
+- GTA 5 vs GTA 6 keeps going (Danny 161K, Johnny GTA 78K).
+- "GTA 6 is broken" / "crazy bug" glitch Shorts 6-61K: the glitch/bug format is still growing.
+- GTA VI category, top Twitch clips of the last 24 h (reviewed 22 Nov):
+  - Skip: Peanut "Escalates a Situation" (club interior, nudity risk); Joe Bart "florida man" (a cop runs over a bird, which breaks our no-animal-harm rule); JshRobz (mostly a game-crash screen); Ludwig "assaulting the barber" (half the clip is the map menu).
+  - Lead: Ludwig "accumulating insurance fraud" (60 s of traffic-pileup chaos, almost no speech). The game doesn't show any payout, so we can't claim one in a narration. Possible "GTA 6 traffic chaos" narrated Short. Crop out the chat overlay.
+  - Lead: caseoh_ "kyle 1-4" series (15.6K views): check the next round.
