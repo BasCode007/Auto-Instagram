@@ -25,7 +25,7 @@
     ],
     "facecam_h": 700,
     "priority": "high",
-    "live": true,
+    "live": false,
     "title": "🫂DROPS🫂60 FPS🫂GTA 6🫂FINISHING GAME IN ONE GO🫂LOCK IT IN🫂YAY🫂THE BEST PLAYER🫂OF ALL TIME🫂IS HERE🫂",
     "vod_access": "public",
     "vod_id": "2936814907",
@@ -57,7 +57,7 @@
     "facecam_h": 700,
     "priority": "high",
     "note": "VODs are subscriber-only: record live",
-    "live": true,
+    "live": false,
     "target_share": 0.125,
     "title": "🔴 GTA 6 STORY! 🔴 I SEARCHED FOR 11 HOURS TODAY FOR THE PIRATE TOKEN 🔴",
     "vod_access": "sub-only",
@@ -74,7 +74,7 @@
     "title": "[DROPS] GTA 6 | DAY 4 | BIGFOOT, ALIENS & BUGATTIS | WE RIDE FOR RANDY | #BUNGULATE",
     "vod_access": "public",
     "vod_id": "2936706130",
-    "seen": "2026-11-22T09:51Z",
+    "seen": "2026-11-22T10:51Z",
     "target_share": 0.5
   },
   "jasontheween": {
@@ -214,7 +214,7 @@
   "yourragegaming": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "CONTINUING GTA 6 STORY MODE!(40% OF THE WAY DONE)",
     "vod_access": "public",
     "vod_id": "2936874294",
@@ -250,7 +250,7 @@
   "fanum": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "GTA 6 🍌 TODAY WE MAKE $1,000,000 🍌 DAY 4 🍌 ITS HEAVY 🍌 ROBBING PEOPLE ON SNAPMATIC 🍌 ROBBING CARS 🍌 ROBBING ROBBERS 🍌",
     "vod_access": "public",
     "vod_id": "2936934156",
@@ -281,7 +281,7 @@
     "title": "GTA6 TIME...end of Chapter 1",
     "vod_access": "public",
     "vod_id": "2936995714",
-    "seen": "2026-11-22T09:51Z"
+    "seen": "2026-11-22T10:51Z"
   },
   "supertf": {
     "facecam": null,
@@ -326,7 +326,7 @@
     "title": "PS5 GTA6 11/22",
     "vod_access": "public",
     "vod_id": "2937042127",
-    "seen": "2026-11-22T09:51Z"
+    "seen": "2026-11-22T10:51Z"
   },
   "mrdzinold": {
     "facecam": null,
@@ -344,16 +344,16 @@
     "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 !wer | !Friendlyfire !discord !ptsmt",
     "vod_access": "public",
     "vod_id": "2937117566",
-    "seen": "2026-11-22T09:51Z"
+    "seen": "2026-11-22T10:51Z"
   },
   "chowh1": {
     "facecam": null,
     "priority": "normal",
-    "live": false,
-    "title": "[DROP]🌴 GTA EN MODE PMU 180FPS 🌴 !giveaway !vpn !holy",
+    "live": true,
+    "title": "[DROP]🌴1 SUB = BADGE ou EMOTE GTA6 - MODE PMU 180FPS 🌴 !!holy !vpn",
     "vod_access": "sub-only",
-    "vod_id": "2935925944",
-    "seen": "2026-11-21T11:51Z"
+    "vod_id": "2937105024",
+    "seen": "2026-11-22T10:51Z"
   },
   "darkviperau": {
     "facecam": null,
@@ -488,7 +488,7 @@
     "title": "🚘DAY 3 NON-LETHAL GTA VI RUN [DROPS ON] 🚘🚔 GIVING AWAY GAME CODES EVERY HOUR 🚔 !RedBull !AT&T !Alienware #GameChanger",
     "vod_access": "public",
     "vod_id": "2936392772",
-    "seen": "2026-11-22T09:51Z"
+    "seen": "2026-11-22T10:51Z"
   },
   "vanillamace": {
     "facecam": null,
@@ -529,7 +529,7 @@
   "tonton": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "🟥 GTA VI || JOUR 4 || DÉBUT DU CHAPITRE 2 [PS5 PRO] 🟥 [SPOIL/BACKSEAT=⛔]",
     "vod_access": "public",
     "vod_id": "2936993062",
@@ -605,7 +605,7 @@
     "title": "MARATHON GTA ! LIVE 7 JOURS NON STOP !! (là c'est le dimanche )",
     "vod_access": "sub-only",
     "vod_id": "2936212688",
-    "seen": "2026-11-22T09:51Z"
+    "seen": "2026-11-22T10:51Z"
   },
   "marlon": {
     "facecam": null,
@@ -740,6 +740,24 @@
     "title": "🏝️🍹⛱️ GTA6 D2 !vpn",
     "vod_access": "public",
     "vod_id": "2937087608",
-    "seen": "2026-11-22T09:51Z"
+    "seen": "2026-11-22T10:51Z"
+  },
+  "singsing": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "GTA 6 DAY 4",
+    "vod_access": "public",
+    "vod_id": "2937125905",
+    "seen": "2026-11-22T10:51Z"
+  },
+  "peter": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "UP TO SOME ILLEGAL ANTICS🏖️Chapter 1🏖️🏖️ GTA VI [Day 4]",
+    "vod_access": "public",
+    "vod_id": "2936972834",
+    "seen": "2026-11-22T10:51Z"
   }
 }
