@@ -105,3 +105,9 @@ Every post that went out. Newest first.
 - Twitch top clips (24 h): Speed "slaps a delusional NPC" → built `speed-delusional-npc` (reaction, 33 s), sent for preview. Lacy "best driver" chase (heavy swearing, weak) and xQc crash clip (club footage + error screen) skipped.
 - Skipped for rules: Kai strip-club clip, Jynxzi sock/Lucia clips, every "ending/finale" clip (spoilers).
 - Counts awaiting approval: reactions 4 (Speed x3, CaseOh), narrated 0, fact 0.
+
+## 22 Nov 14:50 UTC round
+- Live: no new big English GTA 6 streams with public VODs (OhnePixel already scanned last round).
+- Twitch top clips (24 h), reviewed 5: built `peanut-canal-teeter` (reaction, 31 s, Peanut "still falls in"), sent for preview.
+- Skipped: Peanut monkey clip (dark, story scene), OhnePixel "instant karma" (night, too dark), Kai NPC clip (crude), Ludwig "side gig" (same traffic footage as the insurance-fraud lead).
+- Awaiting approval: reactions 5 (Speed x3, CaseOh, Peanut canal), narrated 0, fact 0.

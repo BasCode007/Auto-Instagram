@@ -102,7 +102,7 @@
     "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH...🔴",
     "vod_access": "public",
     "vod_id": "2937242599",
-    "seen": "2026-11-22T13:51Z"
+    "seen": "2026-11-22T14:51Z"
   },
   "trymacs": {
     "facecam": null,
@@ -260,10 +260,10 @@
     "facecam": null,
     "priority": "normal",
     "live": true,
-    "title": "(61%)🌴Canard of all time qui vise les genoux #PourLUCIA",
+    "title": "(67%)🌴Canard of all time qui vise les genoux #PourLUCIA",
     "vod_access": "sub-only",
-    "vod_id": "2937188497",
-    "seen": "2026-11-22T13:51Z"
+    "vod_id": "2936240266",
+    "seen": "2026-11-22T14:51Z"
   },
   "elmariana": {
     "facecam": null,
@@ -326,7 +326,7 @@
     "title": "PS5 GTA6 11/22",
     "vod_access": "public",
     "vod_id": "2937042127",
-    "seen": "2026-11-22T13:51Z"
+    "seen": "2026-11-22T14:51Z"
   },
   "mrdzinold": {
     "facecam": null,
@@ -344,7 +344,7 @@
     "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 !wer | !Friendlyfire !discord !ptsmt",
     "vod_access": "public",
     "vod_id": "2937117566",
-    "seen": "2026-11-22T13:51Z"
+    "seen": "2026-11-22T14:51Z"
   },
   "chowh1": {
     "facecam": null,
@@ -389,12 +389,12 @@
     "title": "GTA VI : NOUVEAU DÉPART POUR JASON & LUCIA ?",
     "vod_access": "sub-only",
     "vod_id": "2937218402",
-    "seen": "2026-11-22T13:51Z"
+    "seen": "2026-11-22T14:51Z"
   },
   "imantado": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "[DROPS de KEYS] 🏝️ GTA VI #5 🏝️ ROBO al BANCO CENTRAL 💦 Sorteo de GTA entre SUBS",
     "vod_access": "sub-only",
     "vod_id": "2937237681",
@@ -416,7 +416,7 @@
     "title": "[Drops] GTA 6 IS AWESOME! - !SubGift - !Beanie is BACK in the store! - PS5 Pro - !Emberville (Jan 7th!)",
     "vod_access": "public",
     "vod_id": "2937256318",
-    "seen": "2026-11-22T13:51Z"
+    "seen": "2026-11-22T14:51Z"
   },
   "youngmulti": {
     "facecam": null,
@@ -569,7 +569,7 @@
     "title": "BIENTÔT LA FIN ! (GTA 6)",
     "vod_access": "public",
     "vod_id": "2937267270",
-    "seen": "2026-11-22T13:51Z"
+    "seen": "2026-11-22T14:51Z"
   },
   "cellbit": {
     "facecam": null,
@@ -587,7 +587,7 @@
     "title": "🔴DROPS🔴REAL LIFE LATINA STREAMING AND MAKING BAD DECISIONS!| !ironmart !glamb !omocat !cheeky !ht !starforge !tts !merch !razer",
     "vod_access": "public",
     "vod_id": "2936891362",
-    "seen": "2026-11-22T13:51Z"
+    "seen": "2026-11-22T14:51Z"
   },
   "chloeyummyyy": {
     "facecam": null,
@@ -641,7 +641,7 @@
     "title": "[DROP] + 1 sub (non prime) = badge ou emote GTA VI - LET'S PLAY COMPLET - EPISODE 5 - CHAPITRE IV AUJOURD'HUI",
     "vod_access": "sub-only",
     "vod_id": "2937252725",
-    "seen": "2026-11-22T13:51Z"
+    "seen": "2026-11-22T14:51Z"
   },
   "vegetta777": {
     "facecam": null,
@@ -772,10 +772,28 @@
   "dannyaarons": {
     "facecam": null,
     "priority": "normal",
-    "live": true,
+    "live": false,
     "title": "FINISHING CHAPTER 1 NOW LOL 🔥 GETTING EVERY COLLECTIBLE CARD 🔥 GRINDING MISSIONS 🔥 RTG FUT CHAMPS 🔥 !boohooman !kf !futgenie !fotmob",
     "vod_access": "public",
     "vod_id": "2936218524",
     "seen": "2026-11-22T13:51Z"
+  },
+  "xrohat": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "[DROPS] GTA VI 95% CHAPTER 5 | CHARITYSTREAM - TAG 22 | !spenden !spendenziel !giveaway !wolt !revolut",
+    "vod_access": "public",
+    "vod_id": "2937266647",
+    "seen": "2026-11-22T14:51Z"
+  },
+  "kamet0": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "VICE CITY, C'EST LE PARADIS (!jd) (!prime)",
+    "vod_access": "sub-only",
+    "vod_id": "2936554609",
+    "seen": "2026-11-22T14:51Z"
   }
 }

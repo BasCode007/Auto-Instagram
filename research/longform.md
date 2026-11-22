@@ -27,3 +27,4 @@ Only **Funniest Moments #1** now. The others are saved for later; on 25 Nov (rem
 - twitch-2936706130 (Peanut day 4) ~1:00:00 pawn shop gun wall + map marker "Collectible Weapon" at a pawn shop: possible fact video once we see what the collectible is
 - twitch-2936706130 (Peanut day 4) 8:14:40-8:15:20 car explodes behind Lucia, "and it's gone... this is why we have three Scooter calls" (Funniest #2 candidate)
 - twitch-2936706130 (Peanut day 4) ~11:15:20-11:16:00 FACT: after being knocked out, on-screen message "Your stash was lost and can't be recovered. Sell your stash to avoid losing it" (+ loading tip "Stock up on Zombix at any convenience store"); he says "I just lost all that money". Next narrated fact Short (batch with tomorrow's voiceovers).
+- Funniest #2 lead: Peanut car teetering on a canal edge, saved, then in the water anyway (twitch clip PrettiestApatheticCockroachVoteNay, 2-27 s + 52.5-59 s).
