@@ -117,3 +117,8 @@ Every post that went out. Newest first.
 - Live: only OhnePixel among big English channels (scanned already); the rest are non-English.
 - Category top clips (24 h): downloaded 4 new ones, none usable. Ludwig "highlights" is the same barber scene plus the map menu. WoolieVersus "QA POWERRR" (fence glitch) and Quin69 (night race) are too dark. Carola "timing" is all loading screens.
 - Awaiting approval: reactions 5, narrated 0, fact 0.
+
+## 22 Nov 16:50-21:50 UTC
+- Worker restarts cut off the 16:50-20:50 rounds before anything was done, so the YouTube queue slipped.
+- 21:52: published the apples Short to YouTube: https://www.youtube.com/watch?v=OaGbXLtDxto
+- Re-planned: the $47K car Short goes at the 22:50 round; Funniest Moments #1 moves to 23 Nov 17:50 (one YouTube upload an hour, long-form in prime time).

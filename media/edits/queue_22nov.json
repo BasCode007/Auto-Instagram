@@ -5,19 +5,20 @@
    "clip": "loserfruit-infinite-apples",
    "postId": "88a0603b-c214-4920-987e-e38da368f45a",
    "revision": "c1ccef9b",
-   "publish_round_utc": "2026-11-22T16:50"
+   "publish_round_utc": "2026-11-22T16:50",
+   "published": "2026-11-22T21:52Z https://www.youtube.com/watch?v=OaGbXLtDxto"
   },
   {
    "clip": "fact-47k-car",
    "postId": "8329687a-f10c-44b2-a423-efeb0cde9f91",
    "revision": "04df9327",
-   "publish_round_utc": "2026-11-22T17:50"
+   "publish_round_utc": "2026-11-22T22:50"
   },
   {
    "clip": "funniest-1 (long-form)",
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
    "revision": "20c24db9",
-   "publish_round_utc": "2026-11-22T18:50"
+   "publish_round_utc": "2026-11-23T17:50"
   }
  ],
  "scheduled_ig_tt": [
@@ -33,5 +34,6 @@
    "ig": "03:35Z",
    "tt": "05:05Z"
   }
- ]
+ ],
+ "note": "16:50-20:50 rounds lost to repeated session worker restarts; apples went out at 21:52, the rest shifted."
 }

@@ -102,5 +102,14 @@
   "lacy-downtime-rant": "scheduled 2026-11-21T11:35Z",
   "loserfruit-infinite-apples": "scheduled 2026-11-22T03:05Z",
   "fact-47k-car": "scheduled 2026-11-22T03:35Z"
- }
+ },
+ "youtube_published": [
+  {
+   "clip": "loserfruit-infinite-apples",
+   "platform": "youtube",
+   "postId": "88a0603b-c214-4920-987e-e38da368f45a",
+   "url": "https://www.youtube.com/watch?v=OaGbXLtDxto",
+   "published_utc": "2026-11-22T21:52Z"
+  }
+ ]
 }
