@@ -150,3 +150,6 @@ Every post that went out. Newest first.
 ## 23 Nov 05:50 UTC round
 - Peanut canal Reel live: https://www.instagram.com/reel/DgEofiDEjkj/
 - The moistcr1tikal scan was killed by a worker restart. Restarted it detached (setsid) so it survives.
+
+## 23 Nov 06:50 UTC round
+- moistcr1tikal VOD 2937957915: the full-stream scan kept dying on worker restarts, so it now runs in 45-min chunks. Chunk 0:00-0:45 reviewed: nothing usable. Most of it is night driving or map screens; the "ghost attack" moment (0:40:34) is too dark and its in-game subtitles contain a slur; the bike road-rage moment (0:27) is weak and dark. Next round: 0:45-1:30.
