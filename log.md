@@ -157,3 +157,8 @@ Every post that went out. Newest first.
 ## 23 Nov 07:50 UTC round
 - moistcr1tikal 0:45-1:30 scanned. Built `moist-scooter-crash` (reaction, 31 s, 0:56:42-0:57:13): e-scooter wipeout, then he takes a stranger's motorbike. Sent for preview. Skipped mission dialogue with drug references (1:12) and night scenes.
 - Next round: 1:30-2:15.
+
+## 23 Nov 08:50 UTC round
+- moistcr1tikal 1:30-2:15 scanned. Built `moist-npc-chase` (reaction, 36 s, 1:36:26-1:36:41 + 1:37:01-1:37:22): he slaps a pushy NPC, then she sprints after his SUV through traffic. Sent for preview. Skipped mission cutscenes (1:44, 1:54) and the vaping line (1:41).
+- Awaiting approval: speed-ufo-alien, moist-scooter-crash, moist-npc-chase (3 reactions, 0 narrated, 0 fact).
+- Next: 2:15-3:50.
