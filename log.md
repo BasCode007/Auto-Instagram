@@ -135,3 +135,8 @@ Every post that went out. Newest first.
   - TT: 08:45, 10:15, 11:45, 13:15, 14:45
   - Times were spaced out per vidIQ's pacing warnings.
 - YouTube drafts are ready, with game-first titles. Each one is published at its round (see queue_22nov.json): today 16:50 car fact, 17:50 NPC, 18:50 Funniest #1, 19:50 Peanut canal; 24 Nov 16:50 Lewis Hamilton, 17:50 bridge jump, 18:50 CaseOh.
+
+## 23 Nov ~04:00 UTC (owner: "keep making more clips")
+- Scraped top 24 h clips from 10 big channels and downloaded 8. Built `speed-ufo-alien` (reaction, 31 s: UFO beam, then the alien body; a side easter egg) and sent it for preview.
+- Skipped: CaseOh nude-NPC door scene and the story cutscene at the beach; Speed "human pig" (sexual jokes, dark); Peanut scooter app and heist (weak or dark); xQc camera roll (photo of a sunbathing woman).
+- make_clip: new `burn_captions: false` keeps the words for swear muting when the clip already has the streamer's own captions.

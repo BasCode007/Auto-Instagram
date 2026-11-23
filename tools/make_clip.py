@@ -505,7 +505,7 @@ def build(spec_path: Path, raw_dir: Path, out_dir: Path, preview: bool,
                          f"enable='between(t,{st},{en})':shortest=1[{nxt}]")
             last = nxt
         words = map_words(spec) if spec.get("words") else []
-        if words:
+        if words and spec.get("burn_captions", True):  # false: words only drive swear mutes
             cap_y = spec.get("caption_y") or {"stack": face_h + 190, "fit": 1440}.get(layout, 1200)
             ass = tmp / "captions.ass"
             write_ass(words, ass, int(cap_y), int(spec.get("caption_size", 80)))
