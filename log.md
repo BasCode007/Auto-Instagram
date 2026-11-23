@@ -167,3 +167,7 @@ Every post that went out. Newest first.
 - 09:50 round lost: the auto-mode safety check returned no verdict.
 - 10:50: moistcr1tikal 2:15-3:00 scanned. Built `moist-flipped-car-fight` (reaction, 33 s, 2:35:51-2:36:24): flipped car, a random NPC attacks him, he takes her truck. Sent for preview. The rest is mission dialogue and menus.
 - Awaiting approval: speed-ufo-alien, moist-scooter-crash, moist-npc-chase, moist-flipped-car-fight (4 reactions, 0 narrated, 0 fact).
+
+## 23 Nov 11:50 UTC round
+- moistcr1tikal 3:00-3:50 scanned: all night races and missions (too dark). VOD done; 3 Shorts came from it.
+- Awaiting approval: 4 reactions (Speed UFO/alien, Charlie scooter crash, NPC chase, flipped-car fight), 0 narrated, 0 fact.
