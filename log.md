@@ -171,3 +171,4 @@ Every post that went out. Newest first.
 ## 23 Nov 11:50 UTC round
 - moistcr1tikal 3:00-3:50 scanned: all night races and missions (too dark). VOD done; 3 Shorts came from it.
 - Awaiting approval: 4 reactions (Speed UFO/alien, Charlie scooter crash, NPC chase, flipped-car fight), 0 narrated, 0 fact.
+approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-flipped-car-fight

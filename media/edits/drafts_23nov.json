@@ -57,5 +57,37 @@
   "speed-lewis-hamilton": "He Called Himself Lewis Hamilton In GTA 6... Then This Happened \ud83c\udfce\ufe0f",
   "speed-bridge-jump": "Jumping Off A Bridge In GTA 6 Went Exactly How You'd Think \ud83d\udc80",
   "caseoh-drive-thru": "First Stop In GTA 6? The Drive-Thru \ud83c\udf2e"
+ },
+ "batch2": {
+  "approved": "owner 'Yes to all 4' 23 Nov ~12:00 UTC. IG/TT drafts created, NOT yet published.",
+  "drafts": [
+   {
+    "clip": "speed-ufo-alien",
+    "upload": "ae6e0365-de64-4239-a4e4-6b7a1ccdd239",
+    "postId": "aab3a0ee-19eb-4c97-a24c-932af64742ce",
+    "note": "IG refused (time past); needs new IG time; TT 16:15"
+   },
+   {
+    "clip": "moist-scooter-crash",
+    "upload": "f76925be-f179-4ebb-8bba-274399146362",
+    "postId": "f6b41fb1-6729-43b2-afb8-7257bbc97b1e",
+    "ig": "13:30",
+    "tt": "17:45"
+   },
+   {
+    "clip": "moist-npc-chase",
+    "upload": "289e2839-6f9a-4019-ac5d-562e460630cf",
+    "postId": "1ee599fb-7d6a-42b8-ac5f-185b21114f9b",
+    "ig": "14:30",
+    "tt": "19:15"
+   },
+   {
+    "clip": "moist-flipped-car-fight",
+    "upload": "0f184d1c-0f60-407a-98ef-66fdc328b9c6",
+    "postId": "9633ac35-761b-45d5-9e8b-591cb8c19780",
+    "ig": "15:30",
+    "tt": "20:45"
+   }
+  ]
  }
 }
