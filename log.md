@@ -146,3 +146,7 @@ Every post that went out. Newest first.
 - NPC Short live on Instagram: https://www.instagram.com/reel/DgEhoAFEmLY/
 - Live: moistcr1tikal is on GTA 6 with a public VOD (2937957915), scan running in the background. xQc is "beating the game", so his scan is skipped for story spoilers.
 - Category clips: Jerma (unclear trunk scene) skipped. BauPenner "Crash Power" (German audio): car flips into a parking garage at 01:23:3x in the clip; possible narrated crash-physics Short (game audio 0).
+
+## 23 Nov 05:50 UTC round
+- Peanut canal Reel live: https://www.instagram.com/reel/DgEofiDEjkj/
+- The moistcr1tikal scan was killed by a worker restart. Restarted it detached (setsid) so it survives.
