@@ -162,3 +162,8 @@ Every post that went out. Newest first.
 - moistcr1tikal 1:30-2:15 scanned. Built `moist-npc-chase` (reaction, 36 s, 1:36:26-1:36:41 + 1:37:01-1:37:22): he slaps a pushy NPC, then she sprints after his SUV through traffic. Sent for preview. Skipped mission cutscenes (1:44, 1:54) and the vaping line (1:41).
 - Awaiting approval: speed-ufo-alien, moist-scooter-crash, moist-npc-chase (3 reactions, 0 narrated, 0 fact).
 - Next: 2:15-3:50.
+
+## 23 Nov 09:50-10:50 UTC
+- 09:50 round lost: the auto-mode safety check returned no verdict.
+- 10:50: moistcr1tikal 2:15-3:00 scanned. Built `moist-flipped-car-fight` (reaction, 33 s, 2:35:51-2:36:24): flipped car, a random NPC attacks him, he takes her truck. Sent for preview. The rest is mission dialogue and menus.
+- Awaiting approval: speed-ufo-alien, moist-scooter-crash, moist-npc-chase, moist-flipped-car-fight (4 reactions, 0 narrated, 0 fact).
