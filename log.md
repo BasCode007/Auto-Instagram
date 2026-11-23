@@ -141,3 +141,8 @@ Every post that went out. Newest first.
 - Skipped: CaseOh nude-NPC door scene and the story cutscene at the beach; Speed "human pig" (sexual jokes, dark); Peanut scooter app and heist (weak or dark); xQc camera roll (photo of a sunbathing woman).
 - make_clip: new `burn_captions: false` keeps the words for swear muting when the clip already has the streamer's own captions.
 - Bridge-jump Short had 2 unmuted swears (no transcript at cut time). Re-rendered with mutes, uploaded (a2023c00), swapped into the scheduled IG 07:30/TT 13:15 post and the YouTube draft.
+
+## 23 Nov 04:50 UTC round
+- NPC Short live on Instagram: https://www.instagram.com/reel/DgEhoAFEmLY/
+- Live: moistcr1tikal is on GTA 6 with a public VOD (2937957915), scan running in the background. xQc is "beating the game", so his scan is skipped for story spoilers.
+- Category clips: Jerma (unclear trunk scene) skipped. BauPenner "Crash Power" (German audio): car flips into a parking garage at 01:23:3x in the clip; possible narrated crash-physics Short (game audio 0).
