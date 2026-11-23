@@ -117,3 +117,9 @@ Instagram page total 12,683 views, 2 followers. No new post has gone out since t
 - IG: 10 followers (up from 6). Last 2 days of Reels mostly 140-215 views. Best retention: speed-mike-tyson 74% watched, BuckMe fact 64% watched + 4 saves, key cloner fact 4 saves + 1 share. Golf cart 178 views 44%; Bigfoot reaction 167 / 41%; Lacy downtime 146 / 40%. Lacy cows only 5 views (31% watched, 67% skip): likely held back; avoid near-duplicates of animal clips.
 - YouTube: new Shorts still 1-15 views each (Speed pool 15, hunger fact 14). Owner's own "peanut bank account" Short is still the channel's best at 1,275. YouTube is not distributing our reaction Shorts yet; next YouTube posts should be the trend formats (fights, glitches, physics, NPC chaos) with broad titles.
 - Pending owner approval: Funniest Moments #1 (long-form), loserfruit-infinite-apples (reaction Short).
+
+## 23 Nov 00:50 UTC, YouTube snapshot (22 public Shorts)
+- Total about 1,665 views. The bank-account Short (19 Nov) still dominates with 1,274 views and 18 likes. Every other Short is under 100.
+- Next best: key cloner fact 87, Skunk Ape 52, house fix-up 54, hunger fact 39, taxi 36. All are fact/discovery Shorts except the Skunk Ape one.
+- Apples Short: 5 views in its first ~3 h (went out at 22:08, after the US prime-time window).
+- Reaction titles naming a streamer ("Lacy...", "Peanut...", "IShowSpeed...") sit at 1-20 views. GTA-6-feature titles do better, which backs the VicePulse finding: lead with the game, not the streamer.

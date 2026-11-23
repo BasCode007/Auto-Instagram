@@ -125,3 +125,6 @@ Every post that went out. Newest first.
 
 ## 22 Nov 22:50-23:50 UTC
 - The 22:50 round was lost to another worker restart. 23:50 falls outside the YouTube window, so the $47K car Short moves to 23 Nov 16:50 and Funniest #1 to 23 Nov 18:50.
+
+## 23 Nov 00:50 UTC round
+- Daily YouTube check (vidiq_user_videos, 5 credits): see performance.md.
