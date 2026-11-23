@@ -1,0 +1,13 @@
+{
+ "approved": "owner 'Yes to all 5' 23 Nov ~01:00 UTC (videos). IG/TT drafts created, NOT yet published. IG times got pacing warnings (too close to existing posts); shift IG +30 min each.",
+ "uploads": {"speed-lewis-hamilton":"5808a741-6a75-4ae3-a85d-dd8d89a0554f","speed-bridge-jump":"6be3452a-e039-42ec-b850-9ffff79d9fad","caseoh-drive-thru":"5a3f87a3-456a-4f32-b13d-822cd116c91a","speed-delusional-npc":"504f71d5-4d6b-49f1-aae5-95b5b79f7657","peanut-canal-teeter":"6ed39122-45ba-4b0b-83eb-8239fbcc3643"},
+ "ig_tt_drafts": [
+  {"clip":"speed-delusional-npc","postId":"3c9eff61-21dc-49cf-80f2-edc63047e0fa","revision":"62c5ad45-887b7685","ig":"01:30Z","tt":"01:45Z"},
+  {"clip":"peanut-canal-teeter","postId":"8b87c47d-59ac-49fc-823e-f4f51f24eb50","revision":"788c55e6-c57a3f33","ig":"02:00Z (suggest 02:30)","tt":"03:15Z"},
+  {"clip":"speed-lewis-hamilton","postId":"5253732b-1ff2-4ab4-aad8-2e910ec9ae02","revision":"8a53c121-938ebf7b","ig":"02:30Z (suggest 03:00)","tt":"04:45Z"},
+  {"clip":"speed-bridge-jump","postId":"0b0635f9-9a91-4710-9985-6a7047b8f4e6","revision":"0a6e9ddd-847b0ed5","ig":"03:00Z (suggest 03:30)","tt":"06:15Z"},
+  {"clip":"caseoh-drive-thru","postId":"54f344b8-dd1c-41d7-860c-a9a20cf208c4","revision":"1e02a111-d5c69b99","ig":"03:30Z (suggest 04:00)","tt":"07:45Z"}
+ ],
+ "youtube_plan": {"speed-delusional-npc":"2026-11-23T17:50","peanut-canal-teeter":"2026-11-23T19:50","speed-lewis-hamilton":"2026-11-24T16:50","speed-bridge-jump":"2026-11-24T17:50","caseoh-drive-thru":"2026-11-24T18:50"},
+ "youtube_titles": {"speed-delusional-npc":"This GTA 6 NPC Thinks She's A 10 💀","peanut-canal-teeter":"He Saved The Car In GTA 6... Or Did He? 😭","speed-lewis-hamilton":"He Called Himself Lewis Hamilton In GTA 6... Then This Happened 🏎️","speed-bridge-jump":"Jumping Off A Bridge In GTA 6 Went Exactly How You'd Think 💀","caseoh-drive-thru":"First Stop In GTA 6? The Drive-Thru 🌮"}
+}
