@@ -176,3 +176,8 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 ## 23 Nov 16:50-21:50 UTC
 - Publishing now needs the owner to approve each post in the app. Two attempts (16:50, 17:50) closed unanswered. Held all posts and asked the owner.
 - YouTube queue moved one day: 24 Nov 16:50 car fact, 17:50 NPC, 18:50 Funniest #1, 19:50 Peanut canal; 25 Nov Lewis Hamilton, bridge jump, CaseOh. The batch-2 IG/TT drafts (UFO plus 3 moistcr1tikal) still need scheduling.
+
+## 23 Nov 22:06 UTC (owner: "post now")
+- YouTube: $47K car Short live https://www.youtube.com/watch?v=oFHigz-Igp8; NPC Short published 22:10.
+- Batch-2 scheduled on IG/TT: UFO IG 22:30/TT 22:45; scooter IG 23:30/TT 00:15; NPC chase IG 00:30/TT 01:45; flipped car IG 01:30/TT 03:15.
+- Remaining YouTube: Peanut canal 24 Nov 16:50, Funniest #1 24 Nov 18:50; Lewis/bridge/CaseOh 25 Nov.
