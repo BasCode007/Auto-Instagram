@@ -153,3 +153,7 @@ Every post that went out. Newest first.
 
 ## 23 Nov 06:50 UTC round
 - moistcr1tikal VOD 2937957915: the full-stream scan kept dying on worker restarts, so it now runs in 45-min chunks. Chunk 0:00-0:45 reviewed: nothing usable. Most of it is night driving or map screens; the "ghost attack" moment (0:40:34) is too dark and its in-game subtitles contain a slur; the bike road-rage moment (0:27) is weak and dark. Next round: 0:45-1:30.
+
+## 23 Nov 07:50 UTC round
+- moistcr1tikal 0:45-1:30 scanned. Built `moist-scooter-crash` (reaction, 31 s, 0:56:42-0:57:13): e-scooter wipeout, then he takes a stranger's motorbike. Sent for preview. Skipped mission dialogue with drug references (1:12) and night scenes.
+- Next round: 1:30-2:15.
