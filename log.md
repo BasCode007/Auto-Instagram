@@ -172,3 +172,7 @@ Every post that went out. Newest first.
 - moistcr1tikal 3:00-3:50 scanned: all night races and missions (too dark). VOD done; 3 Shorts came from it.
 - Awaiting approval: 4 reactions (Speed UFO/alien, Charlie scooter crash, NPC chase, flipped-car fight), 0 narrated, 0 fact.
 approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-flipped-car-fight
+
+## 23 Nov 16:50-21:50 UTC
+- Publishing now needs the owner to approve each post in the app. Two attempts (16:50, 17:50) closed unanswered. Held all posts and asked the owner.
+- YouTube queue moved one day: 24 Nov 16:50 car fact, 17:50 NPC, 18:50 Funniest #1, 19:50 Peanut canal; 25 Nov Lewis Hamilton, bridge jump, CaseOh. The batch-2 IG/TT drafts (UFO plus 3 moistcr1tikal) still need scheduling.

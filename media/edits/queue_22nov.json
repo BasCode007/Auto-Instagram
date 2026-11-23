@@ -12,44 +12,44 @@
    "clip": "fact-47k-car",
    "postId": "8329687a-f10c-44b2-a423-efeb0cde9f91",
    "revision": "04df9327",
-   "publish_round_utc": "2026-11-23T16:50"
+   "publish_round_utc": "2026-11-24T16:50"
   },
   {
    "clip": "funniest-1 (long-form)",
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
    "revision": "20c24db9",
-   "publish_round_utc": "2026-11-23T18:50"
+   "publish_round_utc": "2026-11-24T18:50"
   },
   {
    "clip": "speed-delusional-npc",
    "postId": "e15381bc-3e74-4c77-924e-3f9c1b71c19e",
    "revision": "5dc8c9b7",
-   "publish_round_utc": "2026-11-23T17:50"
+   "publish_round_utc": "2026-11-24T17:50"
   },
   {
    "clip": "peanut-canal-teeter",
    "postId": "9772b1b5-d4ee-4128-86c0-ebfd3135c4e7",
    "revision": "92536903",
-   "publish_round_utc": "2026-11-23T19:50"
+   "publish_round_utc": "2026-11-24T19:50"
   },
   {
    "clip": "speed-lewis-hamilton",
    "postId": "a16ae161-3890-4d64-9b54-acf9e954fa61",
    "revision": "b6d1de26",
-   "publish_round_utc": "2026-11-24T16:50"
+   "publish_round_utc": "2026-11-25T16:50"
   },
   {
    "clip": "speed-bridge-jump",
    "postId": "12989c4d-5052-4692-baa2-1bd0a9d86723",
    "revision": "a7e0068b",
-   "publish_round_utc": "2026-11-24T17:50",
+   "publish_round_utc": "2026-11-25T17:50",
    "note": "media swapped to swear-muted upload a2023c00"
   },
   {
    "clip": "caseoh-drive-thru",
    "postId": "28e9d95b-2d8c-4410-8b3d-c48ce8f81d87",
    "revision": "f251bd9d",
-   "publish_round_utc": "2026-11-24T18:50"
+   "publish_round_utc": "2026-11-25T18:50"
   }
  ],
  "scheduled_ig_tt": [
@@ -66,5 +66,5 @@
    "tt": "05:05Z"
   }
  ],
- "note": "16:50-20:50 rounds lost to repeated session worker restarts; apples went out at 21:52, the rest shifted. 22:50 round also lost to a restart; car Short moved to 23 Nov 16:50, Funniest #1 to 23 Nov 18:50."
+ "note": "16:50-20:50 rounds lost to repeated session worker restarts; apples went out at 21:52, the rest shifted. 22:50 round also lost to a restart; car Short moved to 23 Nov 16:50, Funniest #1 to 23 Nov 18:50. 23 Nov: publishing now needs owner approval in-app; 16:50-21:50 rounds held. Queue moved +1 day."
 }
