@@ -1,5 +1,5 @@
 {
- "approved": "owner 'Yes to all' 22 Nov 02:2x UTC",
+ "approved": "owner 'Yes to all' 22 Nov 02:2x UTC + owner 'Yes to all 5' 23 Nov (5 reaction Shorts).",
  "youtube_queue": [
   {
    "clip": "loserfruit-infinite-apples",
@@ -19,6 +19,36 @@
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
    "revision": "20c24db9",
    "publish_round_utc": "2026-11-23T18:50"
+  },
+  {
+   "clip": "speed-delusional-npc",
+   "postId": "e15381bc-3e74-4c77-924e-3f9c1b71c19e",
+   "revision": "5dc8c9b7",
+   "publish_round_utc": "2026-11-23T17:50"
+  },
+  {
+   "clip": "peanut-canal-teeter",
+   "postId": "9772b1b5-d4ee-4128-86c0-ebfd3135c4e7",
+   "revision": "92536903",
+   "publish_round_utc": "2026-11-23T19:50"
+  },
+  {
+   "clip": "speed-lewis-hamilton",
+   "postId": "a16ae161-3890-4d64-9b54-acf9e954fa61",
+   "revision": "b6d1de26",
+   "publish_round_utc": "2026-11-24T16:50"
+  },
+  {
+   "clip": "speed-bridge-jump",
+   "postId": "12989c4d-5052-4692-baa2-1bd0a9d86723",
+   "revision": "bff30940",
+   "publish_round_utc": "2026-11-24T17:50"
+  },
+  {
+   "clip": "caseoh-drive-thru",
+   "postId": "28e9d95b-2d8c-4410-8b3d-c48ce8f81d87",
+   "revision": "f251bd9d",
+   "publish_round_utc": "2026-11-24T18:50"
   }
  ],
  "scheduled_ig_tt": [

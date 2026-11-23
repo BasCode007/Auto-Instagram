@@ -1,5 +1,5 @@
 {
- "approved": "owner 'Yes to all 5' 23 Nov ~01:00 UTC (videos). IG/TT drafts created, NOT yet published. IG times got pacing warnings (too close to existing posts); shift IG +30 min each.",
+ "approved": "owner 'Yes to all 5' 23 Nov ~01:00 UTC. IG/TT all SCHEDULED in vidIQ. YouTube drafts created; publish each at its round (no publishAt).",
  "uploads": {
   "speed-lewis-hamilton": "5808a741-6a75-4ae3-a85d-dd8d89a0554f",
   "speed-bridge-jump": "6be3452a-e039-42ec-b850-9ffff79d9fad",
@@ -11,7 +11,6 @@
   {
    "clip": "speed-delusional-npc",
    "postId": "3c9eff61-21dc-49cf-80f2-edc63047e0fa",
-   "revision": "62c5ad45-887b7685",
    "ig": "2026-11-23T04:30Z",
    "tt": "2026-11-23T08:45Z",
    "status": "SCHEDULED"
@@ -19,30 +18,30 @@
   {
    "clip": "peanut-canal-teeter",
    "postId": "8b87c47d-59ac-49fc-823e-f4f51f24eb50",
-   "revision": "788c55e6-c57a3f33",
-   "ig": "02:00Z (suggest 02:30)",
-   "tt": "03:15Z"
+   "ig": "2026-11-23T05:30Z",
+   "tt": "2026-11-23T10:15Z",
+   "status": "SCHEDULED"
   },
   {
    "clip": "speed-lewis-hamilton",
    "postId": "5253732b-1ff2-4ab4-aad8-2e910ec9ae02",
-   "revision": "8a53c121-938ebf7b",
-   "ig": "02:30Z (suggest 03:00)",
-   "tt": "04:45Z"
+   "ig": "2026-11-23T06:30Z",
+   "tt": "2026-11-23T11:45Z",
+   "status": "SCHEDULED"
   },
   {
    "clip": "speed-bridge-jump",
    "postId": "0b0635f9-9a91-4710-9985-6a7047b8f4e6",
-   "revision": "0a6e9ddd-847b0ed5",
-   "ig": "03:00Z (suggest 03:30)",
-   "tt": "06:15Z"
+   "ig": "2026-11-23T07:30Z",
+   "tt": "2026-11-23T13:15Z",
+   "status": "SCHEDULED"
   },
   {
    "clip": "caseoh-drive-thru",
    "postId": "54f344b8-dd1c-41d7-860c-a9a20cf208c4",
-   "revision": "1e02a111-d5c69b99",
-   "ig": "03:30Z (suggest 04:00)",
-   "tt": "07:45Z"
+   "ig": "2026-11-23T08:30Z",
+   "tt": "2026-11-23T14:45Z",
+   "status": "SCHEDULED"
   }
  ],
  "youtube_plan": {

@@ -128,3 +128,10 @@ Every post that went out. Newest first.
 
 ## 23 Nov 00:50 UTC round
 - Daily YouTube check (vidiq_user_videos, 5 credits): see performance.md.
+
+## 23 Nov 01:00-03:00 UTC
+- Owner: "Yes to all 5". Uploaded all 5 reaction Shorts to vidIQ and scheduled them for Instagram and TikTok (13-14 hashtags each, game-first captions):
+  - IG: NPC 04:30, Peanut canal 05:30, Lewis Hamilton 06:30, bridge jump 07:30, CaseOh drive-thru 08:30
+  - TT: 08:45, 10:15, 11:45, 13:15, 14:45
+  - Times were spaced out per vidIQ's pacing warnings.
+- YouTube drafts are ready, with game-first titles. Each one is published at its round (see queue_22nov.json): today 16:50 car fact, 17:50 NPC, 18:50 Funniest #1, 19:50 Peanut canal; 24 Nov 16:50 Lewis Hamilton, 17:50 bridge jump, 18:50 CaseOh.
