@@ -7,7 +7,8 @@
 #   -> a new shot every CUT seconds: AI hero shots from ComfyUI when
 #      COMFYUI_URL is set, then portrait stock (Pexels HD renditions or BROLL_DIR)
 #   -> cinematic grade, slow push-in, grain, vignette
-#   -> big centred word-revealed captions -> music at about -12 dB -> public URL
+#   -> big centred word-revealed captions -> music at about -12 dB
+#   -> loudness normalised to -14 LUFS (Reels/Shorts norm) -> public URL
 #
 # Inputs (env):
 #   SCRIPT_TEXT          (required) the voiceover text
@@ -137,10 +138,10 @@ cd "$OUT_DIR"
 fade_at="$(awk -v t="$total" 'BEGIN{printf "%.2f", (t > 2.5) ? t - 2.5 : 0}')"
 if [ -n "${MUSIC:-}" ] && [ -f "${MUSIC:-}" ]; then
   ffmpeg -y -loglevel error -i visuals.mp4 -i voice.mp3 -stream_loop -1 -i "$MUSIC" \
-    -filter_complex "[0:v]${sub_filter}[v];[2:a]volume=${MUSIC_LEVEL},afade=t=in:d=1,afade=t=out:st=${fade_at}:d=2.5[mus];[1:a]apad[vo];[vo][mus]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]" \
+    -filter_complex "[0:v]${sub_filter}[v];[2:a]volume=${MUSIC_LEVEL},afade=t=in:d=1,afade=t=out:st=${fade_at}:d=2.5[mus];[1:a]apad[vo];[vo][mus]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]" \
     -map "[v]" -map "[a]" -t "$total" -c:v libx264 -profile:v high -crf 21 -maxrate 10M -bufsize 20M -pix_fmt yuv420p -r 30 -g 60 -c:a aac -b:a 160k -ar 44100 -movflags +faststart reel.mp4
 else
-  ffmpeg -y -loglevel error -i visuals.mp4 -i voice.mp3 -filter_complex "[0:v]${sub_filter}[v];[1:a]apad[a]" \
+  ffmpeg -y -loglevel error -i visuals.mp4 -i voice.mp3 -filter_complex "[0:v]${sub_filter}[v];[1:a]apad,loudnorm=I=-14:TP=-1.5:LRA=11[a]" \
     -map "[v]" -map "[a]" -t "$total" -c:v libx264 -profile:v high -crf 21 -maxrate 10M -bufsize 20M -pix_fmt yuv420p -r 30 -g 60 -c:a aac -b:a 160k -ar 44100 -movflags +faststart reel.mp4
 fi
 cd - >/dev/null
