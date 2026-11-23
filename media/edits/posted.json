@@ -115,6 +115,11 @@
    "clip": "fact-47k-car",
    "url": "https://www.youtube.com/watch?v=oFHigz-Igp8",
    "published_utc": "2026-11-23T22:06Z"
+  },
+  {
+   "clip": "speed-delusional-npc",
+   "url": "https://www.youtube.com/watch?v=V_BuSFIgPm0",
+   "published_utc": "2026-11-23T22:10Z"
   }
  ],
  "instagram_published": [
@@ -129,6 +134,18 @@
    "url": "https://www.instagram.com/reel/DgEofiDEjkj/",
    "published_utc": "2026-11-23T05:30Z",
    "postId": "8b87c47d-59ac-49fc-823e-f4f51f24eb50"
+  },
+  {
+   "clip": "speed-ufo-alien",
+   "url": "https://www.instagram.com/reel/DgGdOD9FUbo/",
+   "published_utc": "2026-11-23T22:30Z"
+  }
+ ],
+ "tiktok_published": [
+  {
+   "clip": "speed-ufo-alien",
+   "url": "https://www.tiktok.com/@vicecityreplayzvi/video/7711501686077934854",
+   "published_utc": "2026-11-23T22:45Z"
   }
  ]
 }

@@ -181,3 +181,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - YouTube: $47K car Short live https://www.youtube.com/watch?v=oFHigz-Igp8; NPC Short live https://www.youtube.com/watch?v=V_BuSFIgPm0
 - Batch-2 scheduled on IG/TT: UFO IG 22:30/TT 22:45; scooter IG 23:30/TT 00:15; NPC chase IG 00:30/TT 01:45; flipped car IG 01:30/TT 03:15.
 - Remaining YouTube: Peanut canal 24 Nov 16:50, Funniest #1 24 Nov 18:50; Lewis/bridge/CaseOh 25 Nov.
+- 22:50: UFO Short live on IG (https://www.instagram.com/reel/DgGdOD9FUbo/) and TikTok. YouTube drafts made for UFO and the 3 moistcr1tikal clips. YouTube plan: 24 Nov 16:50 Peanut canal, 17:50 UFO, 18:50 Funniest #1, 19:50 scooter; 25 Nov Lewis, bridge, CaseOh, NPC chase; 26 Nov 16:50 flipped car.
