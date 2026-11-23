@@ -140,3 +140,4 @@ Every post that went out. Newest first.
 - Scraped top 24 h clips from 10 big channels and downloaded 8. Built `speed-ufo-alien` (reaction, 31 s: UFO beam, then the alien body; a side easter egg) and sent it for preview.
 - Skipped: CaseOh nude-NPC door scene and the story cutscene at the beach; Speed "human pig" (sexual jokes, dark); Peanut scooter app and heist (weak or dark); xQc camera roll (photo of a sunbathing woman).
 - make_clip: new `burn_captions: false` keeps the words for swear muting when the clip already has the streamer's own captions.
+- Bridge-jump Short had 2 unmuted swears (no transcript at cut time). Re-rendered with mutes, uploaded (a2023c00), swapped into the scheduled IG 07:30/TT 13:15 post and the YouTube draft.
