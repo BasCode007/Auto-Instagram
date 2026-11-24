@@ -202,3 +202,6 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 
 ## 24 Nov 04:50 UTC round
 - Peanut VOD 2938886234, 3:30-4:30: gym (3:34; we already did a gym Short), vape talk (3:45, skip), mission texts. Nothing built.
+
+## 24 Nov 05:50 UTC round
+- Peanut VOD 2938886234, 4:31-5:30: hunting clues from a "serial killer" photo (water tower, junkyard). Side-quest mystery with no payoff yet, and part of a story arc (spoiler risk). Nothing built.
