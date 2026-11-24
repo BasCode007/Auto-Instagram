@@ -123,3 +123,8 @@ Instagram page total 12,683 views, 2 followers. No new post has gone out since t
 - Next best: key cloner fact 87, Skunk Ape 52, house fix-up 54, hunger fact 39, taxi 36. All are fact/discovery Shorts except the Skunk Ape one.
 - Apples Short: 5 views in its first ~3 h (went out at 22:08, after the US prime-time window).
 - Reaction titles naming a streamer ("Lacy...", "Peanut...", "IShowSpeed...") sit at 1-20 views. GTA-6-feature titles do better, which backs the VicePulse finding: lead with the game, not the streamer.
+
+## 24 Nov 00:50 UTC, YouTube snapshot (latest 12)
+- Big jump overnight. "This GTA 6 NPC Thinks She's A 10" has 873 views and 27 likes after about 2.7 h. "$47,000 On ONE Car In GTA 6?!" has 850 views and 22 likes after about 2.7 h. Both went out at 22:07-22:10 UTC.
+- Older Shorts climbed past 1K: apples 1,176; Lacy cows 1,335; Peanut golf cart 1,292; Lacy downtime 1,152; bank app 1,050.
+- Game-first titles ("This GTA 6 NPC...", "$47,000 On ONE Car...") pick up views fastest. Keep using them.

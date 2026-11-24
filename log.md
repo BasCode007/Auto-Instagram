@@ -186,3 +186,7 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 ## 23 Nov 23:50 UTC round
 - Top clips (24 h): built `speed-red-hulk` (reaction, 30 s, a red-painted NPC in a barn, "Hug" prompt) and sent it for preview. Skipped: Kai bridge clip (mostly menus), JasonTheWeen pool (dark), Peanut roof jump (ends in a death screen), xQc ending/rating clips (spoilers).
 - Live with public VODs: jynxzi (2938664561, GTA 6 day 4), zackrawrr (2938575130). Scan next round.
+
+## 24 Nov 00:50 UTC round
+- Daily YouTube check: the new Shorts are taking off (NPC 873, car 850 in under 3 h); see performance.md.
+- Jynxzi VOD 2938664561, last 45 min: nothing usable (phone texts, chat talk, story calls).
