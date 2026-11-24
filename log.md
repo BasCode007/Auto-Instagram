@@ -209,3 +209,6 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 ## 24 Nov 06:50 UTC round
 - Built `speed-tv-channels` (reaction/discovery, 29 s, in-game TV channel surf) and sent for preview. Skipped Peanut jump-scare clips (dark, pause menu).
 - Awaiting approval: speed-red-hulk, speed-tv-channels (2 reactions).
+
+## 24 Nov 07:50 UTC round
+- Peanut VOD 2938886234, 5:30-7:30: story/mission dialogue and a crude line (5:57). Nothing built.
