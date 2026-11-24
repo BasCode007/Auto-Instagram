@@ -228,3 +228,7 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 
 ## 24 Nov 16:50-21:50 UTC
 - No posts today: the one publish attempt (Peanut canal, 17:50) closed unanswered. YouTube queue shifted a day (25 Nov: Peanut canal, aliens, Funniest #1, scooter; 26 Nov: Lewis, bridge, CaseOh, NPC chase; 27 Nov: flipped car).
+
+## 24 Nov 22:00 UTC: long-form check-in (owner reminder)
+- Balance 1,643 credits (1,513 renewable + 130 add-on), renews 18 Dec. About 24 days at ~40/day for routine work is ~960, leaving ~680 spare for long-form.
+- Asked the owner which long-form to make from the saved list. Recommended Funniest Moments #2 (~30-50 credits), but only after #1 is live and has a few days of data.
