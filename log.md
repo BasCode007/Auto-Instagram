@@ -196,3 +196,6 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 
 ## 24 Nov 02:50 UTC round
 - Peanut live VOD 2938886234, 0:00-2:32 scanned: a mystery hunt (phone "nearby scan detected", a pulsing spot under stairs, 1:42-1:45). Dark, and no payoff yet ("this does nothing"). Lead only: re-check later chunks for a reveal.
+
+## 24 Nov 03:50 UTC round
+- Peanut VOD 2938886234, 2:31-3:30: the mystery quest continues ("you need a dead body", 2:40). Time-locked side content rant at 2:39 (he just runs, then it goes dark). Car tuning at 3:21 repeats our $47K car topic. Nothing built.
