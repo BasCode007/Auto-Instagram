@@ -193,3 +193,6 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 
 ## 24 Nov 01:50 UTC round
 - Category top clips: checked xQc relationship rant (off-game talk, rude), CaseOh "get away"/"nice scooter" (just driving, weak visuals), LIRIK NPC dialogue (no facecam, weak). Nothing built.
+
+## 24 Nov 02:50 UTC round
+- Peanut live VOD 2938886234, 0:00-2:32 scanned: a mystery hunt (phone "nearby scan detected", a pulsing spot under stairs, 1:42-1:45). Dark, and no payoff yet ("this does nothing"). Lead only: re-check later chunks for a reveal.
