@@ -41,3 +41,11 @@ Ideas to act on: a "GTA 6 bugs and glitches" Short/compilation series from Twitc
   - Skip: Peanut "Escalates a Situation" (club interior, nudity risk); Joe Bart "florida man" (a cop runs over a bird, which breaks our no-animal-harm rule); JshRobz (mostly a game-crash screen); Ludwig "assaulting the barber" (half the clip is the map menu).
   - Lead: Ludwig "accumulating insurance fraud" (60 s of traffic-pileup chaos, almost no speech). The game doesn't show any payout, so we can't claim one in a narration. Possible "GTA 6 traffic chaos" narrated Short. Crop out the chat overlay.
   - Lead: caseoh_ "kyle 1-4" series (15.6K views): check the next round.
+
+## 24 Nov 2026, 12:50 UTC (vidIQ trending GTA 6 Shorts since 22 Nov, sorted by views in the latest hour)
+- **"GTA 6 best clips"**: an 88 s compilation from a 133-subscriber channel has 936K views and 52K likes in about a day. A small channel can hit with a fast compilation of the best moments, which is exactly what we have in stock.
+- GTA 5 vs GTA 6 is still the biggest format: Dimucc 1.14M (29 s), Caylus 718K, Thayner 172K (14 s), Johnny GTA "GTA 5 after GTA 6" 78K.
+- Memes and "logic" Shorts: GelNox 477K, "GTA 6 logic" 649K (3K-subscriber channel).
+- "GTA 6 trailer vs gameplay comparison": 36K from a 53-subscriber channel.
+- IShowSpeed reaction re-uploads by other pages: 15K in 6 h.
+- Action: build a 60-90 s "GTA 6 Best Clips" compilation Short from our approved Shorts (Speed NPC, scooter crash, plane jump, flipped car, aliens, Red Hulk...) for the owner to preview. Consider a "trailer vs gameplay" side-by-side if we can source trailer frames legally (official Rockstar trailer, credited).

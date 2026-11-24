@@ -219,3 +219,6 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 
 ## 24 Nov 10:50 UTC round
 - Top clips from Speed, Kai, Lacy, Jynxzi and StableRonaldo. Downloaded 2: Kai radio crash (mostly the radio menu, plus a drug lyric) and Speed Rocco mission (black screens, story mission). Nothing built.
+
+## 24 Nov 12:50 UTC round
+- Daily trends check (5 credits): a best-clips compilation (936K from a 133-subscriber channel) and GTA 5 vs 6 dominate. Logged in research/trends.md.
