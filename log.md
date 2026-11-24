@@ -190,3 +190,6 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 ## 24 Nov 00:50 UTC round
 - Daily YouTube check: the new Shorts are taking off (NPC 873, car 850 in under 3 h); see performance.md.
 - Jynxzi VOD 2938664561, last 45 min: nothing usable (phone texts, chat talk, story calls).
+
+## 24 Nov 01:50 UTC round
+- Category top clips: checked xQc relationship rant (off-game talk, rude), CaseOh "get away"/"nice scooter" (just driving, weak visuals), LIRIK NPC dialogue (no facecam, weak). Nothing built.
