@@ -212,3 +212,7 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 
 ## 24 Nov 07:50 UTC round
 - Peanut VOD 2938886234, 5:30-7:30: story/mission dialogue and a crude line (5:57). Nothing built.
+
+## 24 Nov 08:50 UTC round
+- Category top clip: built `tminnzy-plane-jump` (reaction, 20 s, Jason jumps out of the plane, mission FAILED; 43.5K-view clip) and sent for preview. Skipped AvoidingThePuddle (relationship dialogue) and Joe Bart (mostly map).
+- Awaiting approval: speed-red-hulk, speed-tv-channels, tminnzy-plane-jump (3 reactions).

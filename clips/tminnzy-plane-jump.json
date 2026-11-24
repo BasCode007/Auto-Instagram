@@ -1,0 +1,228 @@
+{
+ "id": "tminnzy-plane-jump",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/404725331__RudeBlueStapleResidentSleeper-hN6aHqGrcSgwB2Dl.mp4",
+ "source_url": "https://www.twitch.tv/tminnzy/clip/RudeBlueStapleResidentSleeper-hN6aHqGrcSgwB2Dl",
+ "source_range": null,
+ "creator": "tminnzy",
+ "hook": "HE PRESSED THE *WRONG BUTTON* MID-FLIGHT",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 6.5,
+   "end": 26.5,
+   "x": 0.4
+  }
+ ],
+ "words": [
+  [
+   "Yeah,",
+   0.0,
+   0.6
+  ],
+  [
+   "I'm",
+   0.62,
+   0.8
+  ],
+  [
+   "still",
+   0.8,
+   1.02
+  ],
+  [
+   "not",
+   1.02,
+   1.24
+  ],
+  [
+   "quite",
+   1.24,
+   1.48
+  ],
+  [
+   "not.",
+   1.48,
+   1.7
+  ],
+  [
+   "I'm",
+   2.46,
+   2.94
+  ],
+  [
+   "still",
+   2.94,
+   3.1
+  ],
+  [
+   "not",
+   3.1,
+   3.3
+  ],
+  [
+   "quite",
+   3.3,
+   3.5
+  ],
+  [
+   "not",
+   3.5,
+   3.72
+  ],
+  [
+   "trying",
+   3.72,
+   4.02
+  ],
+  [
+   "to",
+   4.02,
+   4.24
+  ],
+  [
+   "do",
+   4.24,
+   4.38
+  ],
+  [
+   "this",
+   4.38,
+   4.58
+  ],
+  [
+   "mission",
+   4.58,
+   4.9
+  ],
+  [
+   "So",
+   9.6,
+   10.08
+  ],
+  [
+   "like",
+   10.08,
+   10.56
+  ],
+  [
+   "right",
+   10.56,
+   10.82
+  ],
+  [
+   "now",
+   10.82,
+   11.06
+  ],
+  [
+   "chat",
+   11.06,
+   11.3
+  ],
+  [
+   "Wait,",
+   15.08,
+   15.56
+  ],
+  [
+   "what",
+   15.56,
+   16.04
+  ],
+  [
+   "the",
+   16.04,
+   16.18
+  ],
+  [
+   "fuck",
+   16.18,
+   16.5
+  ],
+  [
+   "did",
+   16.5,
+   16.74
+  ],
+  [
+   "I",
+   16.74,
+   16.88
+  ],
+  [
+   "press",
+   16.88,
+   17.24
+  ],
+  [
+   "triangle?",
+   17.24,
+   18.06
+  ],
+  [
+   "Did",
+   18.72,
+   19.2
+  ],
+  [
+   "I",
+   19.2,
+   19.32
+  ],
+  [
+   "really",
+   19.32,
+   19.48
+  ],
+  [
+   "press",
+   19.48,
+   19.76
+  ],
+  [
+   "triangle?",
+   19.76,
+   20.12
+  ],
+  [
+   "I",
+   20.12,
+   20.66
+  ],
+  [
+   "Was",
+   28.3,
+   29.2
+  ],
+  [
+   "winning",
+   29.2,
+   29.4
+  ],
+  [
+   "Chad",
+   29.4,
+   29.76
+  ]
+ ],
+ "burn_captions": false,
+ "facecam": [
+  0.78,
+  0.278,
+  0.2,
+  0.34
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "notes": "Reaction Short, Tminnzy top GTA VI clip (24h, 43.5K views): mid-flight he presses triangle, Jason jumps out of the plane, mission FAILED ('Jason abandoned the plane'). Starts at 6.5 s so the opening mission line with a drug reference is cut out.",
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}
