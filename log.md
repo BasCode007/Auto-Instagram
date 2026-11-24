@@ -205,3 +205,7 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 
 ## 24 Nov 05:50 UTC round
 - Peanut VOD 2938886234, 4:31-5:30: hunting clues from a "serial killer" photo (water tower, junkyard). Side-quest mystery with no payoff yet, and part of a story arc (spoiler risk). Nothing built.
+
+## 24 Nov 06:50 UTC round
+- Built `speed-tv-channels` (reaction/discovery, 29 s, in-game TV channel surf) and sent for preview. Skipped Peanut jump-scare clips (dark, pause menu).
+- Awaiting approval: speed-red-hulk, speed-tv-channels (2 reactions).
