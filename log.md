@@ -216,3 +216,6 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 ## 24 Nov 08:50 UTC round
 - Category top clip: built `tminnzy-plane-jump` (reaction, 20 s, Jason jumps out of the plane, mission FAILED; 43.5K-view clip) and sent for preview. Skipped AvoidingThePuddle (relationship dialogue) and Joe Bart (mostly map).
 - Awaiting approval: speed-red-hulk, speed-tv-channels, tminnzy-plane-jump (3 reactions).
+
+## 24 Nov 10:50 UTC round
+- Top clips from Speed, Kai, Lacy, Jynxzi and StableRonaldo. Downloaded 2: Kai radio crash (mostly the radio menu, plus a drug lyric) and Speed Rocco mission (black screens, story mission). Nothing built.
