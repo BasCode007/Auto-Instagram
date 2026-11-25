@@ -1,3 +1,64 @@
-{"approved":"owner 25 Nov ~12:35 UTC: 'Let's post and run the new videos get them all out and uploading' (all 7 previews)",
- "uploads":{"gta6-best-clips-1":"2e2d60aa-502d-4d5d-8090-7da112c8a960","speed-red-hulk":"cbd7a5d0-b991-4154-9627-296eab70f276","speed-tv-channels":"d55cc629-d8bd-4535-9e61-1e16f31d787d","tminnzy-plane-jump":"73021438-7adf-49f5-aa25-4d42047d830a","caseoh-wheelie-crash":"625dd2e1-8ec3-469c-8972-ac9f88dced5e","kai-cop-crash":"46671fa8-c292-4069-a2cc-abd0ea4e3f9d","bruce-shovel-fight":"ffe53e19-ab5a-4bbd-83dd-961845026702"},
- "drafts":{}}
+{
+ "approved": "owner 25 Nov ~12:35 UTC: 'Let's post and run the new videos get them all out and uploading' (all 7 previews)",
+ "uploads": {
+  "gta6-best-clips-1": "2e2d60aa-502d-4d5d-8090-7da112c8a960",
+  "speed-red-hulk": "cbd7a5d0-b991-4154-9627-296eab70f276",
+  "speed-tv-channels": "d55cc629-d8bd-4535-9e61-1e16f31d787d",
+  "tminnzy-plane-jump": "73021438-7adf-49f5-aa25-4d42047d830a",
+  "caseoh-wheelie-crash": "625dd2e1-8ec3-469c-8972-ac9f88dced5e",
+  "kai-cop-crash": "46671fa8-c292-4069-a2cc-abd0ea4e3f9d",
+  "bruce-shovel-fight": "ffe53e19-ab5a-4bbd-83dd-961845026702"
+ },
+ "drafts": {
+  "kai-cop-crash": {
+   "postId": "1918f81e-6bed-4520-ac88-d8ebc4fab71b",
+   "rev": "2feacb7e-73c9d65e-de70e440",
+   "ig": "11-25 13:00",
+   "tt": "11-25 13:15",
+   "yt": "11-27 17:50"
+  },
+  "caseoh-wheelie-crash": {
+   "postId": "e0ff4196-6519-46a7-9f3a-9db2d9d455ff",
+   "rev": "620b4207-78a1404e-b49bc49b",
+   "ig": "11-25 14:00",
+   "tt": "11-25 14:45",
+   "yt": "11-27 18:50"
+  },
+  "speed-red-hulk": {
+   "postId": "a7ca7525-fa1f-4d4c-bf76-10813f76007a",
+   "rev": "8926e30f-c898e61d-e64b0b25",
+   "ig": "11-25 15:00",
+   "tt": "11-25 16:15",
+   "yt": "11-27 19:50"
+  },
+  "gta6-best-clips-1": {
+   "postId": "d2211490-8ff3-4b1d-a798-82a311e19e6d",
+   "rev": "096fee5a-113fcb24-f90dc92e",
+   "ig": "11-25 16:00",
+   "tt": "11-25 17:45",
+   "yt": "11-28 16:50"
+  },
+  "bruce-shovel-fight": {
+   "postId": "951180a5-6cbe-4f51-a6ce-3c623c891e98",
+   "rev": "0d2aac1b-29ea660c-bb0f2575",
+   "ig": "11-25 17:00",
+   "tt": "11-25 19:15",
+   "yt": "11-28 17:50"
+  },
+  "speed-tv-channels": {
+   "postId": "854e0621-aed4-4062-b7e4-1c960d970b22",
+   "rev": "459fce84-6db2d427-7fda9bf1",
+   "ig": "11-25 18:00",
+   "tt": "11-25 20:45",
+   "yt": "11-28 18:50"
+  },
+  "tminnzy-plane-jump": {
+   "postId": "2cf41cf7-1bb7-472f-8aab-9fbcb24fac91",
+   "rev": "3da3bcdf-740f7066-74cc1bc7",
+   "ig": "11-25 19:00",
+   "tt": "11-25 22:15",
+   "yt": "11-28 19:50"
+  }
+ },
+ "note": "One draft per clip with IG+TT+YT; YouTube accepts publishAt in the draft (no update_video credits). Status: publishing."
+}
