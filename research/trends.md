@@ -49,3 +49,12 @@ Ideas to act on: a "GTA 6 bugs and glitches" Short/compilation series from Twitc
 - "GTA 6 trailer vs gameplay comparison": 36K from a 53-subscriber channel.
 - IShowSpeed reaction re-uploads by other pages: 15K in 6 h.
 - Action: build a 60-90 s "GTA 6 Best Clips" compilation Short from our approved Shorts (Speed NPC, scooter crash, plane jump, flipped car, aliens, Red Hulk...) for the owner to preview. Consider a "trailer vs gameplay" side-by-side if we can source trailer frames legally (official Rockstar trailer, credited).
+
+## 25 Nov 12:55 UTC (vidiq_trending_videos, Shorts, "GTA 6", recentVph, since 22 Nov)
+- "GTA 6 best clips" (133-sub channel) now 1.75M views, 37.8K vph, still the fastest. Our Best Clips #1 goes out today (IG 16:00, TT 17:45, YT 28 Nov). Make Best Clips #2 next.
+- GTA 5 vs GTA 6 still huge: 14 s comparison 805K (15.5K-sub channel); Caylus comparison 967K.
+- New: "GTA 6 Happy Ending" (Zackrawrr Shorts, 354K, 717 comments): streamer reaction to the ending. Ending content stays off-limits for us (owner rule: no ending/final mission).
+- "GTA 6 Reviews Situation" (Metacritic critics vs users), 21K: review-discourse angle; needs verified numbers only.
+- "Evolution of GTA protagonists GTA 3 → GTA 6", 87K: series-history format, possible narrated Short.
+- Crash clips ("Joe Crash", "crash out") 15-19K on tiny channels: crash/physics still works.
+- Balance: 1,633 credits (1,503 renewable + 130 add-on), renews 18 Dec.
