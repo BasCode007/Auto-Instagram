@@ -1,0 +1,93 @@
+{
+ "pillar": "reaction",
+ "kind": "reel",
+ "source_range": null,
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "burn_captions": false,
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "id": "kai-cop-crash",
+ "source": "twitch-clips/134522528__MistyFastChickpeaBatChest-1l50Cnz_nbghKxmh.mp4",
+ "source_url": "https://www.twitch.tv/kaicenat/clip/MistyFastChickpeaBatChest-1l50Cnz_nbghKxmh",
+ "creator": "kaicenat",
+ "hook": "KAI CENAT *CRASHED* INTO THE COPS",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 19.3,
+   "x": 0.5
+  }
+ ],
+ "words": [
+  [
+   "Oh",
+   0.0,
+   1.88
+  ],
+  [
+   "my",
+   1.88,
+   5.0
+  ],
+  [
+   "god,",
+   5.0,
+   5.26
+  ],
+  [
+   "yo,",
+   5.26,
+   10.74
+  ],
+  [
+   "what",
+   12.44,
+   12.56
+  ],
+  [
+   "the",
+   12.56,
+   12.7
+  ],
+  [
+   "fuck",
+   12.7,
+   13.26
+  ],
+  [
+   "who",
+   13.26,
+   14.92
+  ],
+  [
+   "did",
+   14.92,
+   15.16
+  ],
+  [
+   "that",
+   15.16,
+   17.32
+  ],
+  [
+   "boom",
+   17.32,
+   17.82
+  ]
+ ],
+ "facecam": [
+  0.0,
+  0.308,
+  0.117,
+  0.226
+ ],
+ "notes": "Reaction from GTA VI category top clips (24h), Kai Cenat. 19 s, allowed under the 25 Nov 12 s minimum. Clip has its own captions; words only drive mutes."
+}

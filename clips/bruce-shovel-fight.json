@@ -1,0 +1,118 @@
+{
+ "pillar": "reaction",
+ "kind": "reel",
+ "source_range": null,
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "burn_captions": false,
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "id": "bruce-shovel-fight",
+ "source": "twitch-clips/bruce_shovel_bright.mp4",
+ "source_url": "https://www.twitch.tv/brucegreene/clip/FunnyAverageDiamond4Head-rUU4lEnhtbjGMkPr",
+ "creator": "brucegreene",
+ "hook": "HE BROUGHT A *SHOVEL* TO A KNIFE FIGHT",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 27.5,
+   "x": 0.45
+  }
+ ],
+ "words": [
+  [
+   "Everybody's",
+   0.0,
+   0.74
+  ],
+  [
+   "here",
+   0.74,
+   0.86
+  ],
+  [
+   "for",
+   0.86,
+   1.04
+  ],
+  [
+   "for",
+   1.04,
+   1.28
+  ],
+  [
+   "a",
+   1.28,
+   1.38
+  ],
+  [
+   "beating",
+   1.38,
+   1.64
+  ],
+  [
+   "Oh",
+   7.46,
+   7.94
+  ],
+  [
+   "shit,",
+   7.94,
+   8.42
+  ],
+  [
+   "he's",
+   8.54,
+   8.78
+  ],
+  [
+   "got",
+   8.78,
+   17.14
+  ],
+  [
+   "a",
+   17.14,
+   17.26
+  ],
+  [
+   "knife",
+   17.26,
+   17.26
+  ],
+  [
+   "Which",
+   27.5,
+   27.98
+  ],
+  [
+   "clip",
+   27.98,
+   28.46
+  ],
+  [
+   "that",
+   28.46,
+   28.7
+  ],
+  [
+   "You",
+   30.0,
+   30.76
+  ]
+ ],
+ "facecam": [
+  0.8125,
+  0.461,
+  0.178,
+  0.236
+ ],
+ "notes": "Reaction from GTA VI category top clips (24h), Bruce Greene. Night alley fight, source brightened (gamma 1.55, facecam kept original). Allowed under 25 Nov dark-footage rule. Clip has its own captions; words only drive mutes."
+}

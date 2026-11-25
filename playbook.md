@@ -185,4 +185,19 @@ Based on research/competitor-vicepulse.md (VicePulse: 18.4M views in 8 weeks wit
    - Streamer audio at 0 (game/stream audio fully muted; voiceover only, optional quiet music).
    - No facecam, no avatar, no streamer overlays: `layout: "full"` 9:16 crop of the gameplay, `x`/`zoom`/`y` per segment to keep the action centred and corner overlays out.
    - The narration never names the streamer or the stream, and there is no credit line anywhere (owner's call, 21 Nov): not on screen, not in the caption or description.
-4. **Reactions** (streamer moments) keep the stack layout with the creator visible and their voice, 20-35 s.
+4. **Reactions** (streamer moments) keep the stack layout with the creator visible and their voice, 12-35 s (12 s minimum since 25 Nov).
+
+### Owner rules, 25 Nov: content rules relaxed ("we are established")
+
+These override the older safety lists (21 Nov SAFETY line, launch-week spoiler rule, 20 s reaction minimum).
+
+**Now allowed**
+- **Night and dark footage**, as long as the action is easy to read on a phone screen (check a frame at phone size; brighten with `eq` if needed).
+- **Edgy and crude humour**: mild innuendo, crude jokes, swimsuit/revealing outfits in game. Still no nudity, nothing sexually explicit, and keep it out of the hook and cover frame.
+- **In-game drug and alcohol references** (NPC lines, streamer jokes). These clips go to YouTube and Instagram only: `"platforms": {"tiktok": false}` (TikTok regulated-goods rule still stands).
+- **Short reactions from 12 s** (quick punchline clips). Upper limit stays 35 s.
+- **Story and mission moments** that streamers react to. The hook and cover must not give away the twist; add "SPOILER" (or "⚠️ spoilers") at the start of every caption/description; no ending or final-mission content.
+
+**Still banned (platform strikes)**: real or in-game nudity / explicit sexual content, slurs, real-world harm or animal harm, gore close-ups, self-harm jokes, off-game content, unverified claims, static menus, repeats.
+
+**Unchanged**: swears stay muted; preview first; 10+ hashtags; narrated/fact video rules (voice only, no facecam, never name the streamer, no credit line).
