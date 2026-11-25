@@ -128,3 +128,6 @@ Instagram page total 12,683 views, 2 followers. No new post has gone out since t
 - Big jump overnight. "This GTA 6 NPC Thinks She's A 10" has 873 views and 27 likes after about 2.7 h. "$47,000 On ONE Car In GTA 6?!" has 850 views and 22 likes after about 2.7 h. Both went out at 22:07-22:10 UTC.
 - Older Shorts climbed past 1K: apples 1,176; Lacy cows 1,335; Peanut golf cart 1,292; Lacy downtime 1,152; bank app 1,050.
 - Game-first titles ("This GTA 6 NPC...", "$47,000 On ONE Car...") pick up views fastest. Keep using them.
+
+## 25 Nov 00:50 UTC, YouTube snapshot
+- Growth has slowed: NPC 1,131 (+258 in 24 h), car 1,236 (+386), apples 1,349, Lacy cows 1,337, golf cart 1,297. Nothing new posted on 24 Nov (approvals not answered), so the channel had no fresh Shorts to push.

@@ -232,3 +232,6 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 ## 24 Nov 22:00 UTC: long-form check-in (owner reminder)
 - Balance 1,643 credits (1,513 renewable + 130 add-on), renews 18 Dec. About 24 days at ~40/day for routine work is ~960, leaving ~680 spare for long-form.
 - Asked the owner which long-form to make from the saved list. Recommended Funniest Moments #2 (~30-50 credits), but only after #1 is live and has a few days of data.
+
+## 25 Nov 00:50 UTC round
+- Daily YouTube check (5 credits): see performance.md. Channel growth slowing without new uploads.
