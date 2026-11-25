@@ -243,3 +243,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 25 Nov 12:55 UTC: daily trends check done (5 credits). Best-clips compilations and GTA 5 vs 6 still lead. Balance 1,633.
 - 25 Nov 13:05 UTC: owner asked for 3 h gaps between YouTube Shorts. Moved 5 uploaded Shorts with vidiq_update_video (25 credits); 6 retries get new slots. Funniest #1 long-form uploaded (iPI_4V7yZHo), public 18:50 today.
 - 25 Nov 22:55 UTC: retried scooter YouTube upload (new slot 27 Nov 13:50): still YouTube daily upload limit. Next retry after 05:00 UTC 26 Nov. Several rounds today were cut short by worker restarts.
+- 25 Nov 23:52 UTC: all 7 new clips live on Instagram and TikTok (14/14 completed). YouTube retry waits until after 05:00 UTC.
