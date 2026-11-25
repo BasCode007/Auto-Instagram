@@ -201,3 +201,6 @@ These override the older safety lists (21 Nov SAFETY line, launch-week spoiler r
 **Still banned (platform strikes)**: real or in-game nudity / explicit sexual content, slurs, real-world harm or animal harm, gore close-ups, self-harm jokes, off-game content, unverified claims, static menus, repeats.
 
 **Unchanged**: swears stay muted; preview first; 10+ hashtags; narrated/fact video rules (voice only, no facecam, never name the streamer, no credit line).
+
+### Owner rule, 25 Nov: YouTube Shorts 3 hours apart
+YouTube Shorts go out at least 3 h apart on a 13:50 / 16:50 / 19:50 / 22:50 UTC grid (max 4 a day). Long-form keeps its own slot. Instagram (hourly) and TikTok (90 min) unchanged. Owner is verifying the channel to raise YouTube's daily upload limit.

@@ -68,44 +68,127 @@
     "clip": "moist-scooter-crash",
     "postId": "3f81929c-7e35-4f37-bd16-3e34a310b561",
     "pub": "34331b19-3d07-4552-b350-6f4e15f37ee3",
-    "slot": "2026-11-25T19:50Z"
+    "slot": "2026-11-27T13:50Z"
    },
    {
     "clip": "speed-lewis-hamilton",
     "postId": "a16ae161-3890-4d64-9b54-acf9e954fa61",
     "pub": "12a8d6cc-9dca-4aea-a68b-caccd779bb3f",
-    "slot": "2026-11-26T16:50Z"
+    "slot": "2026-11-27T16:50Z"
    },
    {
     "clip": "speed-bridge-jump",
     "postId": "12989c4d-5052-4692-baa2-1bd0a9d86723",
     "pub": "36a5cf09-ff9c-4fcb-a0dc-9d0baff9cd3d",
-    "slot": "2026-11-26T17:50Z"
+    "slot": "2026-11-27T22:50Z"
    },
    {
     "clip": "caseoh-drive-thru",
     "postId": "28e9d95b-2d8c-4410-8b3d-c48ce8f81d87",
     "pub": "feec37ee-c418-459c-b538-6022f07c18fe",
-    "slot": "2026-11-26T18:50Z"
+    "slot": "2026-11-28T13:50Z"
    },
    {
     "clip": "moist-npc-chase",
     "postId": "7e0c8106-aa2c-4371-9695-62fad277da45",
     "pub": "526a9c67-656c-45f2-b695-93f6eefc9608",
-    "slot": "2026-11-26T19:50Z"
+    "slot": "2026-11-28T22:50Z"
    },
    {
     "clip": "moist-flipped-car-fight",
     "postId": "1f568fc6-03c4-42a4-b117-414834ea0891",
     "pub": "5e327a7e-6992-4d73-a8cd-de499cfe39fe",
-    "slot": "2026-11-27T16:50Z"
+    "slot": "2026-11-29T13:50Z"
    }
   ],
   "in_progress": {
    "clip": "funniest-1",
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
    "slot": "2026-11-25T18:50Z"
-  }
+  },
+  "note": "Owner 25 Nov 13:05: YouTube Shorts 3 h apart (grid 13:50/16:50/19:50/22:50 UTC). Failed destination needs full settings in draft_update (title, privacyStatus public, categoryId 20, publishAt=slot) before publish with publicationIds."
  },
- "status": "All 7 published 25 Nov ~12:50: IG+TT scheduled, YouTube uploaded private with publishAt"
+ "status": "All 7 published 25 Nov ~12:50: IG+TT scheduled, YouTube uploaded private with publishAt",
+ "youtube_schedule_3h": [
+  [
+   "2026-11-25T16:50Z",
+   "peanut-canal-teeter",
+   "GXTNzvAR6dI"
+  ],
+  [
+   "2026-11-25T18:50Z",
+   "funniest-1 LONG-FORM 17.5 min",
+   "iPI_4V7yZHo"
+  ],
+  [
+   "2026-11-25T22:50Z",
+   "speed-ufo-alien",
+   "-5ndnnJwSpE"
+  ],
+  [
+   "2026-11-26T13:50Z",
+   "kai-cop-crash",
+   "e2j5HU6KPEA"
+  ],
+  [
+   "2026-11-26T16:50Z",
+   "caseoh-wheelie-crash",
+   "yYNnR1AJTUQ"
+  ],
+  [
+   "2026-11-26T19:50Z",
+   "bruce-shovel-fight",
+   "by4g9mncCDo"
+  ],
+  [
+   "2026-11-26T22:50Z",
+   "speed-tv-channels",
+   "BkfQkEYJrOs"
+  ],
+  [
+   "2026-11-27T13:50Z",
+   "moist-scooter-crash",
+   "RETRY"
+  ],
+  [
+   "2026-11-27T16:50Z",
+   "speed-lewis-hamilton",
+   "RETRY"
+  ],
+  [
+   "2026-11-27T19:50Z",
+   "speed-red-hulk",
+   "8IpgLHo7-FE"
+  ],
+  [
+   "2026-11-27T22:50Z",
+   "speed-bridge-jump",
+   "RETRY"
+  ],
+  [
+   "2026-11-28T13:50Z",
+   "caseoh-drive-thru",
+   "RETRY"
+  ],
+  [
+   "2026-11-28T16:50Z",
+   "gta6-best-clips-1",
+   "ForG1TpyHpg"
+  ],
+  [
+   "2026-11-28T19:50Z",
+   "tminnzy-plane-jump",
+   "XEaNMylKsIY"
+  ],
+  [
+   "2026-11-28T22:50Z",
+   "moist-npc-chase",
+   "RETRY"
+  ],
+  [
+   "2026-11-29T13:50Z",
+   "moist-flipped-car-fight",
+   "RETRY"
+  ]
+ ]
 }
