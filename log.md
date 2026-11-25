@@ -235,3 +235,5 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 
 ## 25 Nov 00:50 UTC round
 - Daily YouTube check (5 credits): see performance.md. Channel growth slowing without new uploads.
+
+- 25 Nov 10:51 UTC round: scraped GTA VI category clips (24h). Built preview caseoh-wheelie-crash (26-56 s of SneakyZanyReindeerGrammarKing, words for mutes only). Skipped BruceGreene shoveler (dark footage, knife) and KaiCenat crash (19 s, under the 20 s reaction minimum). Waiting on owner yes/no.
