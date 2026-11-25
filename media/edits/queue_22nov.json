@@ -18,8 +18,9 @@
   {
    "clip": "funniest-1 (long-form)",
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
-   "revision": "20c24db9",
-   "publish_round_utc": "2026-11-25T18:50"
+   "revision": "c4b313af",
+   "publish_round_utc": "2026-11-25T18:50",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   },
   {
    "clip": "speed-delusional-npc",
@@ -31,51 +32,59 @@
   {
    "clip": "peanut-canal-teeter",
    "postId": "9772b1b5-d4ee-4128-86c0-ebfd3135c4e7",
-   "revision": "92536903",
-   "publish_round_utc": "2026-11-25T16:50"
+   "revision": "6b588ec8",
+   "publish_round_utc": "2026-11-25T16:50",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   },
   {
    "clip": "speed-lewis-hamilton",
    "postId": "a16ae161-3890-4d64-9b54-acf9e954fa61",
-   "revision": "b6d1de26",
-   "publish_round_utc": "2026-11-26T16:50"
+   "revision": "e9a61fef",
+   "publish_round_utc": "2026-11-26T16:50",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   },
   {
    "clip": "speed-bridge-jump",
    "postId": "12989c4d-5052-4692-baa2-1bd0a9d86723",
-   "revision": "a7e0068b",
+   "revision": "6b00acd1",
    "publish_round_utc": "2026-11-26T17:50",
-   "note": "media swapped to swear-muted upload a2023c00"
+   "note": "media swapped to swear-muted upload a2023c00",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   },
   {
    "clip": "caseoh-drive-thru",
    "postId": "28e9d95b-2d8c-4410-8b3d-c48ce8f81d87",
-   "revision": "f251bd9d",
-   "publish_round_utc": "2026-11-26T18:50"
+   "revision": "8771a733",
+   "publish_round_utc": "2026-11-26T18:50",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   },
   {
    "clip": "speed-ufo-alien",
    "postId": "390d5ad0-6386-400c-a466-bfc1b0f758d3",
-   "revision": "a224708a",
-   "publish_round_utc": "2026-11-25T17:50"
+   "revision": "e2facfa5",
+   "publish_round_utc": "2026-11-25T17:50",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   },
   {
    "clip": "moist-scooter-crash",
    "postId": "3f81929c-7e35-4f37-bd16-3e34a310b561",
-   "revision": "86accb60",
-   "publish_round_utc": "2026-11-25T19:50"
+   "revision": "3e538744",
+   "publish_round_utc": "2026-11-25T19:50",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   },
   {
    "clip": "moist-npc-chase",
    "postId": "7e0c8106-aa2c-4371-9695-62fad277da45",
-   "revision": "281f5624",
-   "publish_round_utc": "2026-11-26T19:50"
+   "revision": "d6dc052a",
+   "publish_round_utc": "2026-11-26T19:50",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   },
   {
    "clip": "moist-flipped-car-fight",
    "postId": "1f568fc6-03c4-42a4-b117-414834ea0891",
-   "revision": "73068642",
-   "publish_round_utc": "2026-11-27T16:50"
+   "revision": "1274204e",
+   "publish_round_utc": "2026-11-27T16:50",
+   "mode": "publishAt set in draft (25 Nov); publish once, YouTube goes public at slot"
   }
  ],
  "scheduled_ig_tt": [
