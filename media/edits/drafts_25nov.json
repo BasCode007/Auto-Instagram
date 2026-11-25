@@ -60,5 +60,52 @@
    "yt": "11-28 19:50"
   }
  },
- "note": "One draft per clip with IG+TT+YT; YouTube accepts publishAt in the draft (no update_video credits). Status: publishing."
+ "note": "One draft per clip with IG+TT+YT; YouTube accepts publishAt in the draft (no update_video credits). Status: publishing.",
+ "youtube_retry": {
+  "reason": "YouTube daily upload limit (uploadLimitExceeded) at 12:53 UTC; vidIQ holds until 13:53. Retry one per round with publicationIds; if slot passed, draft_update publishAt (needs replaceScheduled? no: failed dest needs full settings) first.",
+  "pending": [
+   {
+    "clip": "moist-scooter-crash",
+    "postId": "3f81929c-7e35-4f37-bd16-3e34a310b561",
+    "pub": "34331b19-3d07-4552-b350-6f4e15f37ee3",
+    "slot": "2026-11-25T19:50Z"
+   },
+   {
+    "clip": "speed-lewis-hamilton",
+    "postId": "a16ae161-3890-4d64-9b54-acf9e954fa61",
+    "pub": "12a8d6cc-9dca-4aea-a68b-caccd779bb3f",
+    "slot": "2026-11-26T16:50Z"
+   },
+   {
+    "clip": "speed-bridge-jump",
+    "postId": "12989c4d-5052-4692-baa2-1bd0a9d86723",
+    "pub": "36a5cf09-ff9c-4fcb-a0dc-9d0baff9cd3d",
+    "slot": "2026-11-26T17:50Z"
+   },
+   {
+    "clip": "caseoh-drive-thru",
+    "postId": "28e9d95b-2d8c-4410-8b3d-c48ce8f81d87",
+    "pub": "feec37ee-c418-459c-b538-6022f07c18fe",
+    "slot": "2026-11-26T18:50Z"
+   },
+   {
+    "clip": "moist-npc-chase",
+    "postId": "7e0c8106-aa2c-4371-9695-62fad277da45",
+    "pub": "526a9c67-656c-45f2-b695-93f6eefc9608",
+    "slot": "2026-11-26T19:50Z"
+   },
+   {
+    "clip": "moist-flipped-car-fight",
+    "postId": "1f568fc6-03c4-42a4-b117-414834ea0891",
+    "pub": "5e327a7e-6992-4d73-a8cd-de499cfe39fe",
+    "slot": "2026-11-27T16:50Z"
+   }
+  ],
+  "in_progress": {
+   "clip": "funniest-1",
+   "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
+   "slot": "2026-11-25T18:50Z"
+  }
+ },
+ "status": "All 7 published 25 Nov ~12:50: IG+TT scheduled, YouTube uploaded private with publishAt"
 }

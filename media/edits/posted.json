@@ -147,5 +147,62 @@
    "url": "https://www.tiktok.com/@vicecityreplayzvi/video/7711501686077934854",
    "published_utc": "2026-11-23T22:45Z"
   }
- ]
+ ],
+ "youtube_scheduled": [
+  {
+   "clip": "kai-cop-crash",
+   "url": "https://www.youtube.com/watch?v=e2j5HU6KPEA",
+   "goes_public_utc": "2026-11-27T17:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  },
+  {
+   "clip": "caseoh-wheelie-crash",
+   "url": "https://www.youtube.com/watch?v=yYNnR1AJTUQ",
+   "goes_public_utc": "2026-11-27T18:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  },
+  {
+   "clip": "speed-red-hulk",
+   "url": "https://www.youtube.com/watch?v=8IpgLHo7-FE",
+   "goes_public_utc": "2026-11-27T19:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  },
+  {
+   "clip": "gta6-best-clips-1",
+   "url": "https://www.youtube.com/watch?v=ForG1TpyHpg",
+   "goes_public_utc": "2026-11-28T16:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  },
+  {
+   "clip": "bruce-shovel-fight",
+   "url": "https://www.youtube.com/watch?v=by4g9mncCDo",
+   "goes_public_utc": "2026-11-28T17:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  },
+  {
+   "clip": "speed-tv-channels",
+   "url": "https://www.youtube.com/watch?v=BkfQkEYJrOs",
+   "goes_public_utc": "2026-11-28T18:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  },
+  {
+   "clip": "tminnzy-plane-jump",
+   "url": "https://www.youtube.com/watch?v=XEaNMylKsIY",
+   "goes_public_utc": "2026-11-28T19:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  },
+  {
+   "clip": "peanut-canal-teeter",
+   "url": "https://www.youtube.com/watch?v=GXTNzvAR6dI",
+   "goes_public_utc": "2026-11-25T16:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  },
+  {
+   "clip": "speed-ufo-alien",
+   "url": "https://www.youtube.com/watch?v=-5ndnnJwSpE",
+   "goes_public_utc": "2026-11-25T17:50Z",
+   "uploaded": "2026-11-25T12:5xZ private+publishAt"
+  }
+ ],
+ "ig_tt_scheduled_25nov": "see media/edits/drafts_25nov.json (7 clips, IG hourly 13:00-19:00, TT 13:15-22:15)"
 }
