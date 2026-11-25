@@ -237,3 +237,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - Daily YouTube check (5 credits): see performance.md. Channel growth slowing without new uploads.
 
 - 25 Nov 10:51 UTC round: scraped GTA VI category clips (24h). Built preview caseoh-wheelie-crash (26-56 s of SneakyZanyReindeerGrammarKing, words for mutes only). Skipped BruceGreene shoveler (dark footage, knife) and KaiCenat crash (19 s, under the 20 s reaction minimum). Waiting on owner yes/no.
+- 25 Nov 11:51 UTC round: scraped ishowspeed (no clips listed), theburntpeanut, jasontheween. Rejected Peanut "Oopsie" (dark, swimsuit focus, crude line) and "caught in 4k" (mostly static map menu). Jason clips under 40 views. No new preview.
