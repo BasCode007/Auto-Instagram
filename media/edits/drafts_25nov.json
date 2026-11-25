@@ -67,8 +67,9 @@
    {
     "clip": "moist-scooter-crash",
     "postId": "3f81929c-7e35-4f37-bd16-3e34a310b561",
-    "pub": "34331b19-3d07-4552-b350-6f4e15f37ee3",
-    "slot": "2026-11-27T13:50Z"
+    "pub": "cb278d40-3b16-4ced-a5b1-816b00ea34a6",
+    "slot": "2026-11-27T13:50Z",
+    "note": "draft_update done (slot 27 Nov 13:50); retry 25 Nov 22:55 failed limitReached"
    },
    {
     "clip": "speed-lewis-hamilton",
@@ -106,7 +107,8 @@
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
    "slot": "2026-11-25T18:50Z"
   },
-  "note": "Owner 25 Nov 13:05: YouTube Shorts 3 h apart (grid 13:50/16:50/19:50/22:50 UTC). Failed destination needs full settings in draft_update (title, privacyStatus public, categoryId 20, publishAt=slot) before publish with publicationIds."
+  "note": "Owner 25 Nov 13:05: YouTube Shorts 3 h apart (grid 13:50/16:50/19:50/22:50 UTC). Failed destination needs full settings in draft_update (title, privacyStatus public, categoryId 20, publishAt=slot) before publish with publicationIds.",
+  "next_try_after": "2026-11-26T05:00Z (6 h rule; vidIQ hold until 01:08Z)"
  },
  "status": "All 7 published 25 Nov ~12:50: IG+TT scheduled, YouTube uploaded private with publishAt",
  "youtube_schedule_3h": [
