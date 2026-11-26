@@ -253,3 +253,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 26 Nov 12:52 UTC: YouTube upload limit lifted. Scooter Short uploaded (Fl47sYt4wcQ, public 27 Nov 13:50). 5 retries left, one per round.
 - 26 Nov 12:56 UTC: daily trends (5 credits). GTA 6 vs GTA 5 comparisons dominate (2-12M views).
 - 26 Nov 13:53 UTC: Lewis Hamilton YouTube Short uploading (slot 27 Nov 16:50). Confirm URL next round.
+- 26 Nov 14:52 UTC: Hamilton Short uploaded (H9MjN1C91X4, public 27 Nov 16:50). Bridge jump publish sent (slot 27 Nov 22:50).

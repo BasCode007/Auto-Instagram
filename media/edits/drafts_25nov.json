@@ -65,17 +65,11 @@
   "reason": "YouTube daily upload limit (uploadLimitExceeded) at 12:53 UTC; vidIQ holds until 13:53. Retry one per round with publicationIds; if slot passed, draft_update publishAt (needs replaceScheduled? no: failed dest needs full settings) first.",
   "pending": [
    {
-    "clip": "speed-lewis-hamilton",
-    "postId": "a16ae161-3890-4d64-9b54-acf9e954fa61",
-    "pub": "705c60ca-899f-403c-939b-68f555b19532",
-    "slot": "2026-11-27T16:50Z",
-    "note": "uploading 26 Nov 13:53 (rev 5b069fad), confirm URL next round"
-   },
-   {
     "clip": "speed-bridge-jump",
     "postId": "12989c4d-5052-4692-baa2-1bd0a9d86723",
-    "pub": "36a5cf09-ff9c-4fcb-a0dc-9d0baff9cd3d",
-    "slot": "2026-11-27T22:50Z"
+    "pub": "4997a496-4c17-4f44-852f-afb923cf5fea",
+    "slot": "2026-11-27T22:50Z",
+    "note": "publish sent 26 Nov 14:52 (rev af6253b2); confirm URL next round"
    },
    {
     "clip": "caseoh-drive-thru",
@@ -149,7 +143,7 @@
   [
    "2026-11-27T16:50Z",
    "speed-lewis-hamilton",
-   "RETRY"
+   "H9MjN1C91X4"
   ],
   [
    "2026-11-27T19:50Z",
