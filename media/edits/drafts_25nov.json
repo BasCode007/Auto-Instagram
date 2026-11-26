@@ -65,13 +65,6 @@
   "reason": "YouTube daily upload limit (uploadLimitExceeded) at 12:53 UTC; vidIQ holds until 13:53. Retry one per round with publicationIds; if slot passed, draft_update publishAt (needs replaceScheduled? no: failed dest needs full settings) first.",
   "pending": [
    {
-    "clip": "moist-scooter-crash",
-    "postId": "3f81929c-7e35-4f37-bd16-3e34a310b561",
-    "pub": "cb278d40-3b16-4ced-a5b1-816b00ea34a6",
-    "slot": "2026-11-27T13:50Z",
-    "note": "draft_update done (slot 27 Nov 13:50); retry 25 Nov 22:55 failed limitReached"
-   },
-   {
     "clip": "speed-lewis-hamilton",
     "postId": "a16ae161-3890-4d64-9b54-acf9e954fa61",
     "pub": "12a8d6cc-9dca-4aea-a68b-caccd779bb3f",
@@ -108,7 +101,7 @@
    "slot": "2026-11-25T18:50Z"
   },
   "note": "Owner 25 Nov 13:05: YouTube Shorts 3 h apart (grid 13:50/16:50/19:50/22:50 UTC). Failed destination needs full settings in draft_update (title, privacyStatus public, categoryId 20, publishAt=slot) before publish with publicationIds.",
-  "next_try_after": "2026-11-26T12:00Z (failed again 05:52; vidIQ hold to 10:01Z; 6 h rule)"
+  "next_try_after": "2026-11-26T13:50Z (limit lifted 12:52; one per round)"
  },
  "status": "All 7 published 25 Nov ~12:50: IG+TT scheduled, YouTube uploaded private with publishAt",
  "youtube_schedule_3h": [
@@ -150,7 +143,7 @@
   [
    "2026-11-27T13:50Z",
    "moist-scooter-crash",
-   "RETRY"
+   "Fl47sYt4wcQ"
   ],
   [
    "2026-11-27T16:50Z",
