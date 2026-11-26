@@ -131,3 +131,10 @@ Instagram page total 12,683 views, 2 followers. No new post has gone out since t
 
 ## 25 Nov 00:50 UTC, YouTube snapshot
 - Growth has slowed: NPC 1,131 (+258 in 24 h), car 1,236 (+386), apples 1,349, Lacy cows 1,337, golf cart 1,297. Nothing new posted on 24 Nov (approvals not answered), so the channel had no fresh Shorts to push.
+
+## 26 Nov 00:52 UTC YouTube snapshot (vidiq_user_videos, 5 credits)
+- UFO/aliens Short (public 22:50, 2 h): 345 views, 11 likes. Strong start.
+- Peanut canal (public 16:50, 8 h): 56 views. Weak.
+- Funniest Moments #1 long-form (public 18:50, 6 h): 1 view. Long-form gets almost no push on a new channel; Shorts drive the channel.
+- Older Shorts creeping: apples 1,421, Lacy cows 1,337, golf cart 1,299, $47K car 1,246, NPC 1,133, Lacy downtime 1,153, bank app 1,052.
+- Learning: "GTA 6 has X?!" discovery hooks keep winning (apples, aliens, car, bank app). Streamer-name-led titles under 100 views.
