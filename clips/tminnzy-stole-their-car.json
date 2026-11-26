@@ -1,0 +1,183 @@
+{
+ "id": "tminnzy-stole-their-car",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/136192832__HardVictoriousPeafowlTwitchRPG-j8Q8j8GsgrudaSJH.mp4",
+ "source_url": "https://www.twitch.tv/tminnzy/clip/HardVictoriousPeafowlTwitchRPG-j8Q8j8GsgrudaSJH",
+ "source_range": null,
+ "creator": "tminnzy",
+ "hook": "HE STOLE THEIR *CAR* RIGHT IN FRONT OF THEM",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 23.5,
+   "x": 0.5
+  }
+ ],
+ "words": [
+  [
+   "Oh",
+   3.92,
+   4.7
+  ],
+  [
+   "Yeah",
+   8.7,
+   9.48
+  ],
+  [
+   "Shit",
+   12.18,
+   12.96
+  ],
+  [
+   "I",
+   12.96,
+   13.58
+  ],
+  [
+   "got",
+   13.58,
+   16.3
+  ],
+  [
+   "got",
+   16.3,
+   16.58
+  ],
+  [
+   "my",
+   16.58,
+   16.76
+  ],
+  [
+   "Lambo",
+   16.76,
+   17.26
+  ],
+  [
+   "back",
+   17.26,
+   17.54
+  ],
+  [
+   "bitch",
+   17.54,
+   18.4
+  ],
+  [
+   "Which",
+   20.08,
+   20.86
+  ],
+  [
+   "is",
+   20.86,
+   21.02
+  ],
+  [
+   "good",
+   21.02,
+   21.54
+  ],
+  [
+   "by",
+   21.54,
+   22.52
+  ],
+  [
+   "another",
+   22.52,
+   22.76
+  ],
+  [
+   "one",
+   22.76,
+   23.16
+  ],
+  [
+   "It's",
+   24.06,
+   24.84
+  ],
+  [
+   "a",
+   24.84,
+   25.04
+  ],
+  [
+   "good",
+   25.04,
+   25.58
+  ],
+  [
+   "by",
+   25.58,
+   25.8
+  ],
+  [
+   "another",
+   25.8,
+   26.12
+  ],
+  [
+   "one,",
+   26.12,
+   26.4
+  ],
+  [
+   "but",
+   26.46,
+   26.64
+  ],
+  [
+   "now",
+   26.64,
+   27.94
+  ],
+  [
+   "I'm",
+   27.94,
+   28.08
+  ],
+  [
+   "up",
+   28.08,
+   28.46
+  ],
+  [
+   "now",
+   28.46,
+   29.38
+  ],
+  [
+   "I'm",
+   29.38,
+   29.58
+  ],
+  [
+   "up",
+   29.58,
+   29.7
+  ]
+ ],
+ "burn_captions": false,
+ "notes": "Tminnzy GTA VI top clip (24h): steals a gang's SUV while they watch, drives off as they beg. Cut before pause menu. Words only drive mutes.",
+ "facecam": [
+  0.79,
+  0.278,
+  0.2,
+  0.33
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}
