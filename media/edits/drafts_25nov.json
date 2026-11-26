@@ -65,13 +65,6 @@
   "reason": "YouTube daily upload limit (uploadLimitExceeded) at 12:53 UTC; vidIQ holds until 13:53. Retry one per round with publicationIds; if slot passed, draft_update publishAt (needs replaceScheduled? no: failed dest needs full settings) first.",
   "pending": [
    {
-    "clip": "speed-bridge-jump",
-    "postId": "12989c4d-5052-4692-baa2-1bd0a9d86723",
-    "pub": "4997a496-4c17-4f44-852f-afb923cf5fea",
-    "slot": "2026-11-27T22:50Z",
-    "note": "publish sent 26 Nov 14:52 (rev af6253b2); confirm URL next round"
-   },
-   {
     "clip": "caseoh-drive-thru",
     "postId": "28e9d95b-2d8c-4410-8b3d-c48ce8f81d87",
     "pub": "feec37ee-c418-459c-b538-6022f07c18fe",
@@ -153,7 +146,7 @@
   [
    "2026-11-27T22:50Z",
    "speed-bridge-jump",
-   "RETRY"
+   "TV6c7IbcNTU"
   ],
   [
    "2026-11-28T13:50Z",
