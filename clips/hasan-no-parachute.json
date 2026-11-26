@@ -1,0 +1,95 @@
+{
+ "id": "hasan-no-parachute",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/227405999__GoldenPoisedKeyboardRedCoat-HO3GxS3GCBEqzXcR.mp4",
+ "source_url": "https://www.twitch.tv/hasanabi/clip/GoldenPoisedKeyboardRedCoat-HO3GxS3GCBEqzXcR",
+ "source_range": null,
+ "creator": "hasanabi",
+ "hook": "HE FORGOT THE *PARACHUTE* IN GTA 6",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 14.0,
+   "x": 0.4,
+   "zoom": 1.2,
+   "y": 0.9
+  }
+ ],
+ "words": [
+  [
+   "yeah",
+   0.0,
+   0.7
+  ],
+  [
+   "wait",
+   0.7,
+   5.42
+  ],
+  [
+   "how",
+   5.42,
+   5.64
+  ],
+  [
+   "do",
+   5.64,
+   5.76
+  ],
+  [
+   "you",
+   5.76,
+   5.86
+  ],
+  [
+   "how",
+   5.86,
+   6.14
+  ],
+  [
+   "do",
+   6.14,
+   6.26
+  ],
+  [
+   "you",
+   6.26,
+   6.34
+  ],
+  [
+   "do",
+   6.34,
+   6.48
+  ],
+  [
+   "that",
+   6.48,
+   6.8
+  ],
+  [
+   "fuck",
+   18.42,
+   18.86
+  ]
+ ],
+ "burn_captions": false,
+ "notes": "Reaction from GTA VI category top clips (24h), HasanAbi: rooftop jump, parachute not deployed, wasted. Clip has own captions; words only drive mutes. Cut before the black end screen.",
+ "facecam": [
+  0.746,
+  0.389,
+  0.25,
+  0.212
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}

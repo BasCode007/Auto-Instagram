@@ -245,3 +245,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 25 Nov 22:55 UTC: retried scooter YouTube upload (new slot 27 Nov 13:50): still YouTube daily upload limit. Next retry after 05:00 UTC 26 Nov. Several rounds today were cut short by worker restarts.
 - 25 Nov 23:52 UTC: all 7 new clips live on Instagram and TikTok (14/14 completed). YouTube retry waits until after 05:00 UTC.
 - 26 Nov 00:52 UTC: daily YouTube engagement check (5 credits). UFO 345 views in 2 h; Funniest #1 long-form 1 view after 6 h.
+- 26 Nov 01:55 UTC: category scrape. Built preview hasan-no-parachute (14 s). Skipped Tminnzy old-lady kidnap (dark/black screen, story scene) and Lilypichu Hold Square (mostly blurred pause menu).
