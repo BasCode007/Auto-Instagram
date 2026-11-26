@@ -255,3 +255,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 26 Nov 13:53 UTC: Lewis Hamilton YouTube Short uploading (slot 27 Nov 16:50). Confirm URL next round.
 - 26 Nov 14:52 UTC: Hamilton Short uploaded (H9MjN1C91X4, public 27 Nov 16:50). Bridge jump publish sent (slot 27 Nov 22:50).
 - 26 Nov 15:51 UTC: bridge jump uploaded (TV6c7IbcNTU, public 27 Nov 22:50). Drive-thru draft_update hit an approval prompt that went unanswered; retry next round.
+- 26 Nov 17:51 UTC: drive-thru draft_update needs an approval prompt in the app; went unanswered twice (15:51, 16:51). Holding the last 3 YouTube retries until the owner is present.
