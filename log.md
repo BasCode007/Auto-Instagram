@@ -248,3 +248,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 26 Nov 01:55 UTC: category scrape. Built preview hasan-no-parachute (14 s). Skipped Tminnzy old-lady kidnap (dark/black screen, story scene) and Lilypichu Hold Square (mostly blurred pause menu).
 - 26 Nov 03:05 UTC: scraped kaicenat/xqc/lacy. Built preview kai-speed-million-race (Kai vs Speed first-to-$1M challenge, 25 s). xQc 5-star getaway skipped (35 views, repetitive audio). SleepyIntelligentSamosa (race end) kept for Best Clips #2 / follow-up.
 - 26 Nov 03:52 UTC: quiet round. 2 previews awaiting owner (kai-speed-million-race, hasan-no-parachute). YouTube retry due after 05:00.
+- 26 Nov 05:52 UTC: YouTube retry (scooter) failed again, daily upload limit. Next try after 12:00 UTC. Channel likely unverified.

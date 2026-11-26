@@ -108,7 +108,7 @@
    "slot": "2026-11-25T18:50Z"
   },
   "note": "Owner 25 Nov 13:05: YouTube Shorts 3 h apart (grid 13:50/16:50/19:50/22:50 UTC). Failed destination needs full settings in draft_update (title, privacyStatus public, categoryId 20, publishAt=slot) before publish with publicationIds.",
-  "next_try_after": "2026-11-26T05:00Z (6 h rule; vidIQ hold until 01:08Z)"
+  "next_try_after": "2026-11-26T12:00Z (failed again 05:52; vidIQ hold to 10:01Z; 6 h rule)"
  },
  "status": "All 7 published 25 Nov ~12:50: IG+TT scheduled, YouTube uploaded private with publishAt",
  "youtube_schedule_3h": [
