@@ -246,3 +246,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 25 Nov 23:52 UTC: all 7 new clips live on Instagram and TikTok (14/14 completed). YouTube retry waits until after 05:00 UTC.
 - 26 Nov 00:52 UTC: daily YouTube engagement check (5 credits). UFO 345 views in 2 h; Funniest #1 long-form 1 view after 6 h.
 - 26 Nov 01:55 UTC: category scrape. Built preview hasan-no-parachute (14 s). Skipped Tminnzy old-lady kidnap (dark/black screen, story scene) and Lilypichu Hold Square (mostly blurred pause menu).
+- 26 Nov 03:05 UTC: scraped kaicenat/xqc/lacy. Built preview kai-speed-million-race (Kai vs Speed first-to-$1M challenge, 25 s). xQc 5-star getaway skipped (35 views, repetitive audio). SleepyIntelligentSamosa (race end) kept for Best Clips #2 / follow-up.
