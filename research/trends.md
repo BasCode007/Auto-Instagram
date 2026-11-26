@@ -58,3 +58,9 @@ Ideas to act on: a "GTA 6 bugs and glitches" Short/compilation series from Twitc
 - "Evolution of GTA protagonists GTA 3 → GTA 6", 87K: series-history format, possible narrated Short.
 - Crash clips ("Joe Crash", "crash out") 15-19K on tiny channels: crash/physics still works.
 - Balance: 1,633 credits (1,503 renewable + 130 add-on), renews 18 Dec.
+
+## 26 Nov 12:55 UTC (vidiq_trending_videos, Shorts, "GTA 6", recentVph, since 23 Nov)
+- GTA 6 vs GTA 5 is now THE format: "GTA 6 vs GTA 5 Physics Comparison" 2.1M in ~27 h on a 32.7K channel (86K vph); "GTA 5 vs GTA 6 NPC's" 2.6M (68K vph); "GTA 6 vs GTA 5 Train Edit" 12.1M; Dimucc 3.4M. All 10-30 s, side-by-side or split-screen.
+- "GTA 6 best clips" (133 subs) now 2.09M, still climbing; Best Clips #2 is worth making.
+- "Realistic details" Shorts (Detalhes Realistas, 885K) and "GTA 6 Happy Ending" streamer ending reaction (707K, ending content stays off-limits for us).
+- Action: a 10-15 s GTA 6 vs GTA 5 physics/NPC comparison Short needs GTA 5 footage we do not have rights-clean; option is our own narrated "GTA 6 physics" Short with GTA 6 footage only (crash/ragdoll moments) titled "GTA 6 physics are insane". Raise with owner.
