@@ -64,3 +64,11 @@ Ideas to act on: a "GTA 6 bugs and glitches" Short/compilation series from Twitc
 - "GTA 6 best clips" (133 subs) now 2.09M, still climbing; Best Clips #2 is worth making.
 - "Realistic details" Shorts (Detalhes Realistas, 885K) and "GTA 6 Happy Ending" streamer ending reaction (707K, ending content stays off-limits for us).
 - Action: a 10-15 s GTA 6 vs GTA 5 physics/NPC comparison Short needs GTA 5 footage we do not have rights-clean; option is our own narrated "GTA 6 physics" Short with GTA 6 footage only (crash/ragdoll moments) titled "GTA 6 physics are insane". Raise with owner.
+
+## 27 Nov 12:53 UTC (vidiq_trending_videos, Shorts, "GTA 6", recentVph, since 24 Nov)
+- GTA 5 vs GTA 6 still leads but shifting to animated/meme formats (SuperOops 682K, "GTA 5 vs GTA 6!" 21K on a 5-sub channel).
+- "Important GTA 6 Experiment" (Ninye 6.3M subs) 365K: experiment/test format, like our physics idea.
+- "Strongest GTA 6 NPC" (Asmongold Shorts) 167K, 363 comments: NPC strength/fights still hot.
+- "GTA 6 Happy Ending" now 939K (ending content stays off-limits).
+- "GTA 6 Physics" (48K-sub channel) 9K in 14 h: physics clips steady, not explosive.
+- Action: keep discovery/experiment hooks ("You can X in GTA 6?!", "I tested X in GTA 6"). Kayak-on-land fits.
