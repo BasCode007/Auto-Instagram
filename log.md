@@ -264,3 +264,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 27 Nov 01:58 UTC: category scrape (mostly non-English). Built preview vinesauce-land-kayak (25 s, discovery hook). Skipped "hard r" (slur title) and an adult-performer channel clip.
 - 27 Nov 09:58 UTC: scraped ishowspeed/kaicenat/caseoh_/jynxzi. Rejected Speed "fights 2 gang members" (story mission in burning house, heavy blood) and Kai "witness flying kick" (beating women NPCs, brand risk). No new preview.
 - 27 Nov 12:53 UTC: daily trends (5 credits). Experiment/test and NPC-strength formats rising.
+- 27 Nov 16:00 UTC: built preview banks-car-flip-glitch (21.5 s, car flips on its side during a carjack).
