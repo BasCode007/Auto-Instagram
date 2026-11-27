@@ -138,3 +138,10 @@ Instagram page total 12,683 views, 2 followers. No new post has gone out since t
 - Funniest Moments #1 long-form (public 18:50, 6 h): 1 view. Long-form gets almost no push on a new channel; Shorts drive the channel.
 - Older Shorts creeping: apples 1,421, Lacy cows 1,337, golf cart 1,299, $47K car 1,246, NPC 1,133, Lacy downtime 1,153, bank app 1,052.
 - Learning: "GTA 6 has X?!" discovery hooks keep winning (apples, aliens, car, bank app). Streamer-name-led titles under 100 views.
+
+## 27 Nov 00:53 UTC YouTube snapshot (5 credits)
+- UFO/aliens 836 views (+491 in 24 h), 24 likes: best recent Short.
+- Kai cop crash 189 (11 h); CaseOh wheelie 64 (8 h); Peanut canal 58 (32 h); shovel fight and TV channels 0 so far (5 h / 2 h, views may lag).
+- Funniest Moments #1 long-form still 1 view after 30 h: long-form gets no traction yet on this channel.
+- Older: apples 1,474, $47K car 1,247, golf cart 1,299, NPC 1,134, Lacy downtime 1,153.
+- Takeaway: discovery "GTA 6 has X?!" hooks still win (aliens, apples, car). Streamer-name hooks lag on YouTube.

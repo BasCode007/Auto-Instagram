@@ -260,3 +260,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 27 Nov 00:12 UTC: published 3 approved clips (IG 01/02/03:00, TT 01:15/02:45/04:15, YT 29 Nov 16:50/19:50/22:50).
 - 27 Nov 00:50 UTC: 5 YouTube uploads done (3 new + drive-thru + NPC chase), flipped-car uploading. No limit errors.
 - 27 Nov 00:51 UTC: flipped-car Short uploaded (_TPcs0XwzBQ). YouTube retry list empty.
+- 27 Nov 00:53 UTC: daily YouTube snapshot (5 credits). Aliens 836, Kai crash 189.
