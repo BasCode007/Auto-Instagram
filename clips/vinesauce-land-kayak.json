@@ -1,0 +1,93 @@
+{
+ "id": "vinesauce-land-kayak",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/42084540__MoralFastPenguinUWot-LG0z7lwE4TPs24CW.mp4",
+ "source_url": "https://www.twitch.tv/vinesauce/clip/MoralFastPenguinUWot-LG0z7lwE4TPs24CW",
+ "source_range": null,
+ "creator": "vinesauce",
+ "hook": "YOU CAN *KAYAK ON LAND* IN GTA 6?!",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 25.2,
+   "x": 0.45
+  }
+ ],
+ "words": [
+  [
+   "It's",
+   15.96,
+   16.84
+  ],
+  [
+   "my",
+   16.84,
+   16.96
+  ],
+  [
+   "getaway",
+   16.96,
+   17.26
+  ],
+  [
+   "vehicle.",
+   17.26,
+   17.68
+  ],
+  [
+   "Is",
+   17.92,
+   18.58
+  ],
+  [
+   "this",
+   18.58,
+   19.54
+  ],
+  [
+   "the",
+   19.54,
+   19.7
+  ],
+  [
+   "person",
+   19.7,
+   23.4
+  ],
+  [
+   "I",
+   23.4,
+   23.56
+  ],
+  [
+   "crashed",
+   23.56,
+   24.08
+  ],
+  [
+   "into?",
+   24.08,
+   24.54
+  ]
+ ],
+ "burn_captions": true,
+ "notes": "Vinesauce GTA VI top clip (24h): paddles a kayak across sand, gravel and a parking lot. Physics/discovery angle.",
+ "facecam": [
+  0.017,
+  0.555,
+  0.157,
+  0.205
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}

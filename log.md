@@ -261,3 +261,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 27 Nov 00:50 UTC: 5 YouTube uploads done (3 new + drive-thru + NPC chase), flipped-car uploading. No limit errors.
 - 27 Nov 00:51 UTC: flipped-car Short uploaded (_TPcs0XwzBQ). YouTube retry list empty.
 - 27 Nov 00:53 UTC: daily YouTube snapshot (5 credits). Aliens 836, Kai crash 189.
+- 27 Nov 01:58 UTC: category scrape (mostly non-English). Built preview vinesauce-land-kayak (25 s, discovery hook). Skipped "hard r" (slur title) and an adult-performer channel clip.
