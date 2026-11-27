@@ -65,18 +65,6 @@
   "reason": "YouTube daily upload limit (uploadLimitExceeded) at 12:53 UTC; vidIQ holds until 13:53. Retry one per round with publicationIds; if slot passed, draft_update publishAt (needs replaceScheduled? no: failed dest needs full settings) first.",
   "pending": [
    {
-    "clip": "caseoh-drive-thru",
-    "postId": "28e9d95b-2d8c-4410-8b3d-c48ce8f81d87",
-    "pub": "feec37ee-c418-459c-b538-6022f07c18fe",
-    "slot": "2026-11-28T13:50Z"
-   },
-   {
-    "clip": "moist-npc-chase",
-    "postId": "7e0c8106-aa2c-4371-9695-62fad277da45",
-    "pub": "526a9c67-656c-45f2-b695-93f6eefc9608",
-    "slot": "2026-11-28T22:50Z"
-   },
-   {
     "clip": "moist-flipped-car-fight",
     "postId": "1f568fc6-03c4-42a4-b117-414834ea0891",
     "pub": "5e327a7e-6992-4d73-a8cd-de499cfe39fe",
@@ -88,7 +76,7 @@
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
    "slot": "2026-11-25T18:50Z"
   },
-  "note": "Owner 25 Nov 13:05: YouTube Shorts 3 h apart (grid 13:50/16:50/19:50/22:50 UTC). Failed destination needs full settings in draft_update (title, privacyStatus public, categoryId 20, publishAt=slot) before publish with publicationIds.",
+  "note": "All retries sent 27 Nov 00:49 with owner present; flipped-car upload in progress, confirm next round.",
   "next_try_after": "2026-11-26T13:50Z (limit lifted 12:52; one per round)"
  },
  "status": "All 7 published 25 Nov ~12:50: IG+TT scheduled, YouTube uploaded private with publishAt",
@@ -151,7 +139,7 @@
   [
    "2026-11-28T13:50Z",
    "caseoh-drive-thru",
-   "RETRY"
+   "lS9sgsqrkeg"
   ],
   [
    "2026-11-28T16:50Z",
@@ -166,27 +154,27 @@
   [
    "2026-11-28T22:50Z",
    "moist-npc-chase",
-   "RETRY"
+   "LnW-y3eIsTw"
   ],
   [
    "2026-11-29T13:50Z",
    "moist-flipped-car-fight",
-   "RETRY"
+   "(uploading 27 Nov 00:49)"
   ],
   [
    "2026-11-29T16:50Z",
    "kai-speed-million-race",
-   "?"
+   "bJMuX2nefVg"
   ],
   [
    "2026-11-29T19:50Z",
    "hasan-no-parachute",
-   "?"
+   "-ZtgZjjdZbk"
   ],
   [
    "2026-11-29T22:50Z",
    "tminnzy-stole-their-car",
-   "?"
+   "PUj2rqOPpWs"
   ]
  ]
 }
