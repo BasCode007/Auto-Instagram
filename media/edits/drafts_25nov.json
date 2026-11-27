@@ -63,20 +63,13 @@
  "note": "One draft per clip with IG+TT+YT; YouTube accepts publishAt in the draft (no update_video credits). Status: publishing.",
  "youtube_retry": {
   "reason": "YouTube daily upload limit (uploadLimitExceeded) at 12:53 UTC; vidIQ holds until 13:53. Retry one per round with publicationIds; if slot passed, draft_update publishAt (needs replaceScheduled? no: failed dest needs full settings) first.",
-  "pending": [
-   {
-    "clip": "moist-flipped-car-fight",
-    "postId": "1f568fc6-03c4-42a4-b117-414834ea0891",
-    "pub": "5e327a7e-6992-4d73-a8cd-de499cfe39fe",
-    "slot": "2026-11-29T13:50Z"
-   }
-  ],
+  "pending": [],
   "in_progress": {
    "clip": "funniest-1",
    "postId": "e55d7fa4-cc9c-4321-b307-5906bba477cd",
    "slot": "2026-11-25T18:50Z"
   },
-  "note": "All retries sent 27 Nov 00:49 with owner present; flipped-car upload in progress, confirm next round.",
+  "note": "All 6 done 27 Nov.",
   "next_try_after": "2026-11-26T13:50Z (limit lifted 12:52; one per round)"
  },
  "status": "All 7 published 25 Nov ~12:50: IG+TT scheduled, YouTube uploaded private with publishAt",
@@ -159,7 +152,7 @@
   [
    "2026-11-29T13:50Z",
    "moist-flipped-car-fight",
-   "(uploading 27 Nov 00:49)"
+   "_TPcs0XwzBQ"
   ],
   [
    "2026-11-29T16:50Z",
