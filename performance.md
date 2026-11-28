@@ -145,3 +145,8 @@ Instagram page total 12,683 views, 2 followers. No new post has gone out since t
 - Funniest Moments #1 long-form still 1 view after 30 h: long-form gets no traction yet on this channel.
 - Older: apples 1,474, $47K car 1,247, golf cart 1,299, NPC 1,134, Lacy downtime 1,153.
 - Takeaway: discovery "GTA 6 has X?!" hooks still win (aliens, apples, car). Streamer-name hooks lag on YouTube.
+
+## 28 Nov 00:52 UTC YouTube snapshot (5 credits) - WARNING
+- Six Shorts public since 26 Nov 19:50 all show 0 views (shovel 29 h, TV channels 26 h, scooter 11 h, Hamilton 1, Red Hulk 0, bridge 0).
+- Older counts frozen or slightly down: aliens 836 (same as 24 h ago), Kai crash 187 (was 189), car 1,249, apples 1,472.
+- Either vidIQ's view data is stale, or YouTube has stopped distributing new uploads (possible causes: reused-content / copyright claims on streamer footage, or a limit after the 25-26 Nov bulk uploads). Owner should check YouTube Studio > Content for Copyright/Restrictions notices.
