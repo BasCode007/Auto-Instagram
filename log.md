@@ -267,3 +267,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 27 Nov 16:00 UTC: built preview banks-car-flip-glitch (21.5 s, car flips on its side during a carjack).
 - 28 Nov 00:52 UTC: YouTube snapshot shows 0 views on all six Shorts published since 26 Nov evening; flagged to owner.
 - 28 Nov 02:50 UTC: category scrape. Rejected CohhCarnage "GTA NPCs" (NPC dialogue includes a slur), ohnePixel "almost almost" (dark bathroom scene, underwear), Quin69 bike escape (very dark, murky action). No new preview.
+- 28 Nov 03:50 UTC: scraped ishowspeed/kaicenat/xqc (+ jasontheween/peanut/lacy cut short). Speed "Lucia jumps off train bridge" clip was deleted; rest were repeats, off-game talk or sexual-themes flags. No new preview.
