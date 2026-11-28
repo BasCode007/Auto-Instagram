@@ -275,3 +275,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 28 Nov 08:51 UTC: quiet round. 4 previews await owner yes/no (cop tackle, grandma, kayak, car flip); holding new builds so the queue does not pile up. Next: trends after 12:00 UTC, drive-thru Short live 13:50 UTC.
 - 28 Nov 09:50 UTC: quiet round, holding new builds (4 previews awaiting owner).
 - 28 Nov 10:50 UTC: quiet round, holding new builds (4 previews awaiting owner).
+- 28 Nov 11:50 UTC: quiet round, holding new builds (4 previews awaiting owner). Trends check due next round (after 12:00).
