@@ -278,3 +278,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 28 Nov 11:50 UTC: quiet round, holding new builds (4 previews awaiting owner). Trends check due next round (after 12:00).
 - 28 Nov ~12:10 UTC: owner said yes to the physics Short. Built preview story-physics-tested (28 s narrated, voice only, 5 tests from 5 Twitch clips; voiceover 28 credits). Fixed car scene timing so the flip lands on screen and cropped out a burned-in stream caption on the rooftop jump.
 - 28 Nov 12:51 UTC: daily trends (5 credits): physics/suspension TEST format is #1 (3.2M). Balance 1,555.
+- 28 Nov 13:51 UTC: quiet round; drive-thru Short (lS9sgsqrkeg) scheduled public 13:50. 5 previews await owner (physics, cop tackle, grandma, kayak, car flip).
