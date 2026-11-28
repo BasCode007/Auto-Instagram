@@ -1,0 +1,5 @@
+CLIP story-physics-tested  |  28.6s  |  pillar: narrated story
+Source: None
+
+===== NOTES =====
+Owner approved the 'I tested GTA 6 physics' idea 28 Nov. Narrated, voice only, game audio 0, no facecam, no streamer names, no credit line. Source = media/raw/physics/physics_src.mp4 built from 5 Twitch clips (two brightened).

@@ -1,0 +1,77 @@
+{
+ "id": "story-physics-tested",
+ "pillar": "narrated story",
+ "kind": "reel",
+ "source": "physics/physics_src.mp4",
+ "source_url": null,
+ "source_range": null,
+ "creator": null,
+ "hook": "GTA 6 PHYSICS, *TESTED*",
+ "layout": "full",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 5.5,
+   "x": 0.55
+  },
+  {
+   "start": 5.5,
+   "end": 10.6,
+   "x": 0.45
+  },
+  {
+   "start": 10.6,
+   "end": 15.55,
+   "x": 0.4
+  },
+  {
+   "start": 15.55,
+   "end": 21.433,
+   "x": 0.45,
+   "zoom": 1.3,
+   "y": 0.5
+  },
+  {
+   "start": 21.433,
+   "end": 28.6,
+   "x": 0.45
+  }
+ ],
+ "words": [],
+ "burn_captions": false,
+ "caption_y": 1640,
+ "voiceover": {
+  "audio": "https://assets.vidiq.com/voiceovers/ca76f78c-d497-41e8-890c-459d833fda35/743ae8e5-78e0-42cd-9eb9-e1d927755ff6.mp3",
+  "voice": "Liam (vidIQ)",
+  "game_volume": 0
+ },
+ "script": [
+  "We tested GTA 6 physics. Test one: crash a motorbike into a pole.",
+  "Test two: a carjack goes wrong, and the car flips onto its side.",
+  "Test three: run from a cop on foot. He tackles you into the bushes.",
+  "Test four: jump off a rooftop with no parachute. Yeah... wasted.",
+  "Test five: paddle a kayak on dry land. It actually moves! Which test should we try next?"
+ ],
+ "facts": [
+  "Bike hits a pole and rider is thrown (Quin69 clip RREUCZR4, 0.3-5.8 s)",
+  "Car launched into the air and lands on its side after a carjack (clip S7r-zxD3, 4.5-9.6 s)",
+  "Cop tackles player into bushes, Busted (Loserfruit clip jNZkh4GT, 33-38 s)",
+  "Rooftop jump, no parachute, Wasted (clip HO3GxS3G, 7-13 s)",
+  "Kayak moves on sand/dirt (clip LG0z7lwE, 15.5-22.8 s)"
+ ],
+ "notes": "Owner approved the 'I tested GTA 6 physics' idea 28 Nov. Narrated, voice only, game audio 0, no facecam, no streamer names, no credit line. Source = media/raw/physics/physics_src.mp4 built from 5 Twitch clips (two brightened).",
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "captions": {
+  "instagram": "We tested GTA 6 physics \ud83e\uddea Bike vs pole, a flipping car, a cop tackle, no parachute and a kayak on dry land.\n\nWhich test should we try next? \ud83d\udc47\n\n#GTA6 #GTAVI #GTA6Clips #ViceCity #GrandTheftAuto #GTA6Gameplay #Gaming #GamingClips #RockstarGames #Leonida #GTA6Physics #Ragdoll #GTA6Tips",
+  "tiktok": "GTA 6 physics, tested \ud83e\uddea Which test should we try next? #GTA6 #GTAVI #GTA6Clips #ViceCity #GrandTheftAuto #GTA6Gameplay #Gaming #GamingClips #RockstarGames #Leonida #GTA6Physics #Ragdoll #GTA6Tips",
+  "youtube_title": "GTA 6 Physics, TESTED #Shorts",
+  "youtube_shorts": "We tested GTA 6 physics: bike vs pole, a flipping car, a cop tackle, no parachute and a kayak on dry land. Which test should we try next?\n\n#GTA6 #GTAVI #GTA6Clips #ViceCity #GrandTheftAuto #GTA6Gameplay #Gaming #GamingClips #RockstarGames #Leonida #GTA6Physics #Ragdoll #GTA6Tips #Shorts"
+ }
+}
