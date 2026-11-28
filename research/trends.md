@@ -72,3 +72,11 @@ Ideas to act on: a "GTA 6 bugs and glitches" Short/compilation series from Twitc
 - "GTA 6 Happy Ending" now 939K (ending content stays off-limits).
 - "GTA 6 Physics" (48K-sub channel) 9K in 14 h: physics clips steady, not explosive.
 - Action: keep discovery/experiment hooks ("You can X in GTA 6?!", "I tested X in GTA 6"). Kayak-on-land fits.
+
+## 28 Nov 12:51 UTC (vidiq_trending_videos, Shorts, "GTA 6", since 25 Nov, recentVph)
+- "Suspension Test: GTA 6 VS GTA 5" (Game Forensics, 119K subs) 3.2M in ~32 h, 10 s, 109K vph. Test/experiment format is the top Short right now.
+- "Important GTA 6 Experiment" (Ninye) 1.8M, 56 s. "GTA 5 vs GTA 6" 323K on a 1K-sub channel; "Tank GTA 6 vs GTA 5" 106K; "Convertible Comparison" 36K on 3.5K subs.
+- "Glitch Lucia GTA 6" 47K on a 1.2K-sub channel (11 s, 10% engagement): glitches still pull.
+- Memes/skits ("GTA 6 vs Girlfriend", "so... basically GTA 6") strong on big channels.
+- Action: physics-test Short (story-physics-tested) fits the #1 format; keep "test"/"experiment" titles. Car-flip glitch preview also fits "glitch".
+- Balance 1,555 credits (renews 18 Dec). Today: trends 5 + voiceover 28 = 33.
