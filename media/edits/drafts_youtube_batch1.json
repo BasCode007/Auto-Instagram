@@ -1,0 +1,76 @@
+{
+ "account": "YouTube Vice City Replayz (UCGMMqlEYmXFkFwZ4MfZ56Cg), public, category Gaming, 1440x2560 masters",
+ "status": "published (user approved 2026-11-19); 2 hit YouTube's daily upload limit",
+ "drafts": [
+  {
+   "clip": "kai-first-time-gta6",
+   "postId": "21c7e2e7-13c9-45b7-a3e0-6435c220fce3",
+   "revision": "7cca58c4",
+   "at": "2026-11-19T02:10:00Z",
+   "status": "uploaded, public at time"
+  },
+  {
+   "clip": "lacy-map-first-look",
+   "postId": "bcea915c-f2ab-41c0-a212-0f2ae3e6bb53",
+   "revision": "c2050b60",
+   "at": "2026-11-19T03:05:00Z",
+   "status": "uploaded, public at time"
+  },
+  {
+   "clip": "xqc-mirror-shave",
+   "postId": "3c3eba7c-f18c-49ad-bebd-5c50233ef77f",
+   "revision": "ea11e303",
+   "at": "2026-11-19T04:05:00Z",
+   "status": "FAILED uploadLimitExceeded - retry after 2026-11-20T02:10Z"
+  },
+  {
+   "clip": "tg-bridge-chase",
+   "postId": "119d9ae8-c363-4ef8-9730-03152e2aaeda",
+   "revision": "d4f33a36",
+   "at": "2026-11-19T05:05:00Z",
+   "status": "uploaded, public at time"
+  },
+  {
+   "clip": "lacy-cops-know-outfit",
+   "postId": "4aa7c999-4238-4c21-966f-d76627c1263b",
+   "revision": "fe5e2a70",
+   "at": "2026-11-19T06:05:00Z",
+   "status": "FAILED uploadLimitExceeded - retry after 2026-11-20T02:10Z"
+  },
+  {
+   "clip": "tg-pet-the-dog",
+   "postId": "b2e4add9-d231-4da8-a996-ef3559795acc",
+   "revision": "d6dc71ac",
+   "at": "2026-11-19T07:05:00Z",
+   "status": "uploaded, public at time"
+  },
+  {
+   "clip": "xqc-gym-squats",
+   "postId": "1c591c8e-c3b0-446b-98ae-59f9fcad1ea8",
+   "revision": "35b1b1fa",
+   "at": "2026-11-19T08:05:00Z",
+   "status": "uploaded, public at time"
+  },
+  {
+   "clip": "tg-only-9-percent",
+   "postId": "ef0214d3-f64d-484f-a415-e43486744698",
+   "revision": "04bf3f81",
+   "at": "2026-11-19T09:05:00Z",
+   "status": "uploaded, public at time"
+  },
+  {
+   "clip": "tg-fix-up-the-house",
+   "postId": "e84e5107-a15f-4f70-b81f-74eefea34764",
+   "revision": "57fce4a2",
+   "at": "2026-11-19T10:05:00Z",
+   "status": "uploaded, public at time"
+  },
+  {
+   "clip": "tg-paradise-taxi",
+   "postId": "277cd9a6-1cec-441f-a3bb-c017efc639ee",
+   "revision": "51c43222",
+   "at": "2026-11-19T11:05:00Z",
+   "status": "uploaded, public at time"
+  }
+ ]
+}

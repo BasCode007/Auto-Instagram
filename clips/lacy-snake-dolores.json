@@ -1,0 +1,165 @@
+{
+  "id": "lacy-snake-dolores",
+  "pillar": "gameplay clips",
+  "kind": "reel",
+  "source": "twitch-2932194507/sec_67294_67540.mp4",
+  "source_url": "https://www.twitch.tv/videos/2932194507",
+  "source_range": [
+    6729.4,
+    6754.0
+  ],
+  "creator": "lacy",
+  "hook": "JASON HAS A PET SNAKE NAMED *DOLORES*",
+  "credit": "@lacy on Twitch",
+  "layout": "stack",
+  "fps": 60,
+  "no_letterbox": true,
+  "preset": "medium",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 24.6
+    }
+  ],
+  "words": [
+    [
+      "Feed",
+      3.63,
+      4.21
+    ],
+    [
+      "Dolores",
+      4.21,
+      4.81
+    ],
+    [
+      "is",
+      4.81,
+      5.93
+    ],
+    [
+      "that",
+      7.72,
+      7.8
+    ],
+    [
+      "a",
+      7.8,
+      7.9
+    ],
+    [
+      "mouse",
+      7.9,
+      8.4
+    ],
+    [
+      "which",
+      8.4,
+      9.3
+    ],
+    [
+      "I",
+      9.3,
+      9.4
+    ],
+    [
+      "get",
+      9.4,
+      9.5
+    ],
+    [
+      "to",
+      9.5,
+      9.58
+    ],
+    [
+      "watch",
+      9.58,
+      9.68
+    ],
+    [
+      "Dolores",
+      9.68,
+      10.06
+    ],
+    [
+      "eat",
+      10.06,
+      10.28
+    ],
+    [
+      "the",
+      10.28,
+      10.42
+    ],
+    [
+      "mouse",
+      10.42,
+      10.68
+    ],
+    [
+      "no",
+      10.68,
+      11.08
+    ],
+    [
+      "shot,",
+      11.08,
+      11.32
+    ],
+    [
+      "right?",
+      11.32,
+      11.58
+    ],
+    [
+      "Oh",
+      12.96,
+      13.48
+    ],
+    [
+      "My",
+      13.48,
+      13.58
+    ],
+    [
+      "god,",
+      13.58,
+      14.08
+    ],
+    [
+      "oh",
+      14.08,
+      14.66
+    ],
+    [
+      "my",
+      14.66,
+      14.86
+    ],
+    [
+      "oh",
+      14.86,
+      15.12
+    ]
+  ],
+  "captions": {
+    "instagram": "Jason has a pet snake named Dolores\n\nLacy found the snake in Jason's house and went straight for the feed button.\n\n🎥 @lacy on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #lacy",
+    "tiktok": "Jason has a pet snake named Dolores 🎥 @lacy on Twitch #GTA6 #GTAVI #gta6clips #lacy",
+    "youtube_shorts": "Jason has a pet snake named Dolores #GTA6 #Shorts\n\n🎥 @lacy on Twitch\nFull stream: https://www.twitch.tv/videos/2932194507"
+  },
+  "notes": "Cut from https://www.twitch.tv/videos/2932194507 at 1:52:09-1:52:34. Credit is not permission: ask the creator if reachable; take down same day on request.",
+  "facecam": [
+    0.0,
+    0.0,
+    0.258,
+    0.256
+  ],
+  "facecam_h": 700,
+  "gzoom": 1.08,
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
+}

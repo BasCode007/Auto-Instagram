@@ -1,0 +1,91 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Display Black,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,3,5,100,140,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.22,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}DID{\c&H00FFFFFF&} YOU KNOW
+Dialogue: 0,0:00:00.22,0:00:00.36,Cap,,0,0,0,,{\pos(540,1250)}DID {\c&H000AD6FF&}YOU{\c&H00FFFFFF&} KNOW
+Dialogue: 0,0:00:00.36,0:00:00.54,Cap,,0,0,0,,{\pos(540,1250)}DID YOU {\c&H000AD6FF&}KNOW{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.54,0:00:01.06,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}EVERY{\c&H00FFFFFF&} CAR IN
+Dialogue: 0,0:00:01.06,0:00:01.36,Cap,,0,0,0,,{\pos(540,1250)}EVERY {\c&H000AD6FF&}CAR{\c&H00FFFFFF&} IN
+Dialogue: 0,0:00:01.36,0:00:01.60,Cap,,0,0,0,,{\pos(540,1250)}EVERY CAR {\c&H000AD6FF&}IN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.60,0:00:01.86,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}GTA{\c&H00FFFFFF&} 6 HAS
+Dialogue: 0,0:00:01.86,0:00:02.24,Cap,,0,0,0,,{\pos(540,1250)}GTA {\c&H000AD6FF&}6{\c&H00FFFFFF&} HAS
+Dialogue: 0,0:00:02.24,0:00:02.48,Cap,,0,0,0,,{\pos(540,1250)}GTA 6 {\c&H000AD6FF&}HAS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.48,0:00:02.86,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}A{\c&H00FFFFFF&} STAT CARD?
+Dialogue: 0,0:00:02.86,0:00:02.94,Cap,,0,0,0,,{\pos(540,1250)}A {\c&H000AD6FF&}STAT{\c&H00FFFFFF&} CARD?
+Dialogue: 0,0:00:02.90,0:00:03.51,Cap,,0,0,0,,{\pos(540,1250)}A STAT {\c&H000AD6FF&}CARD?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.62,0:00:03.74,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}CHECK{\c&H00FFFFFF&} A CAR,
+Dialogue: 0,0:00:03.74,0:00:03.90,Cap,,0,0,0,,{\pos(540,1250)}CHECK {\c&H000AD6FF&}A{\c&H00FFFFFF&} CAR,
+Dialogue: 0,0:00:03.90,0:00:04.38,Cap,,0,0,0,,{\pos(540,1250)}CHECK A {\c&H000AD6FF&}CAR,{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.38,0:00:04.62,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}AND{\c&H00FFFFFF&} IT TELLS
+Dialogue: 0,0:00:04.62,0:00:04.76,Cap,,0,0,0,,{\pos(540,1250)}AND {\c&H000AD6FF&}IT{\c&H00FFFFFF&} TELLS
+Dialogue: 0,0:00:04.76,0:00:04.98,Cap,,0,0,0,,{\pos(540,1250)}AND IT {\c&H000AD6FF&}TELLS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.98,0:00:05.18,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}YOU{\c&H00FFFFFF&} IF IT'S
+Dialogue: 0,0:00:05.18,0:00:05.34,Cap,,0,0,0,,{\pos(540,1250)}YOU {\c&H000AD6FF&}IF{\c&H00FFFFFF&} IT'S
+Dialogue: 0,0:00:05.34,0:00:05.48,Cap,,0,0,0,,{\pos(540,1250)}YOU IF {\c&H000AD6FF&}IT'S{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.48,0:00:06.22,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}UNLOCKED,{\c&H00FFFFFF&} IF THE
+Dialogue: 0,0:00:06.22,0:00:06.46,Cap,,0,0,0,,{\pos(540,1250)}UNLOCKED, {\c&H000AD6FF&}IF{\c&H00FFFFFF&} THE
+Dialogue: 0,0:00:06.46,0:00:06.60,Cap,,0,0,0,,{\pos(540,1250)}UNLOCKED, IF {\c&H000AD6FF&}THE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.60,0:00:06.90,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}SECURITY{\c&H00FFFFFF&} IS ON,
+Dialogue: 0,0:00:06.90,0:00:07.16,Cap,,0,0,0,,{\pos(540,1250)}SECURITY {\c&H000AD6FF&}IS{\c&H00FFFFFF&} ON,
+Dialogue: 0,0:00:07.16,0:00:07.60,Cap,,0,0,0,,{\pos(540,1250)}SECURITY IS {\c&H000AD6FF&}ON,{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.60,0:00:07.96,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}AND{\c&H00FFFFFF&} IF IT
+Dialogue: 0,0:00:07.96,0:00:08.16,Cap,,0,0,0,,{\pos(540,1250)}AND {\c&H000AD6FF&}IF{\c&H00FFFFFF&} IT
+Dialogue: 0,0:00:08.16,0:00:08.24,Cap,,0,0,0,,{\pos(540,1250)}AND IF {\c&H000AD6FF&}IT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.24,0:00:08.42,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}HAS{\c&H00FFFFFF&} A TRACKER.
+Dialogue: 0,0:00:08.42,0:00:08.54,Cap,,0,0,0,,{\pos(540,1250)}HAS {\c&H000AD6FF&}A{\c&H00FFFFFF&} TRACKER.
+Dialogue: 0,0:00:08.54,0:00:09.17,Cap,,0,0,0,,{\pos(540,1250)}HAS A {\c&H000AD6FF&}TRACKER.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.26,0:00:09.40,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}IT{\c&H00FFFFFF&} EVEN SHOWS
+Dialogue: 0,0:00:09.40,0:00:09.60,Cap,,0,0,0,,{\pos(540,1250)}IT {\c&H000AD6FF&}EVEN{\c&H00FFFFFF&} SHOWS
+Dialogue: 0,0:00:09.60,0:00:09.86,Cap,,0,0,0,,{\pos(540,1250)}IT EVEN {\c&H000AD6FF&}SHOWS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.86,0:00:10.08,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}WHAT{\c&H00FFFFFF&} IT SELLS
+Dialogue: 0,0:00:10.08,0:00:10.22,Cap,,0,0,0,,{\pos(540,1250)}WHAT {\c&H000AD6FF&}IT{\c&H00FFFFFF&} SELLS
+Dialogue: 0,0:00:10.22,0:00:10.46,Cap,,0,0,0,,{\pos(540,1250)}WHAT IT {\c&H000AD6FF&}SELLS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.46,0:00:11.18,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}FOR,{\c&H00FFFFFF&} AND WHAT
+Dialogue: 0,0:00:11.18,0:00:11.46,Cap,,0,0,0,,{\pos(540,1250)}FOR, {\c&H000AD6FF&}AND{\c&H00FFFFFF&} WHAT
+Dialogue: 0,0:00:11.46,0:00:11.66,Cap,,0,0,0,,{\pos(540,1250)}FOR, AND {\c&H000AD6FF&}WHAT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.66,0:00:11.78,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}IT{\c&H00FFFFFF&} COSTS TO
+Dialogue: 0,0:00:11.78,0:00:12.06,Cap,,0,0,0,,{\pos(540,1250)}IT {\c&H000AD6FF&}COSTS{\c&H00FFFFFF&} TO
+Dialogue: 0,0:00:12.06,0:00:12.36,Cap,,0,0,0,,{\pos(540,1250)}IT COSTS {\c&H000AD6FF&}TO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.36,0:00:13.11,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}REGISTER.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.16,0:00:13.30,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}THE{\c&H00FFFFFF&} BURNT PEANUT
+Dialogue: 0,0:00:13.30,0:00:13.54,Cap,,0,0,0,,{\pos(540,1250)}THE {\c&H000AD6FF&}BURNT{\c&H00FFFFFF&} PEANUT
+Dialogue: 0,0:00:13.54,0:00:13.98,Cap,,0,0,0,,{\pos(540,1250)}THE BURNT {\c&H000AD6FF&}PEANUT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.98,0:00:14.32,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}FOUND{\c&H00FFFFFF&} THIS
+Dialogue: 0,0:00:14.32,0:00:14.58,Cap,,0,0,0,,{\pos(540,1250)}FOUND {\c&H000AD6FF&}THIS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.58,0:00:15.00,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}PROGEN{\c&H00FFFFFF&} EMERUS
+Dialogue: 0,0:00:15.00,0:00:15.56,Cap,,0,0,0,,{\pos(540,1250)}PROGEN {\c&H000AD6FF&}EMERUS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.56,0:00:15.80,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}HIDDEN{\c&H00FFFFFF&} IN A
+Dialogue: 0,0:00:15.80,0:00:16.08,Cap,,0,0,0,,{\pos(540,1250)}HIDDEN {\c&H000AD6FF&}IN{\c&H00FFFFFF&} A
+Dialogue: 0,0:00:16.08,0:00:16.22,Cap,,0,0,0,,{\pos(540,1250)}HIDDEN IN {\c&H000AD6FF&}A{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.22,0:00:16.50,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}SHIPPING{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.50,0:00:17.35,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}CONTAINER.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.52,0:00:17.68,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}IT{\c&H00FFFFFF&} SELLS FOR
+Dialogue: 0,0:00:17.68,0:00:17.90,Cap,,0,0,0,,{\pos(540,1250)}IT {\c&H000AD6FF&}SELLS{\c&H00FFFFFF&} FOR
+Dialogue: 0,0:00:17.90,0:00:18.16,Cap,,0,0,0,,{\pos(540,1250)}IT SELLS {\c&H000AD6FF&}FOR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.16,0:00:18.64,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}$30{\c&H00FFFFFF&} ,000.
+Dialogue: 0,0:00:18.64,0:00:19.71,Cap,,0,0,0,,{\pos(540,1250)}$30 {\c&H000AD6FF&},000.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.84,0:00:20.28,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}REGISTERING{\c&H00FFFFFF&} IT?
+Dialogue: 0,0:00:20.28,0:00:20.83,Cap,,0,0,0,,{\pos(540,1250)}REGISTERING {\c&H000AD6FF&}IT?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.96,0:00:21.40,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}$29{\c&H00FFFFFF&} ,900.
+Dialogue: 0,0:00:21.40,0:00:22.83,Cap,,0,0,0,,{\pos(540,1250)}$29 {\c&H000AD6FF&},900.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.12,0:00:23.48,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}BASICALLY{\c&H00FFFFFF&} THE
+Dialogue: 0,0:00:23.48,0:00:23.74,Cap,,0,0,0,,{\pos(540,1250)}BASICALLY {\c&H000AD6FF&}THE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.74,0:00:24.02,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}WHOLE{\c&H00FFFFFF&} CAR AGAIN.
+Dialogue: 0,0:00:24.02,0:00:24.32,Cap,,0,0,0,,{\pos(540,1250)}WHOLE {\c&H000AD6FF&}CAR{\c&H00FFFFFF&} AGAIN.
+Dialogue: 0,0:00:24.32,0:00:25.03,Cap,,0,0,0,,{\pos(540,1250)}WHOLE CAR {\c&H000AD6FF&}AGAIN.{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.06,0:00:25.32,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}FOLLOW{\c&H00FFFFFF&} FOR MORE
+Dialogue: 0,0:00:25.32,0:00:25.58,Cap,,0,0,0,,{\pos(540,1250)}FOLLOW {\c&H000AD6FF&}FOR{\c&H00FFFFFF&} MORE
+Dialogue: 0,0:00:25.58,0:00:25.76,Cap,,0,0,0,,{\pos(540,1250)}FOLLOW FOR {\c&H000AD6FF&}MORE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.76,0:00:26.20,Cap,,0,0,0,,{\pos(540,1250)}{\fscx108\fscy108\t(0,90,\fscx100\fscy100)}{\c&H000AD6FF&}GTA{\c&H00FFFFFF&} 6 SECRETS.
+Dialogue: 0,0:00:26.20,0:00:26.60,Cap,,0,0,0,,{\pos(540,1250)}GTA {\c&H000AD6FF&}6{\c&H00FFFFFF&} SECRETS.
+Dialogue: 0,0:00:26.60,0:00:27.35,Cap,,0,0,0,,{\pos(540,1250)}GTA 6 {\c&H000AD6FF&}SECRETS.{\c&H00FFFFFF&}

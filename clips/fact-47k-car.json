@@ -1,0 +1,74 @@
+{
+ "id": "fact-47k-car",
+ "pillar": "did you know",
+ "kind": "reel",
+ "source": "twitch-2936706130/sec_custom.mp4",
+ "source_url": "https://www.twitch.tv/videos/2936706130",
+ "source_range": [
+  6400,
+  7380
+ ],
+ "creator": "theburntpeanut",
+ "hook": "$47,000 ON *ONE CAR*?!",
+ "credit": "@theburntpeanut on Twitch",
+ "layout": "full",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 20.0,
+   "end": 25.56,
+   "x": 0.5
+  },
+  {
+   "start": 205.0,
+   "end": 208.56,
+   "x": 0.5
+  },
+  {
+   "start": 758.0,
+   "end": 762.52,
+   "x": 0.5
+  },
+  {
+   "start": 199.0,
+   "end": 201.14,
+   "x": 1.0,
+   "zoom": 2.5,
+   "y": 0.0
+  },
+  {
+   "start": 959.0,
+   "end": 961.14,
+   "x": 1.0,
+   "zoom": 2.5,
+   "y": 0.0
+  },
+  {
+   "start": 925.0,
+   "end": 927.51,
+   "x": 0.5
+  }
+ ],
+ "words": [],
+ "caption_y": 1500,
+ "voiceover": {
+  "audio": "https://assets.vidiq.com/voiceovers/ca76f78c-d497-41e8-890c-459d833fda35/610cf09b-43c9-4217-85f3-0d65ccf054bf.mp3",
+  "voice": "Liam (vidIQ)",
+  "game_volume": 0.0
+ },
+ "facts": [
+  "Euroform Automotive tabs: Pro Builds, Cosmetics, Bodywork, Performance, Wheels, Interior (screen)",
+  "Respray 'Atlantic' flip paint $4,900 (screen); Customizable Liveries: Twin Stripe, Wide Stripe, Side Stripe... (screen)",
+  "Rim size 12/16; Rim colours Gloss 'Licorice' $175 (screen)",
+  "Money $100,741 at the start of the session, $53,366 at the end = $47,375 spent (screen)"
+ ],
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "notes": "Narrated fact Short, no face/no streamer audio/no credit (owner rules 21 Nov). Footage: Peanut day 4 VOD 1:46:40-2:03:00.",
+ "hook_until": 13.6
+}

@@ -1,0 +1,93 @@
+{
+ "approved": "owner 'Yes to all 5' 23 Nov ~01:00 UTC. IG/TT all SCHEDULED in vidIQ. YouTube drafts created; publish each at its round (no publishAt).",
+ "uploads": {
+  "speed-lewis-hamilton": "5808a741-6a75-4ae3-a85d-dd8d89a0554f",
+  "speed-bridge-jump": "6be3452a-e039-42ec-b850-9ffff79d9fad",
+  "caseoh-drive-thru": "5a3f87a3-456a-4f32-b13d-822cd116c91a",
+  "speed-delusional-npc": "504f71d5-4d6b-49f1-aae5-95b5b79f7657",
+  "peanut-canal-teeter": "6ed39122-45ba-4b0b-83eb-8239fbcc3643"
+ },
+ "ig_tt_drafts": [
+  {
+   "clip": "speed-delusional-npc",
+   "postId": "3c9eff61-21dc-49cf-80f2-edc63047e0fa",
+   "ig": "2026-11-23T04:30Z",
+   "tt": "2026-11-23T08:45Z",
+   "status": "SCHEDULED"
+  },
+  {
+   "clip": "peanut-canal-teeter",
+   "postId": "8b87c47d-59ac-49fc-823e-f4f51f24eb50",
+   "ig": "2026-11-23T05:30Z",
+   "tt": "2026-11-23T10:15Z",
+   "status": "SCHEDULED"
+  },
+  {
+   "clip": "speed-lewis-hamilton",
+   "postId": "5253732b-1ff2-4ab4-aad8-2e910ec9ae02",
+   "ig": "2026-11-23T06:30Z",
+   "tt": "2026-11-23T11:45Z",
+   "status": "SCHEDULED"
+  },
+  {
+   "clip": "speed-bridge-jump",
+   "postId": "0b0635f9-9a91-4710-9985-6a7047b8f4e6",
+   "ig": "2026-11-23T07:30Z",
+   "tt": "2026-11-23T13:15Z",
+   "status": "SCHEDULED"
+  },
+  {
+   "clip": "caseoh-drive-thru",
+   "postId": "54f344b8-dd1c-41d7-860c-a9a20cf208c4",
+   "ig": "2026-11-23T08:30Z",
+   "tt": "2026-11-23T14:45Z",
+   "status": "SCHEDULED"
+  }
+ ],
+ "youtube_plan": {
+  "speed-delusional-npc": "2026-11-23T17:50",
+  "peanut-canal-teeter": "2026-11-23T19:50",
+  "speed-lewis-hamilton": "2026-11-24T16:50",
+  "speed-bridge-jump": "2026-11-24T17:50",
+  "caseoh-drive-thru": "2026-11-24T18:50"
+ },
+ "youtube_titles": {
+  "speed-delusional-npc": "This GTA 6 NPC Thinks She's A 10 \ud83d\udc80",
+  "peanut-canal-teeter": "He Saved The Car In GTA 6... Or Did He? \ud83d\ude2d",
+  "speed-lewis-hamilton": "He Called Himself Lewis Hamilton In GTA 6... Then This Happened \ud83c\udfce\ufe0f",
+  "speed-bridge-jump": "Jumping Off A Bridge In GTA 6 Went Exactly How You'd Think \ud83d\udc80",
+  "caseoh-drive-thru": "First Stop In GTA 6? The Drive-Thru \ud83c\udf2e"
+ },
+ "batch2": {
+  "approved": "owner 'Yes to all 4' 23 Nov ~12:00 UTC. IG/TT drafts created, NOT yet published.",
+  "drafts": [
+   {
+    "clip": "speed-ufo-alien",
+    "upload": "ae6e0365-de64-4239-a4e4-6b7a1ccdd239",
+    "postId": "aab3a0ee-19eb-4c97-a24c-932af64742ce",
+    "note": "IG refused (time past); needs new IG time; TT 16:15"
+   },
+   {
+    "clip": "moist-scooter-crash",
+    "upload": "f76925be-f179-4ebb-8bba-274399146362",
+    "postId": "f6b41fb1-6729-43b2-afb8-7257bbc97b1e",
+    "ig": "13:30",
+    "tt": "17:45"
+   },
+   {
+    "clip": "moist-npc-chase",
+    "upload": "289e2839-6f9a-4019-ac5d-562e460630cf",
+    "postId": "1ee599fb-7d6a-42b8-ac5f-185b21114f9b",
+    "ig": "14:30",
+    "tt": "19:15"
+   },
+   {
+    "clip": "moist-flipped-car-fight",
+    "upload": "0f184d1c-0f60-407a-98ef-66fdc328b9c6",
+    "postId": "9633ac35-761b-45d5-9e8b-591cb8c19780",
+    "ig": "15:30",
+    "tt": "20:45"
+   }
+  ]
+ }
+}

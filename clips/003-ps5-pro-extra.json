@@ -1,0 +1,75 @@
+{
+  "id": "003-ps5-pro-extra",
+  "pillar": "spotlights",
+  "source": "GTAVI_Trailer_1.mp4",
+  "source_url": "https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Trailer_1/GTAVI_Trailer_1.mp4 (official Trailer 1, rockstargames.com/VI/media)",
+  "hook": "GTA 6 ON PS5 PRO GETS *SOMETHING EXTRA*",
+  "hook_size": 80,
+  "credit": "Footage: Rockstar Games",
+  "cover_at": 0.8,
+  "segments": [
+    {
+      "start": 2.8,
+      "end": 4.9
+    },
+    {
+      "start": 10.95,
+      "end": 13.6
+    },
+    {
+      "start": 19.2,
+      "end": 21.7
+    },
+    {
+      "start": 35.7,
+      "end": 37.4
+    },
+    {
+      "start": 32.6,
+      "end": 34.1
+    },
+    {
+      "start": 39.85,
+      "end": 41.3
+    },
+    {
+      "start": 21.8,
+      "end": 23.2
+    }
+  ],
+  "labels": [
+    {
+      "start": 0.5,
+      "end": 4.0,
+      "text": "Ray-traced shadows, *only on PS5 Pro*"
+    },
+    {
+      "start": 4.0,
+      "end": 7.6,
+      "text": "Sharper image with *PSSR* upscaling"
+    },
+    {
+      "start": 7.6,
+      "end": 11.0,
+      "text": "Every console targets *30 FPS*"
+    },
+    {
+      "start": 11.0,
+      "end": 14.0,
+      "text": "PS5: DualSense haptics + *Tempest 3D Audio*"
+    }
+  ],
+  "captions": {
+    "instagram": "GTA 6 on PS5 Pro gets something extra.\n\nRockstar says ray-traced shadows are only on PS5 Pro, with sharper image quality through PSSR. Every console version targets 30 FPS.\n\n🎥 @rockstargames\n\n#GTA6 #GTAVI #PS5Pro #RockstarGames #PlayStation",
+    "tiktok": "GTA 6 on PS5 Pro gets ray-traced shadows (per Rockstar). Which console are you playing on? 🎥 @rockstargames #GTA6 #PS5Pro #GTAVI #gaming",
+    "youtube_shorts": "GTA 6 on PS5 Pro gets something extra #GTA6 #PS5Pro #Shorts",
+    "x": "GTA 6 on PS5 Pro:\n\n- Ray-traced shadows, only on PS5 Pro\n- Sharper image through PSSR\n- All consoles target 30 FPS\n\n🎥 @RockstarGames"
+  },
+  "notes": "Source: Rockstar Newswire, Nov 10 2026 (Pre-Load Grand Theft Auto VI Now). Ask in comments which console people use; good reply bait.",
+  "layout": "full",
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
+}

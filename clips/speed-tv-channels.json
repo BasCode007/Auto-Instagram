@@ -1,0 +1,78 @@
+{
+ "id": "speed-tv-channels",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/774782030__BoldRelievedTaroAMPEnergyCherry-X4X6GJ4cF50Oyf7a.mp4",
+ "source_url": "https://www.twitch.tv/ishowspeed/clip/BoldRelievedTaroAMPEnergyCherry-X4X6GJ4cF50Oyf7a",
+ "source_range": null,
+ "creator": "ishowspeed",
+ "hook": "GTA 6 HAS *REAL TV CHANNELS*?!",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 29.01,
+   "x": 0.5
+  }
+ ],
+ "words": [
+  [
+   "Bro",
+   15.74,
+   16.32
+  ],
+  [
+   "The",
+   16.32,
+   16.52
+  ],
+  [
+   "hell",
+   16.52,
+   16.9
+  ],
+  [
+   "are",
+   16.9,
+   17.0
+  ],
+  [
+   "these",
+   17.0,
+   17.16
+  ],
+  [
+   "TV",
+   17.16,
+   17.42
+  ],
+  [
+   "channels,",
+   17.42,
+   17.86
+  ],
+  [
+   "bro",
+   17.86,
+   18.18
+  ]
+ ],
+ "notes": "Reaction Short, IShowSpeed top clip (24h) 'Speed Found GTA 6's Weirdest Channel Surf': flicks through in-game TV channels. Discovery. Speed's own captions on, ours off.",
+ "facecam": [
+  0.0,
+  0.426,
+  0.203,
+  0.222
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ },
+ "burn_captions": false
+}

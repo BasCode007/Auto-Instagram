@@ -1,0 +1,30 @@
+{
+ "approved": "owner 'Yes to all' 27 Nov ~00:05 UTC",
+ "posts": {
+  "kai-speed-million-race": {
+   "upload": "607423f6-04f4-4c0a-9488-e855f4fe9998",
+   "postId": "57608b01-515b-45cb-b01a-ce83c2c9ee33",
+   "ig": "27 Nov 01:00",
+   "tt": "27 Nov 01:15",
+   "yt": "29 Nov 16:50",
+   "yt_pub": "e6d2b366-7eca-47eb-9b7b-dfa553fd7fc6"
+  },
+  "hasan-no-parachute": {
+   "upload": "09bd4e88-db8e-4be0-a661-7504c16752ad",
+   "postId": "845fb64c-98ec-4463-9510-4c67d1f3cb1d",
+   "ig": "27 Nov 02:00",
+   "tt": "27 Nov 02:45",
+   "yt": "29 Nov 19:50",
+   "yt_pub": "eb402f28-dd50-41ea-b5d1-a620d5b1d2c4"
+  },
+  "tminnzy-stole-their-car": {
+   "upload": "5c0e5d35-785b-4f3b-a6cd-15cd870705c6",
+   "postId": "e13858f4-9e00-463f-9859-98a1bc0a62f3",
+   "ig": "27 Nov 03:00",
+   "tt": "27 Nov 04:15",
+   "yt": "29 Nov 22:50",
+   "yt_pub": "99ec1104-ee97-45f8-9edd-e0cf57daab04"
+  }
+ },
+ "status": "published 27 Nov ~00:10; IG/TT scheduled, YT uploading private with publishAt (confirm URLs next round)"
+}

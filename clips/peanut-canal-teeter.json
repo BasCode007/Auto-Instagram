@@ -1,0 +1,41 @@
+{
+ "id": "peanut-canal-teeter",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/95077512__PrettiestApatheticCockroachVoteNay-jTUn6F93NhqITAJS.mp4",
+ "source_url": "https://www.twitch.tv/theburntpeanut/clip/PrettiestApatheticCockroachVoteNay-jTUn6F93NhqITAJS",
+ "source_range": null,
+ "creator": "theburntpeanut",
+ "hook": "HE SAVED THE CAR... *OR DID HE?*",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 2.0,
+   "end": 27.0,
+   "x": 0.5
+  },
+  {
+   "start": 52.5,
+   "end": 59.0,
+   "x": 0.5
+  }
+ ],
+ "words": [],
+ "facecam": [
+  0.11,
+  0.68,
+  0.21,
+  0.32
+ ],
+ "facecam_h": 924,
+ "gzoom": 1.08,
+ "notes": "Reaction Short, TheBurntPeanut top clip (24h) 'Peanut still falls in': car teeters on a canal edge, he begs, saves it ('YEAH!'), then it ends up in the water anyway. The 25 s pause-menu stretch is cut out. Clip has burned-in captions, so ours are off.",
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}

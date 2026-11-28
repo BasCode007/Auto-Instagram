@@ -1,0 +1,80 @@
+{
+  "id": "002-5-things-to-know",
+  "pillar": "tips and tutorials",
+  "source": "GTAVI_Trailer_2.mp4",
+  "source_url": "https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Trailer_2/GTAVI_Trailer_2.mp4 (official Trailer 2, rockstargames.com/VI/media)",
+  "hook": "5 THINGS TO KNOW *BEFORE YOU PLAY* GTA 6",
+  "hook_size": 78,
+  "credit": "Footage: Rockstar Games",
+  "cover_at": 0.8,
+  "segments": [
+    {
+      "start": 6.0,
+      "end": 8.1
+    },
+    {
+      "start": 34.7,
+      "end": 38.3
+    },
+    {
+      "start": 38.5,
+      "end": 41.5
+    },
+    {
+      "start": 139.9,
+      "end": 141.4
+    },
+    {
+      "start": 141.75,
+      "end": 143.6
+    },
+    {
+      "start": 147.25,
+      "end": 148.1
+    },
+    {
+      "start": 152.75,
+      "end": 155.9
+    }
+  ],
+  "labels": [
+    {
+      "start": 0.3,
+      "end": 3.4,
+      "text": "1. It unlocks at *midnight local time*"
+    },
+    {
+      "start": 3.4,
+      "end": 6.5,
+      "text": "2. The pre-load is up to *212 GB*"
+    },
+    {
+      "start": 6.5,
+      "end": 9.6,
+      "text": "3. It targets *30 FPS* on PS5 and Xbox Series X|S"
+    },
+    {
+      "start": 9.6,
+      "end": 12.7,
+      "text": "4. Also on *Xbox Cloud Gaming*, with Remote Play support"
+    },
+    {
+      "start": 12.7,
+      "end": 20,
+      "text": "5. A free printable *map of Leonida* lands on the official site on Nov 19"
+    }
+  ],
+  "captions": {
+    "instagram": "5 THINGS TO KNOW BEFORE YOU PLAY GTA 6\n\nAll five come straight from Rockstar's Newswire. Save this for launch night.\n\n🎥 @rockstargames\n\n#GTA6 #GTAVI #GTA6Tips #RockstarGames #ViceCity",
+    "tiktok": "5 things to know before you play GTA 6 (all from Rockstar). Save this. 🎥 @rockstargames #GTA6 #GTAVI #GTA6tips #gaming",
+    "youtube_shorts": "5 things to know before you play GTA 6 #GTA6 #Shorts",
+    "x": "5 things to know before you play GTA 6:\n\n- Unlocks at midnight local time\n- Pre-load is up to 212 GB\n- Targets 30 FPS on PS5 and Xbox Series X|S\n- Also on Xbox Cloud Gaming, with Remote Play\n- Free printable Leonida map on the official site Nov 19\n\n🎥 @RockstarGames"
+  },
+  "notes": "Every fact is in facts.md with its Rockstar Newswire link. After launch, swap item 1 for a post-launch tip.",
+  "layout": "full",
+  "platforms": {
+    "tiktok": true,
+    "instagram": true,
+    "youtube": true
+  }
+}

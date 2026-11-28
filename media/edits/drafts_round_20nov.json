@@ -1,0 +1,82 @@
+{
+ "status": "approved 20 Nov 03:0xZ, scheduled (IG moved to 03:35Z)",
+ "drafts": [
+  {
+   "clip": "peanut-official-business",
+   "postId": "1d9ca299-307b-4d1f-84ef-1a97495a8deb",
+   "revision": "3e59a937-6ca12fba",
+   "ig": "2026-11-20T03:35Z",
+   "tt": "2026-11-20T11:20Z"
+  },
+  {
+   "clip": "peanut-robbed-for-a-chain",
+   "platform": "youtube",
+   "postId": "3ed8d9ca-75a9-42b8-ae85-1fb0dae7421f",
+   "title": "Peanut robbed a store just to afford a chain in GTA 6",
+   "yt": "2026-11-20T03:30Z"
+  },
+  {
+   "clip": "peanut-return-policy",
+   "platform": "youtube",
+   "postId": "485e1b38-b61d-487a-9306-a5745c0ffaae",
+   "title": "Peanut tried to return his shopping in GTA 6",
+   "yt": "2026-11-20T04:00Z"
+  },
+  {
+   "clip": "fact-phone-key-cloner",
+   "type": "fact voiceover",
+   "status": "approved, scheduled",
+   "postId": "5a726f67-51e0-499d-b833-92d43aed9b5c",
+   "revision": "095ef7ab-14589ab4",
+   "ig": "2026-11-20T04:05Z",
+   "yt": "2026-11-20T04:30Z"
+  },
+  {
+   "clip": "fact-car-stat-card",
+   "type": "fact voiceover",
+   "status": "approved 21 Nov, scheduled",
+   "postId": "35a21684-3199-4529-8b82-4e5890048307",
+   "revision": "263efeed-73321db7-e1075ca5",
+   "ig": "2026-11-21T01:35Z",
+   "yt": "2026-11-21T01:45Z",
+   "tt": "2026-11-21T02:50Z"
+  },
+  {
+   "clip": "speed-mike-tyson-bouncer",
+   "status": "approved 21 Nov, scheduled",
+   "postId": "5b00b379-5c9c-4aa9-8384-66fd4e55c76e",
+   "revision": "17678b54-a98901c7",
+   "ig": "2026-11-21T02:05Z",
+   "yt": "2026-11-21T02:15Z",
+   "tt": null
+  },
+  {
+   "clip": "fact-hunger",
+   "type": "fact voiceover",
+   "status": "approved 21 Nov, scheduled",
+   "postId": "677be4db-ca82-4b41-b845-8f3f947b7549",
+   "revision": "55686f45-5ea25be0-64e2b917",
+   "ig": "2026-11-21T02:35Z",
+   "yt": "2026-11-21T02:45Z",
+   "tt": "2026-11-21T04:20Z"
+  },
+  {
+   "clip": "peanut-randy-voicemail",
+   "status": "approved 21 Nov, scheduled",
+   "postId": "d77ba248-d8e6-49b2-bbbf-42013d7e2a4d",
+   "revision": "38294561-3d597ea2-ca9c3cbe",
+   "ig": "2026-11-21T01:05Z",
+   "yt": "2026-11-21T01:15Z",
+   "tt": "2026-11-21T01:20Z"
+  },
+  {
+   "clip": "speed-pool-rules",
+   "status": "approved 21 Nov, scheduled",
+   "postId": "406b57f8-4449-4e95-ab07-bdba158a0b45",
+   "revision": "78566fec-a6484893-b84993f4",
+   "ig": "2026-11-21T03:05Z",
+   "yt": "2026-11-21T03:15Z",
+   "tt": "2026-11-21T05:50Z"
+  }
+ ]
+}

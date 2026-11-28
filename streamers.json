@@ -1,0 +1,862 @@
+{
+  "lacy": {
+    "facecam": [
+      0,
+      0,
+      0.258,
+      0.256
+    ],
+    "facecam_h": 700,
+    "priority": "high",
+    "note": "title invites clippers (!CLIPPING)",
+    "live": false,
+    "target_share": 0.125,
+    "title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ 90% FINISHED 🍹️ IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM",
+    "vod_access": "public",
+    "vod_id": "2936518555",
+    "seen": "2026-11-22T07:51Z"
+  },
+  "xqc": {
+    "facecam": [
+      0,
+      0.505,
+      0.19,
+      0.28
+    ],
+    "facecam_h": 700,
+    "priority": "high",
+    "live": false,
+    "title": "⌛DROPS⌛60 FPS⌛GTA 6⌛BEATING THE GAME⌛THE FINAL HOURS⌛DONT MISS IT⌛BEST ENDING ONLY⌛BEST PLAYER OF GAMES⌛FULL REVIEW AFTER⌛COOL⌛",
+    "vod_access": "public",
+    "vod_id": "2937629817",
+    "seen": "2026-11-23T04:51Z",
+    "target_share": 0.125
+  },
+  "kaicenat": {
+    "facecam": [
+      0.005,
+      0.322,
+      0.198,
+      0.194
+    ],
+    "facecam_h": 600,
+    "priority": "normal",
+    "live": false,
+    "title": "🗺️EXPLORING GTA 6🗺️",
+    "vod_access": "public",
+    "vod_id": "2936683310",
+    "seen": "2026-11-22T04:51Z"
+  },
+  "typicalgamer": {
+    "facecam": [
+      0.008,
+      0.403,
+      0.22,
+      0.247
+    ],
+    "facecam_h": 700,
+    "priority": "high",
+    "note": "VODs are subscriber-only: record live",
+    "live": false,
+    "target_share": 0.125,
+    "title": "🔴 GTA 6 STORY! 🔴 I SEARCHED FOR 11 HOURS TODAY FOR THE PIRATE TOKEN 🔴",
+    "vod_access": "sub-only",
+    "vod_id": "2936409524",
+    "seen": "2026-11-22T09:51Z"
+  },
+  "theburntpeanut": {
+    "facecam": null,
+    "layout": "full",
+    "gx": 0.5,
+    "priority": "top",
+    "note": "no webcam (animated avatar): full layout, x=0.5",
+    "live": true,
+    "title": "[DROPS] GTA 6 | DAY 5 | DIMENSIONAL RIFTS, DEMONS, SECRET MISSIONS | POSSIBLY 1ST STREAMER TO FINISH STORY | #BUNGULATE",
+    "vod_access": "public",
+    "vod_id": "2938886234",
+    "seen": "2026-11-24T02:51Z",
+    "target_share": 0.5
+  },
+  "jasontheween": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🔴GTA VI FINALE🔴100% DONE🔴",
+    "vod_access": "public",
+    "vod_id": "2936160211",
+    "seen": "2026-11-21T16:51Z"
+  },
+  "rubius": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "stream nocturno 🌴 GTA VI a 60fps",
+    "vod_access": "public",
+    "vod_id": "2938666621",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "ohnepixel": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🔴[DROPS] GTA 6 FULL PLAYTHROUGH...🔴",
+    "vod_access": "public",
+    "vod_id": "2937242599",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "trymacs": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA 6 die geilsten Easter Eggs und Geheim Missionen! !ESN !Nobomi !Prepmymeal !Loco",
+    "vod_access": "public",
+    "vod_id": "2938528021",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "squeezie": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA 6 ON CONTINUE LIVE 233H",
+    "vod_access": "sub-only",
+    "vod_id": "2933858131",
+    "seen": "2026-11-19T23:51Z"
+  },
+  "ishowspeed": {
+    "facecam": [
+      0,
+      0.411,
+      0.2,
+      0.233
+    ],
+    "priority": "high",
+    "live": false,
+    "title": "🔴 BEATING GTA 6 RIGHT NOW 100% (FINAL MISSION)",
+    "vod_access": "public",
+    "vod_id": "2934870795",
+    "seen": "2026-11-20T18:50Z",
+    "facecam_h": 650,
+    "note": "GTA stream not archived on Twitch: record live",
+    "target_share": 0.125
+  },
+  "papaplatte": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "☀️ GEILER MANN SPIELT GTA 6 ☀️",
+    "vod_access": "public",
+    "vod_id": "2932389340",
+    "seen": "2026-11-18T15:49Z"
+  },
+  "stableronaldo": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🦩GTA 6 STORY MODE FINALE🦩60 FPS GAMEPLAY🦩CINEMA🦩JOIN QUICK🦩EXCLUSIVE BADGE🦩[twitter/insta stableronaldo] !sub !com !ultra",
+    "vod_access": "public",
+    "vod_id": "2936324446",
+    "seen": "2026-11-22T05:51Z"
+  },
+  "illojuan": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "LUCÍA CAMINOS 🙇🏻‍♂️ MI MAMI 🥺 LELE PANXA 👶🏻 joder qué vergüenza de título lo siento - Grand Theft Auto VI #5",
+    "vod_access": "public",
+    "vod_id": "2938510132",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "zackrawrr": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS ON] UNBANNED GTA 6 RELEASE STREAM FOREVER WOW STREAM W/KAISE LATER BIG DAY HUGE DRAMA NEW GAMES BIG NEWS !restedXP | @asmongold247",
+    "vod_access": "public",
+    "vod_id": "2938575130",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "caseoh_": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🟨LOSING MY MIND🟨",
+    "vod_access": "public",
+    "vod_id": "2937666104",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "auronplay": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "CÓDIGOS PARA SUBS 🌴 !DROPS ON 🌴 GTA 6 #5 LISTO PARA PASAR 6 HORAS HACIENDO A LUCÍA FELIZ (Mido 1.95)",
+    "vod_access": "public",
+    "vod_id": "2937333836",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "hasanabi": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🚉TRUMPCARE PLOT 🚉NEW DNC RULES?🚉 JENSEN HUANG IS BACK🚉 RW MALDING OVER MANDY+GTA🗽GTA CH3 CONT 🗽 !donate",
+    "vod_access": "public",
+    "vod_id": "2938617081",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "jynxzi": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[684/730] ♟️ GTA 6 DAY 4 ♟️",
+    "vod_access": "public",
+    "vod_id": "2938664561",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "yourragegaming": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "DEATH BATTLE DAY!!!! MORE REACTS AFTER + FINISH WITH GTA 6 DATE WITH LUCIA",
+    "vod_access": "public",
+    "vod_id": "2937998841",
+    "seen": "2026-11-23T04:51Z"
+  },
+  "jerma985": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "☕🚨",
+    "vod_access": "public",
+    "vod_id": "2938334131",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "brucedropemoff": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA 6 DAY 2 🌴 WILL I ESCAPE BEING A BROKE BD? 🌴 FUN 🌴 VIBES 🌴 LAUGHS🌴 | !sub !prime !game !socials",
+    "vod_access": "public",
+    "vod_id": "2933200568",
+    "seen": "2026-11-21T06:51Z"
+  },
+  "carola": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "EXTENSIBLE A 1 SEMANA ---- LLEGÓ EL DÍA🌴🌴🌴GTA VI 🌴🌴🌴",
+    "vod_access": "public",
+    "vod_id": "2932848195",
+    "seen": "2026-11-19T09:51Z"
+  },
+  "fanum": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA 6 🍌 TODAY WE MAKE $1,000,000 🍌 DAY 4 🍌 ITS HEAVY 🍌 ROBBING PEOPLE ON SNAPMATIC 🍌 ROBBING CARS 🍌 ROBBING ROBBERS 🍌",
+    "vod_access": "public",
+    "vod_id": "2936934156",
+    "seen": "2026-11-22T09:51Z"
+  },
+  "gotaga": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🌴 (73%) Objectif 1M$ ce soir #PourLUCIA",
+    "vod_access": "sub-only",
+    "vod_id": "2938725055",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "elmariana": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🔴GTA VI🔴🌴EXPLORACION🌴HISTORIA🌴❌CHICHERO❌ || EL 12 HORAS TRAJO SECUELAS",
+    "vod_access": "public",
+    "vod_id": "2933975583",
+    "seen": "2026-11-21T03:50Z"
+  },
+  "maximilian_dood": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA6 TIME...end of Chapter 1",
+    "vod_access": "public",
+    "vod_id": "2936995714",
+    "seen": "2026-11-22T10:51Z"
+  },
+  "supertf": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "extremely tall and handsome and beautiful gorgeous stunning individual is ready to present his greatness once more",
+    "vod_access": "public",
+    "vod_id": "2938893370",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "valkyrae": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTAVI DAY 1 (also live on YT)",
+    "vod_access": "public",
+    "vod_id": "2932982359",
+    "seen": "2026-11-19T09:51Z"
+  },
+  "moistcr1tikal": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "Gta 6",
+    "vod_access": "public",
+    "vod_id": "2937957915",
+    "seen": "2026-11-23T04:51Z"
+  },
+  "mistermv": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA VI (12h de jeu) !emma !vero",
+    "vod_access": "sub-only",
+    "vod_id": "2933720922",
+    "seen": "2026-11-20T06:52Z"
+  },
+  "blusewilly_retry": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "PS5 GTA6 11/22",
+    "vod_access": "public",
+    "vod_id": "2937042127",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "mrdzinold": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🌊🌴☀️ DZIEŃ 3 W SŁONECZNYM VICE CITY [60FPS]🌊🌴☀️ || !STRONA",
+    "vod_access": "public",
+    "vod_id": "2934796972",
+    "seen": "2026-11-21T13:51Z"
+  },
+  "pietsmiet": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🌴🌆🦩GTA VI ★★★★★☆ Drops! PS5Pro !gta6 !wer | !Friendlyfire !discord !ptsmt",
+    "vod_access": "public",
+    "vod_id": "2937117566",
+    "seen": "2026-11-22T14:51Z"
+  },
+  "chowh1": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROP]🌴1 SUB = BADGE ou EMOTE GTA6 - MODE PMU 180FPS 🌴 !!holy !vpn",
+    "vod_access": "sub-only",
+    "vod_id": "2937105024",
+    "seen": "2026-11-22T12:23Z"
+  },
+  "darkviperau": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[PS5 Pro] [HOURLY GIVEAWAYS] Day 3 of GTA VI",
+    "vod_access": "public",
+    "vod_id": "2934782281",
+    "seen": "2026-11-20T12:52Z"
+  },
+  "maxim": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "Hype oder 30 FPS? GTA Tag 1 | !pmm !razer !snocks !koro !holzkern #Werbung",
+    "vod_access": "public",
+    "vod_id": "2933415962",
+    "seen": "2026-11-19T10:51Z"
+  },
+  "eliasn97": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS] GTA VI GRIND 🔥 | !iconleague !doku !eligella !gaming !uncut !clips",
+    "vod_access": "none",
+    "vod_id": null,
+    "seen": "2026-11-20T23:51Z"
+  },
+  "domingo": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA VI : NOUVEAU DÉPART POUR JASON & LUCIA ?",
+    "vod_access": "sub-only",
+    "vod_id": "2937218402",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "imantado": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS de KEYS] 🏝️ GTA VI #5 🏝️ ROBO al BANCO CENTRAL 💦 Sorteo de GTA entre SUBS",
+    "vod_access": "sub-only",
+    "vod_id": "2937237681",
+    "seen": "2026-11-22T13:51Z"
+  },
+  "alanzoka": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "gta 6 vivendo a vida curtindo adoidado é",
+    "vod_access": "public",
+    "vod_id": "2938467977",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "cohhcarnage": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[Drops] GTA 6 IS AWESOME! - !SubGift - !Beanie is BACK in the store! - PS5 Pro - !Emberville (Jan 7th!)",
+    "vod_access": "public",
+    "vod_id": "2937256318",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "youngmulti": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[EN/ES CC] 🛑 PREMIERA NOWEGO NUMERU \"ZA KAŻDYM RA2EM\" O 18:00 🛑 MÓJ PIERWSZY RAZ W GTA 6 🛑 | DARMOWY SUB -> !prime !OperaGX !holy",
+    "vod_access": "sub-only",
+    "vod_id": "2933648161",
+    "seen": "2026-11-19T15:51Z"
+  },
+  "hutchmf": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS] GIVEAWAYS~ DAY 3 OF GTA6 STORY PROGRESS! UNLOCKED THE CLOAKZ... FURRY NETWORK!",
+    "vod_access": "public",
+    "vod_id": "2934897780",
+    "seen": "2026-11-20T20:51Z"
+  },
+  "joe_bartolozzi": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "RANDOM GAMES INTO GTA JOIN JOIN JOIN",
+    "vod_access": "public",
+    "vod_id": "2938650249",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "demonzz1": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "15/16 Start GTA6, po 23 Robin Hood: Faceci w rajtuzach. Pozdrawiam <3",
+    "vod_access": "public",
+    "vod_id": "2933723740",
+    "seen": "2026-11-19T18:50Z"
+  },
+  "tumblurr": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA6 PARTE 3💥🌴⏳ 41% STORIA⏳ CODICI GTA ORE ⏰22:30-00:30⏰",
+    "vod_access": "public",
+    "vod_id": "2935219481",
+    "seen": "2026-11-21T01:51Z"
+  },
+  "lirik": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTAing Pt. 4 of ?",
+    "vod_access": "public",
+    "vod_id": "2936297170",
+    "seen": "2026-11-21T22:51Z"
+  },
+  "emiru": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS] HI :D 🩷⭐ SUB SATURDAY 🩷⭐ VARIETY GAMING -> GTA VI GRIND 🩷⭐ GIVING AWAY GTA COPIES 🩷⭐ BADGES ALL WEEKEND 🩷⭐ @EMIRU247 !giveaway",
+    "vod_access": "public",
+    "vod_id": "2936606693",
+    "seen": "2026-11-22T03:51Z"
+  },
+  "ludwig": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🚘DAY 5 NON-LETHAL GTA VI RUN [DROPS ON] 🚘🚔 GIVING AWAY GAME CODES EVERY HOUR 🚔 !RedBull !AT&T !Alienware #GameChanger",
+    "vod_access": "public",
+    "vod_id": "2938542952",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "vanillamace": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "HAPPY FRIDAY MORE GTA 6",
+    "vod_access": "public",
+    "vod_id": "2934481131",
+    "seen": "2026-11-21T04:50Z"
+  },
+  "summit1g": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA6 PLAYTHROUGH GOOD FPS WITH VEYRA FRAME GEN - !journey for %10 off - !starforge @StarforgeSystems",
+    "vod_access": "public",
+    "vod_id": "2935562437",
+    "seen": "2026-11-21T08:51Z"
+  },
+  "juansguarnizo": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA VI, HOY EMPEZAMOS EL CAPÍTULO 2 😎",
+    "vod_access": "public",
+    "vod_id": "2936298651",
+    "seen": "2026-11-22T00:50Z"
+  },
+  "flight23white": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "YO YO YOOOO🏆🏆",
+    "vod_access": "public",
+    "vod_id": "2934407543",
+    "seen": "2026-11-20T06:52Z"
+  },
+  "tonton": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🟥 GTA VI || JOUR 4 || DÉBUT DU CHAPITRE 2 [PS5 PRO] 🟥 [SPOIL/BACKSEAT=⛔]",
+    "vod_access": "public",
+    "vod_id": "2936993062",
+    "seen": "2026-11-22T09:51Z"
+  },
+  "bratishkinoff": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "2K 60FPS • FIRST POV • GTA 6 • DAY 3",
+    "vod_access": "public",
+    "vod_id": "2934815498",
+    "seen": "2026-11-20T20:51Z"
+  },
+  "handofblood": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🎮 Mein erstes Mal GTA VI | !Drops 🎮",
+    "vod_access": "public",
+    "vod_id": "2934852868",
+    "seen": "2026-11-20T16:50Z"
+  },
+  "nickmercs": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS] GTA 6 IS BETTER THAN WE THOUGHT! 🔥",
+    "vod_access": "public",
+    "vod_id": "2934876295",
+    "seen": "2026-11-20T14:51Z"
+  },
+  "michou": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "GTA 6 CHAPITRE FINAL ! (on finit ce soir 90%+)",
+    "vod_access": "public",
+    "vod_id": "2938536099",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "cellbit": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "7 demonios ou mais todos os dias (GTA 6)",
+    "vod_access": "sub-only",
+    "vod_id": "2938789341",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "ironmouse": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🔴DROPS🔴REAL LIFE LATINA STREAMING AND MAKING BAD DECISIONS!| !ironmart !glamb !omocat !cheeky !ht !starforge !tts !merch !razer",
+    "vod_access": "public",
+    "vod_id": "2936891362",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "chloeyummyyy": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA 6 day 2😍",
+    "vod_access": "public",
+    "vod_id": "2935863788",
+    "seen": "2026-11-21T09:51Z"
+  },
+  "samueletienne": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "MARATHON GTA ! LIVE 7 JOURS NON STOP !! (là c'est le dimanche )",
+    "vod_access": "sub-only",
+    "vod_id": "2936212688",
+    "seen": "2026-11-22T12:23Z"
+  },
+  "marlon": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🌴DAY 3 PLAYING GTA 6 TILL I COMPLETE IT (97% DONE) 🌴 FINALE 🌴 LIVE 24/7 🌴 !sub !comm | YOUNGLA CODE MARLON FOR 15% OFF",
+    "vod_access": "public",
+    "vod_id": "2935183263",
+    "seen": "2026-11-21T11:51Z"
+  },
+  "39daph": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[drops & sub gifts] professional game reviewer and women respecter",
+    "vod_access": "public",
+    "vod_id": "2935850220",
+    "seen": "2026-11-21T10:51Z"
+  },
+  "jltomy": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[SUBATHON MIAMI] Chapitre 4 - On continue le lets play de GTA VI ! | !subathon !holy !free !astro !bfd !submiami",
+    "vod_access": "sub-only",
+    "vod_id": "2938172416",
+    "seen": "2026-11-23T23:50Z"
+  },
+  "zerator": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROP] + 1 sub (non prime) = badge ou emote GTA VI - LET'S PLAY COMPLET - EPISODE 5 - CHAPITRE IV AUJOURD'HUI",
+    "vod_access": "sub-only",
+    "vod_id": "2937252725",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "vegetta777": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA 6 - Una NUEVA VIDA #4",
+    "vod_access": "public",
+    "vod_id": "2936152235",
+    "seen": "2026-11-21T18:51Z"
+  },
+  "missmikkaa": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "DROPS ✅ [PS5 PRO] GOTY? GTA 6 FINALLY!! | Best reviewed game of ALL TIME?? Insane | @MissMikkaa on Socials",
+    "vod_access": "public",
+    "vod_id": "2936155770",
+    "seen": "2026-11-21T19:50Z"
+  },
+  "elajjaz": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[Drops, PS5 Pro] GTA 6 RELEASE (Day 3!) - Yes the game is really tight🪑",
+    "vod_access": "public",
+    "vod_id": "2936158697",
+    "seen": "2026-11-21T17:50Z"
+  },
+  "ewroon": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[EN/ES CC]🌴GTA 6 PELNE PRZEJSCIE🌴60 FPS🌴DZIEN 4🌴 !G4 !holy !flashskins VODY na !yt",
+    "vod_access": "public",
+    "vod_id": "2936358455",
+    "seen": "2026-11-21T19:50Z"
+  },
+  "thegrefg": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "EL EASTER EGG MÁS LOCO DE GTA 6 😱 HORARIO PERUANO 😱 INTENTANDO LLEGAR AL CAPÍTULO 2 😱 EL ÚLTIMO STREAMER EN PASARSE GTA VI 😱",
+    "vod_access": "public",
+    "vod_id": "2938891947",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "anyme023": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "ON FAIT LA TREND DE JASON NUE DANS LA RUE",
+    "vod_access": "public",
+    "vod_id": "2936165406",
+    "seen": "2026-11-22T01:51Z"
+  },
+  "zpiicypotate": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🌴 GTA6 🌴 Wildin' In Vice City | Day 2 | !socials @zpiicypotate",
+    "vod_access": "public",
+    "vod_id": "2936559152",
+    "seen": "2026-11-22T01:51Z"
+  },
+  "lvndmark": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS] GTA 6 IS HERE | !STARFORGE !MONSTER | LVNDMARK_tv On Socials @starforgesystems",
+    "vod_access": "public",
+    "vod_id": "2937774532",
+    "seen": "2026-11-23T04:51Z"
+  },
+  "rdcgaming": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "FINALLY BACK SEEMS LIKE ITS BEEN FOREVER GTA AND PROLLY NOTHING ELSE",
+    "vod_access": "public",
+    "vod_id": "2936786213",
+    "seen": "2026-11-22T08:51Z"
+  },
+  "vinesauce": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA6 Game Bonus",
+    "vod_access": "public",
+    "vod_id": "2934434521",
+    "seen": "2026-11-22T06:51Z"
+  },
+  "ennaouii": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🏝️🍹⛱️ GTA6 D2 !vpn",
+    "vod_access": "public",
+    "vod_id": "2937087608",
+    "seen": "2026-11-22T11:50Z"
+  },
+  "singsing": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "GTA 6 DAY 4",
+    "vod_access": "public",
+    "vod_id": "2937125905",
+    "seen": "2026-11-22T12:23Z"
+  },
+  "peter": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "UP TO SOME ILLEGAL ANTICS🏖️Chapter 1🏖️🏖️ GTA VI [Day 4]",
+    "vod_access": "public",
+    "vod_id": "2936972834",
+    "seen": "2026-11-22T12:23Z"
+  },
+  "banduracartel": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "12:00 🌴GTA VI - OSTATNIA MISJA | [96/100%] 🌴#3 !strona !wk !betclic !moza !pirate",
+    "vod_access": "public",
+    "vod_id": "2937183786",
+    "seen": "2026-11-22T12:23Z"
+  },
+  "dannyaarons": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "FINISHING CHAPTER 1 NOW LOL 🔥 GETTING EVERY COLLECTIBLE CARD 🔥 GRINDING MISSIONS 🔥 RTG FUT CHAMPS 🔥 !boohooman !kf !futgenie !fotmob",
+    "vod_access": "public",
+    "vod_id": "2936218524",
+    "seen": "2026-11-22T13:51Z"
+  },
+  "xrohat": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS] GTA VI 98% CHAPTER 5 | CHARITYSTREAM - TAG 22 | !spenden !spendenziel !giveaway !wolt !revolut",
+    "vod_access": "public",
+    "vod_id": "2937266647",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "kamet0": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "VICE CITY, C'EST LE PARADIS (!jd) (!prime)",
+    "vod_access": "sub-only",
+    "vod_id": "2936554609",
+    "seen": "2026-11-22T15:51Z"
+  },
+  "gingy": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🌸Last chance to grab this deal w/ MOUNTAIN DEW x LITTLE CAESARS !GAMEON #MountainDewPartner #LittleCaesarsPartner🌸 New !Discord",
+    "vod_access": "public",
+    "vod_id": "2937929074",
+    "seen": "2026-11-23T04:51Z"
+  },
+  "fuzhpuzy": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "DROPS 🩷 GTA 6 FINALLY HERE! [PS5 PRO] | Thank you Rockstar Games for the key 🗝️ !Badge",
+    "vod_access": "public",
+    "vod_id": "2938023712",
+    "seen": "2026-11-23T04:51Z"
+  },
+  "crystalmolly": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "[DROPS] GTA VI 💋",
+    "vod_access": "public",
+    "vod_id": "2937936676",
+    "seen": "2026-11-23T04:51Z"
+  },
+  "penta": {
+    "facecam": null,
+    "priority": "normal",
+    "live": false,
+    "title": "🌴[ DROPS ON ]🌴special needs war vet and his Spanish care taker🌴 SPOILERS OR HELP = BAN (unless asked for)🌴",
+    "vod_access": "public",
+    "vod_id": "2937791413",
+    "seen": "2026-11-23T04:51Z"
+  },
+  "shroud": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "i guess ill try the 30fps controller experience.... feeling left out.... fomo.......",
+    "vod_access": "public",
+    "vod_id": "2938768445",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "rivers_gg": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "UN DÍA MAS EN GTA VI | EXPLORAMOS Y ANALIZAMOS TACON 👠",
+    "vod_access": "public",
+    "vod_id": "2938911908",
+    "seen": "2026-11-24T02:51Z"
+  },
+  "angryginge13": {
+    "facecam": null,
+    "priority": "normal",
+    "live": true,
+    "title": "🏖️60%!🏖️CHAPTER 3->4🏖️GTA MARATHON!🏖️FIGHTING IN JAN!🏖️ NEW SET UP!🏖️ON THE RUN!🏖️ROBBED A STORE!🏖️2025 KOTJ 🏖️",
+    "vod_access": "public",
+    "vod_id": "2938367952",
+    "seen": "2026-11-24T02:51Z"
+  }
+}

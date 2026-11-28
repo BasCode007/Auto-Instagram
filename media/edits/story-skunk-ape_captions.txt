@@ -1,0 +1,5 @@
+CLIP story-skunk-ape  |  16.2s  |  pillar: narrated story
+Source: https://www.twitch.tv/videos/2935449800
+
+===== NOTES =====
+First narrated-story test (VicePulse style). Footage https://www.twitch.tv/videos/2935449800 at 9:01:40-9:03:10.

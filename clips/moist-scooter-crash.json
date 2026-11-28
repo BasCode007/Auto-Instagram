@@ -1,0 +1,140 @@
+{
+ "id": "moist-scooter-crash",
+ "pillar": "gameplay clips",
+ "kind": "reel",
+ "source": "twitch-2937957915/sec_34020_34330.mp4",
+ "source_url": "https://www.twitch.tv/videos/2937957915",
+ "source_range": [
+  3402.0,
+  3433.0
+ ],
+ "creator": "moistcr1tikal",
+ "hook": "GTA 6 SCOOTER PHYSICS ARE *UNREAL*",
+ "credit": "@moistcr1tikal on Twitch",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 2.0,
+   "end": 33.0
+  }
+ ],
+ "words": [
+  [
+   "Over",
+   4.86,
+   5.38
+  ],
+  [
+   "the",
+   5.38,
+   5.48
+  ],
+  [
+   "top",
+   5.48,
+   5.68
+  ],
+  [
+   "stop",
+   5.68,
+   6.38
+  ],
+  [
+   "moving",
+   6.38,
+   6.9
+  ],
+  [
+   "man.",
+   6.9,
+   7.28
+  ],
+  [
+   "Nobody",
+   9.26,
+   9.74
+  ],
+  [
+   "trusts",
+   9.74,
+   10.04
+  ],
+  [
+   "me",
+   10.04,
+   10.22
+  ],
+  [
+   "to",
+   10.22,
+   10.32
+  ],
+  [
+   "make",
+   10.32,
+   10.5
+  ],
+  [
+   "it.",
+   10.5,
+   10.66
+  ],
+  [
+   "Oh,",
+   10.68,
+   11.1
+  ],
+  [
+   "oh,",
+   11.1,
+   12.2
+  ],
+  [
+   "that",
+   17.45,
+   17.65
+  ],
+  [
+   "was",
+   17.65,
+   17.79
+  ],
+  [
+   "hype.",
+   17.79,
+   18.09
+  ],
+  [
+   "That",
+   18.79,
+   19.27
+  ],
+  [
+   "was",
+   19.27,
+   19.51
+  ],
+  [
+   "fucking",
+   19.51,
+   19.95
+  ]
+ ],
+ "captions": {
+  "instagram": "GTA 6 scooter physics are unreal\n\n🎥 @moistcr1tikal on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #moistcr1tikal",
+  "tiktok": "GTA 6 scooter physics are unreal 🎥 @moistcr1tikal on Twitch #GTA6 #GTAVI #gta6clips #moistcr1tikal",
+  "youtube_shorts": "GTA 6 scooter physics are unreal #GTA6 #Shorts\n\n🎥 @moistcr1tikal on Twitch\nFull stream: https://www.twitch.tv/videos/2937957915"
+ },
+ "notes": "Cut from https://www.twitch.tv/videos/2937957915 at 0:56:42-0:57:13. Credit is not permission: ask the creator if reachable; take down same day on request.",
+ "facecam": [
+  0.0,
+  0.53,
+  0.22,
+  0.22
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08
+}

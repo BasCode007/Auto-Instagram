@@ -1,0 +1,190 @@
+{
+ "id": "lacy-freed-cows-trampled",
+ "pillar": "funny",
+ "kind": "reel",
+ "source": "twitch-2935059680/sec_131570_131820.mp4",
+ "source_url": "https://www.twitch.tv/videos/2935059680",
+ "source_range": [
+  13157.0,
+  13182.0
+ ],
+ "creator": "lacy",
+ "hook": "LACY TRIED TO *FREE THE COWS*",
+ "credit": "@lacy on Twitch",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 6.25,
+   "end": 26.75
+  }
+ ],
+ "words": [
+  [
+   "Oh",
+   12.22,
+   12.74
+  ],
+  [
+   "You",
+   13.78,
+   14.18
+  ],
+  [
+   "guys",
+   14.18,
+   14.3
+  ],
+  [
+   "want",
+   14.3,
+   14.42
+  ],
+  [
+   "to",
+   14.42,
+   14.48
+  ],
+  [
+   "get",
+   14.48,
+   14.6
+  ],
+  [
+   "set",
+   14.6,
+   14.8
+  ],
+  [
+   "free.",
+   14.8,
+   15.14
+  ],
+  [
+   "I",
+   15.54,
+   15.94
+  ],
+  [
+   "got",
+   15.94,
+   16.14
+  ],
+  [
+   "y",
+   16.14,
+   16.34
+  ],
+  [
+   "'all",
+   16.34,
+   16.54
+  ],
+  [
+   "Come",
+   17.42,
+   17.82
+  ],
+  [
+   "with",
+   17.82,
+   17.98
+  ],
+  [
+   "me.",
+   17.98,
+   18.38
+  ],
+  [
+   "Come",
+   18.58,
+   18.98
+  ],
+  [
+   "with",
+   18.98,
+   19.12
+  ],
+  [
+   "me.",
+   19.12,
+   19.28
+  ],
+  [
+   "I'll",
+   19.4,
+   19.46
+  ],
+  [
+   "set",
+   19.46,
+   19.58
+  ],
+  [
+   "you",
+   19.58,
+   19.74
+  ],
+  [
+   "guys",
+   19.74,
+   19.92
+  ],
+  [
+   "free",
+   19.92,
+   20.26
+  ],
+  [
+   "Allah",
+   23.37,
+   23.77
+  ],
+  [
+   "The",
+   25.11,
+   25.51
+  ],
+  [
+   "fuck",
+   25.51,
+   25.91
+  ],
+  [
+   "is",
+   25.91,
+   26.07
+  ],
+  [
+   "your",
+   26.07,
+   26.23
+  ],
+  [
+   "problem?",
+   26.23,
+   26.89
+  ]
+ ],
+ "captions": {
+  "instagram": "Lacy tried to free the cows\n\nLacy set the farm cows free. One of them did not say thank you.\n\n\ud83c\udfa5 @lacy on Twitch\n\n#GTA6 #GTAVI #GrandTheftAuto #ViceCity #lacy",
+  "tiktok": "Lacy tried to free the cows \ud83c\udfa5 @lacy on Twitch #GTA6 #GTAVI #gta6clips #lacy",
+  "youtube_shorts": "Lacy tried to free the cows #GTA6 #Shorts\n\n\ud83c\udfa5 @lacy on Twitch\nFull stream: https://www.twitch.tv/videos/2935059680"
+ },
+ "notes": "Cut from https://www.twitch.tv/videos/2935059680 at 3:39:17-3:39:42. Credit is not permission: ask the creator if reachable; take down same day on request.",
+ "facecam": [
+  0.0,
+  0.0,
+  0.258,
+  0.256
+ ],
+ "facecam_h": 700,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "id": "caseoh-drive-thru",
+ "pillar": "reaction",
+ "kind": "reel",
+ "source": "twitch-clips/1612438826__SteamyFairJackalLitFam-oLotxv-cxrUQX5fG.mp4",
+ "source_url": "https://www.twitch.tv/caseoh_/clip/SteamyFairJackalLitFam-oLotxv-cxrUQX5fG",
+ "source_range": null,
+ "creator": "caseoh_",
+ "hook": "CASEOH'S FIRST STOP IN GTA 6: *TACOS* \ud83c\udf2e",
+ "layout": "stack",
+ "fps": 60,
+ "no_letterbox": true,
+ "preset": "medium",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 20.77,
+   "x": 0.5
+  }
+ ],
+ "words": [],
+ "notes": "Reaction Short from a top Twitch clip (24h). Clip already has the streamer's own captions, so ours are off.",
+ "facecam": [
+  0.0,
+  0.126,
+  0.208,
+  0.278
+ ],
+ "facecam_h": 640,
+ "gzoom": 1.08,
+ "platforms": {
+  "instagram": true,
+  "tiktok": true,
+  "youtube": true
+ }
+}
