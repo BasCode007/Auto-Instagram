@@ -269,3 +269,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 28 Nov 02:50 UTC: category scrape. Rejected CohhCarnage "GTA NPCs" (NPC dialogue includes a slur), ohnePixel "almost almost" (dark bathroom scene, underwear), Quin69 bike escape (very dark, murky action). No new preview.
 - 28 Nov 03:50 UTC: scraped ishowspeed/kaicenat/xqc (+ jasontheween/peanut/lacy cut short). Speed "Lucia jumps off train bridge" clip was deleted; rest were repeats, off-game talk or sexual-themes flags. No new preview.
 - 28 Nov 04:51 UTC: scrape of jasontheween/theburntpeanut/lacy/caseoh_ timed out (Twitch page slow, quiet overnight hours). No new preview.
+- 28 Nov 05:51 UTC: scraped jasontheween/theburntpeanut/lacy/caseoh_. Peanut "red mist" deleted. Built preview caseoh-grandma-talks-back (33 s, random encounter: old lady NPC argues with Jason).
