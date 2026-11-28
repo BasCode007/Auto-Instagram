@@ -268,3 +268,4 @@ approved 4 at 12:47Z: speed-ufo-alien moist-scooter-crash moist-npc-chase moist-
 - 28 Nov 00:52 UTC: YouTube snapshot shows 0 views on all six Shorts published since 26 Nov evening; flagged to owner.
 - 28 Nov 02:50 UTC: category scrape. Rejected CohhCarnage "GTA NPCs" (NPC dialogue includes a slur), ohnePixel "almost almost" (dark bathroom scene, underwear), Quin69 bike escape (very dark, murky action). No new preview.
 - 28 Nov 03:50 UTC: scraped ishowspeed/kaicenat/xqc (+ jasontheween/peanut/lacy cut short). Speed "Lucia jumps off train bridge" clip was deleted; rest were repeats, off-game talk or sexual-themes flags. No new preview.
+- 28 Nov 04:51 UTC: scrape of jasontheween/theburntpeanut/lacy/caseoh_ timed out (Twitch page slow, quiet overnight hours). No new preview.
